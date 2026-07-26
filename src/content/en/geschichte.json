@@ -1,0 +1,118 @@
+{
+  "id": "geschichte",
+  "type": "hub",
+  "parent": "home",
+  "navLabel": "History",
+  "kicker": "History",
+  "title": "The history of the Tusset Chapel",
+  "subtitle": "From the pilgrimage chapel on the Tussetberg to the reconstruction in Philippsreut",
+  "description": "All chapters on the history of the Tusset Chapel: the old pilgrimage chapel in the Bohemian Forest, the expulsion, the reconstruction of 1983 to 1985 in Philippsreut, and the people who made it possible.",
+
+  "intro": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "The history of the Tusset Chapel is recorded in the accounts of contemporary witnesses: by Otto Veith of Wallern, by Rosl Tahedl of Guthausen, and by Emil Weber himself, who documented the reconstruction in a photographic report. All texts on these pages are translations of the German originals."
+    }
+  ],
+
+  "blocks": [
+    {
+      "t": "chapters",
+      "groups": [
+        {
+          "title": "The old Tusset Chapel",
+          "items": [
+            {
+              "id": "alte-tussetkapelle",
+              "title": "The old Tusset Chapel in the Bohemian Forest",
+              "img": "altetk/tusset_alt.jpg"
+            },
+            {
+              "id": "kapelle-und-wallern",
+              "title": "The chapel on the Tussetberg",
+              "sub": "An account by Otto Veith",
+              "img": "altetk/kapelleundwallern/wallern.jpg"
+            },
+            {
+              "id": "gnadenbilder",
+              "title": "The miraculous images",
+              "sub": "An account by Otto Veith",
+              "img": "altetk/gnadenbilder/gnbildrestauriert.jpg"
+            },
+            {
+              "id": "kreuzwege-und-wallfahrtstage",
+              "title": "The Ways of the Cross and the pilgrimage days",
+              "sub": "An account by Otto Veith",
+              "img": "altetk/kreuzwege/atkstationsbild.jpg"
+            },
+            {
+              "id": "alte-geschichten",
+              "title": "Stories of the old Tusset Chapel",
+              "sub": "by Rosl Tahedl",
+              "img": "altetk/kreuzwege/atkzeichnung.jpg"
+            },
+            {
+              "id": "restaurierung",
+              "title": "The restoration of the old Tusset Chapel",
+              "sub": "May 1987 to August 1990",
+              "img": "altetk/renovierung/atkeinweihung.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Reconstruction and new chapel",
+          "items": [
+            {
+              "id": "wiederaufbau",
+              "title": "The twinning and the building of a memorial",
+              "sub": "A photographic report by Emil Weber",
+              "img": "neuetk/entstehung/aufrichten.jpg"
+            },
+            {
+              "id": "neue-tussetkapelle",
+              "title": "The new Tusset Chapel",
+              "sub": "Introduction and information for visitors",
+              "img": "neuetk/einleitung/neuetk.jpg"
+            },
+            {
+              "id": "einweihung-1985",
+              "title": "The consecration of the new Tusset Chapel",
+              "sub": "on 27 July 1985",
+              "img": "neuetk/einweihung/bischofeder.jpg"
+            },
+            {
+              "id": "kreuzwegweihe-1987",
+              "title": "The Way of the Cross of the Bohemian Forest Germans",
+              "sub": "The blessing of the new Stations of the Cross on 15 August 1987",
+              "img": "neuetk/kreuzwegweihe/kreuzwegzug.jpg"
+            },
+            {
+              "id": "kreuzwegbilder",
+              "title": "The Stations of the Cross",
+              "sub": "painted by Mrs Fritsche-Flügel",
+              "img": "neuetk/kreuzwegbilder/st14.jpg"
+            }
+          ]
+        },
+        {
+          "title": "The people",
+          "items": [
+            {
+              "id": "initiatoren",
+              "title": "The initiators of the new Tusset Chapel",
+              "sub": "Their words of greeting on the reconstruction",
+              "img": "neuetk/einleitung/ntkemil_otto.jpg"
+            },
+            {
+              "id": "emil-weber",
+              "title": "Emil Weber",
+              "sub": "The principal initiator",
+              "img": "initiatoren/emilweber/sbew1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

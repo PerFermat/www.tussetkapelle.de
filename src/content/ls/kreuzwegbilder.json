@@ -1,0 +1,153 @@
+{
+  "id": "kreuzwegbilder",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Die Kreuz-Weg-Bilder",
+  "kicker": "Die neue Kapelle",
+  "title": "Die 14 Bilder vom Kreuz-Weg",
+  "subtitle": "Helma Fritsche-Flügel hat sie gemalt",
+  "description": "Die 14 Bilder vom Kreuz-Weg bei der neuen Tusset-Kapelle. Jedes Bild zeigt ein Dorf aus dem Böhmer-Wald. In Leichter Sprache.",
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Bei der neuen Kapelle gibt es einen Kreuz-Weg. Er hat 14 Bilder. Helma Fritsche-Flügel hat die Bilder gemalt."
+    },
+    {
+      "t": "explain",
+      "word": "Kreuz-Weg",
+      "html": "Ein Kreuz-Weg ist ein Weg mit 14 Bildern. Die Bilder erzählen: So ist Jesus gestorben. Die Menschen gehen den Weg. Bei jedem Bild bleiben sie stehen. Und sie beten."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegbilder/kreuzweg.jpg",
+      "align": "right",
+      "alt": "Der Kreuz-Weg führt in einem Bogen über dem Dorf.",
+      "caption": "Der Kreuz-Weg führt oberhalb vom Dorf."
+    },
+    {
+      "t": "p",
+      "html": "Jedes Bild zeigt hinten ein Dorf. Das Dorf hat das Bild bezahlt. Alle diese Dörfer liegen im Böhmer-Wald."
+    },
+    {
+      "t": "p",
+      "html": "So wird der Kreuz-Weg auch ein Weg durch die alte Heimat."
+    },
+    {
+      "t": "h2",
+      "text": "Die 14 Bilder"
+    },
+    {
+      "t": "station",
+      "title": "Bild 1: Jesus steht vor seinen Richtern",
+      "src": "neuetk/kreuzwegbilder/st1.jpg",
+      "alt": "Bild 1 vom Kreuz-Weg. Jesus steht vor Männern. Hinten sind Häuser.",
+      "html": "Es ist noch dunkel. Hinten sieht man die Häuser von Philippsreut. Jesus ist hell. Das Gute beginnt seinen Kampf gegen das Böse.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Bild 2: Jesus nimmt das Kreuz",
+      "src": "neuetk/kreuzwegbilder/st2.jpg",
+      "alt": "Bild 2 vom Kreuz-Weg. Jesus trägt das Kreuz über eine Brücke.",
+      "html": "Jesus geht über eine Brücke. Mit ihm gehen vertriebene Menschen. Auch diese Menschen tragen ein schweres Schicksal.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Bild 3: Jesus fällt zum ersten Mal hin",
+      "src": "neuetk/kreuzwegbilder/st3.jpg",
+      "alt": "Bild 3 vom Kreuz-Weg. Jesus liegt auf steinigem Boden.",
+      "html": "Der Boden ist steinig. Das Dorf Elendbachl hat das Bild bezahlt. Der Boden dort war auch steinig. Die Menschen haben hart gearbeitet.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Bild 4: Jesus trifft seine Mutter",
+      "src": "neuetk/kreuzwegbilder/st4.jpg",
+      "alt": "Bild 4 vom Kreuz-Weg. Jesus und Maria schauen sich an.",
+      "html": "Hinten ist ein Krieger-Denkmal. Es steht in Eleonorenhain. Viele Mütter mussten sich von ihren Söhnen verabschieden. Die Söhne sind im Krieg gestorben.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Bild 5: Simon hilft Jesus",
+      "src": "neuetk/kreuzwegbilder/st5.jpg",
+      "alt": "Bild 5 vom Kreuz-Weg. Ein Mann hilft Jesus beim Tragen.",
+      "html": "Simon hilft Jesus. Hinten sieht man das Dorf Guthausen. Die Häuser stehen in einer langen Reihe.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Bild 6: Veronika gibt Jesus ein Tuch",
+      "src": "neuetk/kreuzwegbilder/st6.jpg",
+      "alt": "Bild 6 vom Kreuz-Weg. Eine Frau in Tracht gibt Jesus ein Tuch.",
+      "html": "Die Frau trägt eine alte Tracht. Sie kommt aus dem Dorf Humwald. Die Menschen dort haben gerne geholfen.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Bild 7: Jesus fällt zum zweiten Mal hin",
+      "src": "neuetk/kreuzwegbilder/st7.jpg",
+      "alt": "Bild 7 vom Kreuz-Weg. Jesus fällt. Hinten sind dunkle Wolken.",
+      "html": "Am Himmel sind dunkle Wolken. Hinten ist die Kirche von Salnau. Das Bild ist für die Dörfer Salnau und Schönau.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Bild 8: Jesus trifft weinende Frauen",
+      "src": "neuetk/kreuzwegbilder/st8.jpg",
+      "alt": "Bild 8 vom Kreuz-Weg. Jesus segnet Frauen und Kinder.",
+      "html": "Jesus segnet die Frauen und die Kinder. Hinten ist die Kirche von Pfefferschlag.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Bild 9: Jesus fällt zum dritten Mal hin",
+      "src": "neuetk/kreuzwegbilder/st9.jpg",
+      "alt": "Bild 9 vom Kreuz-Weg. Jesus liegt am Boden. Hinten ist leeres Land.",
+      "html": "Hinten sieht man leeres Land. Dort standen die Dörfer Landstraßen und Oberlichtbuchet. Heute sind die Dörfer weg. Der Wald wächst darüber.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Bild 10: Jesus wird die Kleidung weggenommen",
+      "src": "neuetk/kreuzwegbilder/st10.jpg",
+      "alt": "Bild 10 vom Kreuz-Weg. Hinten ist eine Kirche.",
+      "html": "Hinten ist die Kirche von Kuschwarda. Die Kirche wurde zerstört. Heute wächst dort Gras.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Bild 11: Jesus wird an das Kreuz genagelt",
+      "src": "neuetk/kreuzwegbilder/st11.jpg",
+      "alt": "Bild 11 vom Kreuz-Weg. Die Sonne ist dunkel. Hinten ist eine Kapelle.",
+      "html": "Die Sonne wird dunkel. Dunkle Wolken kommen. Hinten ist die kleine Kapelle von Leimsgrub. Dort feiert man heute noch Gottes-Dienst.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Bild 12: Jesus stirbt am Kreuz",
+      "src": "neuetk/kreuzwegbilder/st12.jpg",
+      "alt": "Bild 12 vom Kreuz-Weg. Der Himmel ist rot. Hinten sind Berge.",
+      "html": "Der Himmel ist blut-rot. Hinten sind 2 Berge. Sie heißen Schreiner und Kubany. Unten im Tal ist eine Stadt.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Bild 13: Maria hält ihren toten Sohn",
+      "src": "neuetk/kreuzwegbilder/st13.jpg",
+      "alt": "Bild 13 vom Kreuz-Weg. Maria hält Jesus im Arm. Vorne ist eine Quelle.",
+      "html": "Vorne sprudelt eine Quelle. Solche Quellen gaben dem Dorf Böhmisch-Röhren seinen Namen. Auch bei der alten Kapelle war eine Quelle.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Bild 14: Jesus wird begraben",
+      "src": "neuetk/kreuzwegbilder/st14.jpg",
+      "alt": "Bild 14 vom Kreuz-Weg. Maria hält eine rote Rose. Hinten ist die alte Kapelle.",
+      "html": "Hinten ist die alte Tusset-Kapelle. Maria hält eine rote Rose in der Hand. Die Rose ist ein Zeichen für Hoffnung. Dieses Bild ist für das Dorf Tusset.",
+      "flip": true
+    }
+  ]
+}

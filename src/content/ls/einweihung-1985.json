@@ -1,0 +1,135 @@
+{
+  "id": "einweihung-1985",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Das Fest 1985",
+  "kicker": "Die neue Kapelle",
+  "title": "Das Fest im Jahr 1985",
+  "subtitle": "Am 27. Juli 1985",
+  "description": "Am 27. Juli 1985 wurde die neue Tusset-Kapelle eingeweiht. So war das Fest. In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Am 27. Juli 1985 war das große Fest. Die neue Kapelle wurde eingeweiht."
+    },
+    { "t": "h2", "text": "Das ganze Dorf hat geholfen" },
+    {
+      "t": "p",
+      "html": "Alle im Dorf haben mit-geholfen. Die Feuer-Wehr hat ein Zelt aufgebaut. Die Menschen haben ihre Häuser geputzt. Und die Wege gefegt."
+    },
+    {
+      "t": "p",
+      "html": "Ein Mädchen hat das Glocken-Läuten geübt. Ein anderes Mädchen hat ein Gedicht gelernt. Es war ein Gedicht für den Bischof."
+    },
+    {
+      "t": "p",
+      "html": "Frauen haben Girlanden gebunden. Girlanden sind Ketten aus grünen Zweigen. Überall hat es nach Wald gerochen."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/tkinnen1.jpg",
+      "align": "wide",
+      "alt": "Das Innere der Kapelle mit Blumen und grünen Zweigen geschmückt.",
+      "caption": "Die Kapelle war innen festlich geschmückt."
+    },
+    { "t": "h2", "text": "Der erste Tag: Freitag" },
+    {
+      "t": "p",
+      "html": "Am 26. Juli war schönes Wetter. Viele Menschen sind mit Autos und Bussen gekommen."
+    },
+    {
+      "t": "p",
+      "html": "Am Nachmittag hat das Fest begonnen. Zuerst gab es eine Feier am Krieger-Denkmal. Die Menschen haben an die Toten gedacht."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/festzug.jpg",
+      "align": "wide",
+      "alt": "Viele Menschen mit Fahnen gehen durch das Dorf.",
+      "caption": "Der Fest-Zug durch das Dorf."
+    },
+    {
+      "t": "p",
+      "html": "Danach sind alle durch das Dorf gegangen. Viele hatten Fahnen. Junge Leute haben schöne alte Kleidung getragen."
+    },
+    {
+      "t": "p",
+      "html": "Am Abend war ein Fest im Zelt. Wichtige Gäste sind gekommen. Zum Beispiel der Minister Franz Neubauer."
+    },
+    {
+      "t": "p",
+      "html": "Eine Gruppe hat alte Lieder gesungen. Junge Leute haben getanzt."
+    },
+    { "t": "h2", "text": "Der zweite Tag: Samstag" },
+    {
+      "t": "p",
+      "html": "In der Nacht gab es ein Gewitter. Es hat stark geregnet. Am Morgen war Nebel."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/bischofeder.jpg",
+      "align": "right",
+      "alt": "Der Bischof Franz Eder in festlicher Kleidung.",
+      "caption": "Der Bischof Franz Eder aus Passau."
+    },
+    {
+      "t": "p",
+      "html": "Der Bischof ist gekommen. Er hieß Franz Xaver Eder. Er kam aus Passau."
+    },
+    {
+      "t": "p",
+      "html": "Das Bild von Maria wurde in die Kapelle getragen. Mädchen in weißer Kleidung haben es getragen. Sie haben eine Bahre aus Birken-Holz benutzt."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/gnadenbildtk.jpg",
+      "align": "center",
+      "alt": "Das Bild von Maria wird auf einer Bahre getragen.",
+      "caption": "Das Bild von Maria kommt in die neue Kapelle."
+    },
+    {
+      "t": "p",
+      "html": "Viele Menschen sind zur Kapelle gegangen. Der Bischof hat gepredigt. Viele Menschen haben geweint. Sie haben an ihre alte Heimat gedacht."
+    },
+    {
+      "t": "p",
+      "html": "Dann hat es wieder geregnet. Aber niemand ist weg-gegangen."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/ntkregen.jpg",
+      "align": "wide",
+      "alt": "Viele Menschen stehen mit Regen-Schirmen vor der Kapelle.",
+      "caption": "Beim Fest hat es stark geregnet."
+    },
+    {
+      "t": "p",
+      "html": "Der Bischof hat gelacht. Er hat gesagt: Auch der Himmel gibt uns sein Weih-Wasser!"
+    },
+    {
+      "t": "p",
+      "html": "Alle waren nass. Aber alle waren glücklich."
+    },
+    {
+      "t": "p",
+      "html": "In der Kapelle war nur Platz für kranke und alte Menschen. Sie waren dem Bild von Maria am nächsten."
+    },
+    {
+      "t": "p",
+      "html": "Am Nachmittag wurde das Wetter schön. Der Himmel war blau."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/ewgnadenbild.jpg",
+      "align": "center",
+      "alt": "Emil Weber steht neben dem Bild von Maria.",
+      "caption": "Emil Weber mit dem Bild von Maria."
+    },
+    {
+      "t": "p",
+      "html": "Am Abend war noch eine Andacht. Die Menschen haben alte Lieder gesungen. Alle kannten die Lieder noch aus ihrer Kindheit."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "besuch",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Besuch",
+  "kicker": "Ihr Besuch",
+  "title": "Besuch der Tussetkapelle",
+  "subtitle": "Öffnungszeiten, Anfahrt und Ansprechpartner",
+  "description": "Die neue Tussetkapelle in Philippsreut ist täglich von 8.00 bis 20.00 Uhr geöffnet. Anfahrt über die A3 und die B12 sowie Ansprechpartner für Betreuung und Gottesdienste.",
+  "_quelle": "inhalte/neuetk/anfahrt/ntkanfahrt.htm und start.htm",
+  "blocks": [
+    {
+      "t": "h2",
+      "text": "Öffnungszeiten"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Öffnungszeiten: täglich von 8.00 – 20.00 Uhr"
+    },
+    {
+      "t": "h2",
+      "text": "Ansprechpartner"
+    },
+    {
+      "t": "dl",
+      "items": [
+        {
+          "term": "Betreuerin:",
+          "html": "Frau Therese Friedsam, Hauptstraße 1, Tel. 08550/763"
+        },
+        {
+          "term": "Anmeldung für Gottesdienste:",
+          "html": "Pfarrer Max Richtsfeld, Tel. 08550/274"
+        }
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "Anfahrt zur neuen Tussetkapelle"
+    },
+    {
+      "t": "h3",
+      "text": "So finden Sie uns"
+    },
+    {
+      "t": "p",
+      "html": "Sie erreichen uns über die A3 Richtung Passau Abfahrt Aicha vorm Wald. Von dort aus weiter nach Hutthurm. Von Hutthurm aus gelangen Sie auf der B12 über Freyung nach Philippsreut."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkkarte.jpg",
+      "align": "center",
+      "alt": "Kartenskizze mit der Lage der neuen Tussetkapelle in Philippsreut nahe der Grenze zum Böhmerwald",
+      "caption": "Die Lage der neuen Tussetkapelle nahe der Grenze zum Böhmerwald"
+    },
+    {
+      "t": "h2",
+      "text": "Vor Ort"
+    },
+    {
+      "t": "p",
+      "html": "Das Buch über die Geschichte der neuen Tusset-Kapelle liegt in der Kapelle auf und kann zum Preis von 2,50&nbsp;€ erworben werden."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
+      "align": "center",
+      "alt": "Die neue Tussetkapelle als dunkle Silhouette vor der untergehenden Sonne über dem Böhmerwald"
+    },
+    {
+      "t": "h2",
+      "text": "Koordinaten"
+    },
+    {
+      "t": "p",
+      "html": "Die Tussetkapelle liegt bei <strong>48.863274, 13.677887</strong>. <a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle bei OpenStreetMap ansehen</a>"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "kreuzwege-und-wallfahrtstage",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Kreuz-Weg und Wallfahrt",
+  "kicker": "Die alte Kapelle",
+  "title": "Der Kreuz-Weg und die Wallfahrt",
+  "subtitle": "Wie die Menschen zur Kapelle kamen",
+  "description": "Drei Kreuz-Wege führten zur alten Tusset-Kapelle. Und es gab besondere Fest-Tage. In Leichter Sprache.",
+
+  "blocks": [
+    { "t": "h2", "text": "Was ist ein Kreuz-Weg?" },
+    {
+      "t": "explain",
+      "word": "Kreuz-Weg",
+      "html": "Ein Kreuz-Weg ist ein Weg mit 14 Bildern. Die Bilder erzählen: So ist Jesus gestorben. Die Menschen gehen den Weg. Bei jedem Bild bleiben sie stehen. Und sie beten."
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Zur alten Tusset-Kapelle führten 3 Kreuz-Wege. Sie kamen aus 3 verschiedenen Dörfern."
+    },
+    {
+      "t": "list",
+      "items": [
+        "Ein Weg kam vom Dorf Tusset.",
+        "Ein Weg kam vom Dorf Böhmisch-Röhren.",
+        "Ein Weg kam vom Dorf Guthausen."
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Die Bilder waren auf Holz gemalt. Sie hingen an Bäumen. Handwerker aus den Dörfern haben sie gemacht."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atkstationsbild.jpg",
+      "align": "center",
+      "alt": "Ein altes Bild vom Kreuz-Weg. Es ist auf Blech gemalt.",
+      "caption": "So ein Bild hing am Kreuz-Weg von Guthausen. Heute hängt es in der neuen Kapelle."
+    },
+    { "t": "h2", "text": "Was ist eine Wallfahrt?" },
+    {
+      "t": "explain",
+      "word": "Wallfahrt",
+      "html": "Bei einer Wallfahrt gehen viele Menschen zusammen zu einer Kirche. Sie gehen zu Fuß. Manche gehen viele Stunden. Unterwegs beten und singen sie."
+    },
+    { "t": "h2", "text": "Die wichtigen Fest-Tage" },
+    {
+      "t": "p",
+      "html": "Der wichtigste Tag war der 15. August. An diesem Tag kamen sehr viele Menschen. Zwei Musik-Kapellen haben gespielt."
+    },
+    {
+      "t": "p",
+      "html": "Die Kapelle war zu klein für alle Menschen. Darum war der Gottes-Dienst draußen. Man hat einen Altar in den Wald gestellt."
+    },
+    {
+      "t": "p",
+      "html": "Es gab noch mehr Fest-Tage: den 2. Juli. Und den Sonntag nach dem 26. Juli. Und den Oster-Montag."
+    },
+    {
+      "t": "p",
+      "html": "Menschen kamen von weit her. Aus Linz. Aus Wien. Sogar aus Amerika. Auch Bischöfe und Fürsten sind gekommen."
+    },
+    {
+      "t": "p",
+      "html": "Die Kapelle war nie zugeschlossen. Trotzdem hat nie jemand etwas gestohlen."
+    },
+    { "t": "h2", "text": "Die Kapelle wird immer wieder gebaut" },
+    {
+      "t": "p",
+      "html": "Die erste Kapelle war aus Holz. Sie war von 1791."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1804 hat man eine Kapelle aus Stein gebaut. Sie hat 60 Jahre gehalten."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1864 hat man die Kapelle neu gebaut. Im Jahr 1867 kam ein Vor-Bau aus Holz dazu."
+    },
+    {
+      "t": "p",
+      "html": "Immer wieder haben die Menschen die Kapelle repariert. Die Handwerker haben ihre Namen auf den Altar geschrieben. Man konnte die Namen noch 1967 lesen."
+    },
+    { "t": "h2", "text": "Die Kapelle zerfällt" },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atkverwuestet.jpg",
+      "align": "center",
+      "alt": "Das Innere der alten Kapelle im Jahr 1980. Alles ist zerstört.",
+      "caption": "So sah es 1980 in der alten Kapelle aus."
+    },
+    {
+      "t": "p",
+      "html": "Nach dem Krieg mussten die deutschen Menschen weg. Danach hat sich niemand mehr um die Kapelle gekümmert."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1957 hat eine Familie das Dach repariert. Aber es hat nicht geholfen. Menschen haben Bilder gestohlen. Sie haben die Fenster kaputt gemacht. Sie haben die Bänke zerstört."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atkverfall.jpg",
+      "align": "center",
+      "alt": "Die alte Kapelle von außen im Jahr 1980. Das Dach ist kaputt.",
+      "caption": "Die alte Kapelle im Jahr 1980."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1980 war die Kapelle fast zerfallen. Aber die Menschen aus dem Böhmer-Wald haben die Kapelle nicht vergessen."
+    }
+  ]
+}

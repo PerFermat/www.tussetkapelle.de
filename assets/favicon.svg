@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>Tussetkapelle Philippsreut</title>
+  <rect width="32" height="32" rx="4" fill="#304332"/>
+  <g fill="none" stroke="#b79a5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 4v3"/>
+    <path d="M14.6 5.4h2.8"/>
+    <path d="M16 7l-2.6 3.6h5.2L16 7Z"/>
+    <path d="M13.9 10.6v3.1h4.2v-3.1"/>
+    <path d="M7 18.4 16 12.6l9 5.8"/>
+    <path d="M8.7 17.6V27h14.6v-9.4"/>
+    <path d="M13.7 27v-4.6h4.6V27"/>
+    <circle cx="11.6" cy="21.4" r="1.1"/>
+    <circle cx="20.4" cy="21.4" r="1.1"/>
+  </g>
+</svg>

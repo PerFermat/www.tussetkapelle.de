@@ -1,0 +1,113 @@
+{
+  "lang": "en",
+  "htmlLang": "en",
+  "dir": "en",
+  "label": "English",
+  "flag": "flagEn",
+  "ogLocale": "en_GB",
+
+  "brand": {
+    "name": "Tussetkapelle",
+    "place": "Philippsreut"
+  },
+
+  "ui": {
+    "skip": "Skip to content",
+    "menu": "Open and close menu",
+    "mainNav": "Main navigation",
+    "langNav": "Choose language",
+    "breadcrumb": "You are here",
+    "pagerNav": "More chapters",
+    "prev": "Previous chapter",
+    "next": "Next chapter",
+    "tagline": "A place of remembrance for the Bohemian Forest Germans",
+    "heroAlt": "View of the chancel of the new Tusset Chapel in Philippsreut",
+    "copyright": "Tussetkapelle Philippsreut",
+    "sourceNote": "Texts and images: the Weber family",
+    "newTab": " (opens in a new tab)",
+    "lightboxLabel": "Image viewer",
+    "lightboxCount": "Image {i} of {n}",
+    "lightboxClose": "Close image viewer",
+    "lightboxPrev": "Previous image",
+    "lightboxNext": "Next image"
+  },
+
+  "slugs": {
+    "home": "",
+    "geschichte": "history",
+    "alte-tussetkapelle": "history/old-chapel",
+    "kapelle-und-wallern": "history/chapel-and-wallern",
+    "gnadenbilder": "history/miraculous-images",
+    "kreuzwege-und-wallfahrtstage": "history/stations-and-pilgrimages",
+    "alte-geschichten": "history/old-stories",
+    "restaurierung": "history/restoration",
+    "wiederaufbau": "history/reconstruction",
+    "neue-tussetkapelle": "history/new-chapel",
+    "einweihung-1985": "history/consecration-1985",
+    "kreuzwegweihe-1987": "history/stations-blessing-1987",
+    "kreuzwegbilder": "history/stations-of-the-cross",
+    "initiatoren": "history/initiators",
+    "emil-weber": "history/emil-weber",
+    "galerie": "gallery",
+    "besuch": "visit",
+    "kontakt": "contact",
+    "impressum": "imprint",
+    "datenschutz": "privacy"
+  },
+
+  "nav": [
+    { "id": "home" },
+    {
+      "id": "geschichte",
+      "panel": [
+        {
+          "title": "The old Tusset Chapel",
+          "items": [
+            "alte-tussetkapelle",
+            "kapelle-und-wallern",
+            "gnadenbilder",
+            "kreuzwege-und-wallfahrtstage",
+            "alte-geschichten",
+            "restaurierung"
+          ]
+        },
+        {
+          "title": "Reconstruction and new chapel",
+          "items": [
+            "wiederaufbau",
+            "neue-tussetkapelle",
+            "einweihung-1985",
+            "kreuzwegweihe-1987",
+            "kreuzwegbilder"
+          ]
+        },
+        {
+          "title": "The people",
+          "items": ["initiatoren", "emil-weber"]
+        }
+      ]
+    },
+    { "id": "galerie" },
+    { "id": "besuch" },
+    { "id": "kontakt" }
+  ],
+
+  "sequence": [
+    "geschichte",
+    "alte-tussetkapelle",
+    "kapelle-und-wallern",
+    "gnadenbilder",
+    "kreuzwege-und-wallfahrtstage",
+    "alte-geschichten",
+    "restaurierung",
+    "wiederaufbau",
+    "neue-tussetkapelle",
+    "einweihung-1985",
+    "kreuzwegweihe-1987",
+    "kreuzwegbilder",
+    "initiatoren",
+    "emil-weber"
+  ],
+
+  "footerLinks": ["impressum", "datenschutz"]
+}

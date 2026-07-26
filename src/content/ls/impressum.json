@@ -1,0 +1,94 @@
+{
+  "id": "impressum",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Impressum",
+  "kicker": "Rechtliches",
+  "title": "Impressum",
+  "description": "Im Impressum steht: Wer macht diese Internet-Seite? In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Im Impressum steht: Wer macht diese Internet-Seite? Und wie kann man diese Menschen erreichen?"
+    },
+    {
+      "t": "note",
+      "title": "Achtung: Hier fehlen noch Angaben",
+      "html": "An manchen Stellen stehen Zeichen wie ⟨diese hier⟩. Dort fehlen noch Angaben. Der Betreiber der Seite muss sie eintragen."
+    },
+
+    { "t": "h2", "text": "Wer macht diese Seite?" },
+    {
+      "t": "dl",
+      "items": [
+        { "term": "Anbieter", "html": "Franz Weber" },
+        { "term": "Anschrift", "html": "Eichendorffstr. 2<br>73095 Albershausen<br>Deutschland" },
+        { "term": "E-Mail", "html": "<a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>" }
+      ]
+    },
+
+    { "t": "h2", "text": "Verantwortlich für den Inhalt" },
+    {
+      "t": "p",
+      "html": "Frank Weber<br>Eichendorffstr. 2<br>73095 Albershausen"
+    },
+
+    { "t": "h2", "text": "Woher kommen die Texte und Bilder?" },
+    {
+      "t": "p",
+      "html": "Die Texte und Bilder kommen von der Familie Weber."
+    },
+    {
+      "t": "p",
+      "html": "Diese Menschen haben die Texte geschrieben:"
+    },
+    {
+      "t": "list",
+      "items": [
+        "Otto Veith aus Wallern",
+        "Rosl Tahedl aus Guthausen",
+        "Emil Weber"
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Helma Fritsche-Flügel hat die Bilder vom Kreuz-Weg gemalt."
+    },
+    {
+      "t": "p",
+      "html": "Die Texte und Bilder gehören diesen Menschen. Oder ihren Familien. Sie dürfen die Texte und Bilder nicht ohne Erlaubnis benutzen."
+    },
+
+    { "t": "h2", "text": "Sind alle Angaben richtig?" },
+    {
+      "t": "p",
+      "html": "Wir haben die Texte sorgfältig gemacht. Aber wir können keine Garantie geben."
+    },
+    {
+      "t": "p",
+      "html": "Viele Texte sind Erinnerungen von Menschen. Diese Menschen haben alles selbst erlebt. Sie erzählen aus ihrer Sicht."
+    },
+
+    { "t": "h2", "text": "Links zu anderen Seiten" },
+    {
+      "t": "p",
+      "html": "Auf dieser Seite gibt es Links. Ein Link führt zu einer anderen Internet-Seite."
+    },
+    {
+      "t": "p",
+      "html": "Wir haben keinen Einfluss auf andere Seiten. Für diese Seiten sind andere Menschen verantwortlich."
+    },
+
+    { "t": "h2", "text": "Barriere-Freiheit" },
+    {
+      "t": "p",
+      "html": "Diese Internet-Seite soll für alle Menschen gut sein. Man kann sie mit der Tastatur bedienen. Und mit einem Vorlese-Programm."
+    },
+    {
+      "t": "p",
+      "html": "Haben Sie ein Problem mit dieser Seite? Dann schreiben Sie uns bitte. Unsere E-Mail-Adresse ist: <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>"
+    }
+  ]
+}

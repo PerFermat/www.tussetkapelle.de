@@ -1,0 +1,93 @@
+{
+  "id": "initiatoren",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Die Initiatoren",
+  "kicker": "Die Menschen",
+  "title": "Die Initiatoren der neuen Tussetkapelle",
+  "subtitle": "Die Grußworte der Initiatoren zum Wiederaufbau",
+  "description": "Die Grußworte von Emil Weber, Gemeindebetreuer von Obermoldau, Bürgermeister Otto Damasko aus Philippsreut und Architekt Gerhard Edlmann zum Wiederaufbau der Tussetkapelle.",
+  "_quelle": "inhalte/initiatoren/initiatoren.htm",
+
+  "blocks": [
+    { "t": "h2", "text": "Grußwort des Gemeindebetreuers von Obermoldau" },
+    {
+      "t": "fig",
+      "src": "initiatoren/emilweber.jpg",
+      "align": "right",
+      "alt": "Porträt von Emil Weber, Gemeindebetreuer von Obermoldau",
+      "caption": "<a href=\"{{href:emil-weber}}\">Emil Weber</a><br>ist am 8.&nbsp;Januar 2002 verstorben"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Fast 40 Jahre nach der Vertreibung ist es uns gelungen, in unserer Patengemeinde Philippsreut, nahe der Grenze zu unserer Heimat, an einem schönen und würdigen Platz, mit Blick in den Böhmerwald, die neue Tussetkapelle zu errichten. Drei Jahre Bauzeit sowie zwei Fahrten zur alten Tussetkapelle waren erforderlich, um die Kapelle originalgetreu wieder zu erbauen. Die erste Fahrt unternahm ich mit unserem Architekten im April 1983. Auf dem Weg vom Försterhaus in Böhmisch-Röhren zur Tussetkapelle wurden in mir viele Erinnerungen wach."
+    },
+    {
+      "t": "p",
+      "html": "Um's Herz wurde es mir schwer, als ich sah, dass von diesem schönen Bauwerk mit der einst so kunstvollen Inneneinrichtung nur noch ein Trümmerhaufen übrig geblieben war. Dieser Anblick bekräftigte meinen Entschluss, die Kapelle, die einst unsere Vorfahren in der Böhmerwaldheimat geschaffen haben, zu der sie wallfahrten gingen und bei der Gnadenmutter um Hilfe beteten, wieder zu errichten."
+    },
+    {
+      "t": "p",
+      "html": "Sowohl unserem Architekten, Dipl.&nbsp;Ing. Gerhard Edlmann aus München, als auch unserer Patengemeinde Philippsreut mit Herrn Bürgermeister Otto Damasko, dessen Gemeinderäten und Gemeindearbeitern, allen Spendern und all denjenigen, die bei der Erbauung mitgeholfen haben, möchte ich an dieser Stelle ein herzliches <strong>Vergeltsgott</strong> sagen."
+    },
+    {
+      "t": "p",
+      "html": "Ich freue mich auf alle Böhmerwäldler und auf alle Gäste aus nah und fern. Ich heiße alle herzlich willkommen und wünsche ein freudiges Wiedersehen."
+    },
+
+    { "t": "h2", "text": "Grußwort des 1. Bürgermeisters von Philippsreut" },
+    {
+      "t": "fig",
+      "src": "initiatoren/ottodamasko.jpg",
+      "align": "right",
+      "alt": "Porträt von Otto Damasko, 1. Bürgermeister von Philippsreut",
+      "caption": "Otto Damasko<br>ist am 18.&nbsp;Juni 2002 verstorben"
+    },
+    {
+      "t": "p",
+      "html": "Zwischen Philippsreut und den benachbarten Gemeinden im Böhmerwald bestanden in der Vergangenheit enge Beziehungen, die nach 1945 jäh abgebrochen werden mußten. Damals wurden die Bewohner der grenznahen Orte – wie überhaupt die Deutschen – aus ihrer Heimat vertrieben. Unsere gegenseitig menschliche Verbundenheit ist in all den Jahren seit diesen traurigen Ereignissen erhalten geblieben. Sie fand ihren sichtbaren Ausdruck in der Patenschaftsübernahme zwischen Philippsreut und Obermoldau. Sie wiederum war der Grund dafür, dass die Böhmerwäldler als Standort für die naturgetreue Nachbildung der Tussetkapelle mit ihrer viel verehrten Madonna unser Dorf wählten."
+    },
+    {
+      "t": "p",
+      "html": "Wir freuen uns darüber ganz besonders, weil unsere Vorfahren öfter Wallfahrten zur Muttergottes vom Tussetberg machten und in mancher Notlage um Hilfe anflehten."
+    },
+    {
+      "t": "p",
+      "html": "Allen Initiatoren, Helfern und Spendern, die dieses einmalige Werk, das nach dreijähriger Bauzeit nunmehr vollendet ist, ermöglicht haben, danke ich im Namen der Gemeinde Philippsreut sehr herzlich."
+    },
+    {
+      "t": "p",
+      "html": "Ich würde mich freuen, wenn die neue Tussetkapelle einen ebenso großen Besucherstrom erleben dürfte, wie die ursprüngliche im Böhmerwald."
+    },
+    {
+      "t": "p",
+      "html": "Allen, die zur Einweihung der neuen Kapelle aus nah und fern zu uns kommen, entbiete ich einen herzlichen Willkommensgruß. Ich wünsche Ihnen einen angenehmen Aufenthalt in unserer Gemeinde, der speziell den Böhmerwäldlern ein Wiederseh'n mit Freunden und Bekannten aus der alten Heimat ermöglichen soll. Zugleich hoffe ich, daß für viele Böhmerwäldler Philippsreut durch die neue Tussetkapelle zu einer zweiten Heimat werden wird."
+    },
+
+    { "t": "h2", "text": "Überlegungen zum Bau der Gedenkstätte" },
+    {
+      "t": "fig",
+      "src": "initiatoren/gerhardedlmann.jpg",
+      "align": "right",
+      "alt": "Porträt des Architekten Gerhard Edlmann",
+      "caption": "Gerhard Edlmann"
+    },
+    {
+      "t": "p",
+      "html": "Im Sommer 1982 wurde ich mit der Planung einer Gedenkstätte beauftragt, die der Erinnerung an die ehemalige Böhmerwaldheimat im Gebiet der oberen Moldau einen würdigen Rahmen geben sollte. Dabei dachte man an ein Bauwerk ohne musealen Charakter, das auch von der Bevölkerung der Patenschaftsgemeinde Philippsreut benutzt und damit angenommen werden kann, gleichsam als lebendiges Symbol der Integration. Man entschloss sich, die Tussetkapelle in Philippsreut wieder entstehen zu lassen, da ein moderner Neubau kaum dieses Maß an Identifikation und Erinnerungswert aufweisen könnte, wie dieses weithin bekannte Wallfahrtskirchlein aus der alten Heimat."
+    },
+    {
+      "t": "p",
+      "html": "Der Originalbau liegt sehr abseits, in etwa 1000&nbsp;m Höhe am Tussetberg, und ist in seinem jetzigen desolaten Zustand dem Verfall unweigerlich preisgegeben. Da eine Restaurierung der alten Bausubstanz nicht zu erwarten ist, wurde unser Vorhaben zu einer besonderen Art der Denkmalpflege."
+    },
+    {
+      "t": "p",
+      "html": "Die Originalkapelle aus verputztem Bruchsteinmauerwerk wurde im vorigen Jahrhundert durch einen Holzbau erweitert, der an nordische Stabkirchen erinnert. Die Holzgiebelfassade ist talwärts orientiert und bildet den Abschluss für den Prozessionsweg, der aus dem Tal zum früheren Wallfahrtsort führt. Diese Situation wurde beim Neubau so umgesetzt, dass der Zugang und die achsiale Ausrichtung der Kapelle nun nach Obermoldau orientiert sind, wodurch ein weiterer symbolischer Bezug zur alten Heimat geschaffen wurde."
+    },
+    {
+      "t": "p",
+      "html": "Da Atmosphäre nicht transponierbar ist, soll die neue Tussetkapelle bewusst als Synthese aus Erinnerung und Realität verstanden werden."
+    }
+  ]
+}

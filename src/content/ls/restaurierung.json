@@ -1,0 +1,114 @@
+{
+  "id": "restaurierung",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Alte Kapelle reparieren",
+  "kicker": "Die alte Kapelle",
+  "title": "Die alte Kapelle wird repariert",
+  "subtitle": "Von 1987 bis 1990",
+  "description": "Im Jahr 1988 wurde die alte Tusset-Kapelle repariert. Im Jahr 1990 gab es ein Fest. In Leichter Sprache.",
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Im Jahr 1987 war die alte Kapelle fast zerfallen. Sie stand in Tschechien. Damals hieß das Land Tschechoslowakei."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/renovierung/atkruine1.jpg",
+      "align": "center",
+      "alt": "Die alte Kapelle im Jahr 1987. Das Dach ist offen.",
+      "caption": "So sah die alte Kapelle im Mai 1987 aus."
+    },
+    {
+      "t": "h2",
+      "text": "Ein Brief aus Tschechien"
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1988 hat ein Mann einen Brief geschrieben. Der Mann hat in Prachatitz gelebt. Er hat den Brief an Emil Weber geschickt."
+    },
+    {
+      "t": "p",
+      "html": "In dem Brief steht: Ich kenne die Kapelle von früher. Damals war sie noch schön. Leider ist sie jetzt fast kaputt. Das ist sehr schade."
+    },
+    {
+      "t": "p",
+      "html": "Der Mann schreibt weiter: Dieses Jahr wird die Kapelle repariert. Der Staat bezahlt das. Einfache Menschen haben das gefordert. Sie lieben den Böhmer-Wald."
+    },
+    {
+      "t": "p",
+      "html": "Und er schreibt: Die neue Kapelle in Philippsreut hat geholfen. Darum hat man auch die alte Kapelle repariert."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "altetk/renovierung/atkrenov1.jpg",
+          "alt": "Die reparierte alte Kapelle mit neuem Dach.",
+          "caption": "Die Kapelle ist wieder repariert."
+        },
+        {
+          "src": "altetk/renovierung/atkrenov4.jpg",
+          "alt": "Menschen räumen bei der alten Kapelle auf.",
+          "caption": "Helfer räumen bei der Kapelle auf."
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Bei der Reparatur blieb nur wenig vom alten Bau. Nur die Mauern. Und die Holz-Wand vorne. Alles andere ist neu. Das Dach hat jetzt Holz-Schindeln."
+    },
+    {
+      "t": "p",
+      "html": "Der Mann hat noch etwas gefunden. Ein alter Brett aus der Kapelle. Auf dem Brett stehen Namen. Und das Jahr 1871. Der Mann wollte Emil Weber das Brett schenken."
+    },
+    {
+      "t": "h2",
+      "text": "Das Fest im Jahr 1990"
+    },
+    {
+      "t": "p",
+      "html": "Im August 1990 gab es ein Fest. Es war ein Wunder für viele Menschen."
+    },
+    {
+      "t": "p",
+      "html": "Vorher durfte niemand zur Kapelle gehen. Dort war Stachel-Draht. Und Verbots-Schilder. Denn dort war die Grenze."
+    },
+    {
+      "t": "p",
+      "html": "Beim Fest kamen viele Menschen. Sie kamen von 3 Seiten. Deutsche Menschen und tschechische Menschen."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/renovierung/atkeinweihung.jpg",
+      "align": "center",
+      "alt": "Viele Menschen und Pfarrer bei einem Fest vor der alten Kapelle.",
+      "caption": "Das Fest im August 1990."
+    },
+    {
+      "t": "p",
+      "html": "Der Bischof von Budweis hat den Gottes-Dienst gefeiert. Er hat auf Tschechisch gesprochen. Und auf Deutsch."
+    },
+    {
+      "t": "p",
+      "html": "Der Bischof hat gesagt: Wir kommen von beiden Seiten der Grenze. Wir wollen Frieden machen. Unser Weg soll ein Weg zum Frieden sein. Und ein Weg zur Versöhnung."
+    },
+    {
+      "t": "explain",
+      "word": "Versöhnung",
+      "html": "Versöhnung heißt: Zwei Menschen haben Streit. Oder zwei Länder. Dann reden sie miteinander. Sie verzeihen sich. Danach sind sie wieder Freunde."
+    },
+    {
+      "t": "p",
+      "html": "Deutsche und Tschechen haben zusammen gesessen. Sie haben zusammen gesungen. Und zusammen gebetet."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/renovierung/alteundneuetk.jpg",
+      "align": "center",
+      "alt": "Zwei Bilder nebeneinander: die alte Kapelle und die neue Kapelle.",
+      "caption": "Die alte Kapelle und die neue Kapelle."
+    }
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "id": "galerie",
+  "type": "gallery",
+  "parent": "home",
+  "navLabel": "Galerie",
+  "kicker": "Bildergalerie",
+  "title": "Fotogalerie Tussetkapelle",
+  "subtitle": "Historische Bilder der alten und der neuen Tussetkapelle",
+  "description": "Alle Bilder der Tussetkapelle: die alte Gnadenkapelle im Böhmerwald, die Detailaufnahmen von 1983, der Wiederaufbau, die Einweihung 1985, der Kreuzweg und die Menschen, die den Wiederaufbau möglich gemacht haben.",
+  "_quelle": "inhalte/fotogalerie/fotogalerie.htm sowie alle Bilder der Altsite",
+  "_erzeugt": "Diese Datei wird von tools/make-gallery.mjs erzeugt. Nicht direkt bearbeiten. Bildunterschriften: Deutsch in make-gallery.mjs, Englisch und Leichte Sprache in gallery-captions.mjs.",
+  "intro": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Durch Klick aufs Bild werden diese vergrößert. Mit den Pfeiltasten blättern Sie weiter, mit Escape schließen Sie die Ansicht wieder."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Die neue Tussetkapelle",
+      "items": [
+        {
+          "src": "neuetk/einleitung/neuetk.jpg",
+          "caption": "Die neue Tussetkapelle in Philippsreut"
+        },
+        {
+          "src": "neuetk/einleitung/ntkaltetk.jpg",
+          "caption": "Die alte Tussetkapelle in verfallenem Zustand"
+        },
+        {
+          "src": "neuetk/einleitung/ntkemil_otto.jpg",
+          "caption": "Emil Weber mit Bürgermeister Otto Damasko bei der Überreichung der Patenschafts-Urkunde"
+        },
+        {
+          "src": "neuetk/einleitung/ntkgedenkstein.jpg",
+          "caption": "Der Gedenkstein vor der Kapelle"
+        },
+        {
+          "src": "neuetk/einleitung/ntkkarte.jpg",
+          "caption": "Die Lage der alten und der neuen Tussetkapelle"
+        },
+        {
+          "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
+          "caption": "Die Kapelle im Abendlicht"
+        },
+        {
+          "src": "ntkaltar.jpg",
+          "caption": "Der Altarraum der neuen Tussetkapelle"
+        },
+        {
+          "src": "ntkwinterbild.jpg",
+          "caption": "Die neue Tussetkapelle im Winter"
+        },
+        {
+          "src": "zeichnungntkumkehr.jpg",
+          "caption": "Zeichnung der Tussetkapelle"
+        }
+      ],
+      "note": "Die Kapelle in Philippsreut, wie sie heute steht."
+    },
+    {
+      "title": "Die alte Tussetkapelle im Böhmerwald",
+      "items": [
+        {
+          "src": "altetk/kapelleundwallern/feuersturm.jpg",
+          "caption": "Beim großen Feuersturm in Wallern am 22./23.7.1863 ging auch die Pfarrkirche unter und mit ihr das Gnadenbild der „Muttergottes vom Tussetberg“."
+        },
+        {
+          "src": "altetk/kapelleundwallern/gebhausklauser.jpg",
+          "caption": "Wallern mit Hellgasse im Vordergrund. Das Eckhaus von der Kirche links (Frounzl) gehörte Jakob Klauser. Im Hintergrund der Tusset."
+        },
+        {
+          "src": "altetk/kapelleundwallern/postkarte.jpg",
+          "caption": "Postkarte mit dem Wallerer Becken und dem Tussetberg"
+        },
+        {
+          "src": "altetk/kapelleundwallern/wallern.jpg",
+          "caption": "Wallern im Böhmerwald, einst Herberge am Goldenen Steig"
+        },
+        {
+          "src": "altetk/kreuzwege/atk1945.jpg",
+          "caption": "Das Innere der alten Tussetkapelle"
+        },
+        {
+          "src": "altetk/kreuzwege/atkstationsbild.jpg",
+          "caption": "Stationsbild des Guthausener Kreuzweges (nach Bayern gerettet und heute in der neuen Tussetkapelle)"
+        },
+        {
+          "src": "altetk/kreuzwege/atkverfall.jpg",
+          "caption": "Dem Verfall preisgegeben – Die Gnadenkapelle auf dem Tussetberg im Jahre 1980"
+        },
+        {
+          "src": "altetk/kreuzwege/atkverwuestet.jpg",
+          "caption": "Verwüstet und trostlos – das Innere der alten Kapelle (1980)"
+        },
+        {
+          "src": "altetk/kreuzwege/atkzeichnung.jpg",
+          "caption": "Zeichnung der alten Tussetkapelle"
+        },
+        {
+          "src": "altetk/kreuzwege/boehmroehren.jpg",
+          "caption": "Das alte Böhmisch-Röhren"
+        },
+        {
+          "src": "altetk/kreuzwege/guthausen.jpg",
+          "caption": "Das Holzhauerdorf Guthausen am Nordhang des Tussetberges"
+        },
+        {
+          "src": "altetk/kreuzwege/stannakapelle.jpg",
+          "caption": "St.-Anna-Kapelle in Leimsgrub, erbaut um 1930."
+        },
+        {
+          "src": "altetk/kreuzwege/tussetgb.jpg",
+          "caption": "Tusset, Glöckelbauer (links die Kapelle mit dem Glockengestühl)"
+        },
+        {
+          "src": "altetk/tusset_alt.jpg",
+          "caption": "Die alte Tussetkapelle auf dem Tussetberg"
+        }
+      ],
+      "note": "Der Tussetberg, die Gnadenkapelle und die Dörfer ringsum."
+    },
+    {
+      "title": "Die Gnadenbilder",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/gnbildischraml.jpg",
+          "caption": "Kopie des Gnadenbildes von Ignaz Schraml"
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrauscher.jpg",
+          "caption": "Tussetbild von Malermeister Karl Rauscher aus Wallern"
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrestauriert.jpg",
+          "caption": "Das aufgetauchte Gnadenbild nach der Restaurierung durch Frau Fritsche-Flügel"
+        },
+        {
+          "src": "altetk/gnadenbilder/ignazschraml.jpg",
+          "caption": "Ignaz Schraml"
+        },
+        {
+          "src": "altetk/gnadenbilder/rindenmadonna.jpg",
+          "caption": "Die „Rindenmadonna“, die Frau Blechschmied bei der Vertreibung gerettet hat"
+        },
+        {
+          "src": "altetk/gnadenbilder/wallfahrtszettel.jpg",
+          "caption": "„Wallfahrtszettel“ von der Tussetmadonna"
+        }
+      ],
+      "note": "Die Bilder der Muttergottes vom Tussetberg."
+    },
+    {
+      "title": "Detailaufnahmen der alten Tussetkapelle ab April 1983",
+      "items": [
+        {
+          "src": "fotogalerie/fotosatk/atk1983_1.jpg",
+          "caption": "Emil Weber bei der Vermessung der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_10.jpg",
+          "caption": "Der Eingang der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_11.jpg",
+          "caption": "Das Mauerwerk der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_12.jpg",
+          "caption": "Die Dachkonstruktion der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_13.jpg",
+          "caption": "Balken der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_14.jpg",
+          "caption": "Balken der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_15.jpg",
+          "caption": "Balken der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_16.jpg",
+          "caption": "Ein Fenster der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_2.jpg",
+          "caption": "Der Turm der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_3.jpg",
+          "caption": "Eine Säule der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_4.jpg",
+          "caption": "Die Tür der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_5.jpg",
+          "caption": "Die Bänke der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_6.jpg",
+          "caption": "Ein Fenster der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_7.jpg",
+          "caption": "Die Empore der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_8.jpg",
+          "caption": "Die Empore der alten Kapelle, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_9.jpg",
+          "caption": "Eine Stütze der alten Kapelle, 1983"
+        }
+      ],
+      "note": "Die nachfolgenden Fotos belegen, in welchem desolaten Zustand sich die alte Tussetkapelle befand, als Emil Weber die gesamte Ruine und deren Bauteile 1983 vermessen hat."
+    },
+    {
+      "title": "Der Wiederaufbau 1983 bis 1985",
+      "items": [
+        {
+          "src": "neuetk/entstehung/aufrichten.jpg",
+          "caption": "Das Aufrichten des Holzfachwerkes, Juni 1984"
+        },
+        {
+          "src": "neuetk/entstehung/emilweber.jpg",
+          "caption": "Emil Weber"
+        },
+        {
+          "src": "neuetk/entstehung/ewzimmern.jpg",
+          "caption": "(Emil Weber bei der Zimmerarbeit im Sägewerk Ekstein in Uhingen)"
+        },
+        {
+          "src": "neuetk/entstehung/fenstertk.jpg",
+          "caption": "Fertige Fensterläden und Fenster (insgesamt 20 Stück)"
+        },
+        {
+          "src": "neuetk/entstehung/gemarbeiten.jpg",
+          "caption": "(Bürgermeister Otto Damasko mit seinen Gemeindearbeitern beim Ausheben der Grundfeste)"
+        },
+        {
+          "src": "neuetk/entstehung/lkwladen.jpg",
+          "caption": "Das Beladen des Transporters, 31. Mai 1984"
+        },
+        {
+          "src": "neuetk/entstehung/ruinetk.jpg",
+          "caption": "Dem Verfall preisgegeben. (Die alte Tussetkapelle bei unserem ersten Besuch im April 1983)"
+        },
+        {
+          "src": "neuetk/entstehung/spengler.jpg",
+          "caption": "Die Montage des Kupferdachs, Juli 1984"
+        },
+        {
+          "src": "neuetk/entstehung/tkfertig.jpg",
+          "caption": "Die fertiggestellte neue Tussetkapelle"
+        },
+        {
+          "src": "neuetk/entstehung/tkplan.jpg",
+          "caption": "Aufgrund dieser Zeichnung wurden die Baugesuche entworfen und zur genehmigung eingereicht"
+        },
+        {
+          "src": "neuetk/entstehung/treffen1.jpg",
+          "caption": "Erstes Zusammentreffen der Gemeindebetreuung von Obermoldau mit dem 1. Bürgermeister Otto Damasko in Philippsreut, 1982"
+        },
+        {
+          "src": "neuetk/entstehung/winterlager.jpg",
+          "caption": "(Emil Weber vor dem Winterlager, vorne Dachsparren der Steinkapelle)"
+        }
+      ],
+      "note": "Aus dem Bildbericht von Emil Weber."
+    },
+    {
+      "title": "Die Einweihung am 27. Juli 1985",
+      "items": [
+        {
+          "src": "neuetk/einweihung/bischofeder.jpg",
+          "caption": "Bischof Dr. Franz Eder aus Passau"
+        },
+        {
+          "src": "neuetk/einweihung/bwjugendgp.jpg",
+          "caption": "Die Böhmerwaldjugend in Tracht"
+        },
+        {
+          "src": "neuetk/einweihung/bwjugendzelt.jpg",
+          "caption": "Die Böhmerwaldjugend im Festzelt"
+        },
+        {
+          "src": "neuetk/einweihung/einladung.jpg",
+          "caption": "Die Einladung zur Einweihung"
+        },
+        {
+          "src": "neuetk/einweihung/ewgnadenbild.jpg",
+          "caption": "Emil Weber mit dem Gnadenbild"
+        },
+        {
+          "src": "neuetk/einweihung/festzug.jpg",
+          "caption": "Der Festzug durch das Dorf"
+        },
+        {
+          "src": "neuetk/einweihung/gnadenbildtk.jpg",
+          "caption": "Das Gnadenbild auf der Birkenbahre"
+        },
+        {
+          "src": "neuetk/einweihung/lr-schumertl-und-emil.jpg",
+          "caption": "Landrat Schumertl und Emil Weber"
+        },
+        {
+          "src": "neuetk/einweihung/ntkregen.jpg",
+          "caption": "„Auch der Himmel spendet uns sein Weihwasser!“"
+        },
+        {
+          "src": "neuetk/einweihung/sm-neubauer-und-emil.jpg",
+          "caption": "Staatsminister Franz Neubauer und Emil Weber"
+        },
+        {
+          "src": "neuetk/einweihung/tkinnen1.jpg",
+          "caption": "Der festlich geschmückte Innenraum"
+        }
+      ]
+    },
+    {
+      "title": "Die Kreuzwegweihe am 15. August 1987",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegweihe/emilottqhelma.jpg",
+          "caption": "Emil Weber mit der Malerin Helma Fritsche-Flügel"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/festakt.jpg",
+          "caption": "Der Festakt am Dorfplatz von Philippsreut"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/geistlichkeit.jpg",
+          "caption": "Alle Pfarreien fanden sich zum Festakt ein"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/gerhardfranz.jpg",
+          "caption": "In Böhmerwaldtracht die Söhne Emil Webers, Franz und Gerhard"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/kreuzwegzug.jpg",
+          "caption": "Der Zug der Wallfahrer durch die Fluren"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/kwgebete.jpg",
+          "caption": "Pfarrer Pimmer spricht die Kreuzweg-Gebete"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/letztekwstation.jpg",
+          "caption": "Die letzte Kreuzwegstation"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/salnau.jpg",
+          "caption": "Kreuzwegtafel mit der Kirche von Salnau"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stationsbilder.jpg",
+          "caption": "Die 14 Kreuzwegtafeln auf dem Dorfplatz"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbuebergabe.jpg",
+          "caption": "Anschließend übergab Emil Weber an die Abordnungen der Stiftergemeinden ihre Bilder."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbweihe1.jpg",
+          "caption": "Vor der Tussetkapelle weiht Pfarrer Pimmer die Stationsbilder"
+        }
+      ]
+    },
+    {
+      "title": "Die 14 Kreuzwegbilder",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegbilder/kreuzweg.jpg",
+          "caption": "Der Kreuzweg in einem weiten Bogen über dem Dorf"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st1.jpg",
+          "caption": "1. Station – Jesus steht im Morgengrauen vor seinen Richtern"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st10.jpg",
+          "caption": "10. Station – Jesus wird seiner Kleider beraubt"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st11.jpg",
+          "caption": "11. Station – Jesus wird an das Kreuz genagelt"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st12.jpg",
+          "caption": "12. Station – Der Gekreuzigte stirbt am Steinriegel"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st13.jpg",
+          "caption": "13. Station – Jesus, der Heiland der Welt, ruht im Schoß der Mutter"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st14.jpg",
+          "caption": "14. Station – Jesu Grablegung bei der alten Tussetkapelle, gewidmet dem Dorf Tusset"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st1marterl.jpg",
+          "caption": "Ein Marterl des Kreuzweges"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st2.jpg",
+          "caption": "2. Station – Jesus nimmt das Kreuz auf die Schulter"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st3.jpg",
+          "caption": "3. Station – Jesus fällt zum ersten Mal auf steinigen Boden"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st4.jpg",
+          "caption": "4. Station – Die Begegnung Jesu mit seiner geliebten Mutter"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st5.jpg",
+          "caption": "5. Station – Simon hilft Jesus das Kreuz tragen"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st6.jpg",
+          "caption": "6. Station – Veronika reicht Jesus das Tuch dar"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st7.jpg",
+          "caption": "7. Station – Jesus fällt das zweite Mal unter dem Kreuz"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st8.jpg",
+          "caption": "8. Station – Jesus begegnet den weinenden Frauen"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st9.jpg",
+          "caption": "9. Station – Jesus fällt zum dritten Mal"
+        }
+      ],
+      "note": "Gemalt von Helma Fritsche-Flügel auf Kupferplatten."
+    },
+    {
+      "title": "Die Restaurierung der alten Kapelle 1987 bis 1990",
+      "items": [
+        {
+          "src": "altetk/renovierung/alteundneuetk.jpg",
+          "caption": "Die alte und die neue Tussetkapelle"
+        },
+        {
+          "src": "altetk/renovierung/atkeinweihung.jpg",
+          "caption": "Die Einweihung der erneuerten alten Tussetkapelle im August 1990"
+        },
+        {
+          "src": "altetk/renovierung/atkrenov1.jpg",
+          "caption": "Die restaurierte alte Tussetkapelle"
+        },
+        {
+          "src": "altetk/renovierung/atkrenov2.jpg",
+          "caption": "Die alte Tussetkapelle während der Restaurierung"
+        },
+        {
+          "src": "altetk/renovierung/atkrenov3.jpg",
+          "caption": "Die restaurierte alte Tussetkapelle von der Seite"
+        },
+        {
+          "src": "altetk/renovierung/atkrenov4.jpg",
+          "caption": "Naturschützer bei den Aufräumungsarbeiten"
+        },
+        {
+          "src": "altetk/renovierung/atkruine1.jpg",
+          "caption": "In diesem Zustand befand sich die alte Tussetkapelle im Mai 1987"
+        },
+        {
+          "src": "altetk/renovierung/atkruine2.jpg",
+          "caption": "Die alte Tussetkapelle, 1988"
+        }
+      ]
+    },
+    {
+      "title": "Emil Weber und die Initiatoren",
+      "items": [
+        {
+          "src": "initiatoren/emilweber.jpg",
+          "caption": "Emil Weber, Gemeindebetreuer von Obermoldau"
+        },
+        {
+          "src": "initiatoren/emilweber/elendbachl.jpg",
+          "caption": "Links im Bild an der Wand lehnend die von Emil Webers Vater erzeugten Siebreifen"
+        },
+        {
+          "src": "initiatoren/emilweber/emilmarine.jpg",
+          "caption": "Emil Weber als Soldat bei der Kriegsmarine"
+        },
+        {
+          "src": "initiatoren/emilweber/grabstein1.jpg",
+          "caption": "Der Grabstein von Emil Weber"
+        },
+        {
+          "src": "initiatoren/emilweber/hzemilanna.jpg",
+          "caption": "Hochzeit von Emil Weber und Anna Spitzl, 1960"
+        },
+        {
+          "src": "initiatoren/emilweber/hzmarieemil.jpg",
+          "caption": "v.l. Emils Schwester Marie, seine Frau Maria, geb. Prinz, Emil und sein Schwager Karl Prinz"
+        },
+        {
+          "src": "initiatoren/emilweber/sbew1.jpg",
+          "caption": "Emil Weber vor der neuen Tussetkapelle"
+        },
+        {
+          "src": "initiatoren/emilweber/urgrosselternemi.jpg",
+          "caption": "Emil Webers Großeltern väterlicherseits"
+        },
+        {
+          "src": "initiatoren/emilweber/weberfamilie.jpg",
+          "caption": "v.l. Marie, Liebreich, Franz, Anna und Emil Weber"
+        },
+        {
+          "src": "initiatoren/gerhardedlmann.jpg",
+          "caption": "Gerhard Edlmann, Architekt"
+        },
+        {
+          "src": "initiatoren/ottodamasko.jpg",
+          "caption": "Otto Damasko, 1. Bürgermeister von Philippsreut"
+        }
+      ]
+    },
+    {
+      "title": "Böhmerwald und Bayerischer Wald",
+      "items": [
+        {
+          "src": "kontakt/haidmuehle.jpg",
+          "caption": "Landschaft bei Haidmühle"
+        },
+        {
+          "src": "kontakt/stubenbachsee.jpg",
+          "caption": "Der Stubenbachsee im Böhmerwald"
+        }
+      ]
+    }
+  ]
+}

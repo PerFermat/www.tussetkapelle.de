@@ -1,0 +1,109 @@
+{
+  "id": "neue-tussetkapelle",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Die neue Kapelle",
+  "kicker": "Die neue Kapelle",
+  "title": "Die neue Kapelle",
+  "subtitle": "Was Sie in der Kapelle sehen",
+  "description": "Die neue Tusset-Kapelle in Philippsreut. Was Sie dort sehen können. Und der Gedenk-Stein davor. In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/neuetk.jpg",
+      "align": "right",
+      "alt": "Die neue Kapelle in Philippsreut. Sie ist aus Holz. Vorne sind Säulen.",
+      "caption": "Die neue Kapelle in Philippsreut."
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Die neue Kapelle steht in Philippsreut. Sie sieht genau so aus wie die alte Kapelle."
+    },
+    {
+      "t": "p",
+      "html": "Die alte Kapelle ist etwa 10 Kilometer weit weg. Sie liegt hinter der Grenze in Tschechien."
+    },
+    {
+      "t": "p",
+      "html": "Der Bau hat 3 Jahre gedauert. Emil Weber ist 2 Mal zur alten Kapelle gefahren. So konnte er alles genau nachbauen."
+    },
+    {
+      "t": "p",
+      "html": "Emil Weber hat viel Hilfe bekommen. Vom Architekt Gerhard Edelmann. Vom Bürger-Meister Otto Damasko. Von den Arbeitern der Gemeinde. Und von vielen Menschen, die Geld gegeben haben."
+    },
+
+    { "t": "h2", "text": "Das sehen Sie in der Kapelle" },
+    {
+      "t": "dl",
+      "items": [
+        {
+          "term": "Der Altar",
+          "html": "Emil Weber hat den Altar gebaut. Er sieht aus wie der alte Altar. Karl Benesch hat die Figuren geschnitzt. Adolf Kalischko hat gemalt. Franz Lang hat gedrechselt."
+        },
+        {
+          "term": "Der Altar-Stein",
+          "html": "Der Stein kommt aus einer alten Kirche. Die Kirche stand in Kuschwarda. Sie wurde 1964 zerstört."
+        },
+        {
+          "term": "Das Kreuz",
+          "html": "Das Kreuz hängt über dem Bogen. Ein Bild-Hauer aus Süd-Tirol hat es gemacht."
+        },
+        {
+          "term": "Das Gitter aus Eisen",
+          "html": "Das Gitter steht vor dem Altar. Erhard Uhlmann aus Philippsreut hat es geschmiedet."
+        },
+        {
+          "term": "Der Kreuz-Weg",
+          "html": "Die Bilder in der Kapelle sind von 1914. Sie kommen aus dem Böhmer-Wald. Frau Mertl hat sie geschenkt."
+        },
+        {
+          "term": "Die kleine Glocke",
+          "html": "Die Glocke hängt im Turm. Frau Maria Schreiber hat sie geschenkt. Die Firma Perner in Passau hat sie gegossen."
+        }
+      ]
+    },
+
+    { "t": "h2", "text": "Der Gedenk-Stein vor der Kapelle" },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkgedenkstein.jpg",
+      "align": "right",
+      "alt": "Ein großer Stein aus Granit. Darauf sind Wappen und Namen eingemeißelt.",
+      "caption": "Der Gedenk-Stein vor der Kapelle."
+    },
+    {
+      "t": "p",
+      "html": "Vor der Kapelle steht ein großer Stein. Er ist aus Granit. Der Stein lag lange in einem Wald."
+    },
+    {
+      "t": "p",
+      "html": "Der Bürger-Meister Otto Damasko hat den Stein geholt. Das war schwer. Der Stein ist sehr schwer."
+    },
+    {
+      "t": "p",
+      "html": "Ein Künstler hat den Stein bearbeitet. Er hieß Manfred Werner. Er kam aus Waldkirchen."
+    },
+    { "t": "h2", "text": "Was steht auf dem Stein?" },
+    {
+      "t": "p",
+      "html": "Auf einer Seite stehen die Namen von Dörfern. Diese Dörfer lagen am Tusset-Berg. Die Menschen von dort sind früher zur Kapelle gepilgert."
+    },
+    {
+      "t": "p",
+      "html": "Auf der anderen Seite sind 2 Wappen. Ein Wappen ist von Philippsreut. Das andere ist von Obermoldau. Ein Band verbindet die Wappen."
+    },
+    {
+      "t": "p",
+      "html": "Bei jedem Dorf-Namen ist ein Stück Glas. Das Glas ist ein Zeichen. Es bedeutet: Unsere Liebe zur Heimat ist rein."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkemil_otto.jpg",
+      "align": "center",
+      "alt": "Emil Weber und Otto Damasko halten zusammen eine Urkunde.",
+      "caption": "Emil Weber und der Bürger-Meister Otto Damasko."
+    }
+  ]
+}

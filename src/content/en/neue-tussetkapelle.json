@@ -1,0 +1,156 @@
+{
+  "id": "neue-tussetkapelle",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "The new Tusset Chapel",
+  "kicker": "The new Tusset Chapel",
+  "title": "Introduction",
+  "subtitle": "The new Tusset Chapel in Philippsreut and the memorial stone before it",
+  "description": "How the new Tusset Chapel in Philippsreut came into being, what visitors should know about the altar, the altar stone, the crucifix, the Stations of the Cross and the bell, and the meaning of the memorial stone before the chapel.",
+  "_quelle": "inhalte/neuetk/einleitung/ntkeinleitung.htm",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
+      "align": "right",
+      "alt": "The new Tusset Chapel silhouetted against the setting sun"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Almost 40 years after the expulsion from Obermoldau, Emil Weber succeeded in 1985 in erecting the new Tusset Chapel in the twinned municipality of Philippsreut, close to the border with the homeland, in a beautiful and dignified place with a view into the Bohemian Forest."
+    },
+    {
+      "t": "p",
+      "html": "Three years of building work as well as two journeys to the old Tusset Chapel were needed in order to rebuild the chapel faithfully to the original."
+    },
+    {
+      "t": "p",
+      "html": "The first journey was made in April 1983, and many memories were awakened in Emil; with a heavy heart he saw that of the once so artistic interior only a heap of rubble remained."
+    },
+    {
+      "t": "p",
+      "html": "This sight strengthened his resolve to rebuild the chapel which his forebears had once created in the Bohemian Forest homeland, to which they had gone on pilgrimage and where they had prayed to Our Lady of Grace for help."
+    },
+    {
+      "t": "p",
+      "html": "Without those involved – such as the architect Gerhard Edelmann, the late mayors Otto Damasko and Gustl Tahedl, the municipal councillors and municipal workers of Philippsreut, all the donors and all those who helped with the building, and above all Emil Weber – such an undertaking would never have been possible."
+    },
+    {
+      "t": "p",
+      "html": "So once again a heartfelt „Vergeltsgott“ (God reward you) to all who helped build the new Tusset Chapel!"
+    },
+    {
+      "t": "p",
+      "html": "The new Tusset Chapel was built about 10&nbsp;km as the crow flies from the old Tusset Chapel."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/einleitung/neuetk.jpg",
+          "alt": "The new Tusset Chapel in Philippsreut from the front: timber building with porch roof, columns and tower",
+          "caption": "The new Tusset Chapel in Philippsreut"
+        },
+        {
+          "src": "neuetk/einleitung/ntkkarte.jpg",
+          "alt": "Sketch map with the locations of the old and the new Tusset Chapel on either side of the border",
+          "caption": "The old and the new Tusset Chapel, about 10 kilometres apart"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "At the consecration of the new chapel in 1985 the old chapel was in a ruinous condition and given over to decay. Only a few years ago the old chapel too was rebuilt, so that today, only a few kilometres apart, these two gems stand as reminders of the past of the Bohemian Forest Germans."
+    },
+    {
+      "t": "p",
+      "html": "The history of the old Tusset Chapel takes us far back into the 18th century."
+    },
+    {
+      "t": "p",
+      "html": "A certain Jakob Klauser, known as „Schmiedjogl“, completed the small timber building of the old Tusset Chapel in the year 1791. From that time on the chapel on the Tussetberg was a much-visited Marian place of pilgrimage of the Bohemian Forest Germans, and especially of the people of Wallern."
+    },
+    {
+      "t": "p",
+      "html": "The first stone building in place of the decayed timber chapel was erected in the year 1804 by the municipality of Wallern. It was to withstand the weather for a full 60 years."
+    },
+    {
+      "t": "p",
+      "html": "In 1864 the decayed pilgrimage chapel was rebuilt, in the year 1867 extended by a porch. In 1884 and 1914 further repairs are reported, and again and again, until the outbreak of the Second World War, undertakings were made to preserve the chapel."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkaltetk.jpg",
+      "align": "left",
+      "alt": "The old Tusset Chapel on the Tussetberg in a decayed condition"
+    },
+    {
+      "t": "p",
+      "html": "In 1983 the forest chapel was in such a desolate and shattering condition that Emil Weber resolved to erect the new Tusset Chapel only a few kilometres from the old one."
+    },
+
+    { "t": "h2", "text": "Information for visitors to the new Tusset Chapel" },
+    {
+      "t": "dl",
+      "items": [
+        {
+          "term": "The altar",
+          "html": "is a faithful reproduction of the old altar on the Tussetberg. Emil Weber built it. The wood carvings were done by Karl Benesch (Krummau); the painting is by Adolf Kalischko (Sarau); the turnery by Franz Lang (Deutsch-Reichenau)."
+        },
+        {
+          "term": "The altar stone",
+          "html": "comes from the church of Kuschwarda, destroyed in 1964. A relic of St Brother Konrad of Parzham was inserted by the Bishop of Passau, Dr Franz Eder, at the consecration of the altar on 27&nbsp;July 1985."
+        },
+        {
+          "term": "The crucifix",
+          "html": "above the arch of the stone chapel is the work of a South Tyrolean sculptor."
+        },
+        {
+          "term": "The cast plate",
+          "html": "on the right of the stone chapel comes from the Rothbauer cross at Elendbachl. It stood on the way to Adlerhütte."
+        },
+        {
+          "term": "The wrought-iron grille",
+          "html": "in front of the altar was made by Mr Erhard Uhlmann of Philippsreut in honour of the Mother of God of the Tussetberg."
+        },
+        {
+          "term": "The Stations of the Cross",
+          "html": "in the chapel, dating from 1914, come from the Bohemian Forest homeland (donated by Mrs Mertl, now of Untergriesbach)."
+        },
+        {
+          "term": "The small bell",
+          "html": "on the little tower of the chapel was donated by Mrs Maria Schreiber (Tusset); the bell was cast at the world-renowned Perner bell foundry in Passau."
+        }
+      ]
+    },
+
+    { "t": "h2", "text": "The memorial stone before the chapel" },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkgedenkstein.jpg",
+      "align": "right",
+      "alt": "The memorial stone before the new Tusset Chapel: a granite block with the word „Patenschaft“ (twinning), the two municipal coats of arms and the home villages in the Bohemian Forest"
+    },
+    {
+      "t": "p",
+      "html": "Before the new Tusset Chapel stands a great block of granite. For thousands of years it slumbered in a piece of woodland near the border at Mitterfirmiansreut, until Mayor Otto Damasko and his helpers brought it, with some difficulty in recovery and transport, to the forecourt of the new Tusset Chapel. There – on the spot – this stone was artistically worked by the sculptor Manfred Werner of Waldkirchen."
+    },
+    {
+      "t": "p",
+      "html": "The idea of erecting a memorial stone as a reminder of the injustice of the expulsion and of the lost Bohemian Forest homeland is in fact older than the building of the new Tusset Chapel. Emil Weber, community representative of Obermoldau, wanted to set up a monument for his countrymen which would always remind them of their home villages, most of which can no longer be found today."
+    },
+    {
+      "t": "p",
+      "html": "When the visitor is on the way from the Obermoldau road to the chapel, he sees on the side of the stone facing him the dates of the erection of the new Tusset Chapel carved into it; the formerly German parishes which lay around the Tussetberg are also cut into it. Year after year the people made their pilgrimage from these places to Our Lady of Grace. On the side facing the chapel the stone bears witness to the twinning of the municipality of Philippsreut with the expellees of the former municipality of Obermoldau. A band joins the two municipal coats of arms. In the lower part the home villages of the municipality of Obermoldau – which in the Czech lands of the day was the second largest municipality by area after Prague – are cut deep into the granite, just as our love of the homeland should always have its place deep in our hearts. And so that this love may always remain pure and unblemished, a lump of raw glass adorns each home village beyond the border. At this point we thank the sculptor Manfred Werner most warmly for the artistic design of the memorial stone."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkemil_otto.jpg",
+      "align": "center",
+      "alt": "Emil Weber and Mayor Otto Damasko at the presentation of the twinning certificate",
+      "caption": "So in the end, with the erection of this monument, the original wish of the community representative Emil Weber has also been fulfilled. (In the picture with Mayor Otto Damasko at the presentation of the twinning certificate)"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "initiatoren",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Die Menschen",
+  "kicker": "Die Menschen",
+  "title": "Diese Menschen haben geholfen",
+  "subtitle": "Drei Männer erzählen",
+  "description": "Emil Weber, Otto Damasko und Gerhard Edlmann haben die neue Tusset-Kapelle möglich gemacht. In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Drei Männer haben besonders viel geholfen. Hier sagt jeder ein paar Worte."
+    },
+
+    { "t": "h2", "text": "Emil Weber" },
+    {
+      "t": "fig",
+      "src": "initiatoren/emilweber.jpg",
+      "align": "right",
+      "alt": "Ein Foto von Emil Weber.",
+      "caption": "<a href=\"{{href:emil-weber}}\">Emil Weber</a><br>Er ist am 8. Januar 2002 gestorben."
+    },
+    {
+      "t": "p",
+      "html": "Emil Weber hat die Kapelle gebaut. Er kam aus dem Böhmer-Wald. Er hat für sein Heimat-Dorf Obermoldau gearbeitet."
+    },
+    {
+      "t": "p",
+      "html": "Emil Weber sagt: 40 Jahre nach der Vertreibung haben wir es geschafft. Wir haben die Kapelle wieder gebaut. Sie steht an einem schönen Platz. Man kann von dort in den Böhmer-Wald schauen."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt weiter: Im April 1983 war ich bei der alten Kapelle. Da wurde mir das Herz schwer. Von der schönen Kapelle war nur ein Trümmer-Haufen übrig."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Darum wollte ich die Kapelle wieder bauen. Unsere Vorfahren haben sie gebaut. Sie sind dort hin gepilgert. Sie haben dort gebetet."
+    },
+    {
+      "t": "p",
+      "html": "Emil Weber sagt Danke. Dem Architekt. Dem Bürger-Meister. Den Arbeitern. Und allen, die Geld gegeben haben."
+    },
+
+    { "t": "h2", "text": "Otto Damasko" },
+    {
+      "t": "fig",
+      "src": "initiatoren/ottodamasko.jpg",
+      "align": "right",
+      "alt": "Ein Foto von Otto Damasko.",
+      "caption": "Otto Damasko<br>Er ist am 18. Juni 2002 gestorben."
+    },
+    {
+      "t": "p",
+      "html": "Otto Damasko war Bürger-Meister von Philippsreut."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Früher waren wir mit den Dörfern im Böhmer-Wald befreundet. Nach 1945 ging das nicht mehr. Die Menschen mussten weg."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Aber die Freundschaft ist geblieben. Darum arbeiten Philippsreut und Obermoldau zusammen. Und darum steht die Kapelle jetzt bei uns."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Wir freuen uns sehr. Denn unsere Vorfahren sind auch zur Tusset-Kapelle gepilgert."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Alle Gäste sind herzlich willkommen. Vielleicht wird Philippsreut für viele Menschen eine zweite Heimat."
+    },
+
+    { "t": "h2", "text": "Gerhard Edlmann" },
+    {
+      "t": "fig",
+      "src": "initiatoren/gerhardedlmann.jpg",
+      "align": "right",
+      "alt": "Ein Foto von Gerhard Edlmann.",
+      "caption": "Gerhard Edlmann"
+    },
+    {
+      "t": "p",
+      "html": "Gerhard Edlmann war der Architekt. Er hat die Kapelle geplant."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Im Sommer 1982 habe ich den Auftrag bekommen. Ich sollte ein Denkmal planen. Es sollte an die alte Heimat erinnern."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Es sollte kein Museum sein. Die Menschen in Philippsreut sollten es auch nutzen können."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Darum haben wir die Tusset-Kapelle gewählt. Ein neues modernes Haus wäre nicht so gut gewesen. Die alte Kapelle kennen viele Menschen."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Die alte Kapelle wird bald zerfallen. Niemand wird sie reparieren. Darum ist unser Bau auch Denkmal-Pflege."
+    },
+    {
+      "t": "p",
+      "html": "Er sagt: Die neue Kapelle zeigt nach Obermoldau. Das ist ein Zeichen für die alte Heimat."
+    }
+  ]
+}

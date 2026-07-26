@@ -1,0 +1,113 @@
+{
+  "lang": "ls",
+  "htmlLang": "de",
+  "dir": "ls",
+  "label": "Leichte Sprache",
+  "flag": "flagLs",
+  "ogLocale": "de_DE",
+
+  "brand": {
+    "name": "Tussetkapelle",
+    "place": "Philippsreut"
+  },
+
+  "ui": {
+    "skip": "Weiter zum Text",
+    "menu": "Menü auf-machen und zu-machen",
+    "mainNav": "Haupt-Menü",
+    "langNav": "Sprache aus-wählen",
+    "breadcrumb": "Hier sind Sie",
+    "pagerNav": "Weitere Seiten",
+    "prev": "Seite davor",
+    "next": "Nächste Seite",
+    "tagline": "Ein Ort zum Erinnern",
+    "heroAlt": "So sieht es innen in der neuen Tussetkapelle aus",
+    "copyright": "Tussetkapelle Philippsreut",
+    "sourceNote": "Texte und Bilder: Familie Weber",
+    "newTab": " (Die Seite geht in einem neuen Fenster auf.)",
+    "lightboxLabel": "Bild groß ansehen",
+    "lightboxCount": "Bild {i} von {n}",
+    "lightboxClose": "Bild zu-machen",
+    "lightboxPrev": "Bild davor",
+    "lightboxNext": "Nächstes Bild"
+  },
+
+  "slugs": {
+    "home": "",
+    "geschichte": "geschichte",
+    "alte-tussetkapelle": "geschichte/alte-kapelle",
+    "kapelle-und-wallern": "geschichte/kapelle-und-wallern",
+    "gnadenbilder": "geschichte/bilder-von-maria",
+    "kreuzwege-und-wallfahrtstage": "geschichte/kreuzweg-und-wallfahrt",
+    "alte-geschichten": "geschichte/alte-geschichten",
+    "restaurierung": "geschichte/alte-kapelle-reparieren",
+    "wiederaufbau": "geschichte/wieder-aufbau",
+    "neue-tussetkapelle": "geschichte/neue-kapelle",
+    "einweihung-1985": "geschichte/fest-1985",
+    "kreuzwegweihe-1987": "geschichte/fest-1987",
+    "kreuzwegbilder": "geschichte/kreuzweg-bilder",
+    "initiatoren": "geschichte/die-menschen",
+    "emil-weber": "geschichte/emil-weber",
+    "galerie": "bilder",
+    "besuch": "besuch",
+    "kontakt": "kontakt",
+    "impressum": "impressum",
+    "datenschutz": "datenschutz"
+  },
+
+  "nav": [
+    { "id": "home" },
+    {
+      "id": "geschichte",
+      "panel": [
+        {
+          "title": "Die alte Kapelle",
+          "items": [
+            "alte-tussetkapelle",
+            "kapelle-und-wallern",
+            "gnadenbilder",
+            "kreuzwege-und-wallfahrtstage",
+            "alte-geschichten",
+            "restaurierung"
+          ]
+        },
+        {
+          "title": "Die neue Kapelle",
+          "items": [
+            "wiederaufbau",
+            "neue-tussetkapelle",
+            "einweihung-1985",
+            "kreuzwegweihe-1987",
+            "kreuzwegbilder"
+          ]
+        },
+        {
+          "title": "Die Menschen",
+          "items": ["initiatoren", "emil-weber"]
+        }
+      ]
+    },
+    { "id": "galerie" },
+    { "id": "besuch" },
+    { "id": "kontakt" }
+  ],
+
+  "sequence": [
+    "geschichte",
+    "alte-tussetkapelle",
+    "kapelle-und-wallern",
+    "gnadenbilder",
+    "kreuzwege-und-wallfahrtstage",
+    "alte-geschichten",
+    "restaurierung",
+    "wiederaufbau",
+    "neue-tussetkapelle",
+    "einweihung-1985",
+    "kreuzwegweihe-1987",
+    "kreuzwegbilder",
+    "initiatoren",
+    "emil-weber"
+  ],
+
+  "footerLinks": ["impressum", "datenschutz"]
+}

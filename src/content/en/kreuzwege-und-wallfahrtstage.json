@@ -1,0 +1,134 @@
+{
+  "id": "kreuzwege-und-wallfahrtstage",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Ways of the Cross and pilgrimages",
+  "kicker": "The chapel on the Tussetberg · An account by Otto Veith",
+  "title": "3. The Ways of the Cross · 4. The pilgrimage days · 5. The chapel",
+  "description": "The three Ways of the Cross up the Tussetberg, the pilgrimage days from the Assumption to Easter Monday, the building history of the chapel from 1804 to 1945 and its decay after the expulsion.",
+  "_quelle": "inhalte/altetk/kreuzwege/kreuzwege.htm",
+
+  "blocks": [
+    { "t": "h2", "text": "3. The Ways of the Cross" },
+    { "t": "p", "lede": true, "html": "Three Ways of the Cross lead up the Tussetberg." },
+
+    { "t": "h3", "text": "1. The Tusset Way of the Cross" },
+    {
+      "t": "p",
+      "html": "It began at the village of Tusset and ended at the great cast-iron cross with a stone plinth near the spring, which has since dried up. The year 1872 is noted on it. This cross can be clearly seen in the picture (last cover page)."
+    },
+
+    { "t": "h3", "text": "2. The Böhmisch-Röhren Way of the Cross" },
+    {
+      "t": "p",
+      "html": "It began on the Straßl above the Brennt-Au meadows and ended at the rocky slope leading to the chapel."
+    },
+
+    { "t": "h3", "text": "3. The Guthausen Way of the Cross" },
+    {
+      "t": "p",
+      "html": "It followed the chapel path „Turmbahn“ and began at the „Fürstensteig“, a stalking path, by the „Große Buche“ (Great Beech), above the „Brav(W)enzl-Felsen“."
+    },
+    {
+      "t": "p",
+      "html": "All three Ways of the Cross are rendered in painted pictures which were fixed to trees. The Böhm.-Röhren Way of the Cross was glazed. The Guthausen one was painted on sheet metal. All three were made in rustic manner by local craftsmen."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atkstationsbild.jpg",
+      "align": "center",
+      "alt": "Station picture of the Guthausen Way of the Cross, painted on sheet metal",
+      "caption": "Station picture of the Guthausen Way of the Cross (saved and brought to Bavaria, today in the new Tusset Chapel)"
+    },
+
+    { "t": "h2", "text": "4. The pilgrimage days" },
+
+    { "t": "h3", "text": "15 August – the Assumption of Mary" },
+    {
+      "t": "p",
+      "html": "This day was the patronal feast and at the same time the principal pilgrimage day. The service was held with great solemnity on the forecourt of the chapel. The „Bark Madonna“ was set up outside the chapel on a forest altar. There was a service in the afternoon as well. Usually the bands of Böhm.-Röhren and Guthausen played. The preachers were: after Dr Hilgenreiner, Dr Petersilka of Böhm.-Budweis also preached (he was a deputy of the Christian Party in the Prague parliament), and from about 1924 every year Professor Raimund Jungbauer, a native of Schönau who was a pastor in Vienna-Mödling."
+    },
+
+    { "t": "h3", "text": "2 July – the Visitation of Mary" },
+    {
+      "t": "p",
+      "html": "To this pilgrimage on the so-called „Kleiner Frau’tog“ (Little Lady’s Day) most of the pilgrims came from the immediate neighbourhood."
+    },
+
+    { "t": "h3", "text": "On the Sunday after St Anne’s Day (26 July)" },
+    {
+      "t": "p",
+      "html": "This pilgrimage was made chiefly by pilgrims from Wallern (with music) and from the „Schläge“ (as far as Pfefferschlag)."
+    },
+
+    { "t": "h3", "text": "Easter Monday" },
+    {
+      "t": "p",
+      "html": "The „Grünebenausgang“ or „Emausgang“ of the parish of Böhm.-Röhren."
+    },
+
+    { "t": "h3", "text": "One pilgrimage (procession)" },
+    {
+      "t": "p",
+      "html": "even came from Auersbergsreut in Bavaria to the Tusset Chapel."
+    },
+    {
+      "t": "p",
+      "html": "In summer there were weekday masses once or twice a week. The parish priest of Böhm.-Röhren held these services."
+    },
+    {
+      "t": "p",
+      "html": "Of course one met devout worshippers at the chapel almost every Sunday, from the immediate and the wider neighbourhood. Visitors also came from far away: from Linz, Vienna, indeed even from America. Besides cardinals, bishops and princes, the heir to the throne of the day, Archduke Franz Ferdinand, also visited the quiet forest chapel. The house of God was never locked and nevertheless nothing was ever lost until the expulsion."
+    },
+
+    { "t": "h2", "text": "5. The chapel" },
+    {
+      "t": "p",
+      "html": "The first stone building of the chapel, which the market municipality of Wallern erected in 1804 in place of Jakob Klauser’s decayed timber chapel (1791), withstood the inclemency of the weather for just 60 years. In 1864 it was the Tusset forest warden August Gams who, with the help of the then district forester’s wife of Tusset and through donations, had the pilgrimage chapel rebuilt. An altar was also set up and the licence for mass – five masses a year – obtained. On 24&nbsp;July 1865 the first Holy Mass was read with great solemnity. When two years later, on 10&nbsp;August 1867, the Cardinal and Prince-Archbishop of Prague and his brother, Prince Adolf Johann von Schwarzenberg, visited the shrine, the lordship had a porch built „in the Swiss style“ at the request of the population for an enlargement of the chapel. The factory owner Johann Wessely of Tusset took charge of the work, and he also had a cross erected on the rock. In 1884 the chapel was renovated once more and the new miraculous image, commissioned by the parish priest of Böhm.-Röhren, was set up on the altar in the stone chapel. In 1914 repairs are reported again. And again and again the people around the Tussetberg lent a hand when the chapel of the Protectress of the Bohemian Forest had to be tended and preserved. Thus as late as 1967 the following could be read on the back of the almost destroyed altar:"
+    },
+    {
+      "t": "quote",
+      "html": "Johann Koltschek, joiner from Breitenberg in Bavaria, 17&nbsp;April 1869.<br>Johann Jungwirt of Wallern, joiner, An. 872, 6&nbsp;June.<br>Pius Riepl, journeyman mason of Wallern, 25&nbsp;November 1870.<br>August Schönbaur, Wallern, 25&nbsp;May 1901.<br>At the end of the war on 7&nbsp;June 1945 newly renovated by the painter Franz Baier and the mason Johann Hanis of Ober Zassau, 7&nbsp;VI. 1945.",
+      "cite": "Inscription on the back of the altar, 1967"
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atkverwuestet.jpg",
+      "align": "center",
+      "alt": "The devastated interior of the old Tusset Chapel in 1980: smashed pews, empty altar, broken windows",
+      "caption": "Devastated and desolate – the interior of the old chapel (1980)"
+    },
+    {
+      "t": "p",
+      "html": "After the Germans had been expelled from their homeland, the chapel fell into ever greater decay. It is true that in 1957 the Schmeller/Tahedl family of Guthausen covered the roof with roofing felt with much effort – hoping in this way to be able to preserve the place of pilgrimage – yet wind and weather, and also vandalism under the new masters, gave the shrine over to destruction. Votive offerings and reverse-glass paintings were stolen, the windows smashed, the offertory box and the church pews broken up, pictures shot through."
+    },
+    {
+      "t": "p",
+      "html": "In 1980 this forest chapel was in a desolate and shattering condition. How much longer could the timberwork have withstood the weight of the snow? And soon the forest would surely have folded its green fingers mercifully over the destroyed shrine. Yet through the many years of hardship and despair, the Bohemian Forest Germans around the Tusset had preserved the chapel and Our Lady of Grace in their hearts."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atkverfall.jpg",
+      "align": "center",
+      "alt": "The old Tusset Chapel in 1980 from outside: collapsed roof, weathered timber cladding, overgrown surroundings",
+      "caption": "Given over to decay – the pilgrimage chapel on the Tussetberg in the year 1980"
+    },
+    {
+      "t": "p",
+      "html": "In the Czech journal „Sumava“ no.&nbsp;19/1984, pages 21–22, Ph.&nbsp;Dr. Vaclav Stary wrote, among other things, about the Tusset Chapel:"
+    },
+    {
+      "t": "quote",
+      "html": "“In our own time the Tusset Chapel has lost its old religious significance, and no one comes here any longer as a pilgrim seeking healing from illness. The building was a testimony to the artistic level and the craftsmanship of the Bohemian Forest woodworkers, who in this way expressed their feeling and their conviction in the past.”",
+      "cite": "Ph. Dr. Vaclav Stary, in: Sumava no. 19/1984, pp. 21–22"
+    },
+    {
+      "t": "p",
+      "html": "Our new Tusset Chapel in Philippsreut, as an image of the old chapel from the Tussetberg, is here once again the work of the industrious and skilful hands of Bohemian Forest Germans. Many people can now once again make a religious retreat with their Lady of Grace of the Tussetberg."
+    },
+    {
+      "t": "sources",
+      "html": "Sources: Paul Praxl, senior teacher Rankl, Rosl Tahedl, Vaclav Stary"
+    }
+  ]
+}

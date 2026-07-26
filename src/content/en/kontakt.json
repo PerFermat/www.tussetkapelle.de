@@ -1,0 +1,88 @@
+{
+  "id": "kontakt",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Contact",
+  "kicker": "Contact",
+  "title": "Getting in touch",
+  "subtitle": "Suggestions, comments and links about the Bohemian Forest",
+  "description": "Contact for the website of the new Tusset Chapel, and links to pages about the Bohemian Forest and the Bavarian Forest.",
+  "_quelle": "inhalte/kontakt/kontakt.htm",
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "We, the sons of Emil Weber, are very glad to receive your suggestions and comments – especially from all Bohemian Forest Germans and their descendants who feel a connection to this website and who wish to preserve the history of the Bohemian Forest. We are happy to add links to our website that relate to this subject."
+    },
+    {
+      "t": "fig",
+      "src": "kontakt/haidmuehle.jpg",
+      "align": "center",
+      "alt": "Landscape near Haidmühle in the Bavarian Forest"
+    },
+    {
+      "t": "h2",
+      "text": "How to reach us"
+    },
+    {
+      "t": "p",
+      "html": "Simply send your suggestions to <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>"
+    },
+    {
+      "t": "p",
+      "html": "Click here to see more pictures ----&gt; <a href=\"{{href:galerie}}\">Photo gallery</a>"
+    },
+    {
+      "t": "h2",
+      "text": "Links to pages relating to the Bohemian Forest and the Bavarian Forest"
+    },
+    {
+      "t": "fig",
+      "src": "kontakt/stubenbachsee.jpg",
+      "align": "center",
+      "alt": "Lake Stubenbach in the Bohemian Forest"
+    },
+    {
+      "t": "table",
+      "caption": "Pages relating to the Bohemian Forest and the Bavarian Forest",
+      "head": [
+        "Provider / subject",
+        "Address"
+      ],
+      "rows": [
+        [
+          "German Bohemian Forest Association (Deutscher Böhmerwaldbund)",
+          "<a href=\"https://boehmerwaldbund.de/\" rel=\"noopener noreferrer\">https://boehmerwaldbund.de/</a>"
+        ],
+        [
+          "Municipality of Philippsreut / Mitterfirmiansreut",
+          "<a href=\"http://www.philippsreut.de\" rel=\"noopener noreferrer\">http://www.philippsreut.de</a>"
+        ],
+        [
+          "The Bavarian Forest and Bohemian Forest national parks",
+          "<a href=\"http://www.moldau.ch\" rel=\"noopener noreferrer\">http://www.moldau.ch</a>"
+        ],
+        [
+          "Geography, history and a great deal of interest about both national parks",
+          "<a href=\"http://www.waldwildnis.de/cd/indexcd.htm\" rel=\"noopener noreferrer\">http://www.waldwildnis.de</a>"
+        ],
+        [
+          "The Bavarian Forest National Park",
+          "<a href=\"http://www.nationalpark-bayerischer-wald.de\" rel=\"noopener noreferrer\">http://www.nationalpark-bayerischer-wald.de</a>"
+        ],
+        [
+          "The Bohemian Forest National Park",
+          "<a href=\"https://www.npsumava.cz/en/\" rel=\"noopener noreferrer\">https://www.npsumava.cz/en/</a>"
+        ],
+        [
+          "The Bohemian Forest",
+          "<a href=\"http://www.sumava-info.cz/n_ramecek.html\" rel=\"noopener noreferrer\">http://www.sumava-info.cz/n_ramecek.html</a>"
+        ],
+        [
+          "Community representation for Obermoldau",
+          "<a href=\"http://webmuzeum.sumava.cz/retour-1996/mesta/horni-vltavice/index_de.htm\" rel=\"noopener noreferrer\">http://webmuzeum.sumava.cz/retour-1996/mesta/horni-vltavice/index_de.htm</a>"
+        ]
+      ]
+    }
+  ]
+}

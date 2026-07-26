@@ -1,0 +1,119 @@
+{
+  "id": "geschichte",
+  "type": "hub",
+  "parent": "home",
+  "navLabel": "Geschichte",
+  "kicker": "Geschichte",
+  "title": "Die Geschichte der Tussetkapelle",
+  "subtitle": "Von der Gnadenkapelle auf dem Tussetberg bis zum Wiederaufbau in Philippsreut",
+  "description": "Alle Kapitel zur Geschichte der Tussetkapelle: die alte Gnadenkapelle im Böhmerwald, die Vertreibung, der Wiederaufbau 1983 bis 1985 in Philippsreut und die Menschen, die ihn möglich gemacht haben.",
+  "_hinweis": "Übersichtsseite. Enthält keine neuen historischen Angaben – nur die Kapitelüberschriften und die Untertitel der Originalberichte.",
+
+  "intro": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Die Geschichte der Tussetkapelle ist in Berichten von Zeitzeugen festgehalten: von Otto Veith aus Wallern, von Rosl Tahedl aus Guthausen und von Emil Weber selbst, der den Wiederaufbau als Bildbericht dokumentiert hat. Alle Texte dieser Seiten sind unverändert wiedergegeben."
+    }
+  ],
+
+  "blocks": [
+    {
+      "t": "chapters",
+      "groups": [
+        {
+          "title": "Die alte Tussetkapelle",
+          "items": [
+            {
+              "id": "alte-tussetkapelle",
+              "title": "Die alte Tussetkapelle im Böhmerwald",
+              "img": "altetk/tusset_alt.jpg"
+            },
+            {
+              "id": "kapelle-und-wallern",
+              "title": "Die Kapelle auf dem Tussetberg",
+              "sub": "Ein Bericht von Otto Veith",
+              "img": "altetk/kapelleundwallern/wallern.jpg"
+            },
+            {
+              "id": "gnadenbilder",
+              "title": "Die Gnadenbilder",
+              "sub": "Ein Bericht von Otto Veith",
+              "img": "altetk/gnadenbilder/gnbildrestauriert.jpg"
+            },
+            {
+              "id": "kreuzwege-und-wallfahrtstage",
+              "title": "Die Kreuzwege und die Wallfahrtstage",
+              "sub": "Ein Bericht von Otto Veith",
+              "img": "altetk/kreuzwege/atkstationsbild.jpg"
+            },
+            {
+              "id": "alte-geschichten",
+              "title": "Geschichten der alten Tussetkapelle",
+              "sub": "von Rosl Tahedl",
+              "img": "altetk/kreuzwege/atkzeichnung.jpg"
+            },
+            {
+              "id": "restaurierung",
+              "title": "Die Restaurierung der alten Tussetkapelle",
+              "sub": "Mai 1987 bis August 1990",
+              "img": "altetk/renovierung/atkeinweihung.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Wiederaufbau und neue Kapelle",
+          "items": [
+            {
+              "id": "wiederaufbau",
+              "title": "Entstehung der Patenschaft – Bau einer Gedenkstätte",
+              "sub": "Ein Bildbericht von Emil Weber",
+              "img": "neuetk/entstehung/aufrichten.jpg"
+            },
+            {
+              "id": "neue-tussetkapelle",
+              "title": "Die neue Tussetkapelle",
+              "sub": "Einleitung und Wissenswertes für Besucher",
+              "img": "neuetk/einleitung/neuetk.jpg"
+            },
+            {
+              "id": "einweihung-1985",
+              "title": "Die Einweihung der neuen Tussetkapelle",
+              "sub": "am 27. Juli 1985",
+              "img": "neuetk/einweihung/bischofeder.jpg"
+            },
+            {
+              "id": "kreuzwegweihe-1987",
+              "title": "Der Kreuzweg der Böhmerwäldler in Philippsreut",
+              "sub": "Die Weihe der neuen Kreuzwegbilder am 15. August 1987",
+              "img": "neuetk/kreuzwegweihe/kreuzwegzug.jpg"
+            },
+            {
+              "id": "kreuzwegbilder",
+              "title": "Die Kreuzwegbilder",
+              "sub": "gemalt von Frau Fritsche-Flügel",
+              "img": "neuetk/kreuzwegbilder/st14.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Die Menschen",
+          "items": [
+            {
+              "id": "initiatoren",
+              "title": "Die Initiatoren der neuen Tussetkapelle",
+              "sub": "Die Grußworte der Initiatoren zum Wiederaufbau",
+              "img": "neuetk/einleitung/ntkemil_otto.jpg"
+            },
+            {
+              "id": "emil-weber",
+              "title": "Emil Weber",
+              "sub": "Der Hauptinitiator",
+              "img": "initiatoren/emilweber/sbew1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

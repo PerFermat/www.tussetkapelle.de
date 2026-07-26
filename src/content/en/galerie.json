@@ -1,0 +1,546 @@
+{
+  "id": "galerie",
+  "type": "gallery",
+  "parent": "home",
+  "navLabel": "Gallery",
+  "kicker": "Photo gallery",
+  "title": "Photo gallery of the Tusset Chapel",
+  "subtitle": "Historical photographs of the old and the new Tusset Chapel",
+  "description": "All the photographs of the Tusset Chapel: the old pilgrimage chapel in the Bohemian Forest, the detailed views of 1983, the reconstruction, the consecration of 1985, the Way of the Cross and the people who made the reconstruction possible.",
+  "_quelle": "inhalte/fotogalerie/fotogalerie.htm sowie alle Bilder der Altsite",
+  "_erzeugt": "Diese Datei wird von tools/make-gallery.mjs erzeugt. Nicht direkt bearbeiten. Bildunterschriften: Deutsch in make-gallery.mjs, Englisch und Leichte Sprache in gallery-captions.mjs.",
+  "intro": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Click on a picture to enlarge it. Use the arrow keys to move between pictures and press Escape to close the view again."
+    }
+  ],
+  "sections": [
+    {
+      "title": "The new Tusset Chapel",
+      "items": [
+        {
+          "src": "neuetk/einleitung/neuetk.jpg",
+          "caption": "The new Tusset Chapel in Philippsreut"
+        },
+        {
+          "src": "neuetk/einleitung/ntkaltetk.jpg",
+          "caption": "The old Tusset Chapel in its decayed state"
+        },
+        {
+          "src": "neuetk/einleitung/ntkemil_otto.jpg",
+          "caption": "Emil Weber with Mayor Otto Damasko at the presentation of the twinning certificate"
+        },
+        {
+          "src": "neuetk/einleitung/ntkgedenkstein.jpg",
+          "caption": "The memorial stone before the chapel"
+        },
+        {
+          "src": "neuetk/einleitung/ntkkarte.jpg",
+          "caption": "The location of the old and the new Tusset Chapel"
+        },
+        {
+          "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
+          "caption": "The chapel in the evening light"
+        },
+        {
+          "src": "ntkaltar.jpg",
+          "caption": "The chancel of the new Tusset Chapel"
+        },
+        {
+          "src": "ntkwinterbild.jpg",
+          "caption": "The new Tusset Chapel in winter"
+        },
+        {
+          "src": "zeichnungntkumkehr.jpg",
+          "caption": "Drawing of the Tusset Chapel"
+        }
+      ],
+      "note": "The chapel in Philippsreut as it stands today."
+    },
+    {
+      "title": "The old Tusset Chapel in the Bohemian Forest",
+      "items": [
+        {
+          "src": "altetk/kapelleundwallern/feuersturm.jpg",
+          "caption": "In the great firestorm at Wallern on 22/23 July 1863 the parish church also perished, and with it the miraculous image of “Our Lady of the Tussetberg”."
+        },
+        {
+          "src": "altetk/kapelleundwallern/gebhausklauser.jpg",
+          "caption": "Wallern with the Hellgasse in the foreground. The corner house to the left of the church (Frounzl) belonged to Jakob Klauser. In the background the Tusset."
+        },
+        {
+          "src": "altetk/kapelleundwallern/postkarte.jpg",
+          "caption": "Postcard showing the Wallern basin and the Tussetberg"
+        },
+        {
+          "src": "altetk/kapelleundwallern/wallern.jpg",
+          "caption": "Wallern in the Bohemian Forest, once a hostelry on the Golden Path"
+        },
+        {
+          "src": "altetk/kreuzwege/atk1945.jpg",
+          "caption": "The interior of the old Tusset Chapel"
+        },
+        {
+          "src": "altetk/kreuzwege/atkstationsbild.jpg",
+          "caption": "Station picture of the Guthausen Way of the Cross (saved and brought to Bavaria, today in the new Tusset Chapel)"
+        },
+        {
+          "src": "altetk/kreuzwege/atkverfall.jpg",
+          "caption": "Given over to decay – the pilgrimage chapel on the Tussetberg in the year 1980"
+        },
+        {
+          "src": "altetk/kreuzwege/atkverwuestet.jpg",
+          "caption": "Devastated and desolate – the interior of the old chapel (1980)"
+        },
+        {
+          "src": "altetk/kreuzwege/atkzeichnung.jpg",
+          "caption": "Drawing of the old Tusset Chapel"
+        },
+        {
+          "src": "altetk/kreuzwege/boehmroehren.jpg",
+          "caption": "Old Böhmisch-Röhren"
+        },
+        {
+          "src": "altetk/kreuzwege/guthausen.jpg",
+          "caption": "The woodcutters’ village of Guthausen on the northern slope of the Tussetberg"
+        },
+        {
+          "src": "altetk/kreuzwege/stannakapelle.jpg",
+          "caption": "St Anne’s Chapel in Leimsgrub, built around 1930."
+        },
+        {
+          "src": "altetk/kreuzwege/tussetgb.jpg",
+          "caption": "Tusset, Glöckelbauer (on the left the chapel with the bell frame)"
+        },
+        {
+          "src": "altetk/tusset_alt.jpg",
+          "caption": "The old Tusset Chapel on the Tussetberg"
+        }
+      ],
+      "note": "The Tussetberg, the pilgrimage chapel and the villages around it."
+    },
+    {
+      "title": "The miraculous images",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/gnbildischraml.jpg",
+          "caption": "Copy of the miraculous image by Ignaz Schraml"
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrauscher.jpg",
+          "caption": "Tusset painting by the master painter Karl Rauscher of Wallern"
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrestauriert.jpg",
+          "caption": "The reappeared miraculous image after its restoration by Mrs Fritsche-Flügel"
+        },
+        {
+          "src": "altetk/gnadenbilder/ignazschraml.jpg",
+          "caption": "Ignaz Schraml"
+        },
+        {
+          "src": "altetk/gnadenbilder/rindenmadonna.jpg",
+          "caption": "The “Bark Madonna”, saved by Mrs Blechschmied during the expulsion"
+        },
+        {
+          "src": "altetk/gnadenbilder/wallfahrtszettel.jpg",
+          "caption": "“Pilgrimage sheet” of the Tusset Madonna"
+        }
+      ],
+      "note": "The images of Our Lady of the Tussetberg."
+    },
+    {
+      "title": "Detailed photographs of the old Tusset Chapel from April 1983",
+      "items": [
+        {
+          "src": "fotogalerie/fotosatk/atk1983_1.jpg",
+          "caption": "Emil Weber measuring the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_10.jpg",
+          "caption": "The entrance of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_11.jpg",
+          "caption": "The masonry of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_12.jpg",
+          "caption": "The roof structure of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_13.jpg",
+          "caption": "Beams of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_14.jpg",
+          "caption": "Beams of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_15.jpg",
+          "caption": "Beams of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_16.jpg",
+          "caption": "A window of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_2.jpg",
+          "caption": "The tower of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_3.jpg",
+          "caption": "A column of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_4.jpg",
+          "caption": "The door of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_5.jpg",
+          "caption": "The pews of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_6.jpg",
+          "caption": "A window of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_7.jpg",
+          "caption": "The gallery of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_8.jpg",
+          "caption": "The gallery of the old chapel, 1983"
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_9.jpg",
+          "caption": "A support of the old chapel, 1983"
+        }
+      ],
+      "note": "The following photographs show the desolate condition of the old Tusset Chapel when Emil Weber measured the whole ruin and its parts in 1983."
+    },
+    {
+      "title": "The reconstruction, 1983 to 1985",
+      "items": [
+        {
+          "src": "neuetk/entstehung/aufrichten.jpg",
+          "caption": "Raising the timber framework, June 1984"
+        },
+        {
+          "src": "neuetk/entstehung/emilweber.jpg",
+          "caption": "Emil Weber"
+        },
+        {
+          "src": "neuetk/entstehung/ewzimmern.jpg",
+          "caption": "(Emil Weber at carpentry work in the Ekstein sawmill in Uhingen)"
+        },
+        {
+          "src": "neuetk/entstehung/fenstertk.jpg",
+          "caption": "Finished shutters and windows (20 in all)"
+        },
+        {
+          "src": "neuetk/entstehung/gemarbeiten.jpg",
+          "caption": "(Mayor Otto Damasko with his municipal workers excavating the foundations)"
+        },
+        {
+          "src": "neuetk/entstehung/lkwladen.jpg",
+          "caption": "Loading the lorry, 31 May 1984"
+        },
+        {
+          "src": "neuetk/entstehung/ruinetk.jpg",
+          "caption": "Given over to decay. (The old Tusset Chapel at our first visit in April 1983)"
+        },
+        {
+          "src": "neuetk/entstehung/spengler.jpg",
+          "caption": "Fitting the copper roof, July 1984"
+        },
+        {
+          "src": "neuetk/entstehung/tkfertig.jpg",
+          "caption": "The completed new Tusset Chapel"
+        },
+        {
+          "src": "neuetk/entstehung/tkplan.jpg",
+          "caption": "On the basis of this drawing the planning applications were drawn up and submitted for approval"
+        },
+        {
+          "src": "neuetk/entstehung/treffen1.jpg",
+          "caption": "First meeting of the community representation of Obermoldau with Mayor Otto Damasko in Philippsreut, 1982"
+        },
+        {
+          "src": "neuetk/entstehung/winterlager.jpg",
+          "caption": "(Emil Weber in front of the winter store, in front the rafters of the stone chapel)"
+        }
+      ],
+      "note": "From the photographic report by Emil Weber."
+    },
+    {
+      "title": "The consecration on 27 July 1985",
+      "items": [
+        {
+          "src": "neuetk/einweihung/bischofeder.jpg",
+          "caption": "Bishop Dr Franz Eder of Passau"
+        },
+        {
+          "src": "neuetk/einweihung/bwjugendgp.jpg",
+          "caption": "The Bohemian Forest youth in traditional costume"
+        },
+        {
+          "src": "neuetk/einweihung/bwjugendzelt.jpg",
+          "caption": "The Bohemian Forest youth in the marquee"
+        },
+        {
+          "src": "neuetk/einweihung/einladung.jpg",
+          "caption": "The invitation to the consecration"
+        },
+        {
+          "src": "neuetk/einweihung/ewgnadenbild.jpg",
+          "caption": "Emil Weber with the miraculous image"
+        },
+        {
+          "src": "neuetk/einweihung/festzug.jpg",
+          "caption": "The procession through the village"
+        },
+        {
+          "src": "neuetk/einweihung/gnadenbildtk.jpg",
+          "caption": "The miraculous image on the birchwood bier"
+        },
+        {
+          "src": "neuetk/einweihung/lr-schumertl-und-emil.jpg",
+          "caption": "District administrator Schumertl and Emil Weber"
+        },
+        {
+          "src": "neuetk/einweihung/ntkregen.jpg",
+          "caption": "“Heaven too is bestowing its holy water on us!”"
+        },
+        {
+          "src": "neuetk/einweihung/sm-neubauer-und-emil.jpg",
+          "caption": "State Minister Franz Neubauer and Emil Weber"
+        },
+        {
+          "src": "neuetk/einweihung/tkinnen1.jpg",
+          "caption": "The festively decorated interior"
+        }
+      ]
+    },
+    {
+      "title": "The blessing of the Stations of the Cross on 15 August 1987",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegweihe/emilottqhelma.jpg",
+          "caption": "Emil Weber with the painter Helma Fritsche-Flügel"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/festakt.jpg",
+          "caption": "The ceremony in the village square of Philippsreut"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/geistlichkeit.jpg",
+          "caption": "All the parishes gathered for the ceremony"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/gerhardfranz.jpg",
+          "caption": "In Bohemian Forest costume, Emil Weber’s sons Franz and Gerhard"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/kreuzwegzug.jpg",
+          "caption": "The procession of pilgrims through the fields"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/kwgebete.jpg",
+          "caption": "Father Pimmer says the Stations of the Cross prayers"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/letztekwstation.jpg",
+          "caption": "The last Station of the Cross"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/salnau.jpg",
+          "caption": "Station panel with the church of Salnau"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stationsbilder.jpg",
+          "caption": "The 14 Stations of the Cross panels in the village square"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbuebergabe.jpg",
+          "caption": "Afterwards Emil Weber handed over their pictures to the delegations of the donating municipalities."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbweihe1.jpg",
+          "caption": "In front of the Tusset Chapel, Father Pimmer blesses the station pictures"
+        }
+      ]
+    },
+    {
+      "title": "The 14 Stations of the Cross",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegbilder/kreuzweg.jpg",
+          "caption": "The Way of the Cross in a wide arc above the village"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st1.jpg",
+          "caption": "Station 1 – Jesus stands before his judges at daybreak"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st10.jpg",
+          "caption": "Station 10 – Jesus is stripped of his garments"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st11.jpg",
+          "caption": "Station 11 – Jesus is nailed to the cross"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st12.jpg",
+          "caption": "Station 12 – The Crucified dies at the Steinriegel"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st13.jpg",
+          "caption": "Station 13 – Jesus, the Saviour of the world, rests in his mother’s lap"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st14.jpg",
+          "caption": "Station 14 – The burial of Jesus at the old Tusset Chapel, dedicated to the village of Tusset"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st1marterl.jpg",
+          "caption": "A wayside shrine of the Way of the Cross"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st2.jpg",
+          "caption": "Station 2 – Jesus takes the cross upon his shoulder"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st3.jpg",
+          "caption": "Station 3 – Jesus falls the first time on stony ground"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st4.jpg",
+          "caption": "Station 4 – Jesus meets his beloved mother"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st5.jpg",
+          "caption": "Station 5 – Simon helps Jesus to carry the cross"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st6.jpg",
+          "caption": "Station 6 – Veronica offers Jesus the cloth"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st7.jpg",
+          "caption": "Station 7 – Jesus falls the second time beneath the cross"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st8.jpg",
+          "caption": "Station 8 – Jesus meets the weeping women"
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st9.jpg",
+          "caption": "Station 9 – Jesus falls the third time"
+        }
+      ],
+      "note": "Painted by Helma Fritsche-Flügel on copper plates."
+    },
+    {
+      "title": "The restoration of the old chapel, 1987 to 1990",
+      "items": [
+        {
+          "src": "altetk/renovierung/alteundneuetk.jpg",
+          "caption": "The old and the new Tusset Chapel"
+        },
+        {
+          "src": "altetk/renovierung/atkeinweihung.jpg",
+          "caption": "The consecration of the renewed old Tusset Chapel in August 1990"
+        },
+        {
+          "src": "altetk/renovierung/atkrenov1.jpg",
+          "caption": "The restored old Tusset Chapel"
+        },
+        {
+          "src": "altetk/renovierung/atkrenov2.jpg",
+          "caption": "The old Tusset Chapel during the restoration"
+        },
+        {
+          "src": "altetk/renovierung/atkrenov3.jpg",
+          "caption": "The restored old Tusset Chapel from the side"
+        },
+        {
+          "src": "altetk/renovierung/atkrenov4.jpg",
+          "caption": "Conservationists at work clearing up"
+        },
+        {
+          "src": "altetk/renovierung/atkruine1.jpg",
+          "caption": "This was the condition of the old Tusset Chapel in May 1987"
+        },
+        {
+          "src": "altetk/renovierung/atkruine2.jpg",
+          "caption": "The old Tusset Chapel, 1988"
+        }
+      ]
+    },
+    {
+      "title": "Emil Weber and the initiators",
+      "items": [
+        {
+          "src": "initiatoren/emilweber.jpg",
+          "caption": "Emil Weber, community representative of Obermoldau"
+        },
+        {
+          "src": "initiatoren/emilweber/elendbachl.jpg",
+          "caption": "On the left of the picture, leaning against the wall, the sieve rims made by Emil Weber’s father"
+        },
+        {
+          "src": "initiatoren/emilweber/emilmarine.jpg",
+          "caption": "Emil Weber as a sailor in the navy"
+        },
+        {
+          "src": "initiatoren/emilweber/grabstein1.jpg",
+          "caption": "The gravestone of Emil Weber"
+        },
+        {
+          "src": "initiatoren/emilweber/hzemilanna.jpg",
+          "caption": "The wedding of Emil Weber and Anna Spitzl, 1960"
+        },
+        {
+          "src": "initiatoren/emilweber/hzmarieemil.jpg",
+          "caption": "From left: Emil’s sister Marie, his wife Maria, née Prinz, Emil and his brother-in-law Karl Prinz"
+        },
+        {
+          "src": "initiatoren/emilweber/sbew1.jpg",
+          "caption": "Emil Weber in front of the new Tusset Chapel"
+        },
+        {
+          "src": "initiatoren/emilweber/urgrosselternemi.jpg",
+          "caption": "Emil Weber’s grandparents on his father’s side"
+        },
+        {
+          "src": "initiatoren/emilweber/weberfamilie.jpg",
+          "caption": "From left: Marie, Liebreich, Franz, Anna and Emil Weber"
+        },
+        {
+          "src": "initiatoren/gerhardedlmann.jpg",
+          "caption": "Gerhard Edlmann, architect"
+        },
+        {
+          "src": "initiatoren/ottodamasko.jpg",
+          "caption": "Otto Damasko, mayor of Philippsreut"
+        }
+      ]
+    },
+    {
+      "title": "The Bohemian Forest and the Bavarian Forest",
+      "items": [
+        {
+          "src": "kontakt/haidmuehle.jpg",
+          "caption": "Landscape near Haidmühle"
+        },
+        {
+          "src": "kontakt/stubenbachsee.jpg",
+          "caption": "Lake Stubenbach in the Bohemian Forest"
+        }
+      ]
+    }
+  ]
+}

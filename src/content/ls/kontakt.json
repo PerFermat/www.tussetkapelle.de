@@ -1,0 +1,65 @@
+{
+  "id": "kontakt",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Kontakt",
+  "kicker": "Kontakt",
+  "title": "Kontakt",
+  "subtitle": "So erreichen Sie uns",
+  "description": "So erreichen Sie die Menschen hinter der Internet-Seite von der Tusset-Kapelle. In Leichter Sprache.",
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Diese Internet-Seite haben die Söhne von Emil Weber gemacht. Sie freuen sich über Post von Ihnen."
+    },
+    {
+      "t": "p",
+      "html": "Haben Sie eine Frage? Oder haben Sie einen Tipp? Dann schreiben Sie uns."
+    },
+    {
+      "t": "h2",
+      "text": "Schreiben Sie eine E-Mail"
+    },
+    {
+      "t": "p",
+      "html": "Unsere E-Mail-Adresse ist: <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>"
+    },
+    {
+      "t": "fig",
+      "src": "kontakt/haidmuehle.jpg",
+      "align": "center",
+      "alt": "Eine Landschaft bei Haidmühle. Man sieht Wiesen und Wald.",
+      "caption": "Die Landschaft bei Haidmühle."
+    },
+    {
+      "t": "h2",
+      "text": "Mehr Bilder sehen"
+    },
+    {
+      "t": "p",
+      "html": "Wollen Sie mehr Bilder sehen? Dann gehen Sie zu den <a href=\"{{href:galerie}}\">Bildern</a>."
+    },
+    {
+      "t": "h2",
+      "text": "Andere Internet-Seiten"
+    },
+    {
+      "t": "p",
+      "html": "Diese Internet-Seiten erzählen auch vom Böhmer-Wald. Und vom Bayerischen Wald. Wenn Sie klicken, öffnet sich eine andere Internet-Seite."
+    },
+    {
+      "t": "list",
+      "items": [
+        "<a href=\"https://boehmerwaldbund.de/\" rel=\"noopener noreferrer\">Deutscher Böhmerwaldbund</a>",
+        "<a href=\"http://www.philippsreut.de\" rel=\"noopener noreferrer\">Gemeinde Philippsreut</a>",
+        "<a href=\"http://www.nationalpark-bayerischer-wald.de\" rel=\"noopener noreferrer\">National-Park Bayerischer Wald</a>",
+        "<a href=\"https://www.npsumava.cz/de/\" rel=\"noopener noreferrer\">National-Park Böhmer-Wald</a>",
+        "<a href=\"http://webmuzeum.sumava.cz/retour-1996/mesta/horni-vltavice/index_de.htm\" rel=\"noopener noreferrer\">Gemeinde-Betreuung Obermoldau</a>",
+        "<a href=\"http://www.moldau.ch\" rel=\"noopener noreferrer\">Beide National-Parks</a>",
+        "<a href=\"http://www.waldwildnis.de/cd/indexcd.htm\" rel=\"noopener noreferrer\">Wald-Wildnis</a>",
+        "<a href=\"http://www.sumava-info.cz/n_ramecek.html\" rel=\"noopener noreferrer\">Sumava-Info</a>"
+      ]
+    }
+  ]
+}

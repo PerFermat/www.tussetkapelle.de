@@ -1,0 +1,240 @@
+{
+  "id": "wiederaufbau",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Wiederaufbau",
+  "kicker": "Ein Bildbericht von Emil Weber",
+  "title": "Entstehung der Patenschaft – Bau einer Gedenkstätte",
+  "subtitle": "Von der ersten Idee im Sommer 1981 bis zur fertigen Kapelle im Frühjahr 1985",
+  "description": "Emil Weber schildert selbst, wie aus einer Urlaubsidee im Sommer 1981 die Patenschaft zwischen Obermoldau und Philippsreut und der originalgetreue Wiederaufbau der Tussetkapelle wurde.",
+  "_quelle": "inhalte/neuetk/entstehung/ntkentstehung.htm",
+
+  "blocks": [
+    { "t": "h2", "text": "Sommer 1981" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/emilweber.jpg",
+      "align": "right",
+      "alt": "Porträt von Emil Weber, dem Hauptinitiator der neuen Tussetkapelle"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Es begann alles in meinem Urlaub, den ich nahe der Grenze zum Böhmerwald verbrachte. Auf Ausflügen mit meiner Familie kamen wir an mehreren Gedenkstätten vorbei, die Böhmerwäldler gebaut haben, um nachfolgenden Generationen an das Leid von Krieg und Vertreibung zu erinnern. Da ich die Gemeindebetreuung von Obermoldau übernommen hatte, ging mir von diesen Tagen an nicht mehr die Idee aus dem Kopf, auch für unsere Heimatgemeinde ein solches Mahnmal zu errichten. Den richtigen Platz dafür fand ich in Philippsreut, einer kleinen Gemeinde im Bayerischen Wald, über die schon vor der Vertreibung die Wege unserer Landsleute führten. Ich ging dort auf das Gemeindeamt und unterbreitete dem Gemeindesekretär den Vorschlag einer Patenschaft zwischen Obermoldau und Philippsreut und der damit verbundenen Errichtung einer Gedenkstätte."
+    },
+
+    { "t": "h2", "text": "Herbst 1981" },
+    {
+      "t": "p",
+      "html": "Da sich der Gemeindesekretär diesem Vorschlag nicht abgeneigt zeigte, setzte ich mich nach Beendigung meines Urlaubs gleich hin und brachte der Gemeindeverwaltung am 27.9.1981 in einem Brief mit folgendem Wortlaut mein Anliegen vor:"
+    },
+    {
+      "t": "quote",
+      "html": "… Die ehemalige Pfarrgemeinde Obermoldau hat gegenüber der Gemeinde Philippsreut ein großes Anliegen, bezüglich einer Patenschaft zwischen Obermoldau und Philippsreut, verbunden mit der Errichtung einer Gedenkstätte …",
+      "cite": "Aus dem Brief an die Gemeindeverwaltung Philippsreut, 27.9.1981"
+    },
+    {
+      "t": "p",
+      "html": "Hierauf folgte am 8.10.1981 folgendes Antwortschreiben:"
+    },
+    {
+      "t": "quote",
+      "html": "… Der Gemeinderat von Philippsreut hat von Ihrem Schreiben Kenntnis genommen und begrüßt das Vorhaben der ehemaligen Pfarrgemeinde Obermoldau. Wir sind grundsätzlich damit einverstanden, mit Ihnen eine Patenschaft zu schließen. Bezüglich der Aufstellung einer Gedenkstätte in Philippsreut haben wir bereits mit der Oberforstdirektion Kontakt aufgenommen und werden, wenn dies möglich ist, das vorgesehene Grundstück käuflich erwerben …",
+      "cite": "Antwortschreiben der Gemeinde Philippsreut, 8.10.1981"
+    },
+
+    { "t": "h2", "text": "Frühjahr 1982" },
+    {
+      "t": "p",
+      "html": "Der erste Schritt war also getan. Weiter ging es am 17.&nbsp;April mit dem ersten offiziellen Zusammentreffen von Gemeindebetreuung Obermoldau und dem 1.&nbsp;Bürgermeister, Otto Damasko, in Philippsreut. Hauptprogrammpunkt war die Besichtigung des vorgesehenen Grundstückes an der B&nbsp;12-Straßenabzweigung nach Mauth und in Richtung CSSR-Grenzübergang. Beim anschließenden gemütlichen Beisammensein bei Bürgermeister Damasko, der an jenem Tag seinen 59.&nbsp;Geburtstag feierte, stellten in dieser herzlichen Runde alle fest, dass man ein Patenschaftsverhältnis nur begrüßen kann."
+    },
+    {
+      "t": "p",
+      "html": "Erstmals wurde nun auch in den drei Heimatbriefen über unser Vorhaben berichtet und unter dem Motto „Gedenkstätte Obermoldau“ um Spenden aufgerufen."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/treffen1.jpg",
+      "align": "wide",
+      "alt": "Gruppenbild vom ersten Zusammentreffen der Gemeindebetreuung Obermoldau mit Bürgermeister Otto Damasko in Philippsreut 1982",
+      "caption": "Erstes Zusammentreffen der Gemeindebetreuung von Obermoldau mit dem 1.&nbsp;Bürgermeister Otto Damasko in Philippsreut und Besichtigung des ersten Grundstückes. Von links nach rechts: Josef Gubisch mit Frau (Brettschneider Annerl), Mitterberg; Walter Faschingbauer, Wolfsgrub; Frieda Baier (Wawei Frieda), Birkenhaid; Walter Michetschläger, Filz; Emil Weber, Elendbachl; Bürgermeister Otto Damasko, Philippsreut; Franz Dietl, Eleonorenhain; Franz Häusl, Obermoldau; Albert Robl, Kubohütten"
+    },
+
+    { "t": "h2", "text": "Sommer 1982" },
+    {
+      "t": "p",
+      "html": "Während dieses Sommers gingen für den Gedenkstättenbau folgende Vorschläge ein:"
+    },
+    {
+      "t": "list",
+      "items": [
+        "Steinaufbau mit den Ortsnamen unserer Pfarrgemeinde",
+        "Bau einer achteckigen Kapelle",
+        "Nachbau der in Obermoldau stehenden Johannes-von-Nepomuk-Kapelle",
+        "verkleinerter Bau der Pfarrkirche von Obermoldau",
+        "größerer Kunststein mit den Ortsnamen der Gemeinde."
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Eine weitere Belastung der Entscheidung schien dann auch noch die Absage des Straßenbauamtes Passau zu sein, das den Bau einer Gedenkstätte auf dem vorgesehenen Grundstück nicht genehmigte. Es wandte sich jedoch alles zum Guten, da wir mit dem jetzigen Standort der neuen Tussetkapelle einen geeigneten Platz bekamen."
+    },
+
+    { "t": "h2", "text": "Herbst 1982" },
+    {
+      "t": "p",
+      "html": "Um endlich eine Entscheidung zu fällen, kamen wir am 9.&nbsp;Oktober zum zweiten Male in Philippsreut zusammen. Dort besichtigten wir auch das neue Grundstück, von dem alle Anwesenden sehr begeistert waren. Da der Architekt keinen der genannten Vorschläge als geeignet fand, und ich in dem von ihm vorgelegten Entwurf keine Beziehung zur alten Heimat sah, schien auch bei diesem Zusammentreffen keine Entscheidung zu fallen."
+    },
+    {
+      "t": "p",
+      "html": "Der Architekt schlug vor, eine Kapelle, die in der Böhmerwaldheimat stand oder noch steht, original nachzubauen. Da kam mir die Tussetkapelle in den Sinn. Ich hatte zufällig ein Bild von ihr dabei, welches ich herumgehen ließ. Dieser Vorschlag fand zwar nicht bei allen Anwesenden Anklang, jedoch, nachdem er in den drei Heimatbriefen veröffentlicht wurde, bei der Mehrzahl unserer Landsleute. Briefe und der Eingang zahlreicher Spenden bekräftigten meinen endgültigen Entschluss, die Tussetkapelle in Philippsreut original wieder zu erbauen."
+    },
+
+    { "t": "h2", "text": "Winter 1982/1983" },
+    {
+      "t": "p",
+      "html": "Nun wurde ein Landsmann, der noch in der alten Heimat lebt, gebeten, von der Tussetkapelle Ausmessungen zu machen. Im Dezember bekam ich von ihm eine sehr ausführliche Zeichnung mit den genauen Maßen, auf Grund welcher unser Architekt, Dipl.Ing. Gerhard Edlmann, Baugesuche entwarf und im Frühjahr zur Genehmigung einreichte. Da die genauen Fenstermaße angegeben waren, konnte ich den Winter über die Fenster fertigstellen."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/tkplan.jpg",
+      "align": "wide",
+      "alt": "Maßzeichnung der alten Tussetkapelle mit Grundriss, Aufriss und genauen Maßen",
+      "caption": "Aufgrund dieser Zeichnung wurden die Baugesuche entworfen und zur genehmigung eingereicht"
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/fenstertk.jpg",
+      "align": "wide",
+      "alt": "Die fertigen Fensterläden und Fenster der neuen Tussetkapelle, aufgereiht nebeneinander",
+      "caption": "Fertige Fensterläden und Fenster (insgesamt 20 Stück)"
+    },
+
+    { "t": "h2", "text": "Frühjahr 1983" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/ruinetk.jpg",
+      "align": "right",
+      "alt": "Die alte Tussetkapelle im April 1983, dem Verfall preisgegeben",
+      "caption": "Dem Verfall preisgegeben. (Die alte Tussetkapelle bei unserem ersten Besuch im April 1983)"
+    },
+    {
+      "t": "p",
+      "html": "Um eine genaue Rekonstruktion zu ermöglichen, fuhren unser Architekt und ich im April erstmals zur alten Tussetkapelle. Dort waren wir insgesamt vier Stunden mit Ausmessen und Fotografieren beschäftigt."
+    },
+
+    { "t": "h2", "text": "Sommer 1983" },
+    {
+      "t": "p",
+      "html": "Nun kam der größte Teil der Arbeit auf mich zu. In den Betriebsferien wurden im Sägewerk Ekstein in Uhingen (hier war ich vier Jahre als Zimmermann und Treppenbauer tätig) über 20&nbsp;cbm Bauholz verarbeitet. Eine große Hilfe beim Zimmern und Hobeln waren mir dabei mein Landsmann Gustl Tahedl (Guthausen), meine Frau und meine Söhne sowie zwei Rentner, die beim Einlassen geholfen haben."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/ewzimmern.jpg",
+      "align": "center",
+      "alt": "Emil Weber bei der Zimmerarbeit im Sägewerk Ekstein in Uhingen",
+      "caption": "(Emil Weber bei der Zimmerarbeit im Sägewerk Ekstein in Uhingen)"
+    },
+
+    { "t": "h2", "text": "Herbst 1983" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/gemarbeiten.jpg",
+      "align": "left",
+      "alt": "Bürgermeister Otto Damasko mit Gemeindearbeitern beim Ausheben der Grundfeste",
+      "caption": "(Bürgermeister Otto Damasko mit seinen Gemeindearbeitern beim Ausheben der Grundfeste)"
+    },
+    {
+      "t": "p",
+      "html": "Im September – die Grundfeste war bereits fertig – fuhr der Architekt und ich ein zweites Mal zur alten Tussetkapelle in den Böhmerwald. Die letzten Unklarheiten, die sich aus der Auswertung von Fotografien und Zeichnungen ergeben haben, wurden beseitigt."
+    },
+
+    { "t": "h2", "text": "Winter 1983/1984" },
+    {
+      "t": "p",
+      "html": "Die Zimmerarbeiten in Uhingen wurden abgeschlossen, und für die bearbeiteten Balken und Bretter ein überdachtes Lager gebaut. Bei mir zuhause wurden Fensterläden sowie die Holzverzierungen des Innenraumes fertiggestellt."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/winterlager.jpg",
+      "align": "center",
+      "alt": "Emil Weber vor dem überdachten Winterlager mit den vorbereiteten Dachsparren",
+      "caption": "(Emil Weber vor dem Winterlager, vorne Dachsparren der Steinkapelle)"
+    },
+
+    { "t": "h2", "text": "Frühjahr 1984" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/lkwladen.jpg",
+      "align": "right",
+      "alt": "Das Beladen des Transporters mit den vorgefertigten Bauteilen der Kapelle"
+    },
+    {
+      "t": "p",
+      "html": "Noch bevor der letzte Schnee getaut war, gings munter und mit neuer Kraft weiter. Als letztes mussten die eichenen Säulen gedreht werden, die die Eingangsfront der Tussetkapelle schmücken. Am 31.&nbsp;Mai (es war Vatertag), war dann alles so weit. Den ganzen Vormittag war ich mit meinen Söhnen und anderen Landsleuten mit dem Einladen beschäftigt. Punkt 00.00&nbsp;Uhr des 1.&nbsp;Juni fuhr dann der Transporter, den ich samt Fahrer von der Firma, bei der ich bis zur Rente angestellt war, kostenlos zur Verfügung gestellt bekommen hatte, ab in Richtung Philippsreut, wo er um 7.00&nbsp;Uhr ankam."
+    },
+    {
+      "t": "p",
+      "html": "Schon am gleichen Morgen wurde, da Grundfest und Sockel bereits fertig waren, mit dem Aufrichten begonnen, und schon binnen zwei Tagen stand ein Großteil des Holzfachwerkes. Vor lauter Eifer beim Aufrichten waren von mir die Sicherheitsmaßnahmen etwas vernachlässigt worden, und so war es wie ein erneutes Wunder der Gnadenmutter vom Tussetberg, dass, als uns die Vorderwand einstürzte, keiner von uns zu Schaden kam. Nicht einmal die Wand selbst hatte einen Schaden abbekommen. Nach vier Wochen harter Arbeit war man froh, dass der Holzbau der neuen Kapelle bis auf einige kleinere Arbeiten fertiggestellt war."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/aufrichten.jpg",
+      "align": "center",
+      "alt": "Das Aufrichten des Holzfachwerkes der neuen Tussetkapelle in Philippsreut"
+    },
+    {
+      "t": "p",
+      "html": "Dass alles so reibungslos abgelaufen war, haben wir vor allem Bürgermeister Damasko zu verdanken, der mich und Gustl Tahedl beherbergte, und der viel für den reibungslosen Arbeitsverlauf organisierte. Strom wurde uns von den Nachbarn Friedsam und Stumvoll zur Verfügung gestellt; die naheliegende Schreinerei Springer durften wir jederzeit benützen. Auch Pfarrer Max Richtsfeld trug zum Gelingen unseres Vorhabens bei, denn er gab seinen geistlichen Segen dazu und hatte für seine durstigen Seelen immer ein Tragerl Bier übrig. Die Gemeindearbeiter standen uns jederzeit zur Verfügung."
+    },
+
+    { "t": "h2", "text": "Sommer 1984" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/spengler.jpg",
+      "align": "left",
+      "alt": "Spengler bei der Montage des Kupferdachs auf der neuen Tussetkapelle"
+    },
+    {
+      "t": "p",
+      "html": "Im Juli trat ich zum wiederholten Male die Reise von Uhingen nach Philippsreut an. Ich wurde von drei schwäbischen Flaschnern (in Bayern heißen sie Spengler) begleitet. Mit ihnen und einigen Gemeindearbeitern wurde das Kupferdach innerhalb von zwei Tagen montiert. Übernachtet habe ich mit den drei Handwerkern wie immer beim Patenonkel Damasko."
+    },
+
+    { "t": "h2", "text": "Herbst 1984" },
+    {
+      "t": "p",
+      "html": "Ein zweites Mal glaubte man, dass sich in der Kapelle ein Wunder zugetragen hat. Bei einem großen Sturm im November fiel ein Fenster der Steinkapelle, das noch nicht fest verankert war, samt dem Holzrahmen nach innen auf den Betonboden. Als es aufgefunden wurde, war weder Glas noch Rahmen beschädigt."
+    },
+
+    { "t": "h2", "text": "Winter 1984/1985" },
+    {
+      "t": "p",
+      "html": "Im Januar geschah erneut ein Wunder."
+    },
+    {
+      "t": "p",
+      "html": "Es gelang uns, das Bild der Gnadenmutter vom Tussetberg nach Philippsreut zu bekommen, um diesem in der neuen Tussetkapelle wieder eine Heimat zu geben."
+    },
+    {
+      "t": "p",
+      "html": "Die Vorbereitungsarbeiten für die feierliche Einweihung und für die Gestaltung der Festschrift teilten sich mit mir die Mitglieder des Festausschusses in Philippsreut; Rosl Tahedl aus Guthausen, die bis 1964 im Böhmerwald lebte und eine enge Beziehung zur Tussetkapelle und zum Gnadenbild hatte, konnte viel zur jüngsten Geschichte der Tussetkapelle beitragen; Otto Veith aus Wallern übernahm die Gestaltung der Festschrift."
+    },
+
+    { "t": "h2", "text": "Frühjahr 1985" },
+    {
+      "t": "p",
+      "html": "Mit der Erstellung der originalgetreuen Holzbänke und des Altars wurden von mir die Arbeiten an der neuen Tussetkapelle soweit abgeschlossen."
+    },
+    {
+      "t": "p",
+      "html": "Ein Stück Böhmerwaldheimat ist mit dem Bau der neuen Tussetkapelle in Philippsreut wieder entstanden. Viele fleißige Hände von Landsleuten sowie der Gemeinde Philippsreut haben zum Gelingen beigetragen. Über 30&nbsp;qm Holz wurden dabei verarbeitet. Ich hoffe, dass ich mit meinen Schilderungen und mit den Bildern die Entstehung der neuen Tussetkapelle in Philippsreut als bleibende Erinnerung dargestellt habe."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/tkfertig.jpg",
+      "align": "center",
+      "alt": "Emil Weber auf einer Leiter an der fertiggestellten neuen Tussetkapelle mit den gedrehten Eichensäulen der Eingangsfront",
+      "caption": "Die fertiggestellte neue Tussetkapelle"
+    }
+  ]
+}

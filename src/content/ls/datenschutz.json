@@ -1,0 +1,126 @@
+{
+  "id": "datenschutz",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Datenschutz",
+  "kicker": "Rechtliches",
+  "title": "Datenschutz",
+  "description": "Diese Internet-Seite speichert fast keine Daten von Ihnen. Hier steht warum. In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Daten-Schutz ist wichtig. Hier lesen Sie: Was passiert mit Ihren Daten auf dieser Internet-Seite?"
+    },
+    {
+      "t": "note",
+      "title": "Achtung: Hier fehlen noch Angaben",
+      "html": "An manchen Stellen stehen Zeichen wie ⟨diese hier⟩. Dort fehlen noch Angaben. Der Betreiber der Seite muss sie eintragen."
+    },
+
+    { "t": "h2", "text": "Das Wichtigste in kurzen Sätzen" },
+    {
+      "t": "list",
+      "items": [
+        "Diese Seite benutzt <strong>keine Cookies</strong>.",
+        "Diese Seite <strong>zählt nicht</strong>, wer sie besucht.",
+        "Diese Seite lädt <strong>nichts von anderen Firmen</strong>.",
+        "Diese Seite <strong>speichert nichts</strong> in Ihrem Computer.",
+        "Es gibt <strong>kein Formular</strong> und <strong>keine Anmeldung</strong>."
+      ]
+    },
+    {
+      "t": "explain",
+      "word": "Cookie",
+      "html": "Ein Cookie ist eine kleine Datei. Manche Internet-Seiten legen sie in Ihrem Computer ab. Damit können die Seiten Sie wieder erkennen. Diese Seite macht das nicht."
+    },
+
+    { "t": "h2", "text": "Wer ist verantwortlich?" },
+    {
+      "t": "p",
+      "html": "⟨Vor-Name und Nach-Name⟩<br>⟨Straße und Haus-Nummer⟩<br>⟨Post-Leit-Zahl und Ort⟩<br>E-Mail: <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>"
+    },
+
+    { "t": "h2", "text": "Was speichert der Computer im Internet?" },
+    {
+      "t": "p",
+      "html": "Diese Internet-Seite liegt auf einem Computer. Dieser Computer heißt Server. Der Server speichert einige Angaben."
+    },
+    {
+      "t": "p",
+      "html": "Zum Beispiel: Welche Seite haben Sie geöffnet? Wann war das? Welchen Browser benutzen Sie? Und Ihre Internet-Adresse."
+    },
+    {
+      "t": "p",
+      "html": "Diese Angaben braucht der Server. Sonst funktioniert die Seite nicht. Die Angaben werden nach einiger Zeit gelöscht."
+    },
+    {
+      "t": "dl",
+      "items": [
+        { "term": "Wie lange?", "html": "⟨Angabe von der Firma, die den Server betreibt⟩" },
+        { "term": "Welche Firma?", "html": "⟨Name und Adresse von der Firma⟩" }
+      ]
+    },
+
+    { "t": "h2", "text": "Wenn Sie uns eine E-Mail schreiben" },
+    {
+      "t": "p",
+      "html": "Sie können uns eine E-Mail schreiben. Dann speichern wir Ihre E-Mail. So können wir Ihnen antworten."
+    },
+    {
+      "t": "p",
+      "html": "Wenn die Frage geklärt ist, löschen wir die E-Mail."
+    },
+
+    { "t": "h2", "text": "Die Schrift und die Bilder" },
+    {
+      "t": "p",
+      "html": "Diese Seite benutzt die Schrift von Ihrem Computer. Sie lädt keine Schrift aus dem Internet."
+    },
+    {
+      "t": "p",
+      "html": "Alle Bilder liegen auf dem gleichen Server wie die Seite."
+    },
+
+    { "t": "h2", "text": "Links zu anderen Seiten" },
+    {
+      "t": "p",
+      "html": "Auf dieser Seite gibt es Links zu anderen Internet-Seiten. Diese Seiten öffnen sich erst, wenn Sie klicken."
+    },
+    {
+      "t": "p",
+      "html": "Erst dann bekommt die andere Seite Ihre Internet-Adresse. Für diese Seiten sind andere Menschen verantwortlich."
+    },
+    {
+      "t": "p",
+      "html": "Auf dieser Seite ist keine Land-Karte eingebaut. So werden keine Daten weiter-gegeben."
+    },
+
+    { "t": "h2", "text": "Ihre Rechte" },
+    {
+      "t": "p",
+      "html": "Sie haben Rechte. Diese Rechte stehen in einem Gesetz. Das Gesetz heißt DSGVO."
+    },
+    {
+      "t": "p",
+      "html": "Sie dürfen fragen: Welche Daten haben Sie von mir?"
+    },
+    {
+      "t": "p",
+      "html": "Sie dürfen sagen: Bitte ändern Sie meine Daten."
+    },
+    {
+      "t": "p",
+      "html": "Sie dürfen sagen: Bitte löschen Sie meine Daten."
+    },
+    {
+      "t": "p",
+      "html": "Schreiben Sie uns dafür eine E-Mail."
+    },
+    {
+      "t": "p",
+      "html": "Sie können sich auch beschweren. Die Stelle dafür heißt: Bayerisches Landesamt für Datenschutzaufsicht. Die Adresse ist: Promenade 18, 91522 Ansbach."
+    }
+  ]
+}

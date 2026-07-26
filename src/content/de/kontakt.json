@@ -1,0 +1,88 @@
+{
+  "id": "kontakt",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Kontakt",
+  "kicker": "Kontakt",
+  "title": "Kontaktaufnahme",
+  "subtitle": "Anregungen, Kommentare und Links zum Böhmerwald",
+  "description": "Kontakt zur Website der neuen Tussetkapelle sowie Verweise auf Seiten mit Bezug zum Böhmerwald und zum Bayerischen Wald.",
+  "_quelle": "inhalte/kontakt/kontakt.htm",
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Wir, die Söhne Emil Webers, freuen uns sehr über Ihre Anregungen und Kommentare, insbesondere auch von allen Böhmerwäldlern und deren Nachkommen, welche einen Bezug zu dieser Homepage finden und die Geschichte des Böhmerwaldes erhalten möchten. Gerne sind wir bereit, auf unserer Homepage Links zu erstellen, welche in Verbindung zu diesem Thema stehen."
+    },
+    {
+      "t": "fig",
+      "src": "kontakt/haidmuehle.jpg",
+      "align": "center",
+      "alt": "Landschaft bei Haidmühle im Bayerischen Wald"
+    },
+    {
+      "t": "h2",
+      "text": "So erreichen Sie uns"
+    },
+    {
+      "t": "p",
+      "html": "Senden Sie einfach Ihre Vorschläge an <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>"
+    },
+    {
+      "t": "p",
+      "html": "Klicken Sie hier, um weitere Bilder zu sehen ----&gt; <a href=\"{{href:galerie}}\">Fotogalerie</a>"
+    },
+    {
+      "t": "h2",
+      "text": "Link's zu Seiten mit Bezug auf den Böhmerwald / Bayerischen Wald"
+    },
+    {
+      "t": "fig",
+      "src": "kontakt/stubenbachsee.jpg",
+      "align": "center",
+      "alt": "Der Stubenbachsee im Böhmerwald"
+    },
+    {
+      "t": "table",
+      "caption": "Seiten mit Bezug auf den Böhmerwald und den Bayerischen Wald",
+      "head": [
+        "Anbieter / Thema",
+        "Adresse"
+      ],
+      "rows": [
+        [
+          "Deutscher Böhmerwaldbund",
+          "<a href=\"https://boehmerwaldbund.de/\" rel=\"noopener noreferrer\">https://boehmerwaldbund.de/</a>"
+        ],
+        [
+          "Gemeinde Philippsreut/ Mitterfirmiansreut",
+          "<a href=\"http://www.philippsreut.de\" rel=\"noopener noreferrer\">http://www.philippsreut.de</a>"
+        ],
+        [
+          "Nationalparks Bayerischer Wald und Böhmerwald",
+          "<a href=\"http://www.moldau.ch\" rel=\"noopener noreferrer\">http://www.moldau.ch</a>"
+        ],
+        [
+          "Geographie, Geschichte und sehr viel Interessantes über beide Nationalparks",
+          "<a href=\"http://www.waldwildnis.de/cd/indexcd.htm\" rel=\"noopener noreferrer\">http://www.waldwildnis.de</a>"
+        ],
+        [
+          "Der Nationalpark Bayerischer Wald",
+          "<a href=\"http://www.nationalpark-bayerischer-wald.de\" rel=\"noopener noreferrer\">http://www.nationalpark-bayerischer-wald.de</a>"
+        ],
+        [
+          "Der Nationalpark Böhmerwald",
+          "<a href=\"https://www.npsumava.cz/de/\" rel=\"noopener noreferrer\">https://www.npsumava.cz/de/</a>"
+        ],
+        [
+          "Der Böhmerwald",
+          "<a href=\"http://www.sumava-info.cz/n_ramecek.html\" rel=\"noopener noreferrer\">http://www.sumava-info.cz/n_ramecek.html</a>"
+        ],
+        [
+          "Gemeindebetreuung Obermoldau",
+          "<a href=\"http://webmuzeum.sumava.cz/retour-1996/mesta/horni-vltavice/index_de.htm\" rel=\"noopener noreferrer\">http://webmuzeum.sumava.cz/retour-1996/mesta/horni-vltavice/index_de.htm</a>"
+        ]
+      ]
+    }
+  ]
+}

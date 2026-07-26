@@ -1,0 +1,162 @@
+{
+  "id": "wiederaufbau",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Der Wieder-Aufbau",
+  "kicker": "Emil Weber erzählt",
+  "title": "So wurde die neue Kapelle gebaut",
+  "subtitle": "Von 1981 bis 1985",
+  "description": "Emil Weber erzählt: So wurde die neue Tusset-Kapelle in Philippsreut gebaut. In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/emilweber.jpg",
+      "align": "right",
+      "alt": "Ein Foto von Emil Weber.",
+      "caption": "Emil Weber."
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Emil Weber hat die neue Kapelle gebaut. Hier erzählt er selbst davon."
+    },
+
+    { "t": "h2", "text": "1981: Die Idee" },
+    {
+      "t": "p",
+      "html": "Emil Weber war im Urlaub. Er war nah am Böhmer-Wald. Mit seiner Familie hat er Ausflüge gemacht."
+    },
+    {
+      "t": "p",
+      "html": "Dabei hat er andere Denkmäler gesehen. Menschen aus dem Böhmer-Wald hatten sie gebaut. Die Denkmäler erinnern an Krieg und Vertreibung."
+    },
+    {
+      "t": "p",
+      "html": "Da hatte Emil Weber eine Idee. Er wollte auch ein Denkmal bauen. Für sein Heimat-Dorf Obermoldau."
+    },
+    {
+      "t": "p",
+      "html": "Emil Weber ist zur Gemeinde Philippsreut gegangen. Er hat gefragt: Können wir zusammen-arbeiten? Und können wir hier ein Denkmal bauen?"
+    },
+
+    { "t": "h2", "text": "1982: Die ersten Treffen" },
+    {
+      "t": "p",
+      "html": "Die Gemeinde Philippsreut hat Ja gesagt. Am 17. April 1982 war das erste Treffen. Der Bürger-Meister hieß Otto Damasko."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/treffen1.jpg",
+      "align": "wide",
+      "alt": "Eine Gruppe von Menschen steht auf einer Wiese.",
+      "caption": "Das erste Treffen in Philippsreut im Jahr 1982."
+    },
+    {
+      "t": "p",
+      "html": "Es gab viele Ideen für das Denkmal. Zum Beispiel: ein großer Stein mit Namen. Oder eine kleine Kirche."
+    },
+    {
+      "t": "p",
+      "html": "Aber Emil Weber hat gesagt: Keine Idee ist die richtige. Dann hatte er einen Vorschlag. Wir bauen die alte Tusset-Kapelle noch einmal!"
+    },
+    {
+      "t": "p",
+      "html": "Viele Menschen haben Geld geschickt. Da wusste Emil Weber: Das ist die richtige Idee."
+    },
+
+    { "t": "h2", "text": "1983: Die Kapelle wird gemessen" },
+    {
+      "t": "p",
+      "html": "Ein Mann in Tschechien hat geholfen. Er hat die alte Kapelle gemessen. Dann hat er eine Zeichnung geschickt."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/tkplan.jpg",
+      "align": "wide",
+      "alt": "Eine technische Zeichnung von der Kapelle mit vielen Maßen.",
+      "caption": "Diese Zeichnung war der Bau-Plan."
+    },
+    {
+      "t": "p",
+      "html": "Im April 1983 ist Emil Weber selbst hin-gefahren. Der Architekt ist mit-gefahren. Sie haben 4 Stunden gemessen. Und viele Fotos gemacht."
+    },
+    {
+      "t": "explain",
+      "word": "Architekt",
+      "html": "Ein Architekt plant Häuser. Er zeichnet, wie das Haus aussehen soll. Dann bauen die Handwerker das Haus."
+    },
+    {
+      "t": "p",
+      "html": "Im Sommer 1983 hat die Arbeit begonnen. Emil Weber hat in einem Säge-Werk gearbeitet. Das Säge-Werk war in Uhingen. Er hat über 20 Kubik-Meter Holz bearbeitet."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/ewzimmern.jpg",
+      "align": "center",
+      "alt": "Emil Weber arbeitet mit Holz im Säge-Werk.",
+      "caption": "Emil Weber bei der Arbeit."
+    },
+    {
+      "t": "p",
+      "html": "Viele Menschen haben geholfen. Seine Frau. Seine Söhne. Und Freunde."
+    },
+
+    { "t": "h2", "text": "1984: Die Kapelle wird aufgebaut" },
+    {
+      "t": "p",
+      "html": "Am 31. Mai 1984 war alles fertig. Das Holz kam auf einen Lastwagen. Um 0 Uhr ist der Lastwagen los-gefahren. Um 7 Uhr morgens war er in Philippsreut."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/aufrichten.jpg",
+      "align": "center",
+      "alt": "Männer bauen die Kapelle aus Holz auf.",
+      "caption": "Die Kapelle wird aufgebaut."
+    },
+    {
+      "t": "p",
+      "html": "Am gleichen Morgen hat der Aufbau begonnen. Nach 2 Tagen stand schon viel. Nach 4 Wochen war die Kapelle fast fertig."
+    },
+    {
+      "t": "p",
+      "html": "Einmal ist eine Wand um-gefallen. Aber niemand wurde verletzt. Die Wand ist auch nicht kaputt gegangen. Die Menschen haben gesagt: Das war ein Wunder."
+    },
+    {
+      "t": "p",
+      "html": "Im Juli 1984 kam das Dach drauf. Es ist aus Kupfer. 3 Handwerker haben geholfen. Sie haben nur 2 Tage gebraucht."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/spengler.jpg",
+      "align": "center",
+      "alt": "Handwerker arbeiten auf dem Dach der Kapelle.",
+      "caption": "Das Dach aus Kupfer wird gemacht."
+    },
+
+    { "t": "h2", "text": "1985: Die Kapelle ist fertig" },
+    {
+      "t": "p",
+      "html": "Im Januar 1985 kam das Bild von Maria nach Philippsreut."
+    },
+    {
+      "t": "p",
+      "html": "Im Frühling 1985 hat Emil Weber die Bänke gemacht. Und den Altar. Dann war die Kapelle fertig."
+    },
+    {
+      "t": "p",
+      "html": "Emil Weber hat über 30 Quadrat-Meter Holz verarbeitet."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/tkfertig.jpg",
+      "align": "center",
+      "alt": "Emil Weber steht auf einer Leiter an der fertigen Kapelle.",
+      "caption": "Die neue Kapelle ist fertig."
+    },
+    {
+      "t": "p",
+      "html": "Emil Weber hat gesagt: Ein Stück Heimat ist wieder da. Viele Menschen haben geholfen. Dafür sage ich Danke."
+    }
+  ]
+}

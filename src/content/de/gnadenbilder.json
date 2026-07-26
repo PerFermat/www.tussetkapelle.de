@@ -1,0 +1,84 @@
+{
+  "id": "gnadenbilder",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Die Gnadenbilder",
+  "kicker": "Die Kapelle auf dem Tussetberg · Ein Bericht von Otto Veith",
+  "title": "2. Die Gnadenbilder",
+  "description": "Die Gnadenbilder der Muttergottes vom Tussetberg: das Bild von Ignaz Schraml, das Bild von 1884, das Tussetbild von Karl Rauscher und die Rindenmadonna, die bei der Vertreibung gerettet wurde.",
+  "_quelle": "inhalte/altetk/gnadenbilder/gnadenbilder.htm",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Die von Jakob Klauser 1791 erbaute Holzkapelle litt sehr unter den Witterungseinflüssen, so dass die Marktgemeinde Wallern 1804 eine steinerne bauen ließ. Auch das alte, schon recht brüchige Gnadenbild „Maria mit der Rose“ wurde durch ein neues, größeres ersetzt. Vermutlich war der Maler der damals weitum bekannte Wallerer Kunsthandwerker Ignaz Schraml (1762 – 1846), genannt „Oidl-Nazl“. Seine Bilder hat er nie signiert, aber sicher hat er noch weitere Tussetbilder geschaffen (so z.&nbsp;B. eines im Familienbesitz Achatz/Obermüllner/und wahrscheinlich auch das Bild in der Kapelle in Frauenberg, unweit der Auffahrt zum Dreisessel). Auch in der Dorfkapelle zu Auersbergsreut finden wir eine Kopie des Tusseter Gnadenbildes. Und eine weitere Kopie konnte von einer Familie aus Böhm.-Röhren bei der Vertreibung nach Bayern gerettet werden. Wahrscheinlich gibt es aber noch mehr Nachbildungen, die Landsleute in Sicherheit bringen konnten."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/ignazschraml.jpg",
+          "alt": "Gemaltes Porträt des Wallerer Kunsthandwerkers Ignaz Schraml",
+          "caption": "Ignaz Schraml"
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildischraml.jpg",
+          "alt": "Kopie des Tusseter Gnadenbildes: Maria mit dem Kind, gemalt von Ignaz Schraml",
+          "caption": "Kopie des Gnadenbildes von Ignaz Schraml"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Nach dem Waldstreit war für die Tussetkapelle nunmehr die Pfarrei Böhm.-Röhren zuständig und um 1815 ließ man wiederum ein neues Gnadenbild anfertigen, möglicherweise wieder von Ignaz Schraml."
+    },
+    {
+      "t": "p",
+      "html": "1884 ließ man erneut von der Kunsthandlung Josef Müller in München ein Bild „Maria mit der Rose“ für die Waldkapelle malen. Dieses Bild wurde am Altar fest verankert und blieb so an Ort und Stelle bis 1956. Um es vor Plünderern zu schützen, wurde das Gnadenbild bis 1965 in Guthausen privat sichergestellt. Nach vielen Irrwegen und der Mithilfe der Gottesmutter hat es wieder eine Heimstatt in der neuen Tussetkapelle in Philippsreut gefunden."
+    },
+    {
+      "t": "p",
+      "html": "Auf den Altar in der Waldkapelle am Tusset kam 1956 als Ersatz ein Tussetbild aus dem Pfarrhof zu Wallern, das der Malermeister Karl Rauscher, Wallern, geschaffen hat. Es hielt sich in leidlich gutem Zustand bis 1967. Dann verschwand es aus der Kapelle und galt als verschollen. 1987 ist dieses Bild wieder aufgetaucht, konnte von Helma Fritsche-Flügel restauriert werden und befindet sich jetzt in der neuen Tussetkapelle."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/gnadenbilder/gnbildrauscher.jpg",
+      "align": "center",
+      "alt": "Tussetbild von Malermeister Karl Rauscher aus Wallern: Maria mit dem Kind"
+    },
+    {
+      "t": "p",
+      "html": "Doch zurück in die Zeit der Jahrhundertwende. Weil bei den immer größer werdenden Wallfahrten die Kapelle nicht alle Pilger fassen konnte und man den Gottesdienst, besonders am 15.&nbsp;August, vor einem Waldaltar feierte, ließ der Pfarrer von Böhm.-Röhren auf eigene Kosten in Krummau (?) ein weiteres Bild malen (Nazarenerstil). Von Pfarrer Pechtl erfahren wir, dass damals wahrscheinlich gleich zwei Bilder gemacht wurden. Bei dieser vierten Darstellung des Gnadenbildes seit der Entstehung der Wallfahrt diente zweifellos das alte Gemälde als Vorbild, doch leider wurde nicht mehr die schöne Bildwirkung erzielt. Eines dieser beiden Bilder kam auf den linken Seitenaltar der Röhrener Kirche. Dort wurde es oftmals von Malern kopiert und diente auch als Motiv für die Andachts- und Wallfahrtsbildchen. Mit der Zerstörung der Kirche zu Böhm.-Röhren ist dieses Bild von 1908 vernichtet worden."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/wallfahrtszettel.jpg",
+          "alt": "Gedruckter Wallfahrtszettel mit der Darstellung der Tussetmadonna",
+          "caption": "„Wallfahrtszettel“ von der Tussetmadonna"
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrestauriert.jpg",
+          "alt": "Das wiederaufgefundene Gnadenbild nach der Restaurierung: Maria mit dem Kind",
+          "caption": "Das aufgetauchte Gnadenbild nach der Restaurierung durch Frau Fritsche-Flügel"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Das zweite Bild aber, in einem einfachen Holzrahmen, das bei jeder Wallfahrt den Waldaltar vor der Kapelle schmückte, hatte in der kleinen Holzsakristei seinen Platz. Diese „Rindenmadonna“ hat uns Frau Blechschmied aus Böhm.-Röhren gerettet. Sie wickelte es, natürlich ohne Rahmen, bei der Vertreibung um einen Besenstiel und brachte es so über die rettende Grenze. Frau Blechschmied hielt es bis zu ihrem Tode hoch in Ehren. Lange Zeit war es in der Kirche zu Jandelsbrunn, fand dann einen Ehrenplatz in der Bischof-Neumann-Kapelle am Dreisessel und hat jetzt auch in die neue Tussetkapelle heimgefunden."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/gnadenbilder/rindenmadonna.jpg",
+      "align": "center",
+      "alt": "Die Rindenmadonna: Marienbild in einem einfachen Rahmen aus Baumrinde"
+    },
+    {
+      "t": "p",
+      "html": "So haben nun beide Gnadenbilder vom Tusset in geweihter Stätte wieder einen gemeinsamen Platz."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "initiatoren",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "The initiators",
+  "kicker": "The people",
+  "title": "The initiators of the new Tusset Chapel",
+  "subtitle": "Their words of greeting on the reconstruction",
+  "description": "The words of greeting from Emil Weber, community representative of Obermoldau, Mayor Otto Damasko of Philippsreut and the architect Gerhard Edlmann on the reconstruction of the Tusset Chapel.",
+  "_quelle": "inhalte/initiatoren/initiatoren.htm",
+
+  "blocks": [
+    { "t": "h2", "text": "Greeting from the community representative of Obermoldau" },
+    {
+      "t": "fig",
+      "src": "initiatoren/emilweber.jpg",
+      "align": "right",
+      "alt": "Portrait of Emil Weber, community representative of Obermoldau",
+      "caption": "<a href=\"{{href:emil-weber}}\">Emil Weber</a><br>died on 8&nbsp;January 2002"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Almost 40 years after the expulsion we have succeeded in erecting the new Tusset Chapel in our twinned municipality of Philippsreut, close to the border with our homeland, in a beautiful and dignified place with a view into the Bohemian Forest. Three years of building work as well as two journeys to the old Tusset Chapel were needed in order to rebuild the chapel faithfully to the original. I made the first journey with our architect in April 1983. On the way from the forester’s house in Böhmisch-Röhren to the Tusset Chapel many memories were awakened in me."
+    },
+    {
+      "t": "p",
+      "html": "My heart grew heavy when I saw that of this beautiful building with its once so artistic interior only a heap of rubble remained. This sight strengthened my resolve to rebuild the chapel which our forebears had once created in the Bohemian Forest homeland, to which they had gone on pilgrimage and where they had prayed to Our Lady of Grace for help."
+    },
+    {
+      "t": "p",
+      "html": "To our architect, Dipl.-Ing. Gerhard Edlmann of Munich, as well as to our twinned municipality of Philippsreut with its mayor Otto Damasko, his municipal councillors and municipal workers, to all the donors and to all those who helped with the building, I should like at this point to say a heartfelt <strong>Vergeltsgott</strong> (God reward you)."
+    },
+    {
+      "t": "p",
+      "html": "I look forward to seeing all Bohemian Forest Germans and all guests from near and far. I bid everyone a warm welcome and wish them a joyful reunion."
+    },
+
+    { "t": "h2", "text": "Greeting from the mayor of Philippsreut" },
+    {
+      "t": "fig",
+      "src": "initiatoren/ottodamasko.jpg",
+      "align": "right",
+      "alt": "Portrait of Otto Damasko, mayor of Philippsreut",
+      "caption": "Otto Damasko<br>died on 18&nbsp;June 2002"
+    },
+    {
+      "t": "p",
+      "html": "In the past there were close ties between Philippsreut and the neighbouring municipalities in the Bohemian Forest, which had to be broken off abruptly after 1945. At that time the inhabitants of the places near the border – as indeed the Germans in general – were expelled from their homeland. Our mutual human bond has been preserved through all the years since those sad events. It found its visible expression in the twinning between Philippsreut and Obermoldau. That in turn was the reason why the Bohemian Forest Germans chose our village as the site for the faithful replica of the Tusset Chapel with its much-venerated Madonna."
+    },
+    {
+      "t": "p",
+      "html": "We are especially glad of this, because our forebears often made pilgrimages to the Mother of God of the Tussetberg and implored her help in many a time of need."
+    },
+    {
+      "t": "p",
+      "html": "To all the initiators, helpers and donors who made this unique work possible – now completed after three years of building – I offer my most cordial thanks in the name of the municipality of Philippsreut."
+    },
+    {
+      "t": "p",
+      "html": "I should be glad if the new Tusset Chapel were to see as great a stream of visitors as the original one in the Bohemian Forest."
+    },
+    {
+      "t": "p",
+      "html": "To all who come to us from near and far for the consecration of the new chapel I extend a warm welcome. I wish you a pleasant stay in our municipality, which for the Bohemian Forest Germans in particular should make possible a reunion with friends and acquaintances from the old homeland. At the same time I hope that through the new Tusset Chapel Philippsreut will become a second home for many Bohemian Forest Germans."
+    },
+
+    { "t": "h2", "text": "Reflections on the building of the memorial" },
+    {
+      "t": "fig",
+      "src": "initiatoren/gerhardedlmann.jpg",
+      "align": "right",
+      "alt": "Portrait of the architect Gerhard Edlmann",
+      "caption": "Gerhard Edlmann"
+    },
+    {
+      "t": "p",
+      "html": "In the summer of 1982 I was commissioned to plan a memorial which was to give a dignified setting to the remembrance of the former Bohemian Forest homeland in the region of the upper Moldau. What was envisaged was a building without any museum-like character, one that could also be used and thus accepted by the population of the twinned municipality of Philippsreut – as it were a living symbol of integration. It was decided to let the Tusset Chapel come into being again in Philippsreut, since a modern new building could hardly have offered the same measure of identification and commemorative value as this widely known little pilgrimage church from the old homeland."
+    },
+    {
+      "t": "p",
+      "html": "The original building lies very much off the beaten track, at a height of about 1,000&nbsp;m on the Tussetberg, and in its present desolate condition is inevitably given over to decay. Since a restoration of the old fabric is not to be expected, our undertaking became a particular kind of monument conservation."
+    },
+    {
+      "t": "p",
+      "html": "The original chapel of rendered rubble masonry was extended in the last century by a timber building reminiscent of Nordic stave churches. The timber gable façade faces down the valley and forms the conclusion of the processional path which leads up from the valley to the former place of pilgrimage. This situation was translated in the new building in such a way that the entrance and the axial orientation of the chapel are now directed towards Obermoldau, whereby a further symbolic reference to the old homeland was created."
+    },
+    {
+      "t": "p",
+      "html": "Since atmosphere cannot be transposed, the new Tusset Chapel is to be understood deliberately as a synthesis of memory and reality."
+    }
+  ]
+}

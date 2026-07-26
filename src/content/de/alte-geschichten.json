@@ -1,0 +1,135 @@
+{
+  "id": "alte-geschichten",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Alte Geschichten",
+  "kicker": "von Rosl Tahedl",
+  "title": "Geschichten der alten Tussetkapelle",
+  "subtitle": "Erinnerungen an das Innere der Kapelle und an die Dörfer rund um den Tussetberg",
+  "description": "Rosl Tahedl beschreibt das Innere der alten Tussetkapelle mit den Votivbildern und den Myrtenkränzchen für verstorbene Kinder – und die Dörfer Böhmisch-Röhren, Tusset und Guthausen rund um den Tussetberg.",
+  "_quelle": "inhalte/altetk/kreuzwege/altegeschichten.htm",
+
+  "blocks": [
+    { "t": "h2", "text": "In der alten Tussetkapelle" },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Über fünf vermooste Steinstufen erreichte man die einfache Holztür der Kapelle, welche nie verschlossen war. Hohl hallten die Schritte der Besucher auf dem Holzboden des Vorbaues. Im Innern herrschte ein grünliches Halbdunkel, denn die kleinen Fenster waren von Waldkräutern fast überwachsen. Links neben dem Eingang stand ein mächtiger, granitener „Weihbrunnkessel“. Auf der rechten Seite führte eine Holztreppe auf die kleine Empore, wo bei Gottesdiensten der Kirchenchor seinen Platz fand. Die Wände des Holzbaues waren vollgehängt mit Votivbildern unterschiedlichster Art und Größe. Meistens waren es einfache Drucke mit Madonnendarstellungen, die am Rand den Vermerk hatten: „Maria hilf!“ oder „Maria hat geholfen“. Einige Bilder trugen diesen Hilferuf auch ausgestickt oder in Glasperlen nachgenäht. Auch mehrere Hinterglasbilder, wie sie im Herrgottswinkel unserer Bauernstuben hingen, waren darunter. Dagegen gab es kaum Votivtafeln mit Darstellungen von Gegebenheiten und Hilfen bei einem Unglück, die dem Schutz der Gottesmutter anbefohlen wurden."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atkzeichnung.jpg",
+      "align": "right",
+      "alt": "Zeichnung der alten Tussetkapelle mit Holzvorbau, Turm und Steinkapelle"
+    },
+    {
+      "t": "p",
+      "html": "Solche Bildgeschichten – meistens auf Blechtafeln gemalt – blieben in unserer Gegend den Marterln vorbehalten, welche meistens bei Unglücksfällen während der Waldarbeit an den Wegen aufgestellt wurden. Auch darauf war, meistens in einer Wolke, die Tusseter Madonna als Trösterin des Verunglückten gemalt, z.&nbsp;B. unterhalb des Hochbretter-Berges oder vor der Guthauser Haltestelle – beim Zenzi&nbsp;–&nbsp;Engelbert Marterl."
+    },
+    {
+      "t": "p",
+      "html": "In der Kapelle selber gab es nur Marienbilder – mit Ausnahme der Hinterglasbilder. Dicht gereiht hingen alle an den Holzwänden des Vorbaues. Das Kirchengestühl war aus Fichtenholz und gab in zwei Reihen aufgestellt, einen breiten Mittelweg frei, der den Blick zur Steinkapelle lenkte. Diese war durch ein einfaches Holzgitter abgeschlossen, das einen guten Durchblick zum Gnadenbild gewährte. Diese Gittertür wurde selbstverständlich bei Gottesdiensten geöffnet. Rechter Seite war noch eine Art Holzverschlag, der als kleine Sakristei diente. Hier wurde auch die „Rindenmadonna“ für den Waldaltar zum 15.&nbsp;August aufbewahrt. Links von der Tür war ein kleiner – übrigens nie benutzter – hölzerner Predigtstuhl."
+    },
+    {
+      "t": "p",
+      "html": "Den Mittelgang des Vorbaues begrenzten eine Reihe hölzerner Pfeiler, welche die Dachkonstruktion des höheren, mittleren Dachteiles trugen. Wo die gewundenen Dachsparren die Querbalken schnitten, standen ebenfalls als Votivgaben verschiedene Marienstatuen, darunter mehrere Lourdesmadonnen, wie sie bei Steinbrener in Winterberg gefertigt wurden; aber auch gläserne, sogenannte Silber-Liebfrauen."
+    },
+    {
+      "t": "p",
+      "html": "Darunter waren an den langen Trägerbalken als Besonderheit der Tussetkapelle kleine, weiße Polster aufgehängt, welche mit einem Myrtenkränzchen und langen, weißen Schleifen geschmückt waren. Diese Art von Weihegeschenken an Maria sah ich bisher noch an keiner anderen Wallfahrtsstätte. Die Erklärung dazu ist ganz einfach: Bei uns war das Sterben eines Kindes nicht gerade eine Seltenheit. In den kinderreichen Familien gab es solch trauriges Ereignis öfter. Dem Särglein eines Kindes ging beim Leichenzug nach Böhm.-Röhren immer ein weißgekleidetes Mädchen voran, das in seinen Händen solch ein kleines, weißes Kissen mit dem Myrtenkranz trug. Es wurde dem Kind in das Grab „mitgegeben“. Nun gab es aber Fälle, wo ein Kind unter besonders tragischen Umständen starb. Oft war es ein Unglücksfall, oder die „Halsbräune“ (Diphterie) raffte jählings ein größeres Kind hinweg. Wenn da der Schmerz der Mutter schier unerträglich war, brachte sie das weiße Pölsterchen mit dem Myrtenkrönlein in die Tussetkapelle. Die Schmerzensreiche, die alles Leid der Erde bis zur Neige auskosten musste, hat wohl auch da manchem Mutterherzen den Schmerz gelindert."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atk1945.jpg",
+      "align": "center",
+      "alt": "Innenansicht der alten Tussetkapelle mit Votivbildern an den Holzwänden"
+    },
+    {
+      "t": "p",
+      "html": "Erst wenn das Myrtenkränzchen abblätterte und das weiße Kissen unansehnlich geworden war, wurde es weggebracht – in der Annahme, dass nun das Leid gelindert wäre."
+    },
+    {
+      "t": "p",
+      "html": "Dass Maria aber nicht nur in seelischer Bedrängnis half, sondern auch als Fürbitterin bei körperlicher „Bresthaftigkeit“ geholfen hat, davon zeugten eine Reihe von recht primitiv aus Holz und Leder gefertigter Krücken und „Beinschienen“, die neben dem Predigtstuhl hingen und lehnten."
+    },
+    {
+      "t": "p",
+      "html": "Den Abschluß des Holzanbaues bildete die weiß getünchte Mauer des Steinbaues. Auch hier hingen rund um das Holzgitter Marienbilder und Rosenkränze als Votivgaben. Das Gitter hatte rechter Hand eine kleine Öffnung. Dadurch konnte man leicht einen mächtigen, steinernen Opferstock erreichen und eine Gabe einwerfen. Der Opferstock stand schon in der Steinkapelle."
+    },
+    {
+      "t": "p",
+      "html": "Diese bot dem Besucher aber ein ganz anderes Bild als der Holzbau. Sie war hell und lichtdurchflutet; an beiden Seiten befanden sich große Fenster. Die weißen Wände und die hellblaue Decke erweckten einen ungemein freundlichen Eindruck. Hier hing auch kein einziges Wandbild. Der Fußboden war gelb gekachelt. Der Altar, schlicht und einfach gestaltet, bestand eigentlich nur aus einem einfachen Tisch mit zwei hellblauen Säulenaufsätzen und einer sparsam gemalten Blumenranke in bäuerlicher Manier. So wurde der Blick des Besuchers durch nichts abgelenkt und richtete sich magisch auf das große Gnadenbild der Gottesmutter. Ob er nun vor dem Holzgitter im dunklen Anbau stand, oder durch die geöffnete Tür dem Altar näherkam, immer blieb der Eindruck von Helle und Lieblichkeit, der von dem Bild ausging. Es lässt sich gut vorstellen, daß die innige Mutter/Kind-Beziehung des Bildwerkes trostreich und versöhnend auf das Herz eines betrübten Menschen gewirkt hat. Viele haben das wohl auch so empfunden und kehrten immer wieder zu diesem einsamen Wallfahrtsort zurück."
+    },
+
+    { "t": "h2", "text": "Rund um den Tussetberg" },
+
+    { "t": "h3", "text": "Böhmisch-Röhren" },
+    {
+      "t": "p",
+      "html": "Das Pfarrdorf Böhmisch-Röhren ist eine Gründung aus der Blütezeit des Goldenen Steiges. Hier tränkten die Säumer ihre Pferde und so entstand der Name des Ortes. Er liegt auf einer Hochebene, vom Sulzberg und Schillerberg eingefriedet, nach Osten der Sonne offen. Trotz seiner geographischen Höhe von 930&nbsp;m ü.d.M. war er bald schneefrei, kannte kaum die Reifnächte des Frühlings und war daher ein beliebter Höhenluftkurort. Die „Sommerfrischler“ fanden in den vier Gasthöfen und in zahlreichen Privatunterkünften gute Aufnahme. Der Ort war das Zentrum des großen Kirchensprengels und daher gab es hier mehrere Geschäfte und Handwerksbetriebe, besonders holzverarbeitende Betriebe jeder Art. Auch Arzt- und Poststelle war im Ort. Die helle, freundliche Dorfkirche überragte das Dorf. Sie wurde von 1788 bis 1791 als St.-Anna-Kirche erbaut. Den Kirchplatz schloß ein geräumiger Pfarrhof ab. Unter der Kirche stand das große Schulgebäude mit vier Klassen und der Lehrerwohnung. Der Friedhof lag nicht bei der Kirche, sondern neben der Straßenabzweigung nach Schillerberg. Zur Pfarrei Böhmisch-Röhren gehörten die Dörfer Böhmisch-Röhren, Schönberg, Brandhäuser, Neuthal, Tusset, Schwarzes Kreuz, Guthausen, Schillerberg, Oberzassau."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/boehmroehren.jpg",
+      "align": "wide",
+      "alt": "Historische Ansicht des Pfarrdorfes Böhmisch-Röhren mit der St.-Anna-Kirche",
+      "caption": "Das alte Böhmisch-Röhren"
+    },
+    {
+      "t": "p",
+      "html": "Böhmisch-Röhren liegt nahe der Bayerischen Grenze und es wurde daher nach der Aussiedlung der durchwegs deutschen Bevölkerung nur ganz gering besiedelt. Besonders die Kirche, der Pfarrhof, die großen Gasthäuser und die Geschäfte verkamen und verwahrlosten immer mehr. Deshalb wurde der ganze Ortskern mit der Kirche im Jahre 1966 eingeebnet. Selbst Ortskundige finden kaum mehr die Stätten ihrer Jugenderlebnisse."
+    },
+    {
+      "t": "p",
+      "html": "Böhmisch-Röhren hatte über 1.200 Einwohner."
+    },
+
+    { "t": "h3", "text": "Tusset" },
+    {
+      "t": "p",
+      "html": "Das nächstgelegene Dorf am Südhang des Tussetberges war Tusset. Es war eine eigene politische Gemeinde, zu der noch Neuthal, Schwarzes Kreuz, Pechofen und Grasfurth gehörten. Im Jahre 1939 zählte man dort 678 Einwohner. Der Ort liegt an der Kalten Moldau und an der Bahnlinie Wallern&nbsp;–&nbsp;Gojau, über Schwarzes Kreuz nach Haidmühle&nbsp;–&nbsp;Passau. Im Jahre 1910 erhielt es eine Bahnstation. Das war für Tusset sehr wichtig, denn der Ort war schon Jahrzehnte vorher geprägt von der Holzindustrie. Franz Bienert, einer der vorausblickendsten Unternehmer des Böhmerwaldes, gründete als zweite Resonanzholzfabrik, neben Mader, in Tusset die Fabrik zur Verarbeitung dieses wertvollen Holzes. Das geschah unter schwierigsten wirtschaftlichen Verhältnissen im Jahre 1854. Die Leitung der Tusseter Fabrik vertraute er seinem Schwiegersohn, Johann Wessely, einem gelernten Forstmann, an. Dieser erwies sich als tüchtiger Geschäftsmann und beschäftigte bald über 100 Arbeiter. Dazu kam noch eine große Zahl von Frächtern, denn das wertvolle Holz ging in die ganze Welt. Das Haus Bienert/Wessely war außerdem im ganzen Umland als sehr gastfreundlich bekannt, und so wurde auch die Grundlage gelegt für den zahlreichen Touristenzuspruch in späterer Zeit. Der Gasthof „Forelle“ war weitum bekannt durch seine vorzügliche Bewirtung. Als Bienert und später auch sein Schwiegersohn starben, kaufte im Jahre 1871 Fürst Schwarzenberg den Betrieb. Die Tusseter Holzverarbeitung blieb weiterhin mustergültig für alle ähnlichen Betriebe des Böhmerwaldes."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/tussetgb.jpg",
+      "align": "center",
+      "alt": "Das Dorf Tusset mit dem Anwesen Glöckelbauer, links die Dorfkapelle mit dem Glockengestühl",
+      "caption": "Tusset, Glöckelbauer (links die Kapelle mit dem Glockengestühl)"
+    },
+    {
+      "t": "p",
+      "html": "Nach der Zerschlagung des großen Wirtschaftsraumes der K.&nbsp;u.&nbsp;K. Monarchie stagnierte der Betrieb in Tusset, aber als man es verstand, in einem besonderen Verfahren sehr günstig Parketthölzer herzustellen, nahm dieser neue Industriezweig in der Tusseter Fabrik bald einen großen Aufschwung. Parkettverleger aus Tusset traf man sogar in der Zeit der großen Wirtschaftskrise auf Schlössern und in Villen der ganzen Republik. Ihr handwerkliches Geschick war berühmt. Der wirtschaftliche Wohlstand war in Tusset an den freundlichen, sauberen Häuschen und an dem geselligen Treiben das ganze Jahr über zu bemerken."
+    },
+    {
+      "t": "p",
+      "html": "Im Ort war ein Postamt und eine zweiklassige Schule. Um 1785 erbaute der damalige Besitzer des Hauses Nr.&nbsp;5, Urban Lukas, die kleine Dorfkapelle. Er stiftete Jahre später auch eine Nachbildung einer Tussetmadonna, die in der kleinen Altarnische Platz fand. In der Kapelle hielten die Pfarrherrn von Böhmisch-Röhren für die Tusseter Andachten und Christenlehren. Im Jahre 1925 ließ die Familie Schreiber (Glöcklbauer/Korlbauer) für eine Angelusglocke vor der Kapelle ein Glockengestühl mit einem Holzvorbau errichten. Dieses Glöcklein wurde von der Wohnstube des Anwesens Haus Nr.&nbsp;5 aus geläutet."
+    },
+    {
+      "t": "p",
+      "html": "Auch in der neuen Tussetkapelle in Philippsreut wird wieder ein Glöcklein zum Gebet an die Gnadenmutter rufen. Eine großherzige Spende hat es möglich gemacht."
+    },
+
+    { "t": "h3", "text": "Guthausen" },
+    {
+      "t": "p",
+      "html": "Am Nordhang des Tussetberges lag die jüngste Gemeinde des Bezirks, das Holzhauerdorf Guthausen."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/guthausen.jpg",
+      "align": "wide",
+      "alt": "Historische Ansicht des Holzhauerdorfes Guthausen mit der langen Häuserzeile an der Dorfstraße"
+    },
+    {
+      "t": "p",
+      "html": "Es wurde im Jahre 1816 bis 1819 durch einen Aufruf des Fürsten Schwarzenberg als Holzhauerdorf gegründet. Er hatte den Tussetberg nach einem langen Streit mit den Wallerern durch einen Vergleich im Jahre 1804 zugesprochen bekommen. Um sich nun weiterhin dem Zugriff der Wallerer Hüter und Holzfäller erwehren zu können, ließ er das neue Dorf in einem weit gezogenen Bogen Hausstelle an Hausstelle in der Gramet-Au am rechten Moldauufer anlegen. Die neuen Siedler kamen aus den umliegenden Dörfern und aus Bayern. Sie rodeten in mühevoller Arbeit das ihnen zugesprochene Fleckchen Erde und erbauten die ersten 35 Häuser in einer Reihe neben der Dorfstraße. Das zog ihnen den Spott der umliegenden Dörfer zu. Man sagte: „In Guthausen werden die Gänse nur auf einer Seite gebraten.“ Ob die Guthauser – sie waren überwiegend Holzhauer und Kleinlandwirte – überhaupt Gänse als Sonntagsbraten aßen, ist unwahrscheinlich.. Trotzdem waren sie wohl ein munteres, aufgewecktes Völkchen, denn man sagte auch: „Nach Guthausen geht man um ein Hirn!“ Die örtliche Musikkapelle und der große Gesangverein genossen in der Umgebung einen guten Ruf. Im Jahre 1882 wurde eine zweiklassige Schule erbaut. Der Ort wuchs trotz der schweren Lebensbedingungen rasch an, 10 Kinder in einer Familie waren keine Seltenheit. Im Jahre 1946 standen dort 78 Häuser mit 580 Einwohnern. Guthausen ist heute zu drei Vierteln zerstört und fast menschenleer."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/stannakapelle.jpg",
+      "align": "wide",
+      "alt": "Die St.-Anna-Kapelle in Leimsgrub, ein kleiner Kapellenbau am Waldrand",
+      "caption": "St.-Anna-Kapelle in Leimsgrub, erbaut um 1930."
+    }
+  ]
+}

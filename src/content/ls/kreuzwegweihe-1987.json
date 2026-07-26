@@ -1,0 +1,123 @@
+{
+  "id": "kreuzwegweihe-1987",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Das Fest 1987",
+  "kicker": "Die neue Kapelle",
+  "title": "Das Fest im Jahr 1987",
+  "subtitle": "Der neue Kreuz-Weg wird gesegnet",
+  "description": "Am 15. August 1987 wurden die 14 Bilder vom Kreuz-Weg gesegnet. In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Am 15. August 1987 war wieder ein Fest. Es war schon die 3. Wallfahrt zur neuen Kapelle."
+    },
+    {
+      "t": "p",
+      "html": "An diesem Tag wurden die neuen Bilder vom Kreuz-Weg gesegnet. Es sind 14 Bilder."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/stationsbilder.jpg",
+      "align": "wide",
+      "alt": "Die 14 Bilder vom Kreuz-Weg stehen in einer Reihe auf dem Dorf-Platz.",
+      "caption": "Die 14 Bilder auf dem Dorf-Platz."
+    },
+    { "t": "h2", "text": "Wer hat die Bilder gemalt?" },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/emilottqhelma.jpg",
+      "align": "right",
+      "alt": "Emil Weber steht neben der Malerin Helma Fritsche-Flügel.",
+      "caption": "Emil Weber und die Malerin Helma Fritsche-Flügel."
+    },
+    {
+      "t": "p",
+      "html": "Die Malerin hieß Helma Fritsche-Flügel. Sie kam aus Wallern. Das ist nah am Tusset-Berg."
+    },
+    {
+      "t": "p",
+      "html": "Helma Fritsche-Flügel hat 1 Jahr und 6 Monate gemalt. Sie hat auf Kupfer-Platten gemalt."
+    },
+    {
+      "t": "p",
+      "html": "Auf jedem Bild sieht man ein Dorf im Hintergrund. Jedes Dorf hat ein Bild bezahlt. So ist der Kreuz-Weg auch ein Weg durch die alte Heimat."
+    },
+    { "t": "h2", "text": "So war das Fest" },
+    {
+      "t": "p",
+      "html": "Am Morgen war Nebel. Aber viele Menschen sind gekommen. Etwa 4000 Menschen."
+    },
+    {
+      "t": "p",
+      "html": "Zuerst war eine Feier am Krieger-Denkmal. Die Menschen haben an die Toten gedacht."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/stbuebergabe.jpg",
+      "align": "wide",
+      "alt": "Emil Weber gibt ein Bild an eine Gruppe von Menschen.",
+      "caption": "Emil Weber gibt die Bilder an die Dörfer."
+    },
+    {
+      "t": "p",
+      "html": "Dann hat Emil Weber die Bilder verteilt. Jedes Dorf hat sein Bild bekommen."
+    },
+    {
+      "t": "p",
+      "html": "Danach sind alle zur Kapelle gegangen. Die Musik-Kapelle von Philippsreut ist voran gegangen. Kinder und Erwachsene haben die Bilder getragen."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegweihe/gerhardfranz.jpg",
+          "alt": "Zwei junge Männer in alter Tracht.",
+          "caption": "Franz und Gerhard. Das sind die Söhne von Emil Weber."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbweihe1.jpg",
+          "alt": "Ein Pfarrer segnet die Bilder vor der Kapelle.",
+          "caption": "Der Pfarrer Pimmer segnet die Bilder."
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Der Pfarrer hieß Pimmer. Er hat die Bilder gesegnet. Als Kind war er selbst zur alten Kapelle gepilgert."
+    },
+    {
+      "t": "p",
+      "html": "Ein Frauen-Chor aus Ingolstadt hat gesungen."
+    },
+    { "t": "h2", "text": "Der Weg am Nachmittag" },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/kreuzwegzug.jpg",
+      "align": "wide",
+      "alt": "Eine lange Reihe von Menschen geht über Felder.",
+      "caption": "Viele Menschen gehen den neuen Kreuz-Weg."
+    },
+    {
+      "t": "p",
+      "html": "Am Nachmittag sind alle den Kreuz-Weg gegangen. Der Weg führt oberhalb vom Dorf. Man kann von dort in den Böhmer-Wald schauen."
+    },
+    {
+      "t": "p",
+      "html": "Der Pfarrer hat bei jedem Bild gebetet. Eine Frau aus Wallern hatte die Gebete geschrieben. Sie hieß Ilse Viehbeck-Veith."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/letztekwstation.jpg",
+      "align": "center",
+      "alt": "Das letzte Bild vom Kreuz-Weg mit Blick über die Felder.",
+      "caption": "Das letzte Bild vom Kreuz-Weg."
+    },
+    {
+      "t": "p",
+      "html": "Die Menschen waren sehr bewegt. Sie haben der Malerin gedankt. Und allen, die Geld gegeben haben."
+    }
+  ]
+}

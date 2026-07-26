@@ -1,0 +1,100 @@
+{
+  "id": "kapelle-und-wallern",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Kapelle und Wallern",
+  "kicker": "Die alte Kapelle",
+  "title": "Die Kapelle und der Ort Wallern",
+  "subtitle": "Wie die Kapelle entstanden ist",
+  "description": "Wie die alte Tusset-Kapelle entstanden ist. Die Geschichte von Jakob Klauser. In Leichter Sprache.",
+
+  "blocks": [
+    { "t": "h2", "text": "Der Tusset-Berg" },
+    {
+      "t": "fig",
+      "src": "altetk/kapelleundwallern/wallern.jpg",
+      "align": "right",
+      "alt": "Der Ort Wallern. Man sieht viele Häuser und eine Kirche.",
+      "caption": "Der Ort Wallern im Böhmer-Wald."
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Der Tusset-Berg ist 1065 Meter hoch. Er ist steil. Auf dem Berg wächst viel Wald. In der Nähe liegt der Ort Wallern."
+    },
+    {
+      "t": "p",
+      "html": "Früher führte ein Handels-Weg über den Berg. Der Weg hieß Goldener Steig. Händler haben dort Waren getragen. Sie sind von Passau nach Prachatitz gelaufen. In Wallern konnten sie schlafen."
+    },
+    {
+      "t": "p",
+      "html": "Am Weg hing ein Bild von Maria. Die Händler haben davor gebetet."
+    },
+    { "t": "h2", "text": "Alte Geschichten über das Bild" },
+    {
+      "t": "p",
+      "html": "Über das Bild von Maria gibt es alte Geschichten. Man nennt so eine Geschichte auch Legende."
+    },
+    {
+      "t": "p",
+      "html": "Eine Geschichte erzählt: Ein Soldat wollte das Bild kaputt machen. Da kam ein helles Licht aus dem Bild. Der Soldat konnte nichts mehr sehen. Danach hat er an Maria geglaubt."
+    },
+    {
+      "t": "p",
+      "html": "Eine andere Geschichte erzählt: Ein Jäger hat das Bild in den Fluss geworfen. Aber das Bild ist nicht unter-gegangen. Es ist den Fluss hinauf geschwommen."
+    },
+    { "t": "h2", "text": "Jakob Klauser baut die Kapelle" },
+    {
+      "t": "p",
+      "html": "Jakob Klauser war Schmied. Er hat in Wallern gelebt. Er konnte 3 Jahre lang nichts sehen. Er war blind."
+    },
+    {
+      "t": "p",
+      "html": "Jakob Klauser hatte einen Traum. In dem Traum hat eine Stimme gesagt: Geh in den Tusset-Wald. Dort findest du ein Bild. Dann kannst du wieder sehen."
+    },
+    {
+      "t": "p",
+      "html": "Der Traum kam 3 Nächte lang. Jakob Klauser hat gebetet. Dann konnte er wieder sehen."
+    },
+    {
+      "t": "p",
+      "html": "Jakob Klauser ist in den Wald gegangen. Er hat lange gesucht. Am Abend hat er das Bild gefunden. Es hing an einem Baum bei einer Quelle."
+    },
+    {
+      "t": "p",
+      "html": "Jakob Klauser hat versprochen: Ich baue hier eine Kapelle. Im Jahr 1791 war die Kapelle fertig. Sie war aus Holz. Jakob Klauser hat das Bild in die Kapelle gehängt."
+    },
+    {
+      "t": "p",
+      "html": "Viele kranke Menschen sind zur Kapelle gekommen. Besonders Menschen mit kranken Augen. Manche wurden wieder gesund."
+    },
+    {
+      "t": "p",
+      "html": "Jakob Klauser ist am 3. Juli 1807 gestorben. Er war 70 Jahre alt."
+    },
+    { "t": "h2", "text": "Der Streit um den Wald" },
+    {
+      "t": "p",
+      "html": "Die Menschen aus Wallern durften Holz im Wald schlagen. Der Wald gehörte aber einem Fürsten. Darum gab es Streit."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1810 war der Streit zu Ende. Die Menschen aus Wallern durften kein Holz mehr am Tusset-Berg schlagen."
+    },
+    {
+      "t": "p",
+      "html": "Die Menschen aus Wallern wollten das Bild von Maria behalten. Darum haben sie es nach Wallern gebracht. Es kam in die Kirche."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kapelleundwallern/feuersturm.jpg",
+      "align": "center",
+      "alt": "Ein Bild von einem großen Feuer im Ort Wallern.",
+      "caption": "Im Jahr 1863 gab es in Wallern ein großes Feuer. Die Kirche ist abgebrannt. Das Bild von Maria ist verbrannt."
+    },
+    {
+      "t": "p",
+      "html": "Die Menschen aus Wallern sind trotzdem weiter zur Kapelle gegangen. Bis sie ihre Heimat verlassen mussten."
+    }
+  ]
+}

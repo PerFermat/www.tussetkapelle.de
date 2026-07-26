@@ -1,0 +1,38 @@
+{
+  "id": "alte-tussetkapelle",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "The old Tusset Chapel",
+  "kicker": "The old Tusset Chapel",
+  "title": "The old Tusset Chapel in the Bohemian Forest",
+  "description": "The old Tusset Chapel on the Tussetberg in the Bohemian Forest – the model for the reconstruction in Philippsreut. Overview of the chapters on the history of the pilgrimage chapel.",
+  "_quelle": "inhalte/altetk/altetk.htm",
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "altetk/tusset_alt.jpg",
+      "align": "center",
+      "max": 500,
+      "alt": "The old Tusset Chapel in the Bohemian Forest: a timber chapel with a pointed tower, carved decorative boards and two round windows, surrounded by forest",
+      "caption": "The old Tusset Chapel on the Tussetberg"
+    },
+    {
+      "t": "h2",
+      "text": "The chapters on the old chapel"
+    },
+    {
+      "t": "p",
+      "html": "The history of the pilgrimage chapel on the Tussetberg is recorded in several accounts:"
+    },
+    {
+      "t": "list",
+      "items": [
+        "<a href=\"{{href:kapelle-und-wallern}}\"><strong>The chapel on the Tussetberg – the chapel and Wallern</strong></a> · An account by Otto Veith on the mountain, earlier times, the legends, Jakob Klauser and the forest dispute",
+        "<a href=\"{{href:gnadenbilder}}\"><strong>The miraculous images</strong></a> · An account by Otto Veith on the images of Our Lady of the Tussetberg",
+        "<a href=\"{{href:kreuzwege-und-wallfahrtstage}}\"><strong>The Ways of the Cross, the pilgrimage days and the chapel</strong></a> · An account by Otto Veith",
+        "<a href=\"{{href:alte-geschichten}}\"><strong>Stories of the old Tusset Chapel</strong></a> · by Rosl Tahedl, with recollections of the chapel’s interior and of the villages around the Tussetberg",
+        "<a href=\"{{href:restaurierung}}\"><strong>The restoration of the old Tusset Chapel</strong></a> · Rebuilding from 1987 to 1990 and the consecration in August 1990"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "kapelle-und-wallern",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "The chapel and Wallern",
+  "kicker": "The chapel on the Tussetberg · An account by Otto Veith",
+  "title": "1. The Tusset Chapel and Wallern",
+  "description": "The Tussetberg, the chapel on the Golden Path, the legends of the Marian image, the miraculous healing of the blacksmith Jakob Klauser in 1791 and the forest dispute of the people of Wallern.",
+  "_quelle": "inhalte/altetk/kapelleundwallern/atkkapelleundwallern.htm",
+
+  "blocks": [
+    { "t": "h2", "text": "The mountain" },
+    {
+      "t": "fig",
+      "src": "altetk/kapelleundwallern/postkarte.jpg",
+      "align": "wide",
+      "alt": "Old postcard with a general view of the Wallern basin and the Tussetberg"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Wreathed in legend and saga, the steep and densely wooded Tussetberg closes off the Wallern basin to the west. Wedged between the Cold and the Warm Moldau, the massif pushes forward to the wide landscape of meadow and pasture. South of the main summit (1,065&nbsp;m), beneath the mighty group of rocks (973&nbsp;m) and the ruins of an old watchtower, stands the Tusset Chapel. No mountain and no place of pilgrimage in the whole circle of the home mountains is so closely bound up with the past of Wallern."
+    },
+    { "t": "h2", "text": "In earlier times" },
+    {
+      "t": "p",
+      "html": "The watchtower on the Tussetberg was probably erected as early as the 13th century to protect the merchants and the packhorse traders. For centuries a great many people carried their wares along the Golden Path from Passau to Prachatitz. Wallern offered the weary traders shelter and lodging in the great and endless forest. Their way from Passau was surely lined with numerous chapels and wayside shrines at which the traders could say their prayers. According to a first oral tradition of Wallern, a small timber chapel with a Marian image stood in the 17th century not far from the packhorse bridge, at the place of the „Wallerer Schanzen“ (the Wallern redoubts) so hotly contested in the Thirty Years’ War. This site corresponds to the field name „Schounzhüwl“ at the bend of the Moldau „beim Ochsenstand“, some 300&nbsp;m south-west of the packhorse bridge."
+    },
+    {
+      "t": "p",
+      "html": "When the Swedes invaded, misery, hardship, sickness and death came with them. At that time it happened that a bird-catcher, „a decent man by the name of Wenzel“, was forced to show the Swedes the right way through the inhospitable forests. He feared for the Marian image and at once hid it in a wild cleft of rock on the Tussetberg, so that the image survived the war unharmed. The place where it was hidden is still called „Brav (W=ausgelassen) enzlfelsen“ today. Later, packhorse traders found the Marian image again and fixed it to a tree near a spring. Beside it they set up an offertory box whose proceeds were to go to poor and injured traders."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kapelleundwallern/wallern.jpg",
+      "align": "center",
+      "alt": "Historical view of the market town of Wallern in the Bohemian Forest with its church and rows of houses",
+      "caption": "Wallern in the Bohemian Forest, once a hostelry on the Golden Path"
+    },
+    { "t": "h2", "text": "The legends" },
+    {
+      "t": "p",
+      "html": "A Lutheran soldier once came that way and struck at the Marian image with his sabre in order to destroy it. When he had made the first blow, such a radiance came forth from the image that he was at once blinded and fell to the ground. He fell to his knees and from then on believed in the Mother of God."
+    },
+    {
+      "t": "p",
+      "html": "Once again it happened that a hunter threw the Marian image into the nearby Moldau. To his horror, however, the image did not sink but floated upstream, shining brightly. In vain the hunter tried to recover the image, but he did not succeed. After this misdeed he lost his sight and could not recover for a long time."
+    },
+    { "t": "h2", "text": "Jakob Klauser" },
+    {
+      "t": "p",
+      "html": "For a long time nothing more was heard of these wondrous events. The first reliable written report of the image of the Mother of God of the Tussetberg reaches us in 1791."
+    },
+    {
+      "t": "p",
+      "html": "Jakob Klauser, a citizen of Wallern and a master blacksmith who had already been blind for three years, heard someone speak to him in a dream:"
+    },
+    {
+      "t": "quote",
+      "html": "“You will receive your sight again, but go into the Tusset forest, there you will find an image!”"
+    },
+    {
+      "t": "p",
+      "html": "For three nights in succession the pious man received this instruction. He prayed trustingly to the Mother of God, and his blind eyes opened. In that instant he saw a Marian image in the window, which however vanished again at once. With a leather bread bag – it was still shown in Wallern a hundred years later – he set out on the long journey. After hours of wandering in the Tusset forest he finally found, in the evening, a tree at the spring beside the great rock, on which a Marian image hung. Klauser recognised it as the same one into which he had looked that morning, on that day of joy, in the window of his parlour. All the people of Wallern later held it to be the fabled image from the „Schounzhüwl“, which their parents had described to them exactly. Jakob Klauser prayed the whole night at the Tusset spring. And he vowed to build a chapel on that spot."
+    },
+    {
+      "t": "p",
+      "html": "Jakob Klauser, whom the people of Wallern called „Schmiedjogl“, was known far and wide as a skilful smith. He came from the „Andresl-Haus“ in Brenntenberg. As can be gathered from the Wallern citizens’ registers, he came to Wallern shortly before 1773 and acquired house no.&nbsp;63 there (later the Sulzerfaber house in the Lower Bachzeile), which in 1777 he exchanged with his father-in-law Franz Salzer, whose daughter Maria he married, for house no.&nbsp;16 (Frounzl) situated just behind the parish church. In 1804 Klauser handed this property over to his son-in-law Mathias Lichtnecker, whose descendants remained in the house until the expulsion."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kapelleundwallern/gebhausklauser.jpg",
+      "align": "center",
+      "alt": "Wallern with the Hellgasse in the foreground; to the left of the church the corner house Frounzl, with the Tussetberg in the background",
+      "caption": "Wallern with the Hellgasse in the foreground. The corner house to the left of the church (Frounzl) belonged to Jakob Klauser. In the background the Tusset."
+    },
+    {
+      "t": "p",
+      "html": "Jakob Klauser, who had probably lost his sight while smithing, drove to the Tussetberg with an ox cart loaded with the necessary building material only four days after his miraculous healing, and began building the chapel. When the small timber building was finished, probably still in 1791, Klauser fetched the Marian image from the tree and placed it inside. Soon his place of devotion became a place of pilgrimage for many people, above all the sick and especially those suffering from eye complaints, who often found healing there. Klauser spent days, often even weeks there, praying in the solitary forest chapel. In 1794 he wrote down a document about his healing, which was long kept in the parish archive at Wallern. On 3&nbsp;July 1807 Jakob Klauser died at Wallern at the age of 70."
+    },
+    { "t": "h2", "text": "The forest dispute" },
+    {
+      "t": "p",
+      "html": "The chartered rights of the people of Wallern to timber and pasture weighed heavily on the seigneurial forests, all the more so because they often interpreted their charters as they saw fit. They felled timber as it suited them; their cattle they drove „behind the Tussetberg as far as towards the Passau lands“. From 1613 onwards there were repeated disputes. In 1783 Prince Schwarzenberg made the first complaint to the provincial authority. Now the litigation began in earnest. Emperor Franz urged the parties towards an amicable settlement, which was reached in 1804. On 20&nbsp;November 1810 the forest dispute was finally settled. In compensation with other woodlands, the people of Wallern had to renounce their chartered rights to timber and pasture on the Tussetberg."
+    },
+    {
+      "t": "p",
+      "html": "But the chapel on the Tusset was a much-visited Marian pilgrimage site of the people of Wallern, and so they were by no means willing to leave the miraculous image to the prince. It was taken to Wallern. Two citizens carried it into the market town and the image was to be given its place in a side chapel (the St&nbsp;John Nepomuk Chapel). The legend tells that the image miraculously returned to the Tusset Chapel, and only when the Marian image was brought to Wallern in a solemn procession did it remain in its new place. From then on the people of Wallern called this side chapel the „Tusset Chapel in the parish church“."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kapelleundwallern/feuersturm.jpg",
+      "align": "center",
+      "alt": "Depiction of the great firestorm in Wallern in 1863, in which 60 houses and the parish church were destroyed",
+      "caption": "In the great firestorm at Wallern on 22/23 July 1863, which reduced 60 houses to rubble and ashes, the parish church also perished, and with it the miraculous image of „Our Lady of the Tussetberg“."
+    },
+    {
+      "t": "p",
+      "html": "Even after the forest dispute the people of Wallern remained closely bound to the chapel on the Tussetberg until the days of the expulsion, and they made many pilgrimages to the solitary forest chapel beneath the Tusset rock."
+    }
+  ]
+}

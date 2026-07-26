@@ -1,0 +1,124 @@
+{
+  "id": "home",
+  "type": "home",
+  "navLabel": "Home",
+  "title": "Tussetkapelle",
+  "metaTitle": "Tussetkapelle Philippsreut – A place of remembrance for the Bohemian Forest Germans",
+  "description": "The new Tusset Chapel in Philippsreut was consecrated on 27 July 1985 – a faithful reconstruction of the pilgrimage chapel on the Tussetberg in the Bohemian Forest. History, images and information for your visit.",
+  "_quelle": "start.htm",
+  "hero": {
+    "img": "ntkaltar.jpg",
+    "alt": "View into the chancel of the new Tusset Chapel: carved altar with the miraculous image, crucifix, Stations of the Cross and wooden pews",
+    "title": "Tussetkapelle",
+    "subtitle": "A place of remembrance for the Bohemian Forest Germans",
+    "lede": "Reconstruction of the Tusset Chapel began in <strong>1983</strong>. After some three years of building work, the chapel was consecrated on <strong>27&nbsp;July 1985</strong>.",
+    "cta": {
+      "label": "Discover the history",
+      "to": "geschichte"
+    }
+  },
+  "tiles": [
+    {
+      "to": "geschichte",
+      "icon": "book",
+      "img": "altetk/tusset_alt.jpg",
+      "alt": "The old Tusset Chapel in the Bohemian Forest: a timber chapel with a tower, surrounded by trees",
+      "title": "History",
+      "text": "The story of the old chapel, the expulsion and the reconstruction.",
+      "more": "Read more"
+    },
+    {
+      "to": "galerie",
+      "icon": "camera",
+      "img": "ntkwinterbild.jpg",
+      "alt": "The new Tusset Chapel in winter, deep in snow against a blue sky",
+      "title": "Gallery",
+      "text": "Historical photographs of the old and the new Tusset Chapel.",
+      "more": "To the gallery"
+    },
+    {
+      "to": "besuch",
+      "icon": "pin",
+      "img": "neuetk/einleitung/ntksonnenuntergang.jpg",
+      "alt": "The new Tusset Chapel silhouetted against the setting sun",
+      "title": "Visit",
+      "text": "Opening times, directions and contacts for your visit.",
+      "more": "More information"
+    }
+  ],
+  "visit": {
+    "title": "Visiting the Tusset Chapel",
+    "openLabel": "Open daily",
+    "hours": "8 a.m. – 8 p.m.",
+    "place": "Philippsreut",
+    "cta": {
+      "label": "Show directions",
+      "to": "besuch"
+    }
+  },
+  "timeline": {
+    "title": "One place – one history",
+    "items": [
+      {
+        "icon": "chapel",
+        "when": "1791 and 1804",
+        "what": "Jakob Klauser builds the timber chapel on the Tussetberg. The first stone chapel follows in 1804."
+      },
+      {
+        "icon": "walking",
+        "when": "The expulsion",
+        "what": "The Bohemian Forest Germans leave their homeland. The chapel falls into ruin."
+      },
+      {
+        "icon": "hammer",
+        "when": "1983",
+        "what": "Reconstruction begins in the twinned municipality of Philippsreut."
+      },
+      {
+        "icon": "cross",
+        "when": "27 July 1985",
+        "what": "Consecration by Franz Xaver Eder, Bishop of Passau."
+      },
+      {
+        "icon": "people",
+        "when": "Today",
+        "what": "A place of remembrance and encounter, open every day."
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "t": "h2",
+      "text": "Welcome"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "to the website of the new Tusset Chapel, dedicated to its late builder Emil Weber of Uhingen, born in Filz in the Bohemian Forest"
+    },
+    {
+      "t": "p",
+      "html": "The new Tusset Chapel was consecrated on 27&nbsp;July 1985 by Franz Xaver Eder, Bishop of Passau. Forty years after the expulsion, it had proved possible to build the new Tusset Chapel in the twinned municipality of Philippsreut – close to the border of the Bohemian Forest Germans’ homeland – in a beautiful and dignified spot with a view into the Bohemian Forest."
+    },
+    {
+      "t": "fig",
+      "src": "ntkwinterbild.jpg",
+      "align": "wide",
+      "max": 700,
+      "alt": "The new Tusset Chapel in winter: the timber building with its tower, deep in snow, surrounded by birches"
+    },
+    {
+      "t": "p",
+      "html": "Three years of building work were needed to rebuild the chapel faithfully to the original. Emil Weber, the community representative for Obermoldau, rendered great service to this memorial."
+    },
+    {
+      "t": "p",
+      "html": "The book on the history of the new Tusset Chapel is available in the chapel and may be purchased for 2.50&nbsp;€."
+    },
+    {
+      "t": "note",
+      "title": "A note",
+      "html": "We are grateful for any criticism and for your suggestions, and therefore ask you to send us your comments via the page <a href=\"{{href:kontakt}}\"><em>Contact and links</em></a>. We are always glad to receive further material for this website and to include it in these pages."
+    }
+  ]
+}

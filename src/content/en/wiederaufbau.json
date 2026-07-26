@@ -1,0 +1,237 @@
+{
+  "id": "wiederaufbau",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Reconstruction",
+  "kicker": "A photographic report by Emil Weber",
+  "title": "The twinning and the building of a memorial",
+  "subtitle": "From the first idea in the summer of 1981 to the finished chapel in the spring of 1985",
+  "description": "Emil Weber himself describes how a holiday idea in the summer of 1981 became the twinning of Obermoldau and Philippsreut and the faithful reconstruction of the Tusset Chapel.",
+  "_quelle": "inhalte/neuetk/entstehung/ntkentstehung.htm",
+
+  "blocks": [
+    { "t": "h2", "text": "Summer 1981" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/emilweber.jpg",
+      "align": "right",
+      "alt": "Portrait of Emil Weber, the principal initiator of the new Tusset Chapel"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "It all began during my holiday, which I spent close to the border with the Bohemian Forest. On outings with my family we passed several memorials built by Bohemian Forest Germans to remind following generations of the suffering of war and expulsion. Since I had taken on the community representation for Obermoldau, from those days on the idea would not leave my head of erecting such a memorial for our home community too. I found the right place for it in Philippsreut, a small municipality in the Bavarian Forest through which the paths of our countrymen had already led before the expulsion. I went to the municipal office there and put to the municipal secretary the proposal of a twinning between Obermoldau and Philippsreut, together with the erection of a memorial."
+    },
+
+    { "t": "h2", "text": "Autumn 1981" },
+    {
+      "t": "p",
+      "html": "Since the municipal secretary showed himself not unwilling to consider this proposal, I sat down as soon as my holiday was over and put my request to the municipal administration in a letter of 27.9.1981 with the following wording:"
+    },
+    {
+      "t": "quote",
+      "html": "… The former parish community of Obermoldau has a great request to make of the municipality of Philippsreut concerning a twinning between Obermoldau and Philippsreut, together with the erection of a memorial …",
+      "cite": "From the letter to the municipal administration of Philippsreut, 27.9.1981"
+    },
+    {
+      "t": "p",
+      "html": "There followed on 8.10.1981 the following reply:"
+    },
+    {
+      "t": "quote",
+      "html": "… The municipal council of Philippsreut has taken note of your letter and welcomes the intention of the former parish community of Obermoldau. We are in principle willing to enter into a twinning with you. Concerning the erection of a memorial in Philippsreut we have already made contact with the Higher Forestry Directorate and will, if this is possible, purchase the plot of land envisaged …",
+      "cite": "Reply from the municipality of Philippsreut, 8.10.1981"
+    },
+
+    { "t": "h2", "text": "Spring 1982" },
+    {
+      "t": "p",
+      "html": "So the first step had been taken. Things continued on 17&nbsp;April with the first official meeting between the community representation of Obermoldau and the mayor, Otto Damasko, in Philippsreut. The main item on the programme was the inspection of the plot of land envisaged at the B&nbsp;12 road junction towards Mauth and in the direction of the Czechoslovak border crossing. At the convivial gathering that followed at Mayor Damasko’s house – he was celebrating his 59th birthday that day – everyone in that cordial circle agreed that a twinning relationship could only be welcomed."
+    },
+    {
+      "t": "p",
+      "html": "For the first time our undertaking was now also reported in the three <em>Heimatbriefe</em> (newsletters for the expelled communities), with an appeal for donations under the motto „Memorial Obermoldau“."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/treffen1.jpg",
+      "align": "wide",
+      "alt": "Group photograph of the first meeting of the community representation of Obermoldau with Mayor Otto Damasko in Philippsreut in 1982",
+      "caption": "First meeting of the community representation of Obermoldau with the mayor Otto Damasko in Philippsreut and inspection of the first plot of land. From left to right: Josef Gubisch with his wife (Brettschneider Annerl), Mitterberg; Walter Faschingbauer, Wolfsgrub; Frieda Baier (Wawei Frieda), Birkenhaid; Walter Michetschläger, Filz; Emil Weber, Elendbachl; Mayor Otto Damasko, Philippsreut; Franz Dietl, Eleonorenhain; Franz Häusl, Obermoldau; Albert Robl, Kubohütten"
+    },
+
+    { "t": "h2", "text": "Summer 1982" },
+    {
+      "t": "p",
+      "html": "During that summer the following proposals came in for the memorial:"
+    },
+    {
+      "t": "list",
+      "items": [
+        "A stone structure with the names of the places of our parish community",
+        "The building of an octagonal chapel",
+        "A replica of the St John Nepomuk Chapel standing in Obermoldau",
+        "A reduced version of the parish church of Obermoldau",
+        "A larger artificial stone with the names of the places of the community."
+      ]
+    },
+    {
+      "t": "p",
+      "html": "A further burden on the decision then seemed to be the refusal of the Passau road construction office, which did not approve the building of a memorial on the plot envisaged. Yet everything turned out for the best, since with the present site of the new Tusset Chapel we obtained a suitable place."
+    },
+
+    { "t": "h2", "text": "Autumn 1982" },
+    {
+      "t": "p",
+      "html": "In order finally to reach a decision we came together in Philippsreut for the second time on 9&nbsp;October. There we also inspected the new plot, with which all those present were very taken. Since the architect found none of the proposals mentioned suitable, and I saw in the design he presented no relation to the old homeland, at this meeting too no decision seemed likely to be reached."
+    },
+    {
+      "t": "p",
+      "html": "The architect suggested making a faithful replica of a chapel which had stood, or still stood, in the Bohemian Forest homeland. Then the Tusset Chapel came to my mind. I happened to have a picture of it with me, which I passed round. This proposal did not find favour with everyone present; however, after it had been published in the three <em>Heimatbriefe</em>, it did with the majority of our countrymen. Letters and the arrival of numerous donations confirmed my final resolve to rebuild the Tusset Chapel faithfully in Philippsreut."
+    },
+
+    { "t": "h2", "text": "Winter 1982/1983" },
+    {
+      "t": "p",
+      "html": "Now a countryman still living in the old homeland was asked to take measurements of the Tusset Chapel. In December I received from him a very detailed drawing with the exact dimensions, on the basis of which our architect, Dipl.-Ing. Gerhard Edlmann, drew up the planning applications and submitted them for approval in the spring. Since the exact window dimensions were given, I was able to finish the windows over the winter."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/tkplan.jpg",
+      "align": "wide",
+      "alt": "Measured drawing of the old Tusset Chapel with plan, elevation and exact dimensions",
+      "caption": "On the basis of this drawing the planning applications were drawn up and submitted for approval"
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/fenstertk.jpg",
+      "align": "wide",
+      "alt": "The finished shutters and windows of the new Tusset Chapel, lined up side by side",
+      "caption": "Finished shutters and windows (20 in all)"
+    },
+
+    { "t": "h2", "text": "Spring 1983" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/ruinetk.jpg",
+      "align": "right",
+      "alt": "The old Tusset Chapel in April 1983, given over to decay",
+      "caption": "Given over to decay. (The old Tusset Chapel at our first visit in April 1983)"
+    },
+    {
+      "t": "p",
+      "html": "In order to make an exact reconstruction possible, our architect and I drove to the old Tusset Chapel for the first time in April. There we were occupied for a total of four hours with measuring and photographing."
+    },
+
+    { "t": "h2", "text": "Summer 1983" },
+    {
+      "t": "p",
+      "html": "Now the greatest part of the work fell to me. During the works holiday, more than 20&nbsp;cubic metres of building timber were worked at the Ekstein sawmill in Uhingen (where I had been employed for four years as a carpenter and stair builder). A great help to me in the carpentry and planing were my countryman Gustl Tahedl (Guthausen), my wife and my sons, as well as two pensioners who helped with the impregnating."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/ewzimmern.jpg",
+      "align": "center",
+      "alt": "Emil Weber at carpentry work in the Ekstein sawmill in Uhingen",
+      "caption": "(Emil Weber at carpentry work in the Ekstein sawmill in Uhingen)"
+    },
+
+    { "t": "h2", "text": "Autumn 1983" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/gemarbeiten.jpg",
+      "align": "left",
+      "alt": "Mayor Otto Damasko with municipal workers excavating the foundations",
+      "caption": "(Mayor Otto Damasko with his municipal workers excavating the foundations)"
+    },
+    {
+      "t": "p",
+      "html": "In September – the foundations were already finished – the architect and I drove to the old Tusset Chapel in the Bohemian Forest for a second time. The last uncertainties arising from the evaluation of photographs and drawings were cleared up."
+    },
+
+    { "t": "h2", "text": "Winter 1983/1984" },
+    {
+      "t": "p",
+      "html": "The carpentry work in Uhingen was completed, and a covered store was built for the worked beams and boards. At my home the shutters and the timber decorations for the interior were finished."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/winterlager.jpg",
+      "align": "center",
+      "alt": "Emil Weber in front of the covered winter store with the prepared rafters",
+      "caption": "(Emil Weber in front of the winter store, in front the rafters of the stone chapel)"
+    },
+
+    { "t": "h2", "text": "Spring 1984" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/lkwladen.jpg",
+      "align": "right",
+      "alt": "Loading the lorry with the prefabricated parts of the chapel"
+    },
+    {
+      "t": "p",
+      "html": "Before the last snow had melted, work went cheerfully on with fresh strength. The last thing to be done was to turn the oak columns which adorn the entrance front of the Tusset Chapel. On 31&nbsp;May (it was Father’s Day) everything was ready. All morning I was busy loading with my sons and other countrymen. At exactly midnight on 1&nbsp;June the lorry – which I had been given free of charge, complete with driver, by the firm where I had been employed until my retirement – set off towards Philippsreut, where it arrived at 7 a.m."
+    },
+    {
+      "t": "p",
+      "html": "That same morning, since the foundations and plinth were already finished, the raising was begun, and within two days a large part of the timber framework was standing. In our sheer eagerness during the raising I had rather neglected the safety measures, and so it was like a further miracle of Our Lady of Grace of the Tussetberg that when the front wall collapsed, none of us came to any harm. Not even the wall itself was damaged. After four weeks of hard work we were glad that the timber structure of the new chapel was finished, apart from some minor work."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/aufrichten.jpg",
+      "align": "center",
+      "alt": "Raising the timber framework of the new Tusset Chapel in Philippsreut"
+    },
+    {
+      "t": "p",
+      "html": "That everything went so smoothly we owe above all to Mayor Damasko, who put up me and Gustl Tahedl and who organised much to keep the work running smoothly. Electricity was made available to us by the neighbours Friedsam and Stumvoll; we were allowed to use the nearby Springer joinery at any time. Father Max Richtsfeld also contributed to the success of our undertaking, for he gave it his spiritual blessing and always had a crate of beer to spare for his thirsty souls. The municipal workers were at our disposal at all times."
+    },
+
+    { "t": "h2", "text": "Summer 1984" },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/spengler.jpg",
+      "align": "left",
+      "alt": "Tinsmiths fitting the copper roof on the new Tusset Chapel"
+    },
+    {
+      "t": "p",
+      "html": "In July I made the journey from Uhingen to Philippsreut yet again. I was accompanied by three Swabian <em>Flaschner</em> (in Bavaria they are called <em>Spengler</em> – tinsmiths). With them and some municipal workers the copper roof was fitted within two days. As always, I stayed with the three craftsmen at „godfather“ Damasko’s."
+    },
+
+    { "t": "h2", "text": "Autumn 1984" },
+    {
+      "t": "p",
+      "html": "For a second time people believed that a miracle had occurred in the chapel. During a great storm in November a window of the stone chapel which had not yet been firmly anchored fell inwards, frame and all, onto the concrete floor. When it was found, neither the glass nor the frame was damaged."
+    },
+
+    { "t": "h2", "text": "Winter 1984/1985" },
+    { "t": "p", "html": "In January a miracle happened once again." },
+    {
+      "t": "p",
+      "html": "We succeeded in bringing the image of Our Lady of Grace of the Tussetberg to Philippsreut, in order to give it a home again in the new Tusset Chapel."
+    },
+    {
+      "t": "p",
+      "html": "The preparatory work for the solemn consecration and for the design of the commemorative publication was shared with me by the members of the festival committee in Philippsreut; Rosl Tahedl of Guthausen, who lived in the Bohemian Forest until 1964 and had a close relationship with the Tusset Chapel and the miraculous image, was able to contribute a great deal on the recent history of the Tusset Chapel; Otto Veith of Wallern took charge of the design of the commemorative publication."
+    },
+
+    { "t": "h2", "text": "Spring 1985" },
+    {
+      "t": "p",
+      "html": "With the making of the faithfully reproduced wooden pews and of the altar, my work on the new Tusset Chapel was essentially completed."
+    },
+    {
+      "t": "p",
+      "html": "With the building of the new Tusset Chapel in Philippsreut, a piece of the Bohemian Forest homeland has come into being again. Many industrious hands of countrymen and of the municipality of Philippsreut contributed to its success. Over 30&nbsp;square metres of timber were worked in the process. I hope that with my descriptions and with the pictures I have set down the making of the new Tusset Chapel in Philippsreut as a lasting memory."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/entstehung/tkfertig.jpg",
+      "align": "center",
+      "alt": "Emil Weber on a ladder at the completed new Tusset Chapel with the turned oak columns of the entrance front",
+      "caption": "The completed new Tusset Chapel"
+    }
+  ]
+}

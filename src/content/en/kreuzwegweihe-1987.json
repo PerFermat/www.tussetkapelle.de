@@ -1,0 +1,136 @@
+{
+  "id": "kreuzwegweihe-1987",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Blessing of the Stations 1987",
+  "kicker": "The new Tusset Chapel",
+  "title": "The Way of the Cross of the Bohemian Forest Germans in Philippsreut",
+  "subtitle": "The blessing of the new Stations of the Cross on 15 August 1987",
+  "description": "On 15 August 1987, at the third pilgrimage to the new Tusset Chapel, the 14 Stations of the Cross by Helma Fritsche-Flügel were blessed. Around 4,000 pilgrims took part.",
+  "_quelle": "inhalte/neuetk/kreuzwegweihe/ntkkreuzwegweihe.htm",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/stationsbilder.jpg",
+      "align": "wide",
+      "alt": "The 14 Stations of the Cross lined up in the village square of Philippsreut"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "On 15&nbsp;August 1987 the third pilgrimage to the new Tusset Chapel – already becoming a tradition – took place at Philippsreut. Once again a great number of pilgrims came to honour the Protectress of the Bohemian Forest and to implore her intercession. The centrepiece of this pilgrimage was the blessing of the new Stations of the Cross."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegweihe/salnau.jpg",
+          "alt": "Station panel with the church of Salnau in the background"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/geistlichkeit.jpg",
+          "alt": "The clergy at the ceremony in front of the church of Philippsreut",
+          "caption": "All the parishes gathered for the ceremony"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "The forests around Philippsreut were indeed shrouded in grey banks of mist in the early morning, but the bright masonry of the church of Philippsreut with the war memorial nevertheless shone invitingly in the village square."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/festakt.jpg",
+      "align": "wide",
+      "alt": "The ceremony in the village square of Philippsreut with banner delegations and groups in traditional costume"
+    },
+    {
+      "t": "p",
+      "html": "There the 14 Stations of the Cross panels had been set up and offered the photographers a welcome subject for their cameras. Soon banner delegations, groups in traditional costume and pilgrims gathered there too. Here the festive day began with an act of remembrance and the laying of a wreath at the war memorial for all the fallen, the missing and the deceased from the villages of the Bohemian Forest. All listened, deeply moved, as the strains of the song of the „Good Comrade“ sounded across the border into their homeland."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/emilottqhelma.jpg",
+      "align": "right",
+      "alt": "Emil Weber with the painter Helma Fritsche-Flügel and others involved"
+    },
+    {
+      "t": "p",
+      "html": "Afterwards Rosa Tahedl, on behalf of the painter of the Stations of the Cross, explained the ideas and thoughts which had inspired the artist, Mrs Helma Fritsche-Flügel, in her work. Mrs Fritsche-Flügel, née Kössl, comes from Wallern, that is from the immediate vicinity of the old chapel on the Tussetberg. The artist has long enjoyed great esteem among the Bohemian Forest Germans; the altar painting in the Bishop Neumann Chapel on the Dreisesselberg is also from her hand. She worked for one and a half years on the 14 panels, which were now to be fitted into the shrines erected the previous year. Formerly three Ways of the Cross led from Tusset, Böhmisch Röhren and Guthausen to the old chapel. Only with this new depiction of Christ’s Passion did the newly built Tusset Chapel gain its dignified standing as a place of pilgrimage. The individual stations were donated through gifts from the surrounding municipalities."
+    },
+    {
+      "t": "p",
+      "html": "That gave the painter additional impulses for her work. The panels are painted on copper plates. Each picture shows in the background motifs of the place that donated it. The Passion of Christ thus becomes a symbolic procession through the fields beyond the border. The artist succeeded masterfully in linking the story of salvation with the fate of the Bohemian Forest Germans in recent decades, and in awakening religious feeling."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/stbuebergabe.jpg",
+      "align": "wide",
+      "alt": "Emil Weber hands over their Stations of the Cross to the delegations of the donating municipalities",
+      "caption": "Afterwards Emil Weber handed over their pictures to the delegations of the donating municipalities."
+    },
+    {
+      "t": "p",
+      "html": "Proudly children and adults from these places joined the procession, led by the band of Philippsreut. In a long procession the faithful accompanied the Stations of the Cross to the square in front of the chapel. (&nbsp;In Bohemian Forest costume, Emil Weber’s sons Franz and Gerhard&nbsp;). Here they were set up beside the image of the Mother of God of the Tussetberg, the so-called „Bark Madonna“, and were blessed."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegweihe/gerhardfranz.jpg",
+          "alt": "Franz and Gerhard Weber in Bohemian Forest costume in the procession",
+          "caption": "In Bohemian Forest costume, Emil Weber’s sons Franz and Gerhard"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbweihe1.jpg",
+          "alt": "Father Pimmer blesses the station pictures in front of the Tusset Chapel",
+          "caption": "In front of the Tusset Chapel, Father Pimmer blesses the station pictures"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "The festive service was celebrated, with four clergy assisting, by the Right Reverend Father Pimmer, who as a schoolboy had himself once made the pilgrimage to the old chapel. The Ingolstadt Women’s Choir framed the service with singing and instrumental accompaniment. Even though the weather left something to be desired in the morning, this could not deter the pilgrims – their number was estimated at 4,000. In a wide circle in front of the chapel they listened devoutly to the sermon of the Right Reverend Father Pimmer and to the Ingolstadt Women’s Choir with the Waldler Mass. The interior of the chapel remained reserved for the elderly and the sick."
+    },
+    {
+      "t": "p",
+      "html": "In the afternoon a long procession of pilgrims then moved in prayer through the fields around Philippsreut."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/kreuzwegzug.jpg",
+      "align": "wide",
+      "alt": "The long procession of pilgrims on the Way of the Cross above the fields of Philippsreut"
+    },
+    {
+      "t": "p",
+      "html": "After various proposals and unsuccessful attempts to lead the Way of the Cross from the border to the chapel, the municipality of Philippsreut, through the vigorous support of its mayor Otto Damasko, permitted the stations to be set up on private land in a wide arc above the village. Yet it was precisely through this elevated position at the forest edge, with the distant view of the Bohemian Forest beyond the border, that the recreated Way of the Lord gained a fitting expressive power."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/kwgebete.jpg",
+      "align": "left",
+      "alt": "Father Pimmer says the Stations of the Cross prayers at a wayside shrine"
+    },
+    {
+      "t": "p",
+      "html": "Father Pimmer said the Stations of the Cross prayers which our countrywoman Mrs Ilse Viehbeck-Veith (Wallern) wrote for this Way of the Cross. As the long procession of pilgrims paused in silence at each shrine and symbolically experienced a Golgotha with the priest, everyone surely felt the deep emotion and the harmonious presentation in the artist’s work."
+    },
+    {
+      "t": "p",
+      "html": "Even a chance walker will be moved by the sensitive, realistic depiction of the Passion."
+    },
+    {
+      "t": "p",
+      "html": "Mrs Fritsche-Flügel succeeded in every way in filling the traditional, popular design of a Way of the Cross with artistic impulse. Thus for the Bohemian Forest Germans, after years of decay of their cultural treasures in their homeland, a revival of old cultural heritage was achieved on Bavarian soil. Mrs Fritsche-Flügel contributed decisively to this with her Stations of the Cross panels. She deserves – as do the many donors – the well-founded thanks of her countrymen."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/letztekwstation.jpg",
+      "align": "center",
+      "alt": "The last Station of the Cross with a view across the fields towards the Bohemian Forest",
+      "caption": "The last Station of the Cross"
+    }
+  ]
+}

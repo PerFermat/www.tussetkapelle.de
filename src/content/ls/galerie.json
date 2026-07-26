@@ -1,0 +1,546 @@
+{
+  "id": "galerie",
+  "type": "gallery",
+  "parent": "home",
+  "navLabel": "Bilder",
+  "kicker": "Bilder",
+  "title": "Bilder von der Tusset-Kapelle",
+  "subtitle": "Alte und neue Bilder",
+  "description": "Hier sehen Sie alle Bilder von der Tusset-Kapelle. Von der alten Kapelle im Böhmer-Wald. Und von der neuen Kapelle in Philippsreut.",
+  "_quelle": "inhalte/fotogalerie/fotogalerie.htm sowie alle Bilder der Altsite",
+  "_erzeugt": "Diese Datei wird von tools/make-gallery.mjs erzeugt. Nicht direkt bearbeiten. Bildunterschriften: Deutsch in make-gallery.mjs, Englisch und Leichte Sprache in gallery-captions.mjs.",
+  "intro": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Hier sehen Sie viele Bilder. Klicken Sie auf ein Bild. Dann wird das Bild groß. Mit den Pfeil-Tasten sehen Sie das nächste Bild. Mit der Taste Escape machen Sie das Bild wieder zu."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Die neue Tusset-Kapelle",
+      "items": [
+        {
+          "src": "neuetk/einleitung/neuetk.jpg",
+          "caption": "Die neue Kapelle in Philippsreut."
+        },
+        {
+          "src": "neuetk/einleitung/ntkaltetk.jpg",
+          "caption": "Die alte Kapelle war fast ganz zerfallen."
+        },
+        {
+          "src": "neuetk/einleitung/ntkemil_otto.jpg",
+          "caption": "Emil Weber und der Bürger-Meister Otto Damasko."
+        },
+        {
+          "src": "neuetk/einleitung/ntkgedenkstein.jpg",
+          "caption": "Der Gedenk-Stein vor der Kapelle."
+        },
+        {
+          "src": "neuetk/einleitung/ntkkarte.jpg",
+          "caption": "Eine Karte. Sie zeigt: Hier stehen die beiden Kapellen."
+        },
+        {
+          "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
+          "caption": "Die Kapelle am Abend."
+        },
+        {
+          "src": "ntkaltar.jpg",
+          "caption": "So sieht es innen in der neuen Kapelle aus."
+        },
+        {
+          "src": "ntkwinterbild.jpg",
+          "caption": "Die neue Kapelle im Winter. Überall liegt Schnee."
+        },
+        {
+          "src": "zeichnungntkumkehr.jpg",
+          "caption": "Eine Zeichnung von der Kapelle."
+        }
+      ],
+      "note": "So sieht die Kapelle in Philippsreut heute aus."
+    },
+    {
+      "title": "Die alte Tusset-Kapelle im Böhmer-Wald",
+      "items": [
+        {
+          "src": "altetk/kapelleundwallern/feuersturm.jpg",
+          "caption": "Im Jahr 1863 gab es in Wallern ein großes Feuer. Die Kirche ist abgebrannt."
+        },
+        {
+          "src": "altetk/kapelleundwallern/gebhausklauser.jpg",
+          "caption": "Der Ort Wallern. In dem Eck-Haus links neben der Kirche wohnte Jakob Klauser."
+        },
+        {
+          "src": "altetk/kapelleundwallern/postkarte.jpg",
+          "caption": "Eine alte Post-Karte vom Tusset-Berg."
+        },
+        {
+          "src": "altetk/kapelleundwallern/wallern.jpg",
+          "caption": "Der Ort Wallern im Böhmer-Wald."
+        },
+        {
+          "src": "altetk/kreuzwege/atk1945.jpg",
+          "caption": "So sah es innen in der alten Kapelle aus."
+        },
+        {
+          "src": "altetk/kreuzwege/atkstationsbild.jpg",
+          "caption": "Ein Bild vom alten Kreuz-Weg. Es hängt heute in der neuen Kapelle."
+        },
+        {
+          "src": "altetk/kreuzwege/atkverfall.jpg",
+          "caption": "Die alte Kapelle im Jahr 1980. Sie war fast zerfallen."
+        },
+        {
+          "src": "altetk/kreuzwege/atkverwuestet.jpg",
+          "caption": "So sah es im Jahr 1980 innen in der alten Kapelle aus. Alles war zerstört."
+        },
+        {
+          "src": "altetk/kreuzwege/atkzeichnung.jpg",
+          "caption": "Eine Zeichnung von der alten Kapelle."
+        },
+        {
+          "src": "altetk/kreuzwege/boehmroehren.jpg",
+          "caption": "Das alte Dorf Böhmisch-Röhren."
+        },
+        {
+          "src": "altetk/kreuzwege/guthausen.jpg",
+          "caption": "Das Dorf Guthausen am Tusset-Berg."
+        },
+        {
+          "src": "altetk/kreuzwege/stannakapelle.jpg",
+          "caption": "Die Sankt-Anna-Kapelle in Leimsgrub."
+        },
+        {
+          "src": "altetk/kreuzwege/tussetgb.jpg",
+          "caption": "Das Dorf Tusset. Links ist die Dorf-Kapelle."
+        },
+        {
+          "src": "altetk/tusset_alt.jpg",
+          "caption": "Die alte Kapelle auf dem Tusset-Berg."
+        }
+      ],
+      "note": "Der Tusset-Berg, die Kapelle und die Dörfer in der Nähe."
+    },
+    {
+      "title": "Die Bilder von Maria",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/gnbildischraml.jpg",
+          "caption": "Ein Bild von Maria. Ignaz Schraml hat es gemalt."
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrauscher.jpg",
+          "caption": "Ein Bild von Maria. Karl Rauscher hat es gemalt."
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrestauriert.jpg",
+          "caption": "Dieses Bild war lange verschwunden. Frau Fritsche-Flügel hat es wieder schön gemacht."
+        },
+        {
+          "src": "altetk/gnadenbilder/ignazschraml.jpg",
+          "caption": "Der Maler Ignaz Schraml."
+        },
+        {
+          "src": "altetk/gnadenbilder/rindenmadonna.jpg",
+          "caption": "Dieses Bild heißt Rinden-Madonna. Frau Blechschmied hat es gerettet."
+        },
+        {
+          "src": "altetk/gnadenbilder/wallfahrtszettel.jpg",
+          "caption": "Ein alter Zettel mit dem Bild von Maria."
+        }
+      ],
+      "note": "Diese Bilder zeigen Maria mit dem Jesus-Kind."
+    },
+    {
+      "title": "Fotos von der alten Kapelle aus dem Jahr 1983",
+      "items": [
+        {
+          "src": "fotogalerie/fotosatk/atk1983_1.jpg",
+          "caption": "Emil Weber misst die alte Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_10.jpg",
+          "caption": "Der Eingang von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_11.jpg",
+          "caption": "Die Mauer von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_12.jpg",
+          "caption": "Das Dach von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_13.jpg",
+          "caption": "Balken von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_14.jpg",
+          "caption": "Balken von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_15.jpg",
+          "caption": "Balken von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_16.jpg",
+          "caption": "Ein Fenster von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_2.jpg",
+          "caption": "Der Turm von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_3.jpg",
+          "caption": "Eine Säule von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_4.jpg",
+          "caption": "Die Tür von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_5.jpg",
+          "caption": "Die Bänke in der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_6.jpg",
+          "caption": "Ein Fenster von der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_7.jpg",
+          "caption": "Die Empore in der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_8.jpg",
+          "caption": "Die Empore in der alten Kapelle. 1983."
+        },
+        {
+          "src": "fotogalerie/fotosatk/atk1983_9.jpg",
+          "caption": "Eine Stütze in der alten Kapelle. 1983."
+        }
+      ],
+      "note": "Emil Weber hat die alte Kapelle im Jahr 1983 genau ausgemessen. Die Fotos zeigen: Die Kapelle war fast ganz zerfallen."
+    },
+    {
+      "title": "Der Wieder-Aufbau von 1983 bis 1985",
+      "items": [
+        {
+          "src": "neuetk/entstehung/aufrichten.jpg",
+          "caption": "Die Kapelle wird aufgebaut."
+        },
+        {
+          "src": "neuetk/entstehung/emilweber.jpg",
+          "caption": "Emil Weber."
+        },
+        {
+          "src": "neuetk/entstehung/ewzimmern.jpg",
+          "caption": "Emil Weber arbeitet mit Holz."
+        },
+        {
+          "src": "neuetk/entstehung/fenstertk.jpg",
+          "caption": "Die fertigen Fenster. Es sind 20 Stück."
+        },
+        {
+          "src": "neuetk/entstehung/gemarbeiten.jpg",
+          "caption": "Arbeiter graben das Fundament."
+        },
+        {
+          "src": "neuetk/entstehung/lkwladen.jpg",
+          "caption": "Das Holz wird auf einen Lastwagen geladen."
+        },
+        {
+          "src": "neuetk/entstehung/ruinetk.jpg",
+          "caption": "Die alte Kapelle im April 1983."
+        },
+        {
+          "src": "neuetk/entstehung/spengler.jpg",
+          "caption": "Handwerker machen das Dach aus Kupfer."
+        },
+        {
+          "src": "neuetk/entstehung/tkfertig.jpg",
+          "caption": "Die neue Kapelle ist fertig."
+        },
+        {
+          "src": "neuetk/entstehung/tkplan.jpg",
+          "caption": "Der Bau-Plan für die neue Kapelle."
+        },
+        {
+          "src": "neuetk/entstehung/treffen1.jpg",
+          "caption": "Das erste Treffen in Philippsreut im Jahr 1982."
+        },
+        {
+          "src": "neuetk/entstehung/winterlager.jpg",
+          "caption": "Emil Weber vor dem Holz-Lager."
+        }
+      ],
+      "note": "Diese Fotos hat Emil Weber gemacht."
+    },
+    {
+      "title": "Das Fest am 27. Juli 1985",
+      "items": [
+        {
+          "src": "neuetk/einweihung/bischofeder.jpg",
+          "caption": "Der Bischof Franz Eder aus Passau."
+        },
+        {
+          "src": "neuetk/einweihung/bwjugendgp.jpg",
+          "caption": "Junge Leute in schöner alter Kleidung."
+        },
+        {
+          "src": "neuetk/einweihung/bwjugendzelt.jpg",
+          "caption": "Junge Leute tanzen im Fest-Zelt."
+        },
+        {
+          "src": "neuetk/einweihung/einladung.jpg",
+          "caption": "Die Einladung zum Fest."
+        },
+        {
+          "src": "neuetk/einweihung/ewgnadenbild.jpg",
+          "caption": "Emil Weber mit dem Bild von Maria."
+        },
+        {
+          "src": "neuetk/einweihung/festzug.jpg",
+          "caption": "Viele Menschen gehen durch das Dorf."
+        },
+        {
+          "src": "neuetk/einweihung/gnadenbildtk.jpg",
+          "caption": "Das Bild von Maria wird getragen."
+        },
+        {
+          "src": "neuetk/einweihung/lr-schumertl-und-emil.jpg",
+          "caption": "Der Landrat Schumertl und Emil Weber."
+        },
+        {
+          "src": "neuetk/einweihung/ntkregen.jpg",
+          "caption": "Beim Fest hat es stark geregnet."
+        },
+        {
+          "src": "neuetk/einweihung/sm-neubauer-und-emil.jpg",
+          "caption": "Der Minister Franz Neubauer und Emil Weber."
+        },
+        {
+          "src": "neuetk/einweihung/tkinnen1.jpg",
+          "caption": "Die Kapelle ist innen festlich geschmückt."
+        }
+      ]
+    },
+    {
+      "title": "Das Fest für den Kreuz-Weg am 15. August 1987",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegweihe/emilottqhelma.jpg",
+          "caption": "Emil Weber und die Malerin Helma Fritsche-Flügel."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/festakt.jpg",
+          "caption": "Das Fest auf dem Dorf-Platz."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/geistlichkeit.jpg",
+          "caption": "Viele Pfarrer sind zum Fest gekommen."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/gerhardfranz.jpg",
+          "caption": "Franz und Gerhard. Das sind die Söhne von Emil Weber."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/kreuzwegzug.jpg",
+          "caption": "Viele Menschen gehen den Kreuz-Weg."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/kwgebete.jpg",
+          "caption": "Der Pfarrer Pimmer betet."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/letztekwstation.jpg",
+          "caption": "Das letzte Bild vom Kreuz-Weg."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/salnau.jpg",
+          "caption": "Ein Bild vom Kreuz-Weg mit der Kirche von Salnau."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stationsbilder.jpg",
+          "caption": "Die 14 Bilder vom Kreuz-Weg."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbuebergabe.jpg",
+          "caption": "Emil Weber gibt die Bilder an die Dörfer."
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbweihe1.jpg",
+          "caption": "Der Pfarrer Pimmer segnet die Bilder."
+        }
+      ]
+    },
+    {
+      "title": "Die 14 Bilder vom Kreuz-Weg",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegbilder/kreuzweg.jpg",
+          "caption": "Der Kreuz-Weg führt oberhalb vom Dorf."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st1.jpg",
+          "caption": "Bild 1: Jesus steht vor seinen Richtern."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st10.jpg",
+          "caption": "Bild 10: Jesus wird die Kleidung weggenommen."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st11.jpg",
+          "caption": "Bild 11: Jesus wird an das Kreuz genagelt."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st12.jpg",
+          "caption": "Bild 12: Jesus stirbt am Kreuz."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st13.jpg",
+          "caption": "Bild 13: Maria hält ihren toten Sohn im Arm."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st14.jpg",
+          "caption": "Bild 14: Jesus wird begraben. Dieses Bild ist für das Dorf Tusset."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st1marterl.jpg",
+          "caption": "Ein Bild-Stock am Kreuz-Weg."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st2.jpg",
+          "caption": "Bild 2: Jesus nimmt das Kreuz."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st3.jpg",
+          "caption": "Bild 3: Jesus fällt zum ersten Mal hin."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st4.jpg",
+          "caption": "Bild 4: Jesus trifft seine Mutter."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st5.jpg",
+          "caption": "Bild 5: Simon hilft Jesus beim Tragen."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st6.jpg",
+          "caption": "Bild 6: Veronika gibt Jesus ein Tuch."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st7.jpg",
+          "caption": "Bild 7: Jesus fällt zum zweiten Mal hin."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st8.jpg",
+          "caption": "Bild 8: Jesus trifft weinende Frauen."
+        },
+        {
+          "src": "neuetk/kreuzwegbilder/st9.jpg",
+          "caption": "Bild 9: Jesus fällt zum dritten Mal hin."
+        }
+      ],
+      "note": "Helma Fritsche-Flügel hat diese Bilder gemalt."
+    },
+    {
+      "title": "Die alte Kapelle wird repariert: 1987 bis 1990",
+      "items": [
+        {
+          "src": "altetk/renovierung/alteundneuetk.jpg",
+          "caption": "Die alte Kapelle und die neue Kapelle."
+        },
+        {
+          "src": "altetk/renovierung/atkeinweihung.jpg",
+          "caption": "Im August 1990 gab es ein Fest bei der alten Kapelle."
+        },
+        {
+          "src": "altetk/renovierung/atkrenov1.jpg",
+          "caption": "Die alte Kapelle ist wieder repariert."
+        },
+        {
+          "src": "altetk/renovierung/atkrenov2.jpg",
+          "caption": "Arbeiter reparieren die alte Kapelle."
+        },
+        {
+          "src": "altetk/renovierung/atkrenov3.jpg",
+          "caption": "Die reparierte alte Kapelle von der Seite."
+        },
+        {
+          "src": "altetk/renovierung/atkrenov4.jpg",
+          "caption": "Helfer räumen bei der alten Kapelle auf."
+        },
+        {
+          "src": "altetk/renovierung/atkruine1.jpg",
+          "caption": "So sah die alte Kapelle im Mai 1987 aus."
+        },
+        {
+          "src": "altetk/renovierung/atkruine2.jpg",
+          "caption": "Die alte Kapelle im Jahr 1988."
+        }
+      ]
+    },
+    {
+      "title": "Emil Weber und seine Helfer",
+      "items": [
+        {
+          "src": "initiatoren/emilweber.jpg",
+          "caption": "Emil Weber."
+        },
+        {
+          "src": "initiatoren/emilweber/elendbachl.jpg",
+          "caption": "Ein Haus in Elendbachl. Links an der Wand stehen Sieb-Reifen aus Holz."
+        },
+        {
+          "src": "initiatoren/emilweber/emilmarine.jpg",
+          "caption": "Emil Weber war Soldat bei der Marine."
+        },
+        {
+          "src": "initiatoren/emilweber/grabstein1.jpg",
+          "caption": "Der Grab-Stein von Emil Weber."
+        },
+        {
+          "src": "initiatoren/emilweber/hzemilanna.jpg",
+          "caption": "Die Hochzeit von Emil Weber und Anna Spitzl."
+        },
+        {
+          "src": "initiatoren/emilweber/hzmarieemil.jpg",
+          "caption": "Die Hochzeit von Emil Weber und Maria Prinz."
+        },
+        {
+          "src": "initiatoren/emilweber/sbew1.jpg",
+          "caption": "Emil Weber vor der neuen Kapelle."
+        },
+        {
+          "src": "initiatoren/emilweber/urgrosselternemi.jpg",
+          "caption": "Die Groß-Eltern von Emil Weber."
+        },
+        {
+          "src": "initiatoren/emilweber/weberfamilie.jpg",
+          "caption": "Die Familie von Emil Weber."
+        },
+        {
+          "src": "initiatoren/gerhardedlmann.jpg",
+          "caption": "Gerhard Edlmann. Er war der Architekt."
+        },
+        {
+          "src": "initiatoren/ottodamasko.jpg",
+          "caption": "Otto Damasko. Er war Bürger-Meister von Philippsreut."
+        }
+      ]
+    },
+    {
+      "title": "Der Böhmer-Wald und der Bayerische Wald",
+      "items": [
+        {
+          "src": "kontakt/haidmuehle.jpg",
+          "caption": "Die Landschaft bei Haidmühle."
+        },
+        {
+          "src": "kontakt/stubenbachsee.jpg",
+          "caption": "Der Stubenbach-See im Böhmer-Wald."
+        }
+      ]
+    }
+  ]
+}

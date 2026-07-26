@@ -1,0 +1,84 @@
+{
+  "id": "gnadenbilder",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "The miraculous images",
+  "kicker": "The chapel on the Tussetberg · An account by Otto Veith",
+  "title": "2. The miraculous images",
+  "description": "The miraculous images of Our Lady of the Tussetberg: the image by Ignaz Schraml, the image of 1884, the Tusset painting by Karl Rauscher and the Bark Madonna, saved during the expulsion.",
+  "_quelle": "inhalte/altetk/gnadenbilder/gnadenbilder.htm",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "The timber chapel built by Jakob Klauser in 1791 suffered greatly from the weather, so that in 1804 the market municipality of Wallern had a stone one built. The old and already rather fragile miraculous image „Maria with the Rose“ was also replaced by a new, larger one. The painter was probably the then widely known Wallern craftsman Ignaz Schraml (1762 – 1846), known as „Oidl-Nazl“. He never signed his pictures, but he certainly created further Tusset images (for example one in the possession of the Achatz/Obermüllner family, and probably also the picture in the chapel at Frauenberg, not far from the approach to the Dreisessel). In the village chapel at Auersbergsreut, too, we find a copy of the Tusset miraculous image. And a further copy was saved and brought to Bavaria at the expulsion by a family from Böhm.-Röhren. There are probably still more copies which our countrymen were able to bring to safety."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/ignazschraml.jpg",
+          "alt": "Painted portrait of the Wallern craftsman Ignaz Schraml",
+          "caption": "Ignaz Schraml"
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildischraml.jpg",
+          "alt": "Copy of the Tusset miraculous image: Mary with the Child, painted by Ignaz Schraml",
+          "caption": "Copy of the miraculous image by Ignaz Schraml"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "After the forest dispute the parish of Böhm.-Röhren was now responsible for the Tusset Chapel, and around 1815 a new miraculous image was again commissioned, possibly once more from Ignaz Schraml."
+    },
+    {
+      "t": "p",
+      "html": "In 1884 a painting „Maria with the Rose“ was again commissioned for the forest chapel from the art dealer Josef Müller in Munich. This picture was fixed firmly to the altar and so remained in place until 1956. To protect it from looters, the miraculous image was kept in private safekeeping in Guthausen until 1965. After many wanderings, and with the help of the Mother of God, it has found a home again in the new Tusset Chapel in Philippsreut."
+    },
+    {
+      "t": "p",
+      "html": "In 1956 a Tusset painting from the rectory at Wallern, created by the master painter Karl Rauscher of Wallern, was placed on the altar of the forest chapel on the Tusset as a replacement. It remained in tolerably good condition until 1967. Then it disappeared from the chapel and was considered lost. In 1987 this picture reappeared, could be restored by Helma Fritsche-Flügel, and is now in the new Tusset Chapel."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/gnadenbilder/gnbildrauscher.jpg",
+      "align": "center",
+      "alt": "Tusset painting by the master painter Karl Rauscher of Wallern: Mary with the Child"
+    },
+    {
+      "t": "p",
+      "html": "But let us return to the turn of the century. Because the chapel could not hold all the pilgrims as the pilgrimages grew ever larger, and because the service was celebrated before a forest altar, especially on 15&nbsp;August, the parish priest of Böhm.-Röhren had a further picture painted at his own expense in Krummau (?) in the Nazarene style. From Father Pechtl we learn that at that time probably two pictures were made at once. In this fourth representation of the miraculous image since the beginning of the pilgrimage, the old painting doubtless served as the model, yet unfortunately the beautiful effect of the picture was no longer achieved. One of these two pictures was placed on the left side altar of the church at Röhren. There it was often copied by painters and also served as the motif for devotional and pilgrimage prints. With the destruction of the church at Böhm.-Röhren this picture of 1908 was destroyed."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/wallfahrtszettel.jpg",
+          "alt": "Printed pilgrimage sheet depicting the Tusset Madonna",
+          "caption": "„Pilgrimage sheet“ of the Tusset Madonna"
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrestauriert.jpg",
+          "alt": "The rediscovered miraculous image after restoration: Mary with the Child",
+          "caption": "The reappeared miraculous image after its restoration by Mrs Fritsche-Flügel"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "The second picture, however, in a plain wooden frame, which adorned the forest altar in front of the chapel at every pilgrimage, had its place in the small timber sacristy. This „Bark Madonna“ was saved for us by Mrs Blechschmied of Böhm.-Röhren. At the expulsion she wrapped it – without the frame, of course – around a broom handle and so brought it across the saving border. Mrs Blechschmied held it in high honour until her death. For a long time it was in the church at Jandelsbrunn, then found a place of honour in the Bishop Neumann Chapel on the Dreisessel, and has now also come home to the new Tusset Chapel."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/gnadenbilder/rindenmadonna.jpg",
+      "align": "center",
+      "alt": "The Bark Madonna: a Marian image in a plain frame made of tree bark"
+    },
+    {
+      "t": "p",
+      "html": "So both miraculous images from the Tusset now share a common place again in a consecrated setting."
+    }
+  ]
+}

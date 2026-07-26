@@ -1,0 +1,102 @@
+{
+  "id": "datenschutz",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Datenschutz",
+  "kicker": "Rechtliches",
+  "title": "Datenschutzerklärung",
+  "description": "Datenschutzerklärung: Diese Website setzt keine Cookies, bindet keine externen Dienste ein und verwendet kein Tracking.",
+  "_hinweis": "Neu erstellt. Beschreibt genau den technischen Zustand dieser Website. Die mit ⟨…⟩ markierten Stellen muss der Betreiber ausfüllen.",
+
+  "blocks": [
+    {
+      "t": "note",
+      "title": "Bitte ausfüllen und prüfen",
+      "html": "Die mit <strong>⟨spitzen Klammern⟩</strong> markierten Angaben müssen vor der Veröffentlichung eingesetzt werden. Der Abschnitt zu den Server-Protokolldateien ist mit dem Hosting-Anbieter abzugleichen. Diese Seite ersetzt keine Rechtsberatung."
+    },
+
+    { "t": "h2", "text": "Das Wichtigste in Kürze" },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Diese Website ist eine rein statische Website. Sie setzt <strong>keine Cookies</strong>, verwendet <strong>kein Tracking und keine Analysewerkzeuge</strong>, bindet <strong>keine Schriftarten, Karten, Videos oder Skripte von fremden Servern</strong> ein und legt <strong>keine Daten in Ihrem Browser ab</strong>. Es gibt kein Kontaktformular und keine Anmeldung."
+    },
+
+    { "t": "h2", "text": "Verantwortliche Stelle" },
+    {
+      "t": "p",
+      "html": "⟨Vor- und Nachname bzw. Name der Körperschaft⟩<br>⟨Straße und Hausnummer⟩<br>⟨Postleitzahl und Ort⟩<br>E-Mail: <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>"
+    },
+
+    { "t": "h2", "text": "Server-Protokolldateien" },
+    {
+      "t": "p",
+      "html": "Beim Aufruf einer Seite übermittelt Ihr Browser technisch notwendige Daten an den Server des Hosting-Anbieters. Dieser speichert sie üblicherweise in Protokolldateien: aufgerufene Adresse, Datum und Uhrzeit, übertragene Datenmenge, Meldung über den Erfolg des Abrufs, Browsertyp und Version, Betriebssystem, verweisende Seite sowie die IP-Adresse."
+    },
+    {
+      "t": "dl",
+      "items": [
+        {
+          "term": "Zweck",
+          "html": "Bereitstellung der Website, Betriebssicherheit und Fehleranalyse."
+        },
+        {
+          "term": "Rechtsgrundlage",
+          "html": "Art.&nbsp;6 Abs.&nbsp;1 Satz&nbsp;1 lit.&nbsp;f DSGVO – berechtigtes Interesse am technisch fehlerfreien Betrieb."
+        },
+        {
+          "term": "Speicherdauer",
+          "html": "⟨Angabe des Hosting-Anbieters, üblich sind 7 bis 30 Tage⟩"
+        },
+        {
+          "term": "Auftragsverarbeiter",
+          "html": "⟨Name und Anschrift des Hosting-Anbieters; mit ihm ist ein Vertrag zur Auftragsverarbeitung nach Art.&nbsp;28 DSGVO zu schließen⟩"
+        }
+      ]
+    },
+
+    { "t": "h2", "text": "Kontaktaufnahme per E-Mail" },
+    {
+      "t": "p",
+      "html": "Wenn Sie uns eine E-Mail schreiben, werden Ihre Angaben zur Bearbeitung der Anfrage und für mögliche Anschlussfragen gespeichert. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 Satz&nbsp;1 lit.&nbsp;f DSGVO. Die Daten werden gelöscht, sobald die Anfrage erledigt ist und keine Aufbewahrungspflichten entgegenstehen."
+    },
+
+    { "t": "h2", "text": "Keine Cookies, kein Tracking" },
+    {
+      "t": "p",
+      "html": "Es werden keine Cookies gesetzt und es wird kein <span lang=\"en\">Local Storage</span> oder <span lang=\"en\">Session Storage</span> genutzt. Es findet keine Reichweitenmessung statt, es sind keine Zählpixel, Social-Media-Schaltflächen oder Werbenetzwerke eingebunden. Ein Einwilligungsbanner ist deshalb nicht erforderlich."
+    },
+    {
+      "t": "p",
+      "html": "Das kleine JavaScript dieser Seite läuft ausschließlich in Ihrem Browser. Es klappt das Menü auf und zu und zeigt Bilder in einer größeren Ansicht. Es überträgt keine Daten und speichert nichts."
+    },
+
+    { "t": "h2", "text": "Schriftarten und Bilder" },
+    {
+      "t": "p",
+      "html": "Es werden ausschließlich die auf Ihrem Gerät bereits vorhandenen Systemschriftarten verwendet. Google Fonts oder vergleichbare Dienste sind nicht eingebunden, es findet also keine Verbindung zu fremden Servern statt. Alle Bilder liegen auf demselben Server wie die Website."
+    },
+
+    { "t": "h2", "text": "Externe Verweise" },
+    {
+      "t": "p",
+      "html": "Auf der Seite <a href=\"{{href:kontakt}}\">Kontakt</a> und der Seite <a href=\"{{href:besuch}}\">Besuch</a> finden Sie Verweise auf fremde Websites. Diese werden erst aufgerufen, wenn Sie den Verweis anklicken. Erst dann erhält der jeweilige Anbieter Ihre IP-Adresse. Für die Datenverarbeitung auf jenen Seiten ist der jeweilige Anbieter verantwortlich. Es sind keine Landkarten oder sonstigen Inhalte fremder Anbieter in diese Seiten eingebettet."
+    },
+
+    { "t": "h2", "text": "Ihre Rechte" },
+    {
+      "t": "p",
+      "html": "Sie haben das Recht auf Auskunft (Art.&nbsp;15 DSGVO), Berichtigung (Art.&nbsp;16), Löschung (Art.&nbsp;17), Einschränkung der Verarbeitung (Art.&nbsp;18), Datenübertragbarkeit (Art.&nbsp;20) und Widerspruch (Art.&nbsp;21). Wenden Sie sich dazu an die oben genannte verantwortliche Stelle."
+    },
+    {
+      "t": "p",
+      "html": "Ihnen steht außerdem ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu. Zuständig ist in Bayern das Bayerische Landesamt für Datenschutzaufsicht, Promenade&nbsp;18, 91522 Ansbach."
+    },
+
+    { "t": "h2", "text": "Änderungen" },
+    {
+      "t": "p",
+      "html": "Diese Erklärung beschreibt den Stand der Website zum Zeitpunkt ihrer Erstellung. Sollten künftig Funktionen ergänzt werden, die Daten verarbeiten, wird diese Erklärung entsprechend angepasst."
+    }
+  ]
+}

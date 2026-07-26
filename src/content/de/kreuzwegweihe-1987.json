@@ -1,0 +1,136 @@
+{
+  "id": "kreuzwegweihe-1987",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Kreuzwegweihe 1987",
+  "kicker": "Die neue Tussetkapelle",
+  "title": "Der Kreuzweg der Böhmerwäldler in Philippsreut",
+  "subtitle": "Die Weihe der neuen Kreuzwegbilder am 15. August 1987",
+  "description": "Am 15. August 1987 wurden bei der dritten Wallfahrt zur neuen Tussetkapelle die 14 Kreuzwegbilder von Helma Fritsche-Flügel geweiht. Rund 4.000 Wallfahrer nahmen teil.",
+  "_quelle": "inhalte/neuetk/kreuzwegweihe/ntkkreuzwegweihe.htm",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/stationsbilder.jpg",
+      "align": "wide",
+      "alt": "Die 14 Kreuzwegtafeln aufgereiht auf dem Dorfplatz von Philippsreut"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Am 15.&nbsp;August 1987 war in Philippsreut die nun schon Tradition gewinnende 3.&nbsp;Wallfahrt bei der neuen Tussetkapelle. Wieder kam eine große Zahl von Pilgern, um der Schutzfrau des Böhmerwaldes Ehre zu erweisen und um ihre Fürbitte zu flehen. Der Mittelpunkt dieser Wallfahrt war die Weihe der neuen Kreuzwegbilder."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegweihe/salnau.jpg",
+          "alt": "Kreuzwegtafel mit der Kirche von Salnau im Hintergrund"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/geistlichkeit.jpg",
+          "alt": "Die Geistlichkeit beim Festakt vor der Philippsreuter Kirche",
+          "caption": "Alle Pfarreien fanden sich zum Festakt ein"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Die Wälder um Philippsreut waren zwar in der Früh von grauen Nebelschwaden umhüllt, aber das lichte Mauerwerk der Philippsreuter Kirche mit dem Kriegerdenkmal leuchtete doch einladend am Dorfplatz."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/festakt.jpg",
+      "align": "wide",
+      "alt": "Der Festakt am Dorfplatz von Philippsreut mit Fahnenabordnungen und Trachtengruppen"
+    },
+    {
+      "t": "p",
+      "html": "Dort waren die 14 Kreuzwegtafeln aufgestellt und boten den Fotografen ein willkommenes Objekt zum Knipsen. Bald fanden sich auch Fahnenabordnungen, Trachtengruppen und Wallfahrer dort ein. Hier begann auch der festliche Tag mit einem Gedenken und einer Kranzniederlegung beim Kriegerdenkmal für alle Gefallenen, Vermissten und Verstorbenen aus den Dörfern des Böhmerwaldes. Tiefbewegt lauschten alle, als die Klänge des Liedes vom „Guten Kameraden“ über die Grenze in ihre Heimat hintönten."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/emilottqhelma.jpg",
+      "align": "right",
+      "alt": "Emil Weber mit der Malerin Helma Fritsche-Flügel und weiteren Beteiligten"
+    },
+    {
+      "t": "p",
+      "html": "Anschließend erläuterte Rosa Tahedl im Auftrag der Malerin der Kreuzwegbilder Ideen und Gedanken, welche für die Künstlerin, Frau Helma Fritsche-Flügel, den Ansporn zu ihrem Werk gaben. Frau Fritsche-Flügel, geb. Kössl, stammt aus Wallern, also aus der näheren Umgebung der alten Kapelle am Tussetberg. Die Künstlerin genießt unter den Böhmerwäldlern schon lange großes Ansehen, stammt doch auch das Altarbild in der Bischof-Neumann-Kapelle auf dem Dreisesselberg von ihrer Hand. Sie arbeitete 1&nbsp;1/2&nbsp;Jahre an den 14 Bildtafeln, die nun in die im Vorjahre aufgestellten Bildstöcke eingefügt werden sollten. Früher führten drei Kreuzwege von Tusset, Böhmisch Röhren und Guthausen zur alten Kapelle. Die neu erbaute Tussetkapelle erhielt mit dieser neuen Darstellung des Leidensweges Christi erst die würdige Geltung als Wallfahrtsort. Die einzelnen Stationen wurden durch Spenden der umliegenden Gemeinden gestiftet."
+    },
+    {
+      "t": "p",
+      "html": "Das ergab für die Malerin zusätzlich Impulse für ihre Arbeit. Die Tafeln sind auf Kupferplatten gemalt. Jedes Bild zeigt im Hintergrund Motive des Stifterortes. Der Leidensweg Christi wird so zu einem symbolhaften Zug durch die Fluren jenseits der Grenze. Die Künstlerin verstand es meisterhaft, das Heilsgeschehen mit dem Schicksalsweg der Böhmerwäldler in den letzten Jahrzehnten zu verknüpfen und religiöses Empfinden wachzurufen."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/stbuebergabe.jpg",
+      "align": "wide",
+      "alt": "Emil Weber übergibt den Abordnungen der Stiftergemeinden ihre Kreuzwegbilder",
+      "caption": "Anschließend übergab Emil Weber an die Abordnungen der Stiftergemeinden ihre Bilder."
+    },
+    {
+      "t": "p",
+      "html": "Stolz reihten sich Kinder und Erwachsene dieser Orte in den Festzug ein, den die Musikkapelle von Philippsreut anführte. In einer langen Prozession begleiteten die Gläubigen die Kreuzwegbilder zum Platz vor der Kapelle. (&nbsp;In Böhmerwaldtracht die Söhne Emil Webers, Franz und Gerhard&nbsp;). Hier fanden sie neben dem Bild der Gottesmutter vom Tussetberg, der sogenannten „Rindenmadonna“, Aufstellung und wurden geweiht."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/kreuzwegweihe/gerhardfranz.jpg",
+          "alt": "Franz und Gerhard Weber in Böhmerwaldtracht beim Festzug",
+          "caption": "In Böhmerwaldtracht die Söhne Emil Webers, Franz und Gerhard"
+        },
+        {
+          "src": "neuetk/kreuzwegweihe/stbweihe1.jpg",
+          "alt": "Pfarrer Pimmer weiht vor der Tussetkapelle die Stationsbilder",
+          "caption": "Vor der Tussetkapelle weiht Pfarrer Pimmer die Stationsbilder"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Den Festgottesdienst zelebrierte unter Assistenz von vier Geistlichen H.&nbsp;H. Pfarrer Pimmer, der selber einst als Schulbub zur alten Kapelle gepilgert war. Der Frauensingkreis Ingolstadt umrahmte mit Gesang und Instrumentalbegleitung den Gottesdienst. Selbst wenn das Wetter am Vormittag zu wünschen übrig ließ, konnte das die Wallfahrer – ihre Zahl wurde auf 4&nbsp;000 geschätzt – nicht abschrecken. Im weiten Rund vor der Kapelle lauschten sie andächtig der Predigt von H.&nbsp;H. Pfarrer Pimmer und dem Frauensingkreis Ingolstadt mit der Waldlermesse. Der Innenraum der Kapelle blieb den Alten und Kranken vorbehalten."
+    },
+    {
+      "t": "p",
+      "html": "Am Nachmittag bewegte sich dann ein langer Zug der Wallfahrer betend durch die Fluren um Philippsreut."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/kreuzwegzug.jpg",
+      "align": "wide",
+      "alt": "Der lange Zug der Wallfahrer auf dem Kreuzweg über den Fluren von Philippsreut"
+    },
+    {
+      "t": "p",
+      "html": "Nach verschiedenen Vorschlägen und gescheiterten Versuchen, den Kreuzweg von der Grenze her zur Kapelle zu leiten, hat die Gemeinde Philippsreut durch die tatkräftige Unterstützung ihres Bürgermeisters Otto Damasko das Aufstellen der Stationen auf Privatgrund in einem weiten Bogen über dem Dorf gestattet. Aber gerade durch diese Höhenlage am Waldrand mit dem Fernblick auf den Böhmerwald jenseits der Grenze gewann der nachgestaltete Leidensweg des Herrn an sinnentsprechender Aussagekraft."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/kwgebete.jpg",
+      "align": "left",
+      "alt": "Pfarrer Pimmer spricht bei einem Marterl die Kreuzweg-Gebete"
+    },
+    {
+      "t": "p",
+      "html": "Pfarrer Pimmer sprach die Kreuzweg-Gebete, die unsere Landsmännin Frau Ilse Viehbeck-Veith (Wallern) für diesen Kreuzweg geschrieben hat. Als der lange Zug der Wallfahrer bei jedem Marterl ein stilles Verweilen einlegte und mit dem Geistlichen symbolisch ein Golgotha erlebte, spürte wohl jeder die tiefe Ergriffenheit und die harmonische Darstellung im Schaffen der Künstlerin."
+    },
+    {
+      "t": "p",
+      "html": "Auch ein zufälliger Wanderer wird von der feinsinnigen, realistischen Darstellung der Passion ergriffen werden."
+    },
+    {
+      "t": "p",
+      "html": "Es gelang Frau Fritsche-Flügel in jeder Weise die traditionelle, volksnahe Kreuzweggestaltung mit künstlerischem Impuls zu füllen. So wurde für die Böhmerwäldler nach Jahren des Verfalls ihrer kulturellen Werte in der Heimat jetzt auf bayerischem Boden eine Neubelebung alten Kulturgutes erreicht. Frau Fritsche-Flügel hat mit ihren Kreuzwegtafeln entscheidend dazu beigetragen. Ihr gebührt – ebenso wie den vielen Spendern – der berechtigte Dank ihrer Landsleute."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegweihe/letztekwstation.jpg",
+      "align": "center",
+      "alt": "Die letzte Kreuzwegstation mit Blick über die Fluren zum Böhmerwald",
+      "caption": "Die letzte Kreuzwegstation"
+    }
+  ]
+}

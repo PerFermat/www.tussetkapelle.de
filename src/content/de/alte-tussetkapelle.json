@@ -1,0 +1,39 @@
+{
+  "id": "alte-tussetkapelle",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Die alte Tussetkapelle",
+  "kicker": "Die alte Tussetkapelle",
+  "title": "Die alte Tussetkapelle im Böhmerwald",
+  "description": "Die alte Tussetkapelle auf dem Tussetberg im Böhmerwald – Ausgangspunkt für den Wiederaufbau in Philippsreut. Übersicht über die Kapitel zur Geschichte der Gnadenkapelle.",
+  "_quelle": "inhalte/altetk/altetk.htm",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "altetk/tusset_alt.jpg",
+      "align": "center",
+      "max": 500,
+      "alt": "Die alte Tussetkapelle im Böhmerwald: hölzerner Kapellenbau mit spitzem Turm, geschnitzten Zierbrettern und zwei Rundfenstern, umgeben von Wald",
+      "caption": "Die alte Tussetkapelle auf dem Tussetberg"
+    },
+    {
+      "t": "h2",
+      "text": "Die Kapitel zur alten Kapelle"
+    },
+    {
+      "t": "p",
+      "html": "Die Geschichte der Gnadenkapelle auf dem Tussetberg ist in mehreren Berichten festgehalten:"
+    },
+    {
+      "t": "list",
+      "items": [
+        "<a href=\"{{href:kapelle-und-wallern}}\"><strong>Die Kapelle auf dem Tussetberg – Kapelle und Wallern</strong></a> · Ein Bericht von Otto Veith über den Berg, die alte Zeit, die Legenden, Jakob Klauser und den Waldstreit",
+        "<a href=\"{{href:gnadenbilder}}\"><strong>Die Gnadenbilder</strong></a> · Ein Bericht von Otto Veith über die Bilder der Muttergottes vom Tussetberg",
+        "<a href=\"{{href:kreuzwege-und-wallfahrtstage}}\"><strong>Die Kreuzwege, die Wallfahrtstage und die Kapelle</strong></a> · Ein Bericht von Otto Veith",
+        "<a href=\"{{href:alte-geschichten}}\"><strong>Geschichten der alten Tussetkapelle</strong></a> · von Rosl Tahedl, mit Erinnerungen an das Innere der Kapelle und an die Dörfer rund um den Tussetberg",
+        "<a href=\"{{href:restaurierung}}\"><strong>Die Restaurierung der alten Tussetkapelle</strong></a> · Wiederaufbau 1987 bis 1990 und die Einweihung im August 1990"
+      ]
+    }
+  ]
+}

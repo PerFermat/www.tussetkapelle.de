@@ -1,0 +1,16 @@
+{
+  "name": "www-tussetkapelle-de",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tussetkapelle Philippsreut – Erinnerungsort der Böhmerwäldler. Statische Website in Deutsch, Englisch und Leichter Sprache.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "images": "bash tools/build-images.sh",
+    "serve": "bash serve.sh",
+    "check": "node tools/check-links.mjs && node tools/check-images.mjs && node tools/check-content.mjs"
+  }
+}

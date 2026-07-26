@@ -1,0 +1,121 @@
+{
+  "id": "geschichte",
+  "type": "hub",
+  "parent": "home",
+  "navLabel": "Geschichte",
+  "kicker": "Geschichte",
+  "title": "Die Geschichte der Tusset-Kapelle",
+  "subtitle": "Von der alten Kapelle im Böhmer-Wald bis zur neuen Kapelle in Philippsreut",
+  "description": "Die Geschichte der Tusset-Kapelle in Leichter Sprache. Alle Kapitel auf einer Seite.",
+
+  "intro": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Hier finden Sie alle Kapitel zur Geschichte. Klicken Sie auf ein Bild. Dann lesen Sie mehr."
+    },
+    {
+      "t": "p",
+      "html": "Die Texte sind von Menschen geschrieben. Diese Menschen haben alles selbst erlebt. Sie hießen Otto Veith, Rosl Tahedl und Emil Weber."
+    }
+  ],
+
+  "blocks": [
+    {
+      "t": "chapters",
+      "groups": [
+        {
+          "title": "Die alte Kapelle",
+          "items": [
+            {
+              "id": "alte-tussetkapelle",
+              "title": "Die alte Kapelle im Böhmer-Wald",
+              "img": "altetk/tusset_alt.jpg"
+            },
+            {
+              "id": "kapelle-und-wallern",
+              "title": "Die Kapelle und der Ort Wallern",
+              "sub": "Wie die Kapelle entstanden ist",
+              "img": "altetk/kapelleundwallern/wallern.jpg"
+            },
+            {
+              "id": "gnadenbilder",
+              "title": "Die Bilder von Maria",
+              "sub": "Vier Bilder und ihre Geschichte",
+              "img": "altetk/gnadenbilder/gnbildrestauriert.jpg"
+            },
+            {
+              "id": "kreuzwege-und-wallfahrtstage",
+              "title": "Der Kreuz-Weg und die Wallfahrt",
+              "sub": "Wie die Menschen zur Kapelle kamen",
+              "img": "altetk/kreuzwege/atkstationsbild.jpg"
+            },
+            {
+              "id": "alte-geschichten",
+              "title": "Alte Geschichten",
+              "sub": "Rosl Tahedl erzählt",
+              "img": "altetk/kreuzwege/atkzeichnung.jpg"
+            },
+            {
+              "id": "restaurierung",
+              "title": "Die alte Kapelle wird repariert",
+              "sub": "Von 1987 bis 1990",
+              "img": "altetk/renovierung/atkeinweihung.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Die neue Kapelle",
+          "items": [
+            {
+              "id": "wiederaufbau",
+              "title": "So wurde die neue Kapelle gebaut",
+              "sub": "Emil Weber erzählt",
+              "img": "neuetk/entstehung/aufrichten.jpg"
+            },
+            {
+              "id": "neue-tussetkapelle",
+              "title": "Die neue Kapelle",
+              "sub": "Was Sie in der Kapelle sehen",
+              "img": "neuetk/einleitung/neuetk.jpg"
+            },
+            {
+              "id": "einweihung-1985",
+              "title": "Das Fest im Jahr 1985",
+              "sub": "Am 27. Juli 1985",
+              "img": "neuetk/einweihung/bischofeder.jpg"
+            },
+            {
+              "id": "kreuzwegweihe-1987",
+              "title": "Das Fest im Jahr 1987",
+              "sub": "Der neue Kreuz-Weg",
+              "img": "neuetk/kreuzwegweihe/kreuzwegzug.jpg"
+            },
+            {
+              "id": "kreuzwegbilder",
+              "title": "Die 14 Bilder vom Kreuz-Weg",
+              "sub": "Helma Fritsche-Flügel hat sie gemalt",
+              "img": "neuetk/kreuzwegbilder/st14.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Die Menschen",
+          "items": [
+            {
+              "id": "initiatoren",
+              "title": "Diese Menschen haben geholfen",
+              "img": "neuetk/einleitung/ntkemil_otto.jpg"
+            },
+            {
+              "id": "emil-weber",
+              "title": "Emil Weber",
+              "sub": "Er hat die Kapelle gebaut",
+              "img": "initiatoren/emilweber/sbew1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

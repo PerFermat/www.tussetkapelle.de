@@ -1,0 +1,62 @@
+{
+  "id": "impressum",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Impressum",
+  "kicker": "Rechtliches",
+  "title": "Impressum",
+  "description": "Impressum und Angaben zum Anbieter der Website über die neue Tussetkapelle in Philippsreut.",
+  "_hinweis": "Neu erstellt. Die mit ⟨…⟩ markierten Stellen muss der Betreiber ausfüllen.",
+
+  "blocks": [
+    {
+      "t": "note",
+      "title": "Bitte ausfüllen",
+      "html": "Die mit <strong>⟨spitzen Klammern⟩</strong> markierten Angaben müssen vor der Veröffentlichung eingesetzt werden. Ein Impressum ist für eine in Deutschland betriebene Website nach §&nbsp;5 Digitale-Dienste-Gesetz (DDG, vormals §&nbsp;5 TMG) verpflichtend. Diese Seite ersetzt keine Rechtsberatung."
+    },
+
+    { "t": "h2", "text": "Angaben gemäß § 5 DDG" },
+    {
+      "t": "dl",
+      "items": [
+        { "term": "Anbieter", "html": "Franz Weber" },
+        { "term": "Anschrift", "html": "Eichendorffstr. 2<br>73095 Albershausen<br>Deutschland" },
+        { "term": "E-Mail", "html": "<a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>" }
+      ]
+    },
+
+    { "t": "h2", "text": "Verantwortlich für den Inhalt" },
+    {
+      "t": "p",
+      "html": "Frank Weber<br>Eichendorffstr. 2<br>73095 Albershausen"
+    },
+
+    { "t": "h2", "text": "Inhalte und Urheberrecht" },
+    {
+      "t": "p",
+      "html": "Die Texte und Fotografien dieser Website stammen aus dem Bestand der Familie Weber. Die Berichte sind namentlich gekennzeichnet: die Darstellung der Kapelle auf dem Tussetberg und die Gnadenbilder von Otto Veith (Wallern), die Geschichten der alten Tussetkapelle von Rosl Tahedl (Guthausen), der Bildbericht über den Wiederaufbau von Emil Weber. Die Kreuzwegbilder wurden von Helma Fritsche-Flügel gemalt."
+    },
+    {
+      "t": "p",
+      "html": "Alle Rechte an Texten und Bildern verbleiben bei den jeweiligen Urhebern beziehungsweise deren Rechtsnachfolgern. Eine Weiterverwendung, insbesondere eine gewerbliche, ist nur mit deren Zustimmung zulässig."
+    },
+
+    { "t": "h2", "text": "Haftung für Inhalte" },
+    {
+      "t": "p",
+      "html": "Die Inhalte dieser Seiten wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Es handelt sich in weiten Teilen um historische Berichte von Zeitzeugen, die deren persönliche Erinnerung und Sichtweise wiedergeben."
+    },
+
+    { "t": "h2", "text": "Haftung für Links" },
+    {
+      "t": "p",
+      "html": "Diese Website enthält Verweise auf fremde Websites, auf deren Inhalte kein Einfluss besteht. Für diese fremden Inhalte wird keine Gewähr übernommen; verantwortlich ist stets der jeweilige Anbieter. Die verlinkten Seiten waren zum Zeitpunkt der ursprünglichen Verlinkung nicht zu beanstanden. Ein Teil der Verweise auf der Seite <a href=\"{{href:kontakt}}\">Kontakt</a> ist über zwanzig Jahre alt und möglicherweise nicht mehr erreichbar."
+    },
+
+    { "t": "h2", "text": "Barrierefreiheit" },
+    {
+      "t": "p",
+      "html": "Diese Website ist so gestaltet, dass sie mit Tastatur, Screenreader und bei starker Vergrößerung nutzbar ist. Alle Inhalte stehen zusätzlich in <a href=\"/ls/\">Leichter Sprache</a> zur Verfügung. Wenn Sie auf eine Barriere stoßen, schreiben Sie bitte an <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>."
+    }
+  ]
+}

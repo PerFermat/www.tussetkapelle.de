@@ -1,0 +1,156 @@
+{
+  "id": "neue-tussetkapelle",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Die neue Tussetkapelle",
+  "kicker": "Die neue Tussetkapelle",
+  "title": "Einleitung",
+  "subtitle": "Die neue Tussetkapelle in Philippsreut und der Gedenkstein vor der Kapelle",
+  "description": "Wie die neue Tussetkapelle in Philippsreut entstand, was Besucher über Altar, Altarstein, Kruzifix, Kreuzweg und Glocke wissen sollten, und die Bedeutung des Gedenksteins vor der Kapelle.",
+  "_quelle": "inhalte/neuetk/einleitung/ntkeinleitung.htm",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
+      "align": "right",
+      "alt": "Die neue Tussetkapelle als Silhouette vor der untergehenden Sonne"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Fast 40 Jahre nach der Vertreibung aus Obermoldau ist es Emil Weber 1985 gelungen, in der Patengemeinde Philippsreut, nahe der Grenze zur Heimat, an einem schönen und würdigen Platz, mit Blick in den Böhmerwald, die neue Tussetkapelle zu errichten."
+    },
+    {
+      "t": "p",
+      "html": "3 Jahre Bauzeit sowie 2 Fahrten zur alten Tussetkapelle waren erforderlich, um die Kapelle originalgetreu wieder zu erbauen."
+    },
+    {
+      "t": "p",
+      "html": "Die erste Fahrt wurde im April 1983 unternommen und dabei wurden bei Emil viele Erinnerungen wach, schweren Herzens sah er, dass von der einst so kunstvollen Inneneinrichtung nur noch ein Trümmerhaufen übrig geblieben war."
+    },
+    {
+      "t": "p",
+      "html": "Dieser Anblick bekräftigte seinen Entschluss, die Kapelle, welche einst die Vorfahren in der Böhmerwaldheimat geschaffen haben, zu der sie wallfahren gingen und bei der Gnadenmutter um Hilfe beteten, wieder zu errichten."
+    },
+    {
+      "t": "p",
+      "html": "Ohne die beteiligten Personen wie bspw. den Architekten Gerhard Edelmann, die verstorbenen, Bürgermeister Otto Damasko und Gustl Tahedl, die Gemeinderäte und die Gemeindearbeiter aus Philippsreut, allen Spendern und denjenigen, welche bei der Erbauung mitgeholfen haben, allen voran Emil Weber, wäre ein solches Unterfangen nie möglich gewesen."
+    },
+    {
+      "t": "p",
+      "html": "Deshalb nochmals ein herzliches Vergeltsgott an alle, die an der Erbauung der neuen Tussetkapelle mit geholfen haben!"
+    },
+    {
+      "t": "p",
+      "html": "Die neue Tussetkapelle wurde in etwa 10&nbsp;KM Luftlinie Entfernung zur alten Tussetkapelle erbaut."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/einleitung/neuetk.jpg",
+          "alt": "Die neue Tussetkapelle in Philippsreut von vorn: Holzbau mit Vordach, Säulen und Turm",
+          "caption": "Die neue Tussetkapelle in Philippsreut"
+        },
+        {
+          "src": "neuetk/einleitung/ntkkarte.jpg",
+          "alt": "Kartenskizze mit den Standorten der alten und der neuen Tussetkapelle beiderseits der Grenze",
+          "caption": "Alte und neue Tussetkapelle, rund 10 Kilometer voneinander entfernt"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Bei der Einweihung der neuen Kapelle 1985 war die alte Kapelle in einem ruinösem Zustand und dem Verfall preisgegeben. Erst vor wenigen Jahren wurde auch die alte Kapelle wieder neu aufgebaut, so dass heute nur wenige KM voneinander entfernt diese 2 Schmuckstücke stehen, welche an die Vergangenheit der Böhmerwäldler erinnern sollen."
+    },
+    {
+      "t": "p",
+      "html": "Die Geschichte der alten Tussetkapelle führt uns weit zurück ins 18.&nbsp;Jahrhundert."
+    },
+    {
+      "t": "p",
+      "html": "Ein gewisser Jakob Klauser, genannt der „Schmiedjogl“, stellte im Jahre 1791 den kleinen Holzbau der alten Tussetkapelle fertig. Seit dieser Zeit war die Kapelle am Tussetberg ein vielbesuchter Marienwallfahrtsort der Böhmerwäldler, insbesondere der Wallerer."
+    },
+    {
+      "t": "p",
+      "html": "Der erste Steinbau anstelle der verfallenen Holzkapelle wurde im Jahre 1804 von der Gemeinde Wallern erstellt. Dieser sollte der Witterung ganze 60&nbsp;Jahre standhalten."
+    },
+    {
+      "t": "p",
+      "html": "1864 wurde die verfallene Wallfahrtskapelle neu erstellt im Jahre 1867 um einen Vorbau erweitert. 1884 und 1914 wird von erneuten Ausbesserungen berichtet und immer wieder, bis zum Ausbruch des 2.&nbsp;Weltkrieges fanden Unternehmungen statt, welche die Kapelle erhalten sollten."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkaltetk.jpg",
+      "align": "left",
+      "alt": "Die alte Tussetkapelle auf dem Tussetberg in verfallenem Zustand"
+    },
+    {
+      "t": "p",
+      "html": "1983 war die Waldkapelle in einem derart trostlosen und erschütterndem Zustand, dass Emil Weber seinen Entschluss fand, die neue Tussetkapelle nur wenige Kilometer entfernt von der alten neu zu errichten."
+    },
+
+    { "t": "h2", "text": "Wissenswertes für die Besucher der neuen Tussetkapelle" },
+    {
+      "t": "dl",
+      "items": [
+        {
+          "term": "Der Altar",
+          "html": "ist ein naturgetreues Abbild des alten Altars auf dem Tussetberg. Emil Weber hat ihn gebaut. Die Holzschnitzereien besorgte Karl Benesch (Krummau); die Malerarbeiten sind von Adolf Kalischko (Sarau); die Drechslerarbeiten von Franz Lang (Deutsch-Reichenau)."
+        },
+        {
+          "term": "Der Altarstein",
+          "html": "stammt aus der 1964 zerstörten Kirche von Kuschwarda. Durch den H.&nbsp;H. Bischof von Passau, Dr.&nbsp;Franz Eder, wurde bei der Weihe des Altars am 27.&nbsp;Juli 1985 eine Reliquie des Hl.&nbsp;Bruder Konrad von Parzham eingesetzt."
+        },
+        {
+          "term": "Das Kruzifix",
+          "html": "über dem Bogen der Steinkapelle ist eine Südtiroler Bildhauerarbeit."
+        },
+        {
+          "term": "Die Gußplatte",
+          "html": "rechts an der Steinkapelle stammt vom Kreuz Rothbauer aus Elendbachl. Es stand am Weg nach Adlerhütte."
+        },
+        {
+          "term": "Das Schmiedeeisengitter",
+          "html": "vor dem Altar schuf Herr Erhard Uhlmann aus Philippsreut zu Ehren der Gottesmutter vom Tussetberg."
+        },
+        {
+          "term": "Der Kreuzweg",
+          "html": "in der Kapelle von 1914 stammt aus der Böhmerwaldheimat (gestiftet von Frau Mertl, jetzt Untergriesbach)."
+        },
+        {
+          "term": "Die kleine Glocke",
+          "html": "auf dem Türmchen der Kapelle hat Frau Maria Schreiber (Tusset) gestiftet; gegossen wurde die Glocke in der weltbekannten Glockengießerei Perner in Passau."
+        }
+      ]
+    },
+
+    { "t": "h2", "text": "Der Gedenkstein vor der Kapelle" },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkgedenkstein.jpg",
+      "align": "right",
+      "alt": "Der Gedenkstein vor der neuen Tussetkapelle: Granitblock mit der Aufschrift „Patenschaft“, den Gemeindewappen und den Heimatorten im Böhmerwald"
+    },
+    {
+      "t": "p",
+      "html": "Vor der neuen Tussetkapelle steht ein großer Granitblock. Jahrtausende schlummerte er in einem Waldstück, nahe der Grenze bei Mitterfirmiansreut, bis ihn Bürgermeister Otto Damasko mit seinen Helfern unter einigen Bergungs- und Transportschwierigkeiten auf den Vorplatz der neuen Tussetkapelle holte. Dort – an Ort und Stelle – wurde dieser Stein vom Bildhauer Manfred Werner aus Waldkirchen kunstvoll gestaltet."
+    },
+    {
+      "t": "p",
+      "html": "Der Gedanke, einen Gedenkstein zur Mahnung an das Unrecht der Vertreibung und an die verlorene Böhmerwaldheimat zu errichten, ist eigentlich älter als der Bau der neuen Tussetkapelle. Emil Weber, Heimatbetreuer von Obermoldau, wollte für seine Landsleute ein Mahnmal setzen, das sie immer an ihre Heimatorte erinnern sollte, die heute zum größten Teil nicht mehr zu finden sind."
+    },
+    {
+      "t": "p",
+      "html": "Wenn sich der Besucher auf dem Weg von der Obermoldauer Straße zur Kapelle befindet, sieht er auf der ihm zugekehrten Seite des Steines die Daten der Errichtung der neuen Tussetkapelle eingemeißelt; auch die einstmals deutschen Pfarren, die rund um den Tussetberg lagen, sind eingehauen. Jahr für Jahr sind von diesen Orten die Menschen zur Gnadenmutter gepilgert. Auf der Seite, die zur Kapelle zeigt, gibt der Stein Zeugnis von der Patenschaft der Gemeinde Philippsreut für die Vertriebenen der ehemaligen Gemeinde Obermoldau. Ein Band verbindet beide Gemeindewappen. Im unteren Teil sind die Heimatorte der Gemeinde Obermoldau, die in der damaligen Tschechei nach Prag flächenmäßig die zweitgrößte Gemeinde war, tief in den Granit eingegraben, so wie unsere Liebe zur Heimat tief in unserem Herzen immer ihren Platz haben soll. Und dass diese Liebe immer rein und fleckenlos bleiben möge, schmückt ein Rohglasbrocken jeden Heimatort jenseits der Grenze. An dieser Stelle danken wir dem Bildhauer Manfred Werner für die künstlerische Gestaltung des Gedenksteines sehr herzlich."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkemil_otto.jpg",
+      "align": "center",
+      "alt": "Emil Weber und Bürgermeister Otto Damasko bei der Überreichung der Patenschafts-Urkunde",
+      "caption": "Nun ist letztendlich mit der Errichtung dieses Mahnmals auch der ursprüngliche Wunsch des Heimatbetreuers Emil Weber in Erfüllung gegangen. (Im Bild mit Bürgermeister Otto Damasko bei der Überreichung der Patenschafts-Urkunde)"
+    }
+  ]
+}

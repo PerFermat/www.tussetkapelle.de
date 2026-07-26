@@ -1,0 +1,149 @@
+{
+  "id": "einweihung-1985",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Consecration 1985",
+  "kicker": "The new Tusset Chapel",
+  "title": "The consecration of the new Tusset Chapel",
+  "subtitle": "on 27 July 1985",
+  "description": "The account of the consecration of the new Tusset Chapel on 27 July 1985 by Bishop Dr Franz Eder of Passau: the preparations, the procession, the bringing home of the miraculous image and the blessing in the rain.",
+  "_quelle": "inhalte/neuetk/einweihung/ntkeinweihung.htm",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/einladung.jpg",
+      "align": "right",
+      "alt": "Printed invitation to the consecration of the new Tusset Chapel on 27 July 1985"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Ever closer came the day on which the new chapel in Philippsreut was to receive the blessing of God. The whole village prepared to celebrate the festive days with due solemnity. Mayor Damasko took charge of dividing the work among the associations. The fire brigade saw to the marshalling and to putting up the marquee at a proper distance from the chapel. Two large timber welcome arches were prepared on the busy Bundesstraße 12 towards the border. All the houses were smartened up and the pavements in front of them swept. With their gleaming windows the friendly row of houses of the holiday resort of Philippsreut awaited the festive days. For the service in front of the chapel a raised platform was built. One girl diligently practised her office as bell-ringer at the chapel bell, another eagerly learned the poem of welcome for the bishop. In Mrs Fruth’s garden the snow-white surplices of the altar servers fluttered on the washing line. Emil Weber was at work on the birchwood frame for the entry of the miraculous image: everywhere preparations for the festival!"
+    },
+    {
+      "t": "p",
+      "html": "Then the Catholic Women’s Association arrived to bind the garlands. A stiff breeze blew from the border – just right to keep the woven greenery from wilting. The bare timber beams in the chapel, the entrance gate, the festival platform and the two welcome arches: all of them they wound about with the green garlands. Now a homely, resinous scent of the forest lay over the festival ground."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/tkinnen1.jpg",
+      "align": "wide",
+      "alt": "The interior of the new Tusset Chapel festively decorated with garlands and flowers"
+    },
+    {
+      "t": "p",
+      "html": "So came 26&nbsp;July – a Friday – with radiant sunshine. From all sides cars and buses arrived with the first visitors. The floral decorations were put in place, and by the afternoon everything was ready and prepared for the beginning of the celebration. This began with the honouring of our dead, our fallen and our missing at the village war memorial."
+    },
+    {
+      "t": "p",
+      "html": "All the associations, the guests of honour and many Bohemian Forest Germans, friends of the Mother of God of the Tussetberg, had gathered there. As the song of the Good Comrade rang out over the village, it was as though the summits of the Kubany and the Schreiner were greeting us in agreement across the border forests. These moving notes and the words of Mayor Damasko and Emil Weber made the dividing power of a border destiny forgotten. The Bohemian Forest was one again, on this side as on that."
+    },
+    {
+      "t": "p",
+      "html": "At the procession through the village that followed, cheerful festive joy returned. The banners of the associations swelled in the wind."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/einweihung/festzug.jpg",
+          "alt": "The festive procession with association banners moves through Philippsreut"
+        },
+        {
+          "src": "neuetk/einweihung/bwjugendgp.jpg",
+          "alt": "The Bohemian Forest youth in traditional costume in the procession"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "The traditional costumes of the Bohemian Forest youth and of the local associations made a colourful play of hues amid the restrained seriousness of the landscape all around. Otto Veith and his helpers were eagerly at work capturing these solemn moments on film for all time. On this day and the next a document of the times thus came into being which will show generations to come how faithfully the expelled Bohemian Forest Germans stand by their homeland and their holy places."
+    },
+    {
+      "t": "p",
+      "html": "The evening in the marquee then united everyone in a further act of remembrance of the homeland. Distinguished guests of the State of Bavaria appeared: at their head the Bavarian State Minister, Mr Franz Neubauer, the district administrator Mr Schumertl as patron, representatives of the district assembly and of the government of Lower Bavaria, leading representatives of the homeland associations and of course the chairmen of the associations, of the municipal council, and many friends and benefactors. They now learned something more about the planning and the building of the new chapel. Honours were conferred; the <em>Stubenmusi</em> ensemble of Waldkirchen framed them with reflective music"
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/einweihung/sm-neubauer-und-emil.jpg",
+          "alt": "State Minister Franz Neubauer in conversation with Emil Weber",
+          "caption": "State Minister Franz Neubauer and Emil Weber"
+        },
+        {
+          "src": "neuetk/einweihung/bwjugendzelt.jpg",
+          "alt": "The Bohemian Forest youth performing folk dances in the marquee",
+          "caption": "The Bohemian Forest youth in the marquee"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "When later the singing group of the Bohemian Forest Germans from Göppingen and Uhingen sang their forest airs, and the young people performed old folk dances, the festive evening drew to a close in relaxed anticipation of the day of consecration. The decorated chapel shone in bright floodlight; it too was waiting for the culmination – its consecration."
+    },
+    {
+      "t": "p",
+      "html": "But in the night the heavens showed, as so often before at home, that the final planning of all festivities lies in their hands alone. A thunderstorm passed over the ridges and a proper downpour drummed on the windows of the parlours of Philippsreut. That was the end of the festival organisers’ sleep! The drumming of the raindrops did indeed stop towards morning, but dense grey banks of mist covered the sky."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/bischofeder.jpg",
+      "align": "right",
+      "alt": "Bishop Dr Franz Eder of Passau at the consecration of the new Tusset Chapel"
+    },
+    {
+      "t": "p",
+      "html": "Even when the senior clergy and His Excellency the Right Reverend Bishop Dr Eder of Passau arrived in Philippsreut, the weather was still dull and the sky overcast with grey."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/gnadenbildtk.jpg",
+      "align": "left",
+      "alt": "The miraculous image of Our Lady of the Tussetberg on the birchwood bier"
+    },
+    {
+      "t": "p",
+      "html": "Nevertheless the bishop would not be dissuaded from bringing the miraculous image from the old, ruined chapel on the Tussetberg home to the new chapel in a solemn procession from the mayor’s house. It was carried on the birchwood bier by girls dressed in white."
+    },
+    {
+      "t": "p",
+      "html": "A long procession of clergy and faithful now moved towards the chapel, where the consecration ceremonies began. Many banner-bearers, groups in traditional costume and faithful people gathered around the field altar and listened to the addresses of the speakers and to the bishop’s sermon. Many a tear was shed in remembrance of similar words once spoken beneath the trees of the Tusset forest. It seemed as though this emotion were catching even up above; gradually it began to drizzle and then to rain quite heavily, as the bishop performed the solemn consecration of the interior and of the altar of the chapel."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "neuetk/einweihung/lr-schumertl-und-emil.jpg",
+          "alt": "District administrator Schumertl in conversation with Emil Weber",
+          "caption": "District administrator Schumertl and Emil Weber"
+        },
+        {
+          "src": "neuetk/einweihung/ntkregen.jpg",
+          "alt": "The congregation in front of the chapel in the rain, umbrellas open",
+          "caption": "“Heaven too is bestowing its holy water on us!”"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "But no one let themselves be driven from their place by it. The bishop himself then remarked with good humour: “Heaven too is bestowing its holy water on us!” Soaked but happy, the Bohemian Forest Germans came through the consecration of their chapel. Inside – in the interior – only the sick, the elderly and the disabled could find a place."
+    },
+    {
+      "t": "p",
+      "html": "When the image of the Mother of God was then carried to the altar, it was precisely they who were closest to their dear Lady. All day long the chapel was visited by groups of pilgrims, and as of old they sang and prayed their pilgrimage before the Tusset Madonna. She now smiled down again lovingly on everyone from her old picture. In the afternoon the sky cleared too and shone once more in sunny blue. So the members of the parish of Kuschwarda were able to celebrate the golden jubilee of the priesthood of their last parish priest, the Right Reverend Hugo Rogmans, in the most beautiful sunlight. Touching was the unbroken power of recollection of the jubilarian, who recalled joyful events during his ministry at Kuschwarda in hard times. The village representative Erich Lang – one of his former altar servers – presented him with a carved figure of St Joseph and a votive candle as a memento."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einweihung/ewgnadenbild.jpg",
+      "align": "center",
+      "alt": "Emil Weber with the miraculous image of Our Lady of the Tussetberg"
+    },
+    {
+      "t": "p",
+      "html": "The festive day drew to a close with a service of thanksgiving in the chapel led by the local priest, Father Richtsfeld. The Bohemian Forest Germans again sang the old Marian hymns, and it became clear that the melodies of childhood were still familiar to everyone. Mary had once again united a company of her faithful devotees in prayer, in remembrance of many a pilgrimage up the Tussetberg. Everyone surely felt in their heart, at this new and yet familiar place of pilgrimage, the fervent plea that stands on the linen altar cloth: Protectress of the Bohemian Forest, pray for us!"
+    },
+    { "t": "sources", "html": "(RT)" }
+  ]
+}

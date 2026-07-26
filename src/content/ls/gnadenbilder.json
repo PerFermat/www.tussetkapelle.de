@@ -1,0 +1,114 @@
+{
+  "id": "gnadenbilder",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Die Bilder von Maria",
+  "kicker": "Die alte Kapelle",
+  "title": "Die Bilder von Maria",
+  "subtitle": "Vier Bilder und ihre Geschichte",
+  "description": "In der Tusset-Kapelle hingen verschiedene Bilder von Maria. Ihre Geschichte in Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "In der Kapelle hing immer ein Bild von Maria. Maria ist die Mutter von Jesus. Über viele Jahre gab es mehrere Bilder."
+    },
+    {
+      "t": "explain",
+      "word": "Gnaden-Bild",
+      "html": "Ein Gnaden-Bild ist ein besonderes Bild in einer Kirche. Meistens zeigt es Maria. Die Menschen beten davor. Sie hoffen auf Hilfe."
+    },
+    { "t": "h2", "text": "Das Bild von Ignaz Schraml" },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/ignazschraml.jpg",
+          "alt": "Ein gemaltes Bild von einem Mann. Das ist der Maler Ignaz Schraml.",
+          "caption": "Der Maler Ignaz Schraml."
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildischraml.jpg",
+          "alt": "Ein Bild von Maria mit dem Jesus-Kind.",
+          "caption": "So sah das Bild von Ignaz Schraml aus."
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1804 hat man eine neue Kapelle aus Stein gebaut. Das alte Bild war kaputt. Darum hat man ein neues Bild gemalt."
+    },
+    {
+      "t": "p",
+      "html": "Der Maler hieß wahrscheinlich Ignaz Schraml. Er hat von 1762 bis 1846 gelebt. Er hat in Wallern gewohnt. Die Menschen haben ihn Oidl-Nazl gerufen."
+    },
+    { "t": "h2", "text": "Das Bild von 1884" },
+    {
+      "t": "p",
+      "html": "Im Jahr 1884 kam ein neues Bild in die Kapelle. Es hieß Maria mit der Rose. Es hing fest am Altar."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1956 hat man das Bild weg-genommen. Die Menschen hatten Angst vor Diebstahl. Bis 1965 war das Bild in einem Haus in Guthausen versteckt."
+    },
+    {
+      "t": "p",
+      "html": "Heute hängt dieses Bild in der neuen Kapelle in Philippsreut."
+    },
+    { "t": "h2", "text": "Das Bild von Karl Rauscher" },
+    {
+      "t": "fig",
+      "src": "altetk/gnadenbilder/gnbildrauscher.jpg",
+      "align": "right",
+      "alt": "Ein Bild von Maria mit dem Jesus-Kind. Karl Rauscher hat es gemalt."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1956 kam ein anderes Bild in die Kapelle. Karl Rauscher hat es gemalt. Er war Maler in Wallern."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1967 ist das Bild verschwunden. Lange hat man es nicht gefunden. Im Jahr 1987 kam das Bild wieder zurück."
+    },
+    {
+      "t": "p",
+      "html": "Frau Helma Fritsche-Flügel hat das Bild wieder schön gemacht. Heute hängt es in der neuen Kapelle."
+    },
+    {
+      "t": "figrow",
+      "items": [
+        {
+          "src": "altetk/gnadenbilder/wallfahrtszettel.jpg",
+          "alt": "Ein alter Papier-Zettel mit dem Bild von Maria.",
+          "caption": "So einen Zettel haben die Menschen mit-genommen."
+        },
+        {
+          "src": "altetk/gnadenbilder/gnbildrestauriert.jpg",
+          "alt": "Das reparierte Bild von Maria mit dem Jesus-Kind.",
+          "caption": "Das Bild ist wieder schön gemacht."
+        }
+      ]
+    },
+    { "t": "h2", "text": "Die Rinden-Madonna" },
+    {
+      "t": "p",
+      "html": "Es gab noch ein Bild. Es hatte einen Rahmen aus Baum-Rinde. Darum heißt es Rinden-Madonna."
+    },
+    {
+      "t": "p",
+      "html": "Frau Blechschmied hat dieses Bild gerettet. Sie musste ihre Heimat verlassen. Sie hat das Bild um einen Besen-Stiel gewickelt. So hat sie es über die Grenze gebracht."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/gnadenbilder/rindenmadonna.jpg",
+      "align": "center",
+      "alt": "Ein Bild von Maria. Der Rahmen ist aus Baum-Rinde.",
+      "caption": "Die Rinden-Madonna."
+    },
+    {
+      "t": "p",
+      "html": "Heute hängen beide Bilder in der neuen Tusset-Kapelle."
+    }
+  ]
+}

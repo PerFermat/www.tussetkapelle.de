@@ -1,0 +1,80 @@
+{
+  "id": "besuch",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Visit",
+  "kicker": "Your visit",
+  "title": "Visiting the Tusset Chapel",
+  "subtitle": "Opening times, directions and contacts",
+  "description": "The new Tusset Chapel in Philippsreut is open daily from 8 a.m. to 8 p.m. Directions via the A3 motorway and the B12 road, and contacts for the chapel and for church services.",
+  "_quelle": "inhalte/neuetk/anfahrt/ntkanfahrt.htm und start.htm",
+  "blocks": [
+    {
+      "t": "h2",
+      "text": "Opening times"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Opening times: daily from 8 a.m. to 8 p.m."
+    },
+    {
+      "t": "h2",
+      "text": "Contacts"
+    },
+    {
+      "t": "dl",
+      "items": [
+        {
+          "term": "Custodian:",
+          "html": "Mrs Therese Friedsam, Hauptstraße 1, tel. 08550/763"
+        },
+        {
+          "term": "Registration for church services:",
+          "html": "Father Max Richtsfeld, tel. 08550/274"
+        }
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "How to reach the new Tusset Chapel"
+    },
+    {
+      "t": "h3",
+      "text": "Finding us"
+    },
+    {
+      "t": "p",
+      "html": "You reach us via the A3 motorway towards Passau, leaving at the Aicha vorm Wald exit. From there continue to Hutthurm. From Hutthurm the B12 road takes you via Freyung to Philippsreut."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkkarte.jpg",
+      "align": "center",
+      "alt": "Sketch map showing the location of the new Tusset Chapel in Philippsreut near the border with the Bohemian Forest",
+      "caption": "The location of the new Tusset Chapel near the border with the Bohemian Forest"
+    },
+    {
+      "t": "h2",
+      "text": "At the chapel"
+    },
+    {
+      "t": "p",
+      "html": "The book on the history of the new Tusset Chapel is available in the chapel and may be purchased for 2.50&nbsp;€."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
+      "align": "center",
+      "alt": "The new Tusset Chapel as a dark silhouette against the setting sun above the Bohemian Forest"
+    },
+    {
+      "t": "h2",
+      "text": "Coordinates"
+    },
+    {
+      "t": "p",
+      "html": "The Tusset Chapel is located at <strong>48.863274, 13.677887</strong>. <a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">View the chapel on OpenStreetMap</a>"
+    }
+  ]
+}

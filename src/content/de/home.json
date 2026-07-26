@@ -1,0 +1,120 @@
+{
+  "id": "home",
+  "type": "home",
+  "navLabel": "Startseite",
+  "title": "Tussetkapelle",
+  "metaTitle": "Tussetkapelle Philippsreut – Erinnerungsort der Böhmerwäldler",
+  "description": "Die neue Tussetkapelle in Philippsreut wurde am 27. Juli 1985 geweiht – ein originalgetreuer Wiederaufbau der Gnadenkapelle auf dem Tussetberg im Böhmerwald. Geschichte, Bilder und Hinweise für Ihren Besuch.",
+  "_quelle": "start.htm",
+
+  "hero": {
+    "img": "ntkaltar.jpg",
+    "alt": "Blick in den Altarraum der neuen Tussetkapelle: geschnitzter Altar mit dem Gnadenbild, Kruzifix, Kreuzwegbilder und Holzbänke",
+    "title": "Tussetkapelle",
+    "subtitle": "Erinnerungsort der Böhmerwäldler",
+    "lede": "Der Wiederaufbau der Tussetkapelle begann <strong>1983</strong>. Nach rund drei Jahren Bauzeit wurde die Kapelle am <strong>27.&nbsp;Juli 1985</strong> eingeweiht.",
+    "cta": { "label": "Geschichte entdecken", "to": "geschichte" }
+  },
+
+  "tiles": [
+    {
+      "to": "geschichte",
+      "icon": "book",
+      "img": "altetk/tusset_alt.jpg",
+      "alt": "Die alte Tussetkapelle im Böhmerwald: ein hölzerner Kapellenbau mit Turm zwischen Bäumen",
+      "title": "Geschichte",
+      "text": "Geschichte der alten Kapelle, Vertreibung und Wiederaufbau.",
+      "more": "Mehr erfahren"
+    },
+    {
+      "to": "galerie",
+      "icon": "camera",
+      "img": "ntkwinterbild.jpg",
+      "alt": "Die neue Tussetkapelle im Winter, tief eingeschneit, vor blauem Himmel",
+      "title": "Galerie",
+      "text": "Historische Bilder der alten und neuen Tussetkapelle.",
+      "more": "Zur Galerie"
+    },
+    {
+      "to": "besuch",
+      "icon": "pin",
+      "img": "neuetk/einleitung/ntksonnenuntergang.jpg",
+      "alt": "Die neue Tussetkapelle als Silhouette vor der untergehenden Sonne",
+      "title": "Besuch",
+      "text": "Öffnungszeiten, Anfahrt und Ansprechpartner rund um Ihren Besuch.",
+      "more": "Mehr Informationen"
+    }
+  ],
+
+  "visit": {
+    "title": "Besuch der Tussetkapelle",
+    "openLabel": "Täglich geöffnet",
+    "hours": "8.00 – 20.00 Uhr",
+    "place": "Philippsreut",
+    "cta": { "label": "Anfahrt anzeigen", "to": "besuch" }
+  },
+
+  "timeline": {
+    "title": "Ein Ort – eine Geschichte",
+    "items": [
+      {
+        "icon": "chapel",
+        "when": "1791 und 1804",
+        "what": "Jakob Klauser erbaut die Holzkapelle auf dem Tussetberg. 1804 folgt der erste Steinbau."
+      },
+      {
+        "icon": "walking",
+        "when": "Vertreibung",
+        "what": "Die Böhmerwäldler verlassen ihre Heimat. Die Kapelle verfällt."
+      },
+      {
+        "icon": "hammer",
+        "when": "1983",
+        "what": "Beginn des Wiederaufbaus in der Patengemeinde Philippsreut."
+      },
+      {
+        "icon": "cross",
+        "when": "27. Juli 1985",
+        "what": "Einweihung durch den Passauer Bischof Franz Xaver Eder."
+      },
+      {
+        "icon": "people",
+        "when": "Heute",
+        "what": "Ort der Erinnerung und der Begegnung, täglich geöffnet."
+      }
+    ]
+  },
+
+  "blocks": [
+    { "t": "h2", "text": "Willkommen" },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "auf der Homepage der neuen Tussetkapelle, gewidmet dem verstorbenen Erbauer Emil Weber aus Uhingen, geboren in Filz/Böhmerwald"
+    },
+    {
+      "t": "p",
+      "html": "Die neue Tussetkapelle wurde am 27.&nbsp;Juli 1985 durch den Passauer Bischof Franz Xaver Eder geweiht. 40 Jahre nach der Vertreibung war es gelungen, in der Patengemeinde Philippsreut – nahe der Grenze der Heimat der Böhmerwäldler – an einem schönen und würdigen Platz mit Blick in den Böhmerwald, die neue Tussetkapelle zu errichten."
+    },
+    {
+      "t": "fig",
+      "src": "ntkwinterbild.jpg",
+      "align": "wide",
+      "max": 700,
+      "alt": "Die neue Tussetkapelle im Winter: der hölzerne Bau mit Turm, tief eingeschneit, umgeben von Birken"
+    },
+    {
+      "t": "p",
+      "html": "3 Jahre Bauzeit waren erforderlich, um die Kapelle originalgetreu wieder zu erbauen. Der Gemeindebetreuer von Obermoldau, Herr Emil Weber, hat sich um diese Gedenkstätte große Verdienste erworben."
+    },
+    {
+      "t": "p",
+      "html": "Das Buch über die Geschichte der neuen Tusset-Kapelle liegt in der Kapelle auf und kann zum Preis von 2,50&nbsp;€ erworben werden."
+    },
+    {
+      "t": "note",
+      "title": "Anmerkung",
+      "html": "Wir sind Ihnen dankbar für jegliche Kritik und Vorschläge und bitten Sie deshalb, uns unter der Seite <a href=\"{{href:kontakt}}\"><em>Kontakt und Links</em></a> entsprechende Hinweise zu geben. Gerne nehmen wir weiteres Material für diese Homepage entgegen und binden dieses in die Seiten ein."
+    }
+  ]
+}

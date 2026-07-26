@@ -1,0 +1,1351 @@
+{
+ "altetk/gnadenbilder/gnbildischraml.jpg": {
+  "w": 285,
+  "h": 385,
+  "bytes": 16515,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/gnadenbilder/gnbildrauscher.jpg": {
+  "w": 300,
+  "h": 396,
+  "bytes": 26542,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/gnadenbilder/gnbildrestauriert.jpg": {
+  "w": 257,
+  "h": 346,
+  "bytes": 18706,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/gnadenbilder/ignazschraml.jpg": {
+  "w": 260,
+  "h": 346,
+  "bytes": 25353,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/gnadenbilder/rindenmadonna.jpg": {
+  "w": 359,
+  "h": 300,
+  "bytes": 14600,
+  "webp": true,
+  "steps": []
+ },
+ "altetk/gnadenbilder/wallfahrtszettel.jpg": {
+  "w": 224,
+  "h": 340,
+  "bytes": 13757,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/kapelleundwallern/feuersturm.jpg": {
+  "w": 400,
+  "h": 284,
+  "bytes": 15279,
+  "webp": true,
+  "steps": []
+ },
+ "altetk/kapelleundwallern/gebhausklauser.jpg": {
+  "w": 400,
+  "h": 242,
+  "bytes": 23233,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/kapelleundwallern/postkarte.jpg": {
+  "w": 576,
+  "h": 224,
+  "bytes": 18860,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 156,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kapelleundwallern/wallern.jpg": {
+  "w": 474,
+  "h": 300,
+  "bytes": 28369,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 253,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kreuzwege/atk1945.jpg": {
+  "w": 481,
+  "h": 300,
+  "bytes": 23191,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 249,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kreuzwege/atkstationsbild.jpg": {
+  "w": 300,
+  "h": 377,
+  "bytes": 24809,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/kreuzwege/atkverfall.jpg": {
+  "w": 412,
+  "h": 300,
+  "bytes": 22171,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 291,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kreuzwege/atkverwuestet.jpg": {
+  "w": 432,
+  "h": 300,
+  "bytes": 13790,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 278,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kreuzwege/atkzeichnung.jpg": {
+  "w": 300,
+  "h": 409,
+  "bytes": 42597,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 293,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kreuzwege/boehmroehren.jpg": {
+  "w": 581,
+  "h": 300,
+  "bytes": 33697,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 207,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kreuzwege/guthausen.jpg": {
+  "w": 538,
+  "h": 300,
+  "bytes": 21480,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 223,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kreuzwege/stannakapelle.jpg": {
+  "w": 496,
+  "h": 300,
+  "bytes": 32711,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 242,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/kreuzwege/tussetgb.jpg": {
+  "w": 494,
+  "h": 300,
+  "bytes": 16118,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 243,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/renovierung/alteundneuetk.jpg": {
+  "w": 438,
+  "h": 300,
+  "bytes": 22065,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 274,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/renovierung/atkeinweihung.jpg": {
+  "w": 467,
+  "h": 300,
+  "bytes": 16465,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 257,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/renovierung/atkrenov1.jpg": {
+  "w": 459,
+  "h": 300,
+  "bytes": 24794,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 261,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/renovierung/atkrenov2.jpg": {
+  "w": 424,
+  "h": 300,
+  "bytes": 25706,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 283,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/renovierung/atkrenov3.jpg": {
+  "w": 420,
+  "h": 300,
+  "bytes": 20720,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 286,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "altetk/renovierung/atkrenov4.jpg": {
+  "w": 300,
+  "h": 361,
+  "bytes": 22351,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/renovierung/atkruine1.jpg": {
+  "w": 382,
+  "h": 300,
+  "bytes": 22190,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/renovierung/atkruine2.jpg": {
+  "w": 384,
+  "h": 300,
+  "bytes": 23184,
+  "webp": false,
+  "steps": []
+ },
+ "altetk/tusset_alt.jpg": {
+  "w": 1087,
+  "h": 1447,
+  "bytes": 583718,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 300,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   },
+   {
+    "box": 700,
+    "w": 700,
+    "h": 932,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_1.jpg": {
+  "w": 350,
+  "h": 465,
+  "bytes": 25941,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 301,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_10.jpg": {
+  "w": 530,
+  "h": 350,
+  "bytes": 21453,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 264,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_11.jpg": {
+  "w": 518,
+  "h": 350,
+  "bytes": 19983,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 270,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_12.jpg": {
+  "w": 541,
+  "h": 350,
+  "bytes": 25162,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 259,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_13.jpg": {
+  "w": 525,
+  "h": 350,
+  "bytes": 19347,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 267,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_14.jpg": {
+  "w": 521,
+  "h": 350,
+  "bytes": 17379,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 269,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_15.jpg": {
+  "w": 530,
+  "h": 350,
+  "bytes": 15707,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 264,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_16.jpg": {
+  "w": 531,
+  "h": 350,
+  "bytes": 17845,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 264,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_2.jpg": {
+  "w": 350,
+  "h": 512,
+  "bytes": 22041,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 273,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_3.jpg": {
+  "w": 350,
+  "h": 520,
+  "bytes": 20866,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 269,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_4.jpg": {
+  "w": 350,
+  "h": 510,
+  "bytes": 19142,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 275,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_5.jpg": {
+  "w": 350,
+  "h": 504,
+  "bytes": 20352,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 278,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_6.jpg": {
+  "w": 350,
+  "h": 509,
+  "bytes": 18841,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 275,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_7.jpg": {
+  "w": 350,
+  "h": 522,
+  "bytes": 11167,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 268,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_8.jpg": {
+  "w": 350,
+  "h": 512,
+  "bytes": 23749,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 273,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "fotogalerie/fotosatk/atk1983_9.jpg": {
+  "w": 350,
+  "h": 507,
+  "bytes": 16613,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 276,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "initiatoren/emilweber/elendbachl.jpg": {
+  "w": 485,
+  "h": 300,
+  "bytes": 17513,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 247,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "initiatoren/emilweber/emilmarine.jpg": {
+  "w": 204,
+  "h": 300,
+  "bytes": 6386,
+  "webp": true,
+  "steps": []
+ },
+ "initiatoren/emilweber/grabstein1.jpg": {
+  "w": 300,
+  "h": 394,
+  "bytes": 18097,
+  "webp": false,
+  "steps": []
+ },
+ "initiatoren/emilweber/hzemilanna.jpg": {
+  "w": 463,
+  "h": 300,
+  "bytes": 14870,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 259,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "initiatoren/emilweber/hzmarieemil.jpg": {
+  "w": 398,
+  "h": 300,
+  "bytes": 10268,
+  "webp": true,
+  "steps": []
+ },
+ "initiatoren/emilweber/sbew1.jpg": {
+  "w": 500,
+  "h": 377,
+  "bytes": 17714,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 302,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "initiatoren/emilweber/urgrosselternemi.jpg": {
+  "w": 300,
+  "h": 422,
+  "bytes": 10901,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 284,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "initiatoren/emilweber/weberfamilie.jpg": {
+  "w": 443,
+  "h": 300,
+  "bytes": 16867,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 271,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "initiatoren/emilweber.jpg": {
+  "w": 125,
+  "h": 169,
+  "bytes": 3357,
+  "webp": true,
+  "steps": []
+ },
+ "initiatoren/gerhardedlmann.jpg": {
+  "w": 125,
+  "h": 179,
+  "bytes": 3657,
+  "webp": true,
+  "steps": []
+ },
+ "initiatoren/ottodamasko.jpg": {
+  "w": 125,
+  "h": 175,
+  "bytes": 3003,
+  "webp": true,
+  "steps": []
+ },
+ "kontakt/haidmuehle.jpg": {
+  "w": 400,
+  "h": 264,
+  "bytes": 14608,
+  "webp": true,
+  "steps": []
+ },
+ "kontakt/stubenbachsee.jpg": {
+  "w": 400,
+  "h": 160,
+  "bytes": 18735,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/anfahrt/karte.gif": {
+  "w": 400,
+  "h": 300,
+  "bytes": 19445,
+  "webp": false,
+  "steps": []
+ },
+ "neuetk/einleitung/neuetk.jpg": {
+  "w": 202,
+  "h": 267,
+  "bytes": 17459,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einleitung/ntkaltetk.jpg": {
+  "w": 202,
+  "h": 264,
+  "bytes": 20816,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einleitung/ntkemil_otto.jpg": {
+  "w": 400,
+  "h": 297,
+  "bytes": 22675,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einleitung/ntkgedenkstein.jpg": {
+  "w": 180,
+  "h": 280,
+  "bytes": 19396,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einleitung/ntkkarte.jpg": {
+  "w": 350,
+  "h": 231,
+  "bytes": 16914,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einleitung/ntksonnenuntergang.jpg": {
+  "w": 160,
+  "h": 200,
+  "bytes": 3674,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/bischofeder.jpg": {
+  "w": 360,
+  "h": 250,
+  "bytes": 18413,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/bwjugendgp.jpg": {
+  "w": 378,
+  "h": 250,
+  "bytes": 24987,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/bwjugendzelt.jpg": {
+  "w": 365,
+  "h": 200,
+  "bytes": 18685,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/einladung.jpg": {
+  "w": 310,
+  "h": 200,
+  "bytes": 12200,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/ewgnadenbild.jpg": {
+  "w": 300,
+  "h": 406,
+  "bytes": 23737,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 296,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/einweihung/festzug.jpg": {
+  "w": 400,
+  "h": 180,
+  "bytes": 17241,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/gnadenbildtk.jpg": {
+  "w": 372,
+  "h": 250,
+  "bytes": 23640,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/lr-schumertl-und-emil.jpg": {
+  "w": 242,
+  "h": 250,
+  "bytes": 16476,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/ntkregen.jpg": {
+  "w": 400,
+  "h": 199,
+  "bytes": 14345,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/sm-neubauer-und-emil.jpg": {
+  "w": 318,
+  "h": 250,
+  "bytes": 17018,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/einweihung/tkinnen1.jpg": {
+  "w": 400,
+  "h": 230,
+  "bytes": 21843,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/entstehung/aufrichten.jpg": {
+  "w": 300,
+  "h": 329,
+  "bytes": 19684,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/entstehung/emilweber.jpg": {
+  "w": 150,
+  "h": 202,
+  "bytes": 5072,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/entstehung/ewzimmern.jpg": {
+  "w": 340,
+  "h": 227,
+  "bytes": 11663,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/entstehung/fenstertk.jpg": {
+  "w": 400,
+  "h": 119,
+  "bytes": 8607,
+  "webp": false,
+  "steps": []
+ },
+ "neuetk/entstehung/gemarbeiten.jpg": {
+  "w": 342,
+  "h": 215,
+  "bytes": 16992,
+  "webp": false,
+  "steps": []
+ },
+ "neuetk/entstehung/lkwladen.jpg": {
+  "w": 300,
+  "h": 241,
+  "bytes": 20775,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/entstehung/ruinetk.jpg": {
+  "w": 200,
+  "h": 284,
+  "bytes": 10602,
+  "webp": false,
+  "steps": []
+ },
+ "neuetk/entstehung/spengler.jpg": {
+  "w": 300,
+  "h": 206,
+  "bytes": 12810,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/entstehung/tkfertig.jpg": {
+  "w": 400,
+  "h": 602,
+  "bytes": 48995,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 266,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/entstehung/tkplan.jpg": {
+  "w": 400,
+  "h": 269,
+  "bytes": 20066,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/entstehung/treffen1.jpg": {
+  "w": 350,
+  "h": 212,
+  "bytes": 13802,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/entstehung/winterlager.jpg": {
+  "w": 350,
+  "h": 174,
+  "bytes": 19863,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/kreuzwegbilder/kreuzweg.jpg": {
+  "w": 400,
+  "h": 480,
+  "bytes": 35168,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 333,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st1.jpg": {
+  "w": 300,
+  "h": 446,
+  "bytes": 14457,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 269,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st10.jpg": {
+  "w": 300,
+  "h": 445,
+  "bytes": 15396,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 270,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st11.jpg": {
+  "w": 300,
+  "h": 445,
+  "bytes": 15991,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 270,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st12.jpg": {
+  "w": 300,
+  "h": 415,
+  "bytes": 13795,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 289,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st13.jpg": {
+  "w": 300,
+  "h": 429,
+  "bytes": 16078,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 280,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st14.jpg": {
+  "w": 300,
+  "h": 429,
+  "bytes": 16160,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 280,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st1marterl.jpg": {
+  "w": 400,
+  "h": 484,
+  "bytes": 34738,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 331,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st2.jpg": {
+  "w": 301,
+  "h": 445,
+  "bytes": 16175,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 271,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st3.jpg": {
+  "w": 300,
+  "h": 447,
+  "bytes": 15622,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 268,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st4.jpg": {
+  "w": 300,
+  "h": 452,
+  "bytes": 15411,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 265,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st5.jpg": {
+  "w": 300,
+  "h": 446,
+  "bytes": 16283,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 269,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st6.jpg": {
+  "w": 300,
+  "h": 451,
+  "bytes": 16084,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 266,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st7.jpg": {
+  "w": 300,
+  "h": 444,
+  "bytes": 13880,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 270,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st8.jpg": {
+  "w": 300,
+  "h": 450,
+  "bytes": 15333,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 267,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegbilder/st9.jpg": {
+  "w": 300,
+  "h": 440,
+  "bytes": 14833,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 273,
+    "h": 400,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegweihe/emilottqhelma.jpg": {
+  "w": 300,
+  "h": 361,
+  "bytes": 26434,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/kreuzwegweihe/festakt.jpg": {
+  "w": 511,
+  "h": 300,
+  "bytes": 28118,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 235,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegweihe/geistlichkeit.jpg": {
+  "w": 415,
+  "h": 200,
+  "bytes": 13916,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 193,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegweihe/gerhardfranz.jpg": {
+  "w": 339,
+  "h": 250,
+  "bytes": 20089,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/kreuzwegweihe/kreuzwegzug.jpg": {
+  "w": 447,
+  "h": 250,
+  "bytes": 19068,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 224,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegweihe/kwgebete.jpg": {
+  "w": 372,
+  "h": 250,
+  "bytes": 18694,
+  "webp": false,
+  "steps": []
+ },
+ "neuetk/kreuzwegweihe/letztekwstation.jpg": {
+  "w": 369,
+  "h": 250,
+  "bytes": 17033,
+  "webp": false,
+  "steps": []
+ },
+ "neuetk/kreuzwegweihe/salnau.jpg": {
+  "w": 150,
+  "h": 225,
+  "bytes": 6791,
+  "webp": false,
+  "steps": []
+ },
+ "neuetk/kreuzwegweihe/stationsbilder.jpg": {
+  "w": 400,
+  "h": 188,
+  "bytes": 22219,
+  "webp": true,
+  "steps": []
+ },
+ "neuetk/kreuzwegweihe/stbuebergabe.jpg": {
+  "w": 479,
+  "h": 250,
+  "bytes": 17932,
+  "webp": false,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 209,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "neuetk/kreuzwegweihe/stbweihe1.jpg": {
+  "w": 375,
+  "h": 250,
+  "bytes": 13718,
+  "webp": false,
+  "steps": []
+ },
+ "ntkaltar.jpg": {
+  "w": 1994,
+  "h": 789,
+  "bytes": 366391,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 158,
+    "jpg": true,
+    "webp": true
+   },
+   {
+    "box": 700,
+    "w": 700,
+    "h": 277,
+    "jpg": true,
+    "webp": true
+   },
+   {
+    "box": 1000,
+    "w": 1000,
+    "h": 396,
+    "jpg": true,
+    "webp": true
+   },
+   {
+    "box": 1400,
+    "w": 1400,
+    "h": 554,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "ntkwinterbild.jpg": {
+  "w": 1448,
+  "h": 1086,
+  "bytes": 501742,
+  "webp": true,
+  "steps": [
+   {
+    "box": 400,
+    "w": 400,
+    "h": 300,
+    "jpg": true,
+    "webp": true
+   },
+   {
+    "box": 700,
+    "w": 700,
+    "h": 525,
+    "jpg": true,
+    "webp": true
+   },
+   {
+    "box": 1000,
+    "w": 1000,
+    "h": 750,
+    "jpg": true,
+    "webp": true
+   }
+  ]
+ },
+ "zeichnungntkumkehr.jpg": {
+  "w": 130,
+  "h": 172,
+  "bytes": 6686,
+  "webp": false,
+  "steps": []
+ }
+}

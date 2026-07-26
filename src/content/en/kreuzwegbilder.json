@@ -1,0 +1,154 @@
+{
+  "id": "kreuzwegbilder",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "The Stations of the Cross",
+  "kicker": "The new Tusset Chapel",
+  "title": "The Stations of the Cross at the new Tusset Chapel",
+  "subtitle": "The Stations of the Cross, painted by Mrs Fritsche-Flügel",
+  "description": "The 14 Stations of the Cross at the new Tusset Chapel, painted by Helma Fritsche-Flügel on copper plates. Each picture shows in the background motifs of the village that donated it.",
+  "_quelle": "inhalte/neuetk/kreuzwegbilder/ntkkreuzwegbilder.htm",
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Mrs Fritsche-Flügel, née Kössl, comes from Wallern, that is from the immediate vicinity of the old chapel on the Tussetberg. The artist has long enjoyed great esteem among the Bohemian Forest Germans; the altar painting in the Bishop Neumann Chapel on the Dreisesselberg is also from her hand. She worked for one and a half years on the 14 panels. Formerly three Ways of the Cross led from Tusset, Böhmisch Röhren and Guthausen to the old chapel. Only with this new depiction of Christ’s Passion did the newly built Tusset Chapel gain its dignified standing as a place of pilgrimage. The individual stations were donated through gifts from the surrounding municipalities. That gave the painter additional impulses for her work. The panels are painted on copper plates."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegbilder/st1marterl.jpg",
+      "align": "right",
+      "alt": "A wayside shrine of the Way of the Cross near Philippsreut with its inset station panel"
+    },
+    {
+      "t": "p",
+      "html": "Each picture shows in the background motifs of the place that donated it. The Passion of Christ thus becomes a symbolic procession through the fields beyond the border. The artist succeeded masterfully in linking the story of salvation with the fate of the Bohemian Forest Germans in recent decades, and in awakening religious feeling."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/kreuzwegbilder/kreuzweg.jpg",
+      "align": "left",
+      "alt": "The Way of the Cross of the Bohemian Forest Germans in a wide arc above the village of Philippsreut"
+    },
+    {
+      "t": "p",
+      "html": "After various proposals and unsuccessful attempts to lead the Way of the Cross from the border to the chapel, the municipality of Philippsreut, through the vigorous support of its mayor Otto Damasko, permitted the stations to be set up on private land in a wide arc above the village. Yet it was precisely through this elevated position at the forest edge, with the distant view of the Bohemian Forest beyond the border, that the recreated Way of the Lord gained a fitting expressive power."
+    },
+    {
+      "t": "h2",
+      "text": "The 14 stations"
+    },
+    {
+      "t": "station",
+      "title": "Station 1 – Jesus stands before his judges at daybreak",
+      "src": "neuetk/kreuzwegbilder/st1.jpg",
+      "alt": "First Station: Jesus before his judges, in the background the houses of Philippsreut at night",
+      "html": "The bright figure of the Redeemer steps out of the darkness of the night which still lies over the houses of the twinned municipality of Philippsreut. The struggle of the good and the light against the dark powers begins.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Station 2 – Jesus takes the cross upon his shoulder",
+      "src": "neuetk/kreuzwegbilder/st2.jpg",
+      "alt": "Second Station: Jesus with the cross among the procession of expellees crossing the Moldau bridge at Obermoldau",
+      "html": "Symbolically he goes with the procession of the expelled across the Moldau bridge from Obermoldau towards the camp at Winterberg. These people too had a cross to bear, laid upon them by powers unknown to them.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Station 3 – Jesus falls the first time on stony ground",
+      "src": "neuetk/kreuzwegbilder/st3.jpg",
+      "alt": "Third Station: Jesus falls on stony ground, in the background the village of Elendbachl",
+      "html": "This picture was donated by the village of Elendbachl together with the surrounding places. Indeed, it was surely stony ground that even gave the place its name. With blood and sweat it was once cleared by its inhabitants, until it became a beloved homeland to them.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Station 4 – Jesus meets his beloved mother",
+      "src": "neuetk/kreuzwegbilder/st4.jpg",
+      "alt": "Fourth Station: the meeting of Jesus with his mother, in the background the war memorial of Eleonorenhain",
+      "html": "How many mothers from Eleonorenhain must have taken leave of their sons, who went to war and did not return. Only a name on the war memorial in the background still recalls them.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Station 5 – Simon helps Jesus to carry the cross",
+      "src": "neuetk/kreuzwegbilder/st5.jpg",
+      "alt": "Fifth Station: Simon helps carry the cross, in the background the row of houses of Guthausen on the Tussetberg",
+      "html": "Where does he come from, this helper? Did he come down from the Tussetberg – across the Guthausen meadows to the bank of the young, murmuring Moldau by the packhorse bridge? Like a belt, the row of houses of Guthausen runs across the picture through the forest mantle of the Tussetberg.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Station 6 – Veronica offers Jesus the cloth",
+      "src": "neuetk/kreuzwegbilder/st6.jpg",
+      "alt": "Sixth Station: Veronica in Bohemian Forest costume offers Jesus the cloth, in the background the village chapel of Humwald",
+      "html": "She wears the Bohemian Forest costume, the woman from Humwald. As she hurries courageously to help from the former row of houses of the village square across the forecourt of the village chapel, one feels the old readiness to help of this expelled village community.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Station 7 – Jesus falls the second time beneath the cross",
+      "src": "neuetk/kreuzwegbilder/st7.jpg",
+      "alt": "Seventh Station: Jesus falls a second time, in the background the church of Salnau beneath storm clouds",
+      "html": "This station is dedicated to the memory of the parishes of Salnau/Schönau. Dangerous storm clouds gather over the ridges of the Hochficht. They mass above the church of Salnau, whose bright walls still greet the land far and wide above the valley of the Moldau.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Station 8 – Jesus meets the weeping women – in the landscape around Pfefferschlag.",
+      "src": "neuetk/kreuzwegbilder/st8.jpg",
+      "alt": "Eighth Station: Jesus blesses women and children in front of the historic village church of Pfefferschlag",
+      "html": "He blesses the expectant mothers and the children in the square before the historic village church. Blessed too be the woman with the statue of the expelled Madonna from the chapel of Unterlichtbuchet; blessed are all who are threatened with harm at human borders.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Station 9 – Jesus falls the third time",
+      "src": "neuetk/kreuzwegbilder/st9.jpg",
+      "alt": "Ninth Station: Jesus falls a third time, in the background the barren land of the destroyed villages of Landstraßen and Oberlichtbuchet",
+      "html": "The two villages of Landstraßen and Oberlichtbuchet were once proud farming villages. Today they have been levelled to the ground. Little by little the forest folds its green fingers over the barren land. The border has become a line of destiny for those who live beside it.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Station 10 – Jesus is stripped of his garments",
+      "src": "neuetk/kreuzwegbilder/st10.jpg",
+      "alt": "Tenth Station: Jesus is stripped of his garments, in the background the destroyed church of Kuschwarda",
+      "html": "The market town of Kuschwarda too was robbed of its greatest treasure, its church. Today grass grows green where the house of God once stood. In the picture it stands once more as the emblem of this largest market municipality with its nearby villages.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Station 11 – Jesus is nailed to the cross",
+      "src": "neuetk/kreuzwegbilder/st11.jpg",
+      "alt": "Eleventh Station: Jesus is nailed to the cross, in the background the chapel at Leimsgrub beneath dark rings of cloud",
+      "html": "The sun darkens its light above the wide mountain saddle around Pumperle. Sombre rings of cloud encircle the sun. They herald disaster. Will the little chapel at Leimsgrub, in which thanks to the care of a countrywoman the service can still be celebrated today, be able to avert the threatening danger?",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Station 12 – The Crucified dies at the Steinriegel",
+      "src": "neuetk/kreuzwegbilder/st12.jpg",
+      "alt": "Twelfth Station: the Crucified at the Steinriegel, the mountains Schreiner and Kubany in blood-red light",
+      "html": "In blood-red light stand the Schreiner and the Kubany; in the valley basin the age-grey houses of the town crouch low. The breath of the world conflagration sweeps over Calvary with its inescapable sacrifice of the cross.",
+      "flip": true
+    },
+    {
+      "t": "station",
+      "title": "Station 13 – Jesus, the Saviour of the world, rests in his mother’s lap",
+      "src": "neuetk/kreuzwegbilder/st13.jpg",
+      "alt": "Thirteenth Station: Jesus in his mother’s lap, a forest spring bubbling in the foreground",
+      "html": "In the foreground a forest spring bubbles up, of the kind that once gave the parish village of Böhmisch Röhren its name. A clear spring of refreshment for the people, a healing water with which the wounds of Jesus too were washed! Once a spring of grace bubbled up by the old Tusset Chapel as well.",
+      "flip": false
+    },
+    {
+      "t": "station",
+      "title": "Station 14 – The burial of Jesus at the old Tusset Chapel – dedicated to the village of Tusset",
+      "src": "neuetk/kreuzwegbilder/st14.jpg",
+      "alt": "Fourteenth Station: the burial at the old Tusset Chapel, Mary holding a red rose in her hand",
+      "html": "He was laid in a tomb of rock. So too the chapel crouches low before the rocky towers of the mountain. Mary holds a rose in her hand for her dead son – red shines this symbol of hope as victory over death. Full of hope, the morning light of the Resurrection stands over the Tusset forest.",
+      "flip": true
+    }
+  ]
+}

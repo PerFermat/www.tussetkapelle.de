@@ -1,0 +1,138 @@
+{
+  "id": "restaurierung",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Restaurierung der Kapelle",
+  "kicker": "Die alte Tussetkapelle",
+  "title": "Die Restaurierung der alten Tussetkapelle",
+  "subtitle": "Der Wiederaufbau der alten Tussetkapelle · Mai 1987 bis August 1990",
+  "description": "1988 wurde die alte Tussetkapelle auf Kosten des tschechoslowakischen Staates generalsaniert. Ein Brief aus Prachatitz von 1988 und der Bericht von der Einweihung im August 1990.",
+  "_quelle": "inhalte/altetk/restaurierung/restaurierung.htm",
+  "blocks": [
+    {
+      "t": "h2",
+      "text": "Der Wiederaufbau der alten Tussetkapelle"
+    },
+    {
+      "t": "h3",
+      "text": "Mai 1987"
+    },
+    {
+      "t": "fig",
+      "src": "altetk/renovierung/atkruine1.jpg",
+      "align": "center",
+      "alt": "Die alte Tussetkapelle 1987 als Ruine: freiliegender Dachstuhl, verfallene Verschalung",
+      "caption": "In diesem Zustand befand sich die alte Tussetkapelle im Mai 1987"
+    },
+    {
+      "t": "fig",
+      "src": "altetk/renovierung/atkruine2.jpg",
+      "align": "center",
+      "alt": "Weitere Ansicht der verfallenen alten Tussetkapelle",
+      "caption": "1988"
+    },
+    {
+      "t": "h2",
+      "text": "Brief von einem Initiator des Wiederaufbaus"
+    },
+    {
+      "t": "letter",
+      "meta": "Prachatitz, den 27.11.88",
+      "sign": "Herzlichst grüßt Sie",
+      "blocks": [
+        {
+          "t": "p",
+          "html": "Geehrter Herr Weber!"
+        },
+        {
+          "t": "p",
+          "html": "Mit Interesse habe ich die Broschüre „Einweihung der neuen Tussetkapelle“ gelesen. Weil es mir bekannt ist, daß Sie der Hauptinitiator zum Aufbau der neuen Tussetkapelle in Philippsreut sind. Die Tussetkapelle ist ein hervorragendes Denkmal und eine Perle der Volksarchitektur."
+        },
+        {
+          "t": "fig",
+          "src": "altetk/renovierung/atkrenov1.jpg",
+          "align": "center",
+          "alt": "Die restaurierte alte Tussetkapelle mit neuem Schindeldach"
+        },
+        {
+          "t": "p",
+          "html": "Ich lebe schon 32&nbsp;Jahre in Prachatitz, die Kapelle habe ich noch in der Zeit meiner Jugend kennengelernt, als sie noch nicht beschädigt war. Leider! – Vandalismus und der „Zahn der Zeit“ haben dieses einzigartige Denkmal fast vernichtet. Es war sehr schade! Wahrscheinlich ist Ihnen bekannt, daß im heurigen Jahr auf Kosten des tschechoslowakischen Staates eine Generalreparatur der Tussetkapelle durchgeführt wurde. Die Initiative zur Restaurierung setzten einfache Bewunderer und Freunde des Böhmerwaldes durch. Ich rechne mich auch zu diesen; freiwillig arbeite ich hier zum Schutze der Natur. Die neue Kapelle in Philippsreut half zur Realisierung der Restaurierung von der Originalkapelle auf dem Tussetberg."
+        },
+        {
+          "t": "fig",
+          "src": "altetk/renovierung/atkrenov2.jpg",
+          "align": "center",
+          "alt": "Die alte Tussetkapelle während der Restaurierungsarbeiten 1988"
+        },
+        {
+          "t": "p",
+          "html": "Bei der Reparatur blieb von der ursprünglichen Kapelle nur das Mauerwerk und die hölzerne Konstruktion der Stirnfront – das andere ist alles neu. Das Dach ist mit Schindeln gedeckt. Von dem ursprünglichen Bau der Kapelle ist es mir gelungen, ein Brett mit alten Aufschriften und Unterschriften von Einwohnern aus Wallern und Umgebung sicherzustellen."
+        },
+        {
+          "t": "p",
+          "html": "Es sind lesbar z.&nbsp;B. Anton Sitter, Pinsker, Schröder u.s.w.; die Aufschriften sind mit Jahreszahlen vom Jahre 1871 bezeichnet. Bei einigen ist auch die Hausnummer angegeben. Das Brett hat die Ausmaße ungefähr 150&nbsp;X&nbsp;25&nbsp;cm, im unteren Teil hat es zwei kreisförmige Öffnungen."
+        },
+        {
+          "t": "p",
+          "html": "Dieses Brett will ich Ihnen widmen. Schreiben Sie mir bitte, ob Sie daran Interesse haben. Ansonsten lade ich Sie und Ihre Freunde zum Besuch (Kontrolle) der reparierten Tussetkapelle ein."
+        },
+        {
+          "t": "figrow",
+          "items": [
+            {
+              "src": "altetk/renovierung/atkrenov3.jpg",
+              "alt": "Die restaurierte alte Tussetkapelle von der Seite"
+            },
+            {
+              "src": "altetk/renovierung/atkrenov4.jpg",
+              "alt": "Naturschützer bei den Aufräumungsarbeiten an der alten Tussetkapelle"
+            }
+          ]
+        },
+        {
+          "t": "p",
+          "html": "In der Anlage sende ich eine Fotografie der restaurierten Kapelle. Es sind darauf die Naturschützer, welche hier die Aufräumungsarbeiten durchführten."
+        },
+        {
+          "t": "p",
+          "html": "Ich entschuldige mich, daß ich diesen Brief nicht in deutsch schreibe, aber ich beherrsche diese Sprache nicht gut, besonders die Gramatik und lese mit Hilfe des Wörterbuches."
+        }
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "Die Einweihung der erneuerten alten Tussetkapelle"
+    },
+    {
+      "t": "h3",
+      "text": "August 1990"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Es sah und hörte sich wie ein Wunder an: Wo es noch vor weniger als einem Jahr kaum einem Menschen gestattet war, seinen Fuß hinzusetzen, weil Stacheldraht und Verbotsschilder dies verwehrten, wo unter herab gebrochenen Ästen und mannshohem Farn das letzte Stündlein für die Tussetkapelle zu schlagen schien, hatte der Tussetwald am Samstag Leben erhalten. Von drei Seiten strömten auf den einstigen Hauptwallfahrtswegen Menschenmengen zum Gipfel des Berges, Böhmerwäldler und Tschechen, die dabei sein wollten, wann die erneuerte Gnadenkapelle wieder den kirchlichen Segen erhält."
+    },
+    {
+      "t": "p",
+      "html": "„Ein Gotteshaus war es, ihr aber habt es zu einer Räuberhöhle gemacht“, so abgewandelt hätte das Evangelienwort gepaßt und angewendet werden können auf den Zustand der Kapelle im Tusset, einer weit über die Grenzen des umliegenden Landes hinaus bekannten Wallfahrtsstätte des unteren Böhmerwaldes. Zertrümmerte Bänke, aus den Verankerungen gerissene, Säulen, von Schüssen durchbohrte Marienbilder, Wände, ein sich bedrohlich senkender Dachstuhl, ein Dach, das an vielen Stellen bereits undicht geworden war, so sah das Waldkirchlein noch vor wenigen Monaten aus. Etwa fünf Jahre zuvor war in Erahnung ihres Niederganges in Philippsreuth bereits die maßstabgerechte Nachbildung der Marienkirche entstanden. Nach der Wende im Nachbarland erinnerten sich die Tschechen der geschändeten Kapelle, legten Hand an für ihre Erhaltung, kleideten sie mit einer gänzlich neuen Außenfassade ein und schufen entsprechende Erneuerungen, so daß sie der Schwester in Philippsreuth in fast nichts mehr nachsteht. Mancher, der sie nach Jahren wieder sah, der ihr Bild aus den Achtzigerjahren kannte, traute seinen Augen kaum, was er da im Schatten hoher Buchen, angelehnt an den Felsen, auf dem wahrscheinlich einmal ein Wachturm stand, gewahrte, als er ihrer, nach nicht, ganz leichtem Marsch, ansichtig wurde."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/renovierung/atkeinweihung.jpg",
+      "align": "center",
+      "alt": "Einweihung der erneuerten alten Tussetkapelle im August 1990: Geistliche und Gläubige vor der Kapelle",
+      "caption": "Die Einweihung der erneuerten alten Tussetkapelle im August 1990"
+    },
+    {
+      "t": "p",
+      "html": "Mit zahlreichen Geistlichen von diesseits und jenseits der Grenze, zusammen mit Tschechen von drüben und vielen Böhmerwäldlern von herüben, feierte der Bischof von Budweis den Gottesdienst, in den die Segnung der Kapelle mit eingebunden war. In seiner Predigt, die der hohe geistliche Würdenträger in tschechisch und deutsch hielt, rief er die Gläubigen auf, nach einer vierzigjährigen Epoche der Ungerechtigkeit in seinem Land das jetzt fehlende Bild durch ein noch schöneres zu ersetzen, „das durch ein marianisches Leben“ der Gottesmutter gemalt werden sollte. „Wir kommen von beiden Seiten der Grenze, um Frieden zu stiften. Unser Weg sollte eine Friedenswallfahrt, eine Versöhnungswallfahrt und eine Vergebungswallfahrt werden“, meinte der Prediger, der auch daran erinnerte, daß geforderter Gerechtigkeit Versöhnung und Vergebung vorausgehen müßten. Beim Bild von der wunderbaren Heilung des Jakob Klauser, der an der Quelle beim Tussetfelsen sein Augenlicht wieder bekam, meinte der Bischof, daß wir alle, 'Um das Wunder eines besseren Sehens beten sollten, wenn der Nachbar neben uns steht, den wir oft in seiner Not nicht sehen. „Maria, Mutter und Schutzfrau des Böhmerwaldes, bitte für uns“ so rief der geistliche Würdenträger in den Wald hinein, wo sein Ruf natürlich nicht ohne Echo verhallte: Deutsche und Tschechen, einträchtig nebeneinander sitzend, singend und betend, sie haben seinen Aufruf sicher verstanden und vielleicht in dieser Stunde schon begonnen, weitere Brücken des Verstehens zu bauen."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/renovierung/alteundneuetk.jpg",
+      "align": "center",
+      "alt": "Die alte und die neue Tussetkapelle im Vergleich nebeneinander",
+      "caption": "Die alte und die neue Tussetkapelle"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "besuch",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Besuch",
+  "kicker": "Ihr Besuch",
+  "title": "Besuch in der Tusset-Kapelle",
+  "subtitle": "Wann ist die Kapelle offen? Und wie kommen Sie hin?",
+  "description": "Die Tusset-Kapelle in Philippsreut ist jeden Tag von 8 bis 20 Uhr offen. Hier lesen Sie in Leichter Sprache, wie Sie zur Kapelle kommen.",
+  "blocks": [
+    {
+      "t": "h2",
+      "text": "Wann ist die Kapelle offen?"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Die Kapelle ist jeden Tag offen. Von 8 Uhr morgens bis 20 Uhr abends."
+    },
+    {
+      "t": "h2",
+      "text": "Wo steht die Kapelle?"
+    },
+    {
+      "t": "p",
+      "html": "Die Kapelle steht in Philippsreut. Philippsreut ist ein Dorf in Bayern. Es liegt im Bayerischen Wald. Es liegt nah an der Grenze zu Tschechien."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntkkarte.jpg",
+      "align": "center",
+      "alt": "Eine Karte. Sie zeigt: Hier steht die neue Kapelle. Und hier stand die alte Kapelle.",
+      "caption": "Auf der Karte sehen Sie: Hier steht die Kapelle."
+    },
+    {
+      "t": "h2",
+      "text": "So kommen Sie mit dem Auto"
+    },
+    {
+      "t": "p",
+      "html": "Fahren Sie auf der Autobahn A 3. Fahren Sie in Richtung Passau."
+    },
+    {
+      "t": "p",
+      "html": "Nehmen Sie die Ausfahrt Aicha vorm Wald."
+    },
+    {
+      "t": "p",
+      "html": "Fahren Sie dann nach Hutthurm."
+    },
+    {
+      "t": "p",
+      "html": "Fahren Sie dann auf der Straße B 12 weiter. Sie fahren über Freyung. Dann kommen Sie nach Philippsreut."
+    },
+    {
+      "t": "h2",
+      "text": "Wer hilft Ihnen weiter?"
+    },
+    {
+      "t": "p",
+      "html": "Diese Namen sind bekannt:"
+    },
+    {
+      "t": "dl",
+      "items": [
+        {
+          "term": "Für die Kapelle:",
+          "html": "Frau Therese Friedsam, Hauptstraße 1, Telefon 08550/763"
+        },
+        {
+          "term": "Für einen Gottes-Dienst:",
+          "html": "Pfarrer Max Richtsfeld, Telefon 08550/274"
+        }
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "Ein Buch in der Kapelle"
+    },
+    {
+      "t": "p",
+      "html": "In der Kapelle liegt ein Buch. In dem Buch steht die Geschichte von der Kapelle. Das Buch kostet 2 Euro und 50 Cent."
+    },
+    {
+      "t": "fig",
+      "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
+      "align": "center",
+      "alt": "Die Kapelle am Abend. Die Sonne geht unter. Der Himmel ist orange.",
+      "caption": "Die Kapelle am Abend."
+    },
+    {
+      "t": "h2",
+      "text": "Die genaue Stelle"
+    },
+    {
+      "t": "p",
+      "html": "Die Kapelle steht genau hier: <strong>48.863274, 13.677887</strong>. <a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle auf einer Karte ansehen</a>. Dann öffnet sich eine andere Internet-Seite."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "home",
+  "type": "home",
+  "navLabel": "Start-Seite",
+  "title": "Tussetkapelle",
+  "metaTitle": "Tussetkapelle Philippsreut – in Leichter Sprache",
+  "description": "Die Tussetkapelle in Philippsreut in Leichter Sprache. Die Kapelle ist ein Ort zum Erinnern. Sie wurde im Jahr 1985 eingeweiht.",
+  "hero": {
+    "img": "ntkaltar.jpg",
+    "alt": "So sieht es innen in der neuen Tussetkapelle aus. Man sieht den Altar aus Holz und viele Bilder.",
+    "title": "Tussetkapelle",
+    "subtitle": "Ein Ort zum Erinnern",
+    "lede": "Die Tusset-Kapelle steht in Philippsreut. Der Bau begann im Jahr <strong>1983</strong>. Das Fest zur Einweihung war am <strong>27. Juli 1985</strong>.",
+    "cta": {
+      "label": "Die Geschichte lesen",
+      "to": "geschichte"
+    }
+  },
+  "tiles": [
+    {
+      "to": "geschichte",
+      "icon": "book",
+      "img": "altetk/tusset_alt.jpg",
+      "alt": "Die alte Kapelle im Wald. Sie ist aus dunklem Holz.",
+      "title": "Geschichte",
+      "text": "Hier lesen Sie: Das ist mit der alten Kapelle passiert. Und so wurde die neue Kapelle gebaut.",
+      "more": "Mehr lesen"
+    },
+    {
+      "to": "galerie",
+      "icon": "camera",
+      "img": "ntkwinterbild.jpg",
+      "alt": "Die neue Kapelle im Winter. Überall liegt Schnee.",
+      "title": "Bilder",
+      "text": "Hier sehen Sie viele Bilder. Von der alten Kapelle und von der neuen Kapelle.",
+      "more": "Zu den Bildern"
+    },
+    {
+      "to": "besuch",
+      "icon": "pin",
+      "img": "neuetk/einleitung/ntksonnenuntergang.jpg",
+      "alt": "Die Kapelle am Abend. Die Sonne geht unter.",
+      "title": "Besuch",
+      "text": "Hier lesen Sie: So kommen Sie zur Kapelle. Und wann die Kapelle offen ist.",
+      "more": "Mehr lesen"
+    }
+  ],
+  "visit": {
+    "title": "Besuch in der Kapelle",
+    "openLabel": "Jeden Tag offen",
+    "hours": "8 bis 20 Uhr",
+    "place": "Philippsreut",
+    "cta": {
+      "label": "Weg zur Kapelle",
+      "to": "besuch"
+    }
+  },
+  "timeline": {
+    "title": "Ein Ort und seine Geschichte",
+    "items": [
+      {
+        "icon": "chapel",
+        "when": "1791",
+        "what": "Ein Mann baut eine Kapelle aus Holz. Sie steht auf dem Tusset-Berg im Böhmer-Wald."
+      },
+      {
+        "icon": "walking",
+        "when": "Nach 1945",
+        "what": "Die Menschen müssen ihre Heimat verlassen. Die Kapelle zerfällt."
+      },
+      {
+        "icon": "hammer",
+        "when": "1983",
+        "what": "In Philippsreut beginnt der Bau von einer neuen Kapelle."
+      },
+      {
+        "icon": "cross",
+        "when": "1985",
+        "what": "Die neue Kapelle ist fertig. Am 27. Juli ist ein großes Fest."
+      },
+      {
+        "icon": "people",
+        "when": "Heute",
+        "what": "Viele Menschen besuchen die Kapelle. Sie ist jeden Tag offen."
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "t": "h2",
+      "text": "Herzlich willkommen"
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Das ist die Internet-Seite von der Tusset-Kapelle. Die Kapelle steht in Philippsreut. Philippsreut ist ein Dorf in Bayern. Es liegt nah an der Grenze zu Tschechien."
+    },
+    {
+      "t": "p",
+      "html": "Ein Mann hat die Kapelle gebaut. Der Mann hieß Emil Weber. Emil Weber ist im Jahr 2002 gestorben. Diese Internet-Seite ist für ihn."
+    },
+    {
+      "t": "h2",
+      "text": "Warum gibt es die Kapelle?"
+    },
+    {
+      "t": "p",
+      "html": "Früher stand im Böhmer-Wald eine Kapelle. Sie hieß Tusset-Kapelle. Viele Menschen sind dort hin gegangen. Sie haben dort gebetet."
+    },
+    {
+      "t": "p",
+      "html": "Nach dem Zweiten Welt-Krieg mussten viele Menschen ihre Heimat verlassen. Das nennt man Vertreibung. Die Menschen durften nicht mehr zur Kapelle gehen. Die Kapelle ist kaputt gegangen."
+    },
+    {
+      "t": "explain",
+      "word": "Vertreibung",
+      "html": "Vertreibung heißt: Menschen müssen ihre Heimat verlassen. Sie wollen das nicht. Aber sie dürfen nicht bleiben. Nach dem Zweiten Welt-Krieg ist das vielen Menschen im Böhmer-Wald passiert."
+    },
+    {
+      "t": "p",
+      "html": "Emil Weber wollte die Kapelle wieder haben. Darum hat er eine neue Kapelle gebaut. Sie sieht genau so aus wie die alte Kapelle. Sie steht in Philippsreut in Bayern."
+    },
+    {
+      "t": "fig",
+      "src": "ntkwinterbild.jpg",
+      "align": "wide",
+      "max": 700,
+      "alt": "Die neue Kapelle im Winter. Sie ist aus Holz. Sie hat einen kleinen Turm. Überall liegt Schnee.",
+      "caption": "Die neue Tusset-Kapelle im Winter."
+    },
+    {
+      "t": "h2",
+      "text": "Wie lange hat der Bau gedauert?"
+    },
+    {
+      "t": "p",
+      "html": "Der Bau hat 3 Jahre gedauert. Viele Menschen haben geholfen. Am 27. Juli 1985 war das große Fest. Ein Bischof hat die Kapelle eingeweiht. Der Bischof hieß Franz Xaver Eder. Er kam aus Passau."
+    },
+    {
+      "t": "explain",
+      "word": "Einweihen",
+      "html": "Einweihen heißt: Ein Pfarrer oder ein Bischof betet in einem neuen Haus. Dann ist das Haus eine Kirche. Danach darf man dort Gottes-Dienst feiern."
+    },
+    {
+      "t": "h2",
+      "text": "Ein Buch über die Kapelle"
+    },
+    {
+      "t": "p",
+      "html": "In der Kapelle liegt ein Buch. In dem Buch steht die Geschichte von der Kapelle. Das Buch kostet 2 Euro und 50 Cent. Sie können es in der Kapelle kaufen."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "datenschutz",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Privacy",
+  "kicker": "Legal",
+  "title": "Privacy notice",
+  "description": "Privacy notice: this website sets no cookies, embeds no external services and uses no tracking.",
+  "_hinweis": "Neu erstellt. Beschreibt genau den technischen Zustand dieser Website.",
+
+  "blocks": [
+    {
+      "t": "note",
+      "title": "To be completed and checked",
+      "html": "The details marked with <strong>⟨angle brackets⟩</strong> must be filled in before publication. The section on server log files must be checked against the hosting provider’s practice. This page is not a substitute for legal advice."
+    },
+
+    { "t": "h2", "text": "In brief" },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "This is a purely static website. It sets <strong>no cookies</strong>, uses <strong>no tracking and no analytics</strong>, embeds <strong>no fonts, maps, videos or scripts from external servers</strong> and stores <strong>no data in your browser</strong>. There is no contact form and no login."
+    },
+
+    { "t": "h2", "text": "Controller" },
+    {
+      "t": "p",
+      "html": "⟨given name and surname, or name of the body⟩<br>⟨street and number⟩<br>⟨postcode and town⟩<br>E-mail: <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>"
+    },
+
+    { "t": "h2", "text": "Server log files" },
+    {
+      "t": "p",
+      "html": "When a page is called up, your browser transmits technically necessary data to the hosting provider’s server. The provider usually stores these in log files: the address requested, the date and time, the volume of data transferred, a message about the success of the request, browser type and version, operating system, the referring page and the IP address."
+    },
+    {
+      "t": "dl",
+      "items": [
+        {
+          "term": "Purpose",
+          "html": "Provision of the website, operational security and error analysis."
+        },
+        {
+          "term": "Legal basis",
+          "html": "Art.&nbsp;6(1)(f) GDPR – legitimate interest in the technically error-free operation of the site."
+        },
+        {
+          "term": "Retention period",
+          "html": "⟨as stated by the hosting provider; 7 to 30 days is usual⟩"
+        },
+        {
+          "term": "Processor",
+          "html": "⟨name and address of the hosting provider; a data processing agreement under Art.&nbsp;28 GDPR must be concluded with them⟩"
+        }
+      ]
+    },
+
+    { "t": "h2", "text": "Contact by e-mail" },
+    {
+      "t": "p",
+      "html": "If you write to us by e-mail, your details will be stored in order to deal with your enquiry and in case of follow-up questions. The legal basis is Art.&nbsp;6(1)(f) GDPR. The data will be deleted as soon as the enquiry has been dealt with and no retention obligations prevent this."
+    },
+
+    { "t": "h2", "text": "No cookies, no tracking" },
+    {
+      "t": "p",
+      "html": "No cookies are set and no local storage or session storage is used. There is no audience measurement, and no tracking pixels, social media buttons or advertising networks are embedded. A consent banner is therefore not required."
+    },
+    {
+      "t": "p",
+      "html": "The small amount of JavaScript on this site runs entirely in your browser. It opens and closes the menu and displays images in a larger view. It transmits no data and stores nothing."
+    },
+
+    { "t": "h2", "text": "Fonts and images" },
+    {
+      "t": "p",
+      "html": "Only the system fonts already present on your device are used. Google Fonts and comparable services are not embedded, so no connection is made to external servers. All images are hosted on the same server as the website."
+    },
+
+    { "t": "h2", "text": "External links" },
+    {
+      "t": "p",
+      "html": "On the <a href=\"{{href:kontakt}}\">contact</a> page and the <a href=\"{{href:besuch}}\">visit</a> page you will find links to external websites. These are only called up when you click the link. Only then does the respective provider receive your IP address. Responsibility for data processing on those sites rests with the respective provider. No maps or other content from external providers are embedded in these pages."
+    },
+
+    { "t": "h2", "text": "Your rights" },
+    {
+      "t": "p",
+      "html": "You have the right of access (Art.&nbsp;15 GDPR), to rectification (Art.&nbsp;16), to erasure (Art.&nbsp;17), to restriction of processing (Art.&nbsp;18), to data portability (Art.&nbsp;20) and to object (Art.&nbsp;21). Please contact the controller named above."
+    },
+    {
+      "t": "p",
+      "html": "You also have the right to lodge a complaint with a data protection supervisory authority. In Bavaria the competent authority is the Bavarian Data Protection Authority (Bayerisches Landesamt für Datenschutzaufsicht), Promenade&nbsp;18, 91522 Ansbach."
+    },
+
+    { "t": "h2", "text": "Changes" },
+    {
+      "t": "p",
+      "html": "This notice describes the state of the website at the time it was drawn up. Should functions that process data be added in future, this notice will be amended accordingly."
+    }
+  ]
+}

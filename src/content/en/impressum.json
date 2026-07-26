@@ -1,0 +1,68 @@
+{
+  "id": "impressum",
+  "type": "article",
+  "parent": "home",
+  "navLabel": "Imprint",
+  "kicker": "Legal",
+  "title": "Imprint",
+  "description": "Imprint and provider information for the website about the new Tusset Chapel in Philippsreut.",
+  "_hinweis": "Neu erstellt. Die mit ⟨…⟩ markierten Stellen muss der Betreiber ausfüllen.",
+
+  "blocks": [
+    {
+      "t": "note",
+      "title": "To be completed",
+      "html": "The details marked with <strong>⟨angle brackets⟩</strong> must be filled in before publication. An imprint is a legal requirement for a website operated in Germany under §&nbsp;5 of the Digital Services Act (DDG, formerly §&nbsp;5 TMG). This page is not a substitute for legal advice."
+    },
+
+    { "t": "h2", "text": "Information pursuant to § 5 DDG" },
+    {
+      "t": "dl",
+      "items": [
+        { "term": "Provider", "html": "Frank Weber" },
+        {
+          "term": "Address",
+          "html": "Eichendorffstr. 2, 73095 Albershausen<br>Germany"
+        },
+        {
+          "term": "E-mail",
+          "html": "<a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>"
+        }
+      ]
+    },
+
+    { "t": "h2", "text": "Responsible for the content" },
+    {
+      "t": "p",
+      "html": "Franz weber<br>Eichendorffstr. 2<br>73095 Albershausen"
+    },
+
+    { "t": "h2", "text": "Content and copyright" },
+    {
+      "t": "p",
+      "html": "The texts and photographs on this website come from the archive of the Weber family. The accounts are attributed by name: the description of the chapel on the Tussetberg and of the miraculous images by Otto Veith (Wallern), the stories of the old Tusset Chapel by Rosl Tahedl (Guthausen), and the photographic report on the reconstruction by Emil Weber. The Stations of the Cross were painted by Helma Fritsche-Flügel."
+    },
+    {
+      "t": "p",
+      "html": "All rights to the texts and images remain with the respective authors or their legal successors. Any further use, in particular any commercial use, is permitted only with their consent."
+    },
+
+    { "t": "h2", "text": "Liability for content" },
+    {
+      "t": "p",
+      "html": "The content of these pages has been compiled with care. No guarantee can however be given for the accuracy, completeness and currency of the content. Large parts of it are historical accounts by contemporary witnesses, reflecting their personal recollection and point of view."
+    },
+
+    { "t": "h2", "text": "Liability for links" },
+    {
+      "t": "p",
+      "html": "This website contains links to external websites over whose content we have no influence. No guarantee is given for such external content; responsibility always rests with the respective provider. The linked pages gave no cause for complaint at the time the links were originally made. Some of the links on the <a href=\"{{href:kontakt}}\">contact</a> page are more than twenty years old and may no longer be reachable."
+    },
+
+    { "t": "h2", "text": "Accessibility" },
+    {
+      "t": "p",
+      "html": "This website is designed to be usable with a keyboard, with a screen reader and at high levels of magnification. All content is additionally available in <a href=\"/ls/\">Leichte Sprache</a> (easy-to-read German). If you encounter a barrier, please write to <a href=\"mailto:info@tussetkapelle.de\">info@tussetkapelle.de</a>."
+    }
+  ]
+}

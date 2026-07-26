@@ -1,0 +1,153 @@
+{
+  "id": "alte-geschichten",
+  "type": "article",
+  "parent": "alte-tussetkapelle",
+  "navLabel": "Alte Geschichten",
+  "kicker": "Rosl Tahedl erzählt",
+  "title": "Alte Geschichten",
+  "subtitle": "So war es früher in der Kapelle und in den Dörfern",
+  "description": "Rosl Tahedl erzählt: So sah es früher in der alten Tusset-Kapelle aus. Und so war es in den Dörfern. In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Rosl Tahedl hat im Böhmer-Wald gelebt. Sie hat die alte Kapelle gut gekannt. Hier erzählt sie davon."
+    },
+    { "t": "h2", "text": "So sah es in der Kapelle aus" },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atkzeichnung.jpg",
+      "align": "right",
+      "alt": "Eine Zeichnung von der alten Kapelle. Vorne ist ein Vor-Bau aus Holz.",
+      "caption": "Eine Zeichnung von der alten Kapelle."
+    },
+    {
+      "t": "p",
+      "html": "Vor der Kapelle waren 5 Stufen aus Stein. Auf den Stufen wuchs Moos. Die Tür war aus Holz. Sie war nie zugeschlossen."
+    },
+    {
+      "t": "p",
+      "html": "Vorne war ein Raum aus Holz. Dort war es dunkel. Die Fenster waren klein. Pflanzen sind über die Fenster gewachsen."
+    },
+    {
+      "t": "p",
+      "html": "An den Wänden hingen viele kleine Bilder. Fast alle Bilder zeigten Maria. Auf manchen Bildern stand: Maria hilf. Oder: Maria hat geholfen."
+    },
+    {
+      "t": "explain",
+      "word": "Votiv-Bild",
+      "html": "Ein Votiv-Bild ist ein Geschenk an Gott oder an Maria. Menschen bringen es in eine Kirche. Sie sagen damit Danke. Oder sie bitten um Hilfe."
+    },
+    { "t": "h2", "text": "Die kleinen Kissen mit Blumen" },
+    {
+      "t": "p",
+      "html": "In der Tusset-Kapelle hingen kleine weiße Kissen. Auf jedem Kissen war ein Kranz aus Myrten-Blüten. Und lange weiße Bänder."
+    },
+    {
+      "t": "p",
+      "html": "Diese Kissen gab es nur in dieser Kapelle. Sie hatten eine traurige Bedeutung."
+    },
+    {
+      "t": "p",
+      "html": "Früher sind viele Kinder gestorben. Bei der Beerdigung ging ein Mädchen voran. Das Mädchen trug ein weißes Kissen mit einem Blumen-Kranz. Das Kissen kam mit ins Grab."
+    },
+    {
+      "t": "p",
+      "html": "Manche Kinder sind sehr plötzlich gestorben. Zum Beispiel bei einem Unfall. Dann war die Mutter sehr traurig. Diese Mütter haben das Kissen in die Kapelle gebracht."
+    },
+    {
+      "t": "p",
+      "html": "Die Blumen sind später trocken geworden. Dann hat man das Kissen weg-genommen. Die Menschen haben gedacht: Jetzt ist die Trauer kleiner."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/atk1945.jpg",
+      "align": "center",
+      "alt": "Das Innere der alten Kapelle mit vielen kleinen Bildern an den Wänden.",
+      "caption": "So sah es in der alten Kapelle aus."
+    },
+    { "t": "h2", "text": "Der helle Raum aus Stein" },
+    {
+      "t": "p",
+      "html": "Hinten war ein Raum aus Stein. Dort war es hell. Die Fenster waren groß. Die Wände waren weiß. Die Decke war hell-blau."
+    },
+    {
+      "t": "p",
+      "html": "Der Boden hatte gelbe Fliesen. Der Altar war einfach. An der Wand hing das große Bild von Maria."
+    },
+    {
+      "t": "p",
+      "html": "Viele Menschen sind wieder gekommen. Das Bild hat sie getröstet."
+    },
+    { "t": "h2", "text": "Die Dörfer am Tusset-Berg" },
+    { "t": "h3", "text": "Böhmisch-Röhren" },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/boehmroehren.jpg",
+      "align": "wide",
+      "alt": "Ein altes Foto vom Dorf Böhmisch-Röhren mit der Kirche.",
+      "caption": "Das alte Dorf Böhmisch-Röhren."
+    },
+    {
+      "t": "p",
+      "html": "Böhmisch-Röhren lag hoch oben. 930 Meter über dem Meer. Es war ein Kur-Ort. Menschen sind zum Erholen dort hin gefahren."
+    },
+    {
+      "t": "p",
+      "html": "In dem Dorf gab es 4 Gast-Häuser. Und viele Geschäfte. Und einen Arzt. Und eine Post. Die Kirche war von 1791."
+    },
+    {
+      "t": "p",
+      "html": "Im Dorf haben über 1200 Menschen gewohnt."
+    },
+    {
+      "t": "p",
+      "html": "Nach dem Krieg mussten die Menschen weg. Im Jahr 1966 hat man das Dorf ab-gerissen. Auch die Kirche. Heute findet man den Platz kaum noch."
+    },
+    { "t": "h3", "text": "Tusset" },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/tussetgb.jpg",
+      "align": "wide",
+      "alt": "Ein altes Foto vom Dorf Tusset. Links ist eine kleine Kapelle.",
+      "caption": "Das Dorf Tusset. Links sieht man die Dorf-Kapelle."
+    },
+    {
+      "t": "p",
+      "html": "Tusset lag am Tusset-Berg. Im Jahr 1939 haben dort 678 Menschen gewohnt."
+    },
+    {
+      "t": "p",
+      "html": "In Tusset gab es eine Fabrik. Dort hat man besonderes Holz gemacht. Aus diesem Holz baut man Musik-Instrumente. Über 100 Menschen haben in der Fabrik gearbeitet."
+    },
+    {
+      "t": "p",
+      "html": "Später hat die Fabrik Parkett gemacht. Parkett ist ein Boden aus Holz. Die Arbeiter aus Tusset waren berühmt. Sie haben in Schlössern gearbeitet."
+    },
+    { "t": "h3", "text": "Guthausen" },
+    {
+      "t": "p",
+      "html": "Guthausen war das jüngste Dorf. Es entstand von 1816 bis 1819. Die Menschen dort waren Holz-Arbeiter."
+    },
+    {
+      "t": "p",
+      "html": "Die ersten 35 Häuser standen in einer Reihe. Die Nachbar-Dörfer haben darüber gelacht."
+    },
+    {
+      "t": "p",
+      "html": "Aber die Menschen aus Guthausen waren klug. Man hat gesagt: Nach Guthausen geht man um ein Hirn."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1946 gab es 78 Häuser. Dort haben 580 Menschen gewohnt. Heute ist das Dorf fast leer."
+    },
+    {
+      "t": "fig",
+      "src": "altetk/kreuzwege/stannakapelle.jpg",
+      "align": "wide",
+      "alt": "Eine kleine Kapelle am Wald-Rand.",
+      "caption": "Die Sankt-Anna-Kapelle in Leimsgrub. Sie ist von 1930."
+    }
+  ]
+}

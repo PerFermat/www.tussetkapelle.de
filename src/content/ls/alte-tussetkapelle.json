@@ -1,0 +1,58 @@
+{
+  "id": "alte-tussetkapelle",
+  "type": "article",
+  "parent": "geschichte",
+  "navLabel": "Die alte Kapelle",
+  "kicker": "Die alte Kapelle",
+  "title": "Die alte Kapelle im Böhmer-Wald",
+  "description": "Die alte Tusset-Kapelle stand im Böhmer-Wald. In Leichter Sprache.",
+
+  "blocks": [
+    {
+      "t": "fig",
+      "src": "altetk/tusset_alt.jpg",
+      "align": "center",
+      "max": 450,
+      "alt": "Die alte Kapelle im Wald. Sie ist aus dunklem Holz. Sie hat einen spitzen Turm.",
+      "caption": "So sah die alte Tusset-Kapelle aus."
+    },
+    {
+      "t": "p",
+      "lede": true,
+      "html": "Die alte Kapelle stand auf einem Berg. Der Berg heißt Tusset-Berg. Er liegt im Böhmer-Wald."
+    },
+    {
+      "t": "explain",
+      "word": "Böhmer-Wald",
+      "html": "Der Böhmer-Wald ist ein großes Wald-Gebiet. Er liegt heute in Tschechien. Früher haben dort viele deutsche Menschen gewohnt."
+    },
+    {
+      "t": "p",
+      "html": "Die Kapelle war aus Holz und aus Stein. Sie war sehr schön. Viele Menschen sind dort hin gegangen."
+    },
+    { "t": "h2", "text": "Warum ist die Kapelle kaputt gegangen?" },
+    {
+      "t": "p",
+      "html": "Nach dem Zweiten Welt-Krieg mussten die deutschen Menschen weg. Niemand hat sich mehr um die Kapelle gekümmert. Regen und Schnee haben das Holz zerstört. Menschen haben Dinge gestohlen."
+    },
+    {
+      "t": "p",
+      "html": "Im Jahr 1980 war die Kapelle fast ganz zerfallen."
+    },
+    { "t": "h2", "text": "Mehr über die alte Kapelle lesen" },
+    {
+      "t": "p",
+      "html": "Hier gibt es mehr zu lesen:"
+    },
+    {
+      "t": "list",
+      "items": [
+        "<a href=\"{{href:kapelle-und-wallern}}\">Die Kapelle und der Ort Wallern</a>",
+        "<a href=\"{{href:gnadenbilder}}\">Die Bilder von Maria</a>",
+        "<a href=\"{{href:kreuzwege-und-wallfahrtstage}}\">Der Kreuz-Weg und die Wallfahrt</a>",
+        "<a href=\"{{href:alte-geschichten}}\">Alte Geschichten</a>",
+        "<a href=\"{{href:restaurierung}}\">Die alte Kapelle wird repariert</a>"
+      ]
+    }
+  ]
+}
