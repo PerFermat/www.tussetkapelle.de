@@ -25,12 +25,13 @@
       "t": "p",
       "html": "Die Kapelle steht in Philippsreut. Philippsreut ist ein Dorf in Bayern. Es liegt im Bayerischen Wald. Es liegt nah an der Grenze zu Tschechien."
     },
+
     {
       "t": "fig",
       "src": "neuetk/einleitung/ntkkarte.jpg",
       "align": "center",
       "alt": "Eine Karte. Sie zeigt: Hier steht die neue Kapelle. Und hier stand die alte Kapelle.",
-      "caption": "Auf der Karte sehen Sie: Hier steht die Kapelle."
+      "caption": "<a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Auf der Karte sehen Sie: Hier steht die Kapelle.</a>"
     },
     {
       "t": "h2",
@@ -87,14 +88,7 @@
       "align": "center",
       "alt": "Die Kapelle am Abend. Die Sonne geht unter. Der Himmel ist orange.",
       "caption": "Die Kapelle am Abend."
-    },
-    {
-      "t": "h2",
-      "text": "Die genaue Stelle"
-    },
-    {
-      "t": "p",
-      "html": "Die Kapelle steht genau hier: <strong>48.863274, 13.677887</strong>. <a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle auf einer Karte ansehen</a>. Dann öffnet sich eine andere Internet-Seite."
     }
+
   ]
 }

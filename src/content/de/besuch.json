@@ -20,6 +20,15 @@
     },
     {
       "t": "h2",
+      "text": "Lage der Tussetkapelle"
+    },
+    {
+      "t": "p",
+      "html": "<a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle bei OpenStreetMap ansehen</a>"
+    },
+
+    {
+      "t": "h2",
       "text": "Ansprechpartner"
     },
     {
@@ -67,14 +76,6 @@
       "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
       "align": "center",
       "alt": "Die neue Tussetkapelle als dunkle Silhouette vor der untergehenden Sonne über dem Böhmerwald"
-    },
-    {
-      "t": "h2",
-      "text": "Koordinaten"
-    },
-    {
-      "t": "p",
-      "html": "Die Tussetkapelle liegt bei <strong>48.863274, 13.677887</strong>. <a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle bei OpenStreetMap ansehen</a>"
     }
   ]
 }

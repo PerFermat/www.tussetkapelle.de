@@ -20,8 +20,18 @@
     },
     {
       "t": "h2",
+      "text": "Location of the Tusset Chapel"
+    },
+    {
+      "t": "p",
+      "html": "<a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle bei OpenStreetMap ansehen</a>"
+    },
+
+    {
+      "t": "h2",
       "text": "Contacts"
     },
+
     {
       "t": "dl",
       "items": [
@@ -67,14 +77,6 @@
       "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
       "align": "center",
       "alt": "The new Tusset Chapel as a dark silhouette against the setting sun above the Bohemian Forest"
-    },
-    {
-      "t": "h2",
-      "text": "Coordinates"
-    },
-    {
-      "t": "p",
-      "html": "The Tusset Chapel is located at <strong>48.863274, 13.677887</strong>. <a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">View the chapel on OpenStreetMap</a>"
     }
   ]
 }

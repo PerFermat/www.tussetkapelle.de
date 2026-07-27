@@ -2,6 +2,7 @@
 # Lokaler Testserver für die Tussetkapelle-Website.
 # Fester Port, damit Lesezeichen und Screenshots über Sitzungen hinweg stabil bleiben.
 set -euo pipefail
+npm run build
 
 PORT="${TK_PORT:-8473}"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

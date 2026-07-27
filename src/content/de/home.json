@@ -50,7 +50,7 @@
     "title": "Besuch der Tussetkapelle",
     "openLabel": "Täglich geöffnet",
     "hours": "8.00 – 20.00 Uhr",
-    "place": "Philippsreut",
+    "place": "<a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Philippsreut</a>",
     "cta": { "label": "Anfahrt anzeigen", "to": "besuch" }
   },
 

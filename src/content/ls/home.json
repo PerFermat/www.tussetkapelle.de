@@ -49,7 +49,7 @@
     "title": "Besuch in der Kapelle",
     "openLabel": "Jeden Tag offen",
     "hours": "8 bis 20 Uhr",
-    "place": "Philippsreut",
+    "place": "<a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Philippsreut</a>",
     "cta": {
       "label": "Weg zur Kapelle",
       "to": "besuch"
