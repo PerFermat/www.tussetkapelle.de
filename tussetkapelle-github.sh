@@ -47,3 +47,5 @@ else
     echo "Fehler beim Push nach GitHub!"
     exit 1
 fi
+
+

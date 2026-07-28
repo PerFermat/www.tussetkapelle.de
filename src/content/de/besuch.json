@@ -24,7 +24,7 @@
     },
     {
       "t": "p",
-      "html": "<a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle bei OpenStreetMap ansehen</a>"
+      "html": "<a \"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle bei OpenStreetMap ansehen</a>"
     },
 
     {
