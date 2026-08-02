@@ -54,6 +54,10 @@
       "html": "Fahren Sie dann auf der Straße B 12 weiter. Sie fahren über Freyung. Dann kommen Sie nach Philippsreut."
     },
     {
+      "t": "p",
+      "html": "Sie können den Weg auch am Computer planen. Klicken Sie dazu hier: <a href=\"https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&amp;route=%3B48.863274%2C13.677887\" rel=\"noopener noreferrer\">Weg zur Kapelle planen</a>. Dann müssen Sie nur noch sagen: Hier starte ich."
+    },
+    {
       "t": "h2",
       "text": "Wer hilft Ihnen weiter?"
     },

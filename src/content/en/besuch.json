@@ -24,7 +24,7 @@
     },
     {
       "t": "p",
-      "html": "<a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">Die Kapelle bei OpenStreetMap ansehen</a>"
+      "html": "<a href=\"https://www.openstreetmap.org/?mlat=48.863274&amp;mlon=13.677887#map=17/48.863274/13.677887\" rel=\"noopener noreferrer\">View the chapel on OpenStreetMap</a>"
     },
 
     {
@@ -51,7 +51,7 @@
     },
     {
       "t": "h3",
-      "text": "Finding us"
+      "text": "<a href=\"https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&amp;route=%3B48.863274%2C13.677887\" rel=\"noopener noreferrer\">Finding us</a>"
     },
     {
       "t": "p",
