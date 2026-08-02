@@ -25,7 +25,7 @@ class NpmRunner(QObject):
     #: Vorgang beendet (Klartextname, Erfolg, Rückgabewert)
     finished = Signal(str, bool, int)
 
-    LABELS = {"build": "Website erzeugen", "check": "Prüfen", "images": "Bilder aufbereiten"}
+    LABELS = {"build": "Website erzeugen", "check": "Prüfen", "images": "Bilder auffrischen"}
 
     def __init__(self, root: Path, parent: QObject | None = None) -> None:
         super().__init__(parent)

@@ -48,6 +48,10 @@ class FieldWidget(QWidget):
     """Gemeinsame Grundlage aller Feldelemente."""
 
     changed = Signal()
+    #: Am Bildbestand wurde etwas geändert – am Inhalt dieses Feldes nicht
+    #: unbedingt. Nur die Bildauswahl sendet das; das Hauptfenster frischt
+    #: daraufhin die Statuszeile auf.
+    stock_changed = Signal()
 
     def value(self) -> Any:  # pragma: no cover - abstrakt
         raise NotImplementedError
@@ -238,13 +242,29 @@ class ImageField(FieldWidget):
         layout.addLayout(right, 1)
 
     def _choose(self) -> None:
-        dialog = ImagePickerDialog(self._repo.manifest, self._src, self._used(), self)
-        if dialog.exec() == ImagePickerDialog.DialogCode.Accepted and dialog.selected:
+        dialog = ImagePickerDialog(
+            self._repo.manifest, self._src, self._used(), self, root=self._repo.root
+        )
+        accepted = dialog.exec() == ImagePickerDialog.DialogCode.Accepted
+        if dialog.images_changed:
+            # Aufnehmen, Ersetzen und Löschen ändern Dateien, Maße und
+            # Größenstufen – die erzeugten Seiten nennen all das und sind damit
+            # veraltet, auch wenn am Inhalt nichts geändert wurde.
+            self._repo.site_stale = True
+            self.stock_changed.emit()
+        if accepted and dialog.selected:
             self.set_value(dialog.selected)
             self.changed.emit()
 
     def _used(self) -> set[str]:
-        """Bereits eingebundene Bilder – für den Filter im Auswahldialog."""
+        """Bereits eingebundene Bilder.
+
+        Steuert zweierlei: den Filter „Nur noch nicht verwendete Bilder“ und die
+        Frage, ob ein Bild gelöscht werden darf. Gesucht wird rekursiv in allen
+        Seiten aller drei Sprachen – die Bildergalerie eingeschlossen. Und weil
+        hier der Stand *im Speicher* gelesen wird, gilt ein gerade erst aus
+        einem Abschnitt entferntes Bild sofort als frei.
+        """
         used: set[str] = set()
 
         def walk(node: Any) -> None:

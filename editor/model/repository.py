@@ -32,6 +32,37 @@ LANGUAGES = ("de", "en", "ls")
 
 _ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
+#: Ordner im Projektstamm, in denen keine erzeugten Seiten liegen. ``ls`` steht
+#: bewusst nicht darin: die Fassung in Leichter Sprache hat unter ``ls/bilder/``
+#: eine eigene Galerieseite.
+_NOT_OUTPUT = {"src", "tools", "bilder", "node_modules", ".git", ".claude", ".venv", "editor"}
+
+
+def _newest(folder: FsPath) -> float:
+    """Jüngster Zeitstempel unterhalb eines Ordners; 0.0, wenn es ihn nicht gibt."""
+    newest = 0.0
+    for path in folder.rglob("*"):
+        if path.is_file():
+            newest = max(newest, path.stat().st_mtime)
+    return newest
+
+
+def _newest_page(root: FsPath) -> float:
+    """Jüngster Zeitstempel der erzeugten HTML-Seiten – faktisch die Bauzeit.
+
+    ``build.js`` schreibt bei jedem Lauf alle Seiten neu, auch die unveränderten.
+    Der jüngste Zeitstempel ist deshalb der des letzten Laufs.
+    """
+    newest = 0.0
+    for entry in root.iterdir():
+        if entry.name in _NOT_OUTPUT or entry.name.startswith("."):
+            continue
+        paths = [entry] if entry.is_file() else entry.rglob("*.html")
+        for path in paths:
+            if path.suffix == ".html" and path.is_file():
+                newest = max(newest, path.stat().st_mtime)
+    return newest
+
 
 class RepositoryError(RuntimeError):
     """Ein Vorgang wurde abgelehnt – die Meldung geht wörtlich in den Dialog."""
@@ -55,6 +86,30 @@ class ContentRepository:
         self.pages: dict[str, dict[str, Page]] = {}
         self.manifest = ImageManifest(root / "src" / "image-manifest.json", root / "bilder")
         self.load()
+        self.site_stale = self._detect_stale()
+
+    # ------------------------------------------------------------------ #
+    # Steht die erzeugte Website noch zu den Quellen?                     #
+    # ------------------------------------------------------------------ #
+
+    def _detect_stale(self) -> bool:
+        """Liegen die fertigen Seiten hinter dem, woraus sie entstehen?
+
+        Die erzeugten Seiten liegen im Projektstamm und sind zugleich das, was
+        hochgeladen wird. Bleiben sie stehen, während sich Inhalt oder
+        Bildbestand ändern, zeigt eine Seite auf eine Datei, die es nicht mehr
+        gibt: genau so kam es nach dem Löschen eines Bildes zu der Meldung
+        „defekte Bildverweise“ – gelöscht war richtig, nur war die Seite von
+        vorher stehen geblieben.
+
+        Beim Start lässt sich das allein an den Zeitstempeln ablesen; danach
+        führt der Editor den Zustand selbst mit (``site_stale``).
+        """
+        newest_source = _newest(self.root / "src")
+        build_js = self.root / "build.js"
+        if build_js.exists():
+            newest_source = max(newest_source, build_js.stat().st_mtime)
+        return _newest_page(self.root) < newest_source
 
     # ------------------------------------------------------------------ #
     # Laden                                                              #
@@ -144,6 +199,9 @@ class ContentRepository:
                 if page.dirty and jsonio.save_file(page.path, page.data, page.style):
                     written.append(page.path)
                 page.dirty = False
+        if written:
+            # Der Inhalt ist neu, die erzeugten Seiten sind es noch nicht.
+            self.site_stale = True
         return written
 
     # ------------------------------------------------------------------ #

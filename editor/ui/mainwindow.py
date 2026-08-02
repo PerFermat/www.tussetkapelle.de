@@ -29,6 +29,7 @@ from PySide6.QtWidgets import (
     QSplitter,
     QTabWidget,
     QToolBar,
+    QToolButton,
     QVBoxLayout,
     QWidget,
 )
@@ -38,7 +39,7 @@ from ..model import BLOCKS, ContentRepository, Page, RepositoryError, Severity, 
 from ..process import NpmRunner
 from .blockeditor import BlockEditor
 from .blocklist import BlockList
-from .console import ConsolePanel
+from .console import ConsolePanel, ConsoleTitleBar
 from .homeeditor import HomeEditor
 from .pagedialogs import NewPageDialog, RenamePageDialog
 from .pagetree import PageTree
@@ -64,6 +65,9 @@ class MainWindow(QMainWindow):
         self.block_index = 0
         self._before_edit: dict[str, Any] | None = None
         self._rebuilding = False
+        #: Anschließend auszuführendes Skript – „Prüfen“ lässt die Website erst
+        #: neu erzeugen, wenn sie veraltet ist.
+        self._after_build = ""
 
         self.setWindowTitle("Tussetkapelle – Inhalte bearbeiten")
         self.resize(1500, 940)
@@ -82,6 +86,13 @@ class MainWindow(QMainWindow):
             self.autosave.start()
 
         self._restore_geometry()
+        # Der Zustand des Ausgabefensters wird bewusst NICHT aus den
+        # Einstellungen übernommen: es ist eine Antwort auf einen Knopfdruck,
+        # kein Arbeitsbereich. Das setzt zugleich alte Einstellungsdateien
+        # zurück, in denen es abgekoppelt und sichtbar gespeichert ist.
+        self.console_dock.setFloating(False)
+        self.console_dock.hide()
+
         self._reload_tree(select=self.settings.value("lastPage", "home", type=str))
 
     # ------------------------------------------------------------------ #
@@ -218,6 +229,11 @@ class MainWindow(QMainWindow):
         site_menu.addAction(self.action_build)
         site_menu.addAction(self.action_check)
         site_menu.addAction(self.action_preview)
+        site_menu.addSeparator()
+        # Für den Fall, dass Bilder von Hand nach bilder/ gelegt wurden. Beim
+        # Aufnehmen über die Bildauswahl läuft das ohnehin von selbst.
+        self.action_images = QAction("Bilder auffrischen", self, triggered=self.refresh_images)
+        site_menu.addAction(self.action_images)
 
         help_menu = self.menuBar().addMenu("&Hilfe")
         help_menu.addAction(QAction("Über diesen Editor", self, triggered=self._about))
@@ -225,22 +241,74 @@ class MainWindow(QMainWindow):
     def _build_statusbar(self) -> None:
         self.status_page = QLabel()
         self.status_dirty = QLabel()
+        self.status_site = QLabel()
+        self.status_site.setProperty("rolle", "warnung")
+        self.status_site.setToolTip(
+            "Die hochgeladenen Seiten liegen fertig im Projektordner. Solange "
+            "sie nicht neu erzeugt sind, zeigen sie den Stand von vorher – nach "
+            "dem Löschen eines Bildes sogar Verweise auf eine Datei, die es "
+            "nicht mehr gibt. „Website erzeugen“ (F5) bringt sie auf den Stand."
+        )
         self.status_result = QLabel()
+
+        # Ganz rechts der Schalter für das Ausgabefenster. Eingeklappt ist die
+        # Statuszeile alles, was unten steht – ein Pluszeichen holt die Ausgabe
+        # zurück.
+        self.console_toggle = QToolButton()
+        self.console_toggle.setObjectName("ausgabeSchalter")
+        self.console_toggle.setAutoRaise(True)
+        self.console_toggle.clicked.connect(self._toggle_console)
+
         bar = self.statusBar()
         bar.addWidget(self.status_page, 1)
         bar.addPermanentWidget(self.status_dirty)
+        bar.addPermanentWidget(self.status_site)
         bar.addPermanentWidget(self.status_result)
+        bar.addPermanentWidget(self.console_toggle)
+
+    def _toggle_console(self) -> None:
+        self.console_dock.setVisible(not self.console_dock.isVisible())
+
+    def _console_visibility_changed(self, visible: bool) -> None:
+        """Hält den Schalter im Gleichklang mit dem Fenster.
+
+        Der Schalter ändert sein Aussehen nicht selbst, sondern erst auf diese
+        Meldung hin. So stimmt er auch, wenn das Fenster von anderer Stelle
+        geöffnet wird – etwa durch eine eintreffende Ausgabezeile.
+        """
+        self.console_toggle.setIcon(icon("minus" if visible else "add", Color.CREAM))
+        self.console_toggle.setToolTip(
+            "Ausgabe der Werkzeuge verbergen" if visible else "Ausgabe der Werkzeuge zeigen"
+        )
+
+    def _show_console(self) -> None:
+        self.console_dock.show()
+        # Eine feste, bescheidene Höhe: die Ausgabe ist ein Blick, kein
+        # Arbeitsbereich. Ohne das nimmt sie sich beim ersten Öffnen die halbe
+        # Fensterhöhe und die Eingabemaske wird eng.
+        self.resizeDocks([self.console_dock], [280], Qt.Orientation.Vertical)
 
     def _build_console(self) -> None:
+        """Das Ausgabefenster – fest unten, einklappbar, nie ein eigenes Fenster.
+
+        Abkoppeln war die Voreinstellung und hat sich als Fehler erwiesen: als
+        frei schwebendes Fenster legt sich die Ausgabe über die Eingabemaske,
+        und ``restoreState()`` holte diesen Zustand bei jedem Start zurück.
+        Deshalb bleibt allein ``DockWidgetClosable`` übrig, der erlaubte Bereich
+        ist auf „unten“ beschränkt, und die Titelzeile ist eine eigene – die
+        voreingestellte reißt das Fenster schon beim Doppelklick los.
+        """
         self.console = ConsolePanel()
         self.console_dock = QDockWidget("Ausgabe der Werkzeuge", self)
         self.console_dock.setObjectName("ausgabe")
         self.console_dock.setWidget(self.console)
-        self.console_dock.setFeatures(
-            QDockWidget.DockWidgetFeature.DockWidgetMovable
-            | QDockWidget.DockWidgetFeature.DockWidgetFloatable
-            | QDockWidget.DockWidgetFeature.DockWidgetClosable
-        )
+        self.console_dock.setFeatures(QDockWidget.DockWidgetFeature.DockWidgetClosable)
+        self.console_dock.setAllowedAreas(Qt.DockWidgetArea.BottomDockWidgetArea)
+
+        title = ConsoleTitleBar(self.console_dock)
+        title.collapse_requested.connect(self.console_dock.hide)
+        self.console_dock.setTitleBarWidget(title)
+
         self.addDockWidget(Qt.DockWidgetArea.BottomDockWidgetArea, self.console_dock)
         self.console_dock.hide()
 
@@ -254,12 +322,18 @@ class MainWindow(QMainWindow):
 
         self.editor.changed.connect(self._on_block_edited)
         self.home_editor.changed.connect(self._on_page_edited)
+        self.editor.stock_changed.connect(self._update_status)
+        self.home_editor.stock_changed.connect(self._update_status)
 
         self.undo_stack.canUndoChanged.connect(self.action_undo.setEnabled)
         self.undo_stack.canRedoChanged.connect(self.action_redo.setEnabled)
         self.undo_stack.cleanChanged.connect(lambda _: self._update_status())
         self.action_undo.setEnabled(False)
         self.action_redo.setEnabled(False)
+
+        self.console.output_arrived.connect(self._show_console)
+        self.console_dock.visibilityChanged.connect(self._console_visibility_changed)
+        self._console_visibility_changed(False)
 
         self.runner.started.connect(self._run_started)
         self.runner.line.connect(self.console.append)
@@ -337,6 +411,9 @@ class MainWindow(QMainWindow):
         n = self.repo.dirty_count()
         self.status_dirty.setText("Alles gespeichert" if n == 0 else f"{n} Dateien geändert")
         self.action_save.setEnabled(n > 0)
+        self.status_site.setText(
+            "Website nicht auf dem neuesten Stand" if self.repo.site_stale else ""
+        )
 
     # ------------------------------------------------------------------ #
     # Bearbeiten                                                         #
@@ -430,6 +507,8 @@ class MainWindow(QMainWindow):
         self.home_editor = HomeEditor(self.repo, lang)
         self.editor.changed.connect(self._on_block_edited)
         self.home_editor.changed.connect(self._on_page_edited)
+        self.editor.stock_changed.connect(self._update_status)
+        self.home_editor.stock_changed.connect(self._update_status)
         self.tabs.insertTab(0, self.editor, "Abschnitt")
         self.tabs.insertTab(1, self.home_editor, "Aufbau der Startseite")
         self.undo_stack.clear()
@@ -597,17 +676,35 @@ class MainWindow(QMainWindow):
         self.settings.setValue("autosave", on)
         self.autosave.start() if on else self.autosave.stop()
 
+    # Das Ausgabefenster wird hier nicht geöffnet: es meldet sich selbst, sobald
+    # die erste Zeile eintrifft (ConsolePanel.output_arrived). Wer es während
+    # eines Laufs zuklappt, soll es zugeklappt behalten.
+
     def build_site(self) -> None:
         if self.repo.dirty and not self.save():
             return
-        self.console_dock.show()
         self.runner.run("build")
 
     def check_site(self) -> None:
+        """Prüft die erzeugten Seiten – nachdem sie auf den Stand gebracht sind.
+
+        Geprüft wird nicht der Inhalt im Editor, sondern was auf der Platte
+        liegt. Eine veraltete Seite zu prüfen sagt über den heutigen Stand
+        nichts aus und führt in die Irre: nach dem Löschen eines Bildes meldet
+        die Prüfung „defekte Bildverweise“ auf Seiten, die längst neu erzeugt
+        gehören. Deshalb wird erst erzeugt, dann geprüft.
+        """
         if self.repo.dirty and not self.save():
             return
-        self.console_dock.show()
+        if self.repo.site_stale:
+            self._after_build = "check"
+            self.runner.run("build")
+            return
         self.runner.run("check")
+
+    def refresh_images(self) -> None:
+        """Ableitungen und Bildverzeichnis aus bilder/ neu erzeugen."""
+        self.runner.run("images")
 
     def open_preview(self) -> None:
         QDesktopServices.openUrl(QUrl(PREVIEW_URL)) or webbrowser.open(PREVIEW_URL)
@@ -615,17 +712,32 @@ class MainWindow(QMainWindow):
             "Vorschau geöffnet. Läuft der Testserver nicht, hilft „npm run serve“."
         )
 
+    def _set_tools_enabled(self, on: bool) -> None:
+        for action in (self.action_build, self.action_check, self.action_images):
+            action.setEnabled(on)
+
     def _run_started(self, label: str) -> None:
         self.console.begin(label)
-        self.action_build.setEnabled(False)
-        self.action_check.setEnabled(False)
+        self._set_tools_enabled(False)
         self.status_result.setText(f"{label} läuft …")
 
     def _run_finished(self, label: str, ok: bool, code: int) -> None:
+        follow, self._after_build = self._after_build, ""
         self.console.end(label, ok, code)
-        self.action_build.setEnabled(True)
-        self.action_check.setEnabled(True)
+        self._set_tools_enabled(True)
         self.status_result.setText(f"{label}: {'erfolgreich' if ok else 'fehlgeschlagen'}")
+        if ok and label == NpmRunner.LABELS["build"]:
+            self.repo.site_stale = False
+        if ok and label == NpmRunner.LABELS["images"]:
+            # Das Skript hat src/image-manifest.json neu geschrieben – Maße und
+            # Größenstufen in den erzeugten Seiten stimmen damit womöglich nicht
+            # mehr.
+            self.repo.manifest.reload()
+            self.repo.site_stale = True
+        self._update_status()
+        if ok and follow:
+            self.runner.run(follow)
+            return
         if not ok:
             self._error(
                 f"{label} fehlgeschlagen",

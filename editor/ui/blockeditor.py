@@ -32,6 +32,8 @@ class BlockEditor(QWidget):
     """Zeigt und bearbeitet genau einen Baustein."""
 
     changed = Signal()
+    #: Am Bildbestand wurde etwas geändert (siehe FieldWidget.stock_changed).
+    stock_changed = Signal()
 
     def __init__(self, repo: ContentRepository, lang: str, parent: QWidget | None = None) -> None:
         super().__init__(parent)
@@ -114,6 +116,7 @@ class BlockEditor(QWidget):
             widget = build_field(field_spec, self._repo, self._lang)
             widget.set_value(block.get(field_spec.key))
             widget.changed.connect(self._collect)
+            widget.stock_changed.connect(self.stock_changed)
             self._fields[field_spec.key] = widget
 
             if field_spec.kind is not FieldKind.BOOL:

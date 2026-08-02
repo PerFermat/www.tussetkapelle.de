@@ -49,6 +49,8 @@ class HomeEditor(QWidget):
     """Alle Texte der Startseite in einer Maske."""
 
     changed = Signal()
+    #: Am Bildbestand wurde etwas geändert (siehe FieldWidget.stock_changed).
+    stock_changed = Signal()
 
     def __init__(self, repo: ContentRepository, lang: str, parent: QWidget | None = None) -> None:
         super().__init__(parent)
@@ -130,6 +132,7 @@ class HomeEditor(QWidget):
         field = ImageField(FieldSpec(key, label, FieldKind.IMAGE), self._repo)
         field.set_value(holder.get(key, ""))
         field.changed.connect(lambda h=holder, k=key, f=field: self._set(h, k, f.value()))
+        field.stock_changed.connect(self.stock_changed)
         form.addRow(label, field)
 
     def _page_choice(self, form: QFormLayout, label: str, holder: dict, key: str) -> None:

@@ -60,6 +60,7 @@ _PATHS: dict[str, str] = {
     "build": "M4 20l6-6M8 8l4-4 3 3-4 4zM13 13l4 4 3-3-4-4z",
     "check": "M4 12l5 5L20 6",
     "add": "M12 5v14M5 12h14",
+    "minus": "M5 12h14",
     "remove": "M6 7h12M9 7V5h6v2M8 7l1 13h6l1-13",
     "up": "M12 19V6M6 12l6-6 6 6",
     "down": "M12 5v13M6 12l6 6 6-6",
@@ -272,9 +273,17 @@ QSplitter::handle:vertical   {{ height: 1px; }}
 QStatusBar {{ background: {Color.GREEN_DEEP}; color: {Color.CREAM}; }}
 QStatusBar QLabel {{ color: {Color.CREAM}; padding: 0 10px; }}
 QStatusBar::item {{ border: none; }}
+QToolButton#ausgabeSchalter {{
+    background: transparent; border: none; border-radius: 4px; padding: 2px 8px; margin-right: 4px;
+}}
+QToolButton#ausgabeSchalter:hover {{ background: {Color.GREEN}; }}
 
-QDockWidget {{ titlebar-close-icon: none; color: {Color.GREEN}; font-weight: 600; }}
-QDockWidget::title {{ background: {Color.CREAM}; padding: 7px 10px; border-bottom: 1px solid {Color.LINE}; }}
+/* Das Ausgabefenster hat eine eigene Titelzeile (ConsoleTitleBar); die
+   voreingestellte wird nicht verwendet und deshalb hier auch nicht gestaltet. */
+QWidget#ausgabeTitel {{ background: {Color.CREAM}; border-bottom: 1px solid {Color.LINE}; }}
+QLabel#ausgabeTitelText {{ color: {Color.GREEN}; font-weight: 600; }}
+QPushButton#ausgabeEinklappen {{ background: transparent; border: none; border-radius: 4px; }}
+QPushButton#ausgabeEinklappen:hover {{ background: {Color.PAPER}; }}
 
 QScrollBar:vertical   {{ background: transparent; width: 11px; margin: 2px; }}
 QScrollBar:horizontal {{ background: transparent; height: 11px; margin: 2px; }}

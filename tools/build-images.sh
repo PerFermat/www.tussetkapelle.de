@@ -1,24 +1,32 @@
 #!/usr/bin/env bash
 # Bild-Pipeline für die Tussetkapelle-Website.
 #
-# Die Altsite bleibt der unangetastete Archivbestand (nur lesend). In bilder/
-# entsteht daraus ein für die Auslieferung optimierter Satz:
+# bilder/ ist die Bildquelle des Projekts – alle Dateien liegen in der
+# Versionsverwaltung. Dieses Skript erzeugt daraus den ausgelieferten Satz:
 #
-#   1. Kopien der Originale mit normalisierten Dateinamen
-#      (Kleinschreibung, ~ -> -, .JPG -> .jpg).
-#      Bilder breiter als LARGE_MIN werden dabei mit q82 neu kodiert – die
-#      Originale liegen mit q90 vor und sind für Webauslieferung unnötig schwer.
-#   2. eine .webp-Variante je Bild, aber nur wenn sie kleiner ist als das JPEG.
-#   3. eine Größenleiter (700/1000/1400 px) für die wenigen großen Bilder.
-#   4. Thumbnails "-400" für das Galerie-Grid.
+#   1. eine .webp-Variante je Bild, aber nur wenn sie kleiner ist als das JPEG.
+#   2. eine Größenleiter (700/1000/1400 px) für die wenigen großen Bilder.
+#   3. Thumbnails "-400" für das Galerie-Grid.
+#   4. src/image-manifest.json über tools/make-manifest.mjs.
 #
 # Grundsatz: nie vergrößern. 55 der 116 Bilder des Bestands sind von sich aus
 # kleiner als 400 px und werden unverändert in Nativgröße ausgeliefert.
 #
-# Idempotent. Aufruf: npm run images   [TK_SRC=<pfad>]  [FORCE=1]
+# Bis Juli 2026 las Schritt 1 die Originale aus dem Archiv der Altsite von 2003,
+# über einen fest verdrahteten Pfad außerhalb des Projekts. Das ist entfallen:
+# der Bestand ist übernommen, und auf keinem anderen Rechner wäre es lauffähig
+# gewesen. Neue Bilder kommen über den Inhaltseditor herein, der die drei
+# Betriebsarten unten aufruft.
+#
+# Idempotent. Aufruf:
+#   npm run images                                 alles auffrischen  [FORCE=1]
+#   tools/build-images.sh --add     <datei> <ziel> Bild aufnehmen
+#   tools/build-images.sh --replace <datei> <ziel> Bild ersetzen
+#   tools/build-images.sh --remove           <ziel> Bild entfernen
+#
+# <ziel> ist ein Pfad relativ zu bilder/, etwa neuetk/anfahrt/wegweiser.jpg.
 set -euo pipefail
 
-SRC="${TK_SRC:-/home/michael/Dokumente/tussent/www.tussetkapelle.de}"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DEST="$ROOT/bilder"
 FORCE="${FORCE:-0}"
@@ -29,38 +37,33 @@ THUMB_MAX=400
 LARGE_MIN=800          # ab dieser Breite gibt es eine Größenleiter
 LADDER=(700 1000 1400) # Zwischenstufen; die Nativbreite kommt automatisch dazu
 
-[[ -d $SRC ]] || { echo "FEHLER: Quellverzeichnis nicht gefunden: $SRC" >&2; exit 1; }
 for bin in convert identify; do
   command -v $bin >/dev/null || { echo "FEHLER: ImageMagick ($bin) fehlt." >&2; exit 1; }
 done
+command -v node >/dev/null || { echo "FEHLER: Node.js fehlt (für das Bildverzeichnis)." >&2; exit 1; }
 
-# Frameset-Chrome der Altsite – kein Inhalt, wird nicht übernommen.
-# tusset_alt.NEUKODIERT-q82.jpg wird von der Ersatzregel weiter unten unter dem
-# kanonischen Namen übernommen und darf hier nicht zusätzlich einlaufen.
-SKIP_NAMES=("back.gif" "Image6_.gif" "tusset_alt.NEUKODIERT-q82.jpg")
-
-n_copy=0 n_reenc=0 n_webp=0 n_webp_skip=0 n_thumb=0 n_native=0 n_ladder=0
-
-# Behebt u. a. SM~neubauer~und~emil.jpg / lr~schumertl~und~emil.jpg, die im
-# Original deshalb über absolute http://-URLs mit %7E eingebunden werden mussten.
-normalize() { printf '%s' "$1" | tr '[:upper:]' '[:lower:]' | tr '~' '-'; }
+n_webp=0 n_webp_skip=0 n_thumb=0 n_native=0 n_ladder=0
 
 width_of()   { identify -format '%w' "$1[0]" 2>/dev/null || echo 0; }
 longest_of() { identify -format '%[fx:int(max(w,h))]' "$1[0]" 2>/dev/null || echo 0; }
 
+# Abgeleitete Dateien (…-400.jpg, …-1000.jpg) beim Durchlauf überspringen.
+is_derived() { [[ $(basename "$1") =~ -[0-9]{3,4}\.(jpg|webp)$ ]]; }
+
 # $1 = Quelldatei (absolut), $2 = Zielpfad relativ zu bilder/
+#
+# Kleine JPEGs werden unverändert übernommen. Alles andere geht durch convert:
+# große Bilder, weil q90 für die Auslieferung unnötig schwer ist – und PNG, GIF,
+# WebP oder TIFF, weil die Schritte danach ausschließlich auf .jpg arbeiten.
 ingest() {
   local src=$1 dst="$DEST/$2"
   mkdir -p "$(dirname "$dst")"
-  [[ $FORCE == 1 || ! -f $dst || $src -nt $dst ]] || return 0
-
-  if [[ ${src,,} == *.jpg || ${src,,} == *.jpeg ]] && (( $(width_of "$src") > LARGE_MIN )); then
-    # Großes Bild: neu kodieren statt kopieren.
-    convert "$src" -quality "$JPEG_Q" -sampling-factor 4:2:0 -interlace Plane -strip "$dst"
-    n_reenc=$((n_reenc + 1))
-  else
+  if [[ ${src,,} == *.jpg || ${src,,} == *.jpeg ]] && (( $(width_of "$src") <= LARGE_MIN )); then
     cp -p "$src" "$dst"
-    n_copy=$((n_copy + 1))
+  else
+    # -alpha remove: eine durchsichtige Fläche würde im JPEG sonst schwarz.
+    convert "$src" -background white -alpha remove -alpha off \
+            -quality "$JPEG_Q" -sampling-factor 4:2:0 -interlace Plane -strip "$dst"
   fi
 }
 
@@ -111,47 +114,126 @@ make_thumb() {
   n_thumb=$((n_thumb + 1))
 }
 
-# Abgeleitete Dateien (…-400.jpg, …-1000.jpg) beim Durchlauf überspringen.
-is_derived() { [[ $(basename "$1") =~ -[0-9]{3,4}\.(jpg|webp)$ ]]; }
+# Alle Ableitungen eines Bildes entfernen: die WebP-Variante der Nativgröße und
+# jede Größenstufe. Nötig vor jedem Ersetzen, weil eine neue Fassung auch
+# kleiner sein kann – eine 1400-px-Stufe eines 900-px-Bildes bliebe sonst als
+# tote Datei liegen.
+drop_derived() {
+  local jpg=$1 stem="${1%.*}" f
+  rm -f "$stem.webp"
+  for f in "$stem"-*; do
+    [[ -f $f ]] || continue
+    is_derived "$f" && rm -f "$f"
+  done
+}
 
-echo "== 1/4  Originale übernehmen, Dateinamen normalisieren"
-while IFS= read -r -d '' f; do
-  base=$(basename "$f"); skip=0
-  for s in "${SKIP_NAMES[@]}"; do [[ $base == "$s" ]] && skip=1; done
-  (( skip )) && continue
-  ingest "$f" "$(normalize "${f#"$SRC"/bilder/}")"
-done < <(find "$SRC/bilder" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' -o -iname '*.png' \) -print0)
+# Ordner aufräumen, die nur wegen des gelöschten Bildes bestanden. Ohne das
+# bleibt nach dem letzten Bild ein leeres Verzeichnis zurück, das niemand mehr
+# anfasst. Aufgeräumt wird ausschließlich unterhalb von bilder/ und nur, solange
+# rmdir zustimmt – ein Ordner mit Inhalt bleibt unangetastet.
+prune_dirs() {
+  local dir=$1
+  while [[ $dir == "$DEST"/* ]] && rmdir "$dir" 2>/dev/null; do
+    dir=$(dirname "$dir")
+  done
+}
 
-# Bilder aus dem Wurzelverzeichnis der Altsite -> bilder/ (oberste Ebene).
-for base in ntkaltar.JPG ntkwinterbild.JPG zeichnungntkumkehr.JPG; do
-  [[ -f "$SRC/$base" ]] && ingest "$SRC/$base" "$(normalize "$base")"
-done
+# Ableitungen für genau eine Datei, danach das Bildverzeichnis.
+derive_one() {
+  local jpg=$1
+  make_webp "$jpg"
+  make_ladder "$jpg"
+  make_thumb "$jpg"
+}
 
-# Ersatzquellen: Für tusset_alt.jpg existiert im Archiv nur noch eine
-# Neukodierung (siehe bilder/altetk/FEHLBESTAND.txt im Archiv). Sie wird unter
-# dem kanonischen Namen übernommen, damit der Build reproduzierbar bleibt.
-# Sobald das Original wieder im Archiv liegt, greift automatisch die Schleife
-# oben und diese Ersatzregel läuft ins Leere.
-if [[ ! -f "$SRC/bilder/altetk/tusset_alt.jpg" \
-   && -f "$SRC/bilder/altetk/tusset_alt.NEUKODIERT-q82.jpg" ]]; then
-  ingest "$SRC/bilder/altetk/tusset_alt.NEUKODIERT-q82.jpg" "altetk/tusset_alt.jpg"
-fi
-echo "   $n_copy unverändert kopiert, $n_reenc neu kodiert (breiter als $LARGE_MIN px)"
+manifest() { node "$ROOT/tools/make-manifest.mjs"; }
 
-echo "== 2/4  WebP-Varianten (q$WEBP_Q)"
+# Zielpfad prüfen: relativ, ohne Ausbruch aus bilder/, mit erlaubter Endung.
+check_target() {
+  local target=$1 pattern=$2
+  [[ $target != /* && $target != *..* ]] \
+    || { echo "FEHLER: Ungültiger Zielpfad: $target" >&2; exit 1; }
+  [[ ${target,,} =~ $pattern ]] \
+    || { echo "FEHLER: Zielpfad passt nicht: $target" >&2; exit 1; }
+}
+
+# --------------------------------------------------------------------------- #
+# Betriebsarten                                                               #
+# --------------------------------------------------------------------------- #
+
+case "${1:-}" in
+  --add|--replace)
+    mode=$1; source=${2:-}; target=${3:-}
+    [[ -n $source && -n $target ]] || { echo "Aufruf: $0 $mode <datei> <ziel>" >&2; exit 2; }
+    [[ -f $source ]] || { echo "FEHLER: Datei nicht gefunden: $source" >&2; exit 1; }
+    check_target "$target" '\.jpg$'
+    dst="$DEST/$target"
+
+    if [[ $mode == --add ]]; then
+      [[ -e $dst ]] && { echo "FEHLER: Es gibt dort schon ein Bild: $target" >&2; exit 1; }
+    else
+      [[ -f $dst ]] || { echo "FEHLER: Kein Bild zum Ersetzen: $target" >&2; exit 1; }
+      drop_derived "$dst"
+    fi
+
+    FORCE=1 ingest "$source" "$target"
+    derive_one "$dst"
+    manifest
+    printf '%s: %s (%s)\n' \
+      "$([[ $mode == --add ]] && echo Aufgenommen || echo Ersetzt)" \
+      "$target" "$(identify -format '%wx%h' "$dst[0]")"
+    exit 0
+    ;;
+
+  --remove)
+    target=${2:-}
+    [[ -n $target ]] || { echo "Aufruf: $0 --remove <ziel>" >&2; exit 2; }
+    check_target "$target" '\.(jpg|gif|png)$'
+    dst="$DEST/$target"
+    [[ -f $dst ]] || { echo "FEHLER: Kein Bild zum Löschen: $target" >&2; exit 1; }
+
+    # Ob das Bild noch irgendwo verwendet wird, weiß dieses Skript nicht. Diese
+    # Prüfung gehört in den Editor, der als einziger den Inhalt kennt.
+    drop_derived "$dst"
+    rm -f "$dst"
+    prune_dirs "$(dirname "$dst")"
+    manifest
+    echo "Gelöscht: $target"
+    exit 0
+    ;;
+
+  "")
+    ;;
+
+  *)
+    echo "Unbekannte Betriebsart: $1" >&2
+    echo "Aufruf: $0 [--add <datei> <ziel> | --replace <datei> <ziel> | --remove <ziel>]" >&2
+    exit 2
+    ;;
+esac
+
+# --------------------------------------------------------------------------- #
+# Sammellauf über den gesamten Bestand                                        #
+# --------------------------------------------------------------------------- #
+
+echo "== 1/4  WebP-Varianten (q$WEBP_Q)"
 while IFS= read -r -d '' f; do is_derived "$f" || make_webp "$f"; done \
   < <(find "$DEST" -type f -name '*.jpg' -print0)
 echo "   $n_webp erzeugt, $n_webp_skip verworfen (WebP war nicht kleiner)"
 
-echo "== 3/4  Größenleiter für große Bilder (${LADDER[*]} px)"
+echo "== 2/4  Größenleiter für große Bilder (${LADDER[*]} px)"
 while IFS= read -r -d '' f; do is_derived "$f" || make_ladder "$f"; done \
   < <(find "$DEST" -type f -name '*.jpg' -print0)
 echo "   $n_ladder Stufe(n) erzeugt"
 
-echo "== 4/4  Galerie-Thumbnails (max $THUMB_MAX px)"
+echo "== 3/4  Galerie-Thumbnails (max $THUMB_MAX px)"
 while IFS= read -r -d '' f; do is_derived "$f" || make_thumb "$f"; done \
   < <(find "$DEST" -type f -name '*.jpg' -print0)
 echo "   $n_thumb erzeugt, $n_native bereits klein genug"
+
+echo "== 4/4  Bildverzeichnis"
+printf '   '
+manifest
 
 echo
 printf 'Fertig: %s Dateien, %s in %s\n' \

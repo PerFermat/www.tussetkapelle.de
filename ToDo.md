@@ -145,7 +145,19 @@ Eine Datei ist nur als Neukodierung vorhanden:
   Vorhanden: gleiche Pixelmaße, Qualität 82, 760.186 Bytes
 
 Im Archiv liegt sie als `tusset_alt.NEUKODIERT-q82.jpg` neben einer Notiz
-`FEHLBESTAND.txt`. **Falls Sie das Original noch haben**, legen Sie es bitte
-als `tusset_alt.jpg` dorthin zurück und starten Sie
-`npm run images && node tools/make-manifest.mjs && npm run build`.
-Die Pipeline greift dann automatisch wieder auf das Original zu.
+`FEHLBESTAND.txt`. **Falls Sie das Original noch haben**, ersetzen Sie das Bild
+im Editor: Dialog *Bild auswählen* → `altetk/tusset_alt.jpg` markieren →
+*Bild ersetzen …*. Die Größenstufen und das Bildverzeichnis entstehen dabei neu;
+danach einmal *Website erzeugen*.
+
+Auf der Kommandozeile geht es genauso:
+
+```bash
+tools/build-images.sh --replace <pfad/zum/original.jpg> altetk/tusset_alt.jpg
+npm run build
+```
+
+Seit Juli 2026 greift die Bild-Pipeline nicht mehr auf das Archiv zu –
+`bilder/` ist die Quelle, und alle Dateien liegen in der Versionsverwaltung.
+`tools/restore-archive.sh` und `tools/archive-filelist.txt` sind damit entfallen;
+die Wiederherstellung oben ist abgeschlossen und hier aktenkundig.

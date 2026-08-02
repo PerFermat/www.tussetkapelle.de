@@ -13,15 +13,15 @@ Texte und Bilder stammen von der Familie Weber und sind inhaltlich unverändert
 
 ```bash
 npm run editor    # grafischer Inhaltseditor – der übliche Weg
-npm run images    # Bilder aus dem Archiv aufbereiten (nur bei Bedarf)
+npm run images    # Größenstufen und Bildverzeichnis auffrischen (bei Bedarf)
 npm run build     # HTML-Dateien erzeugen
 npm run serve     # Testserver auf http://localhost:8473
-npm run check     # Vollständigkeit und Struktur prüfen
+npm run check     # Vollständigkeit und Struktur prüfen (setzt build voraus)
 ```
 
 Es gibt keine npm-Abhängigkeiten. Vorausgesetzt werden Node ab Version 18,
-Python 3 (für den Testserver und den Editor) und ImageMagick (nur für
-`npm run images`).
+Python 3 (für den Testserver und den Editor) und ImageMagick (für alles, was mit
+Bildern zu tun hat – auch für das Aufnehmen im Editor).
 
 ## Inhalte pflegen – mit dem Editor
 
@@ -32,7 +32,14 @@ npm run editor      # oder  ./editor.sh
 Der Editor unter `editor/` zeigt Seiten, Abschnitte und Bilder in Klartext.
 JSON und HTML kommen darin nirgends vor. Er kann Seiten anlegen, umbenennen,
 verschieben und löschen, Abschnitte per Maus umsortieren, Bilder mit Vorschau
-auswählen und am Ende **Website erzeugen** und **Prüfen** anstoßen.
+auswählen, aufnehmen, ersetzen und löschen und am Ende **Website erzeugen** und
+**Prüfen** anstoßen.
+
+Die Ausgabe der Werkzeuge steht unten. Sie ist eingeklappt und meldet sich von
+selbst, sobald ein Lauf etwas zu sagen hat; das **+** rechts in der Statuszeile
+holt sie jederzeit hervor, das **−** in ihrer Titelzeile klappt sie wieder ein.
+Als eigenes Fenster lässt sie sich nicht abkoppeln – das verdeckte die
+Eingabemaske.
 
 Beim ersten Start legt `editor.sh` eine Python-Umgebung unter `.venv/` an und
 installiert PySide6 hinein (rund 300 MB, ein bis zwei Minuten). Danach startet
@@ -53,14 +60,36 @@ Drei Eigenschaften sind dabei bewusst so gebaut:
   an der sonst `npm run build` scheitern würde: fehlende Adresse, unbekanntes
   Bild, Verweis ins Leere.
 
-Neue Bilder kommen weiterhin über `npm run images` in den Bestand; der Editor
-bietet nur an, was in `src/image-manifest.json` steht.
+Neue Bilder kommen über den Dialog **Bild auswählen** in den Bestand – siehe
+[Bilder](#bilder). Der Editor bietet zur Auswahl nur an, was in
+`src/image-manifest.json` steht.
 
-Ein Selbsttest des Datenmodells läuft ohne Oberfläche:
+### „Website nicht auf dem neuesten Stand“
+
+Die fertigen Seiten liegen im Projektordner und sind zugleich das, was
+hochgeladen wird. Sie entstehen nur beim Erzeugen – ein gespeicherter Text oder
+ein gelöschtes Bild ändert sie nicht. Läuft beides auseinander, sagt es die
+Statuszeile in Rot, und **Prüfen** erzeugt die Seiten erst neu, bevor es prüft.
+
+Ohne das prüft man den Stand von gestern. Nach dem Löschen eines Bildes meldete
+die Prüfung sieben *defekte Bildverweise* – zu Recht: gelöscht war richtig, nur
+stand die Seite noch vom Erzeugen davor und nannte eine Datei, die es nicht mehr
+gab. Beim Start liest der Editor den Zustand an den Zeitstempeln ab; danach führt
+er ihn selbst mit.
+
+Zwei Tests laufen ohne Bildschirm. Der erste prüft das Datenmodell, der zweite
+drückt auf die Schaltflächen der wirklich angezeigten Dialoge:
 
 ```bash
 .venv/bin/python -m editor.selftest
+QT_QPA_PLATFORM=offscreen .venv/bin/python -m editor.uitest
 ```
+
+Den zweiten gibt es, weil eine Attrappe der Sicherheitsabfrage einmal einen
+Fehler verdeckt hat: `QMessageBox.question()` liefert in PySide6 eine einfache
+Zahl, keinen Enum-Wert. Der Vergleich mit `is` war deshalb immer falsch, und
+Löschen blieb wirkungslos. Vergleiche auf Antworten von Dialogen gehören mit
+`==` geschrieben.
 
 ## Inhalte von Hand ändern
 
@@ -113,7 +142,8 @@ unter `slugs` in `site.<sprache>.json`. Der Editor tut beides von selbst.
 ## Prüfungen
 
 `npm run check` führt zwei Skripte aus. Beide müssen ohne Beanstandung
-durchlaufen.
+durchlaufen. Geprüft werden die **erzeugten Seiten**, nicht der Inhalt unter
+`src/` – auf der Kommandozeile gehört deshalb `npm run build` davor.
 
 **`tools/check-images.mjs` – Bildvollständigkeit.**
 Jedes Bild des Bestandes muss auf mindestens einer Seite eingebunden sein und
@@ -158,33 +188,75 @@ es lauffähig gewesen, und jede künftige Textpflege hätte es fehlschlagen lass
 
 ## Bilder
 
-`npm run images` liest das Archiv (`TK_SRC`, voreingestellt
-`~/Dokumente/tussent/www.tussetkapelle.de`) und erzeugt `bilder/`:
+`bilder/` ist die Bildquelle des Projekts – 315 Dateien, alle in der
+Versionsverwaltung. `npm run images` frischt daraus den ausgelieferten Satz auf:
 
-* Dateinamen normalisiert: Kleinschreibung, `.JPG` → `.jpg`, `~` → `-`.
-  Das behebt `SM~neubauer~und~emil.jpg` und `lr~schumertl~und~emil.jpg`, die in
-  der Vorlage deshalb über absolute `http://`-Adressen mit `%7E` eingebunden
-  werden mussten.
 * WebP je Bild, aber nur wenn es kleiner ist als das JPEG. Bei 52 der kleinen
   Aufnahmen ist es das nicht – dort wird bewusst keine WebP-Variante angelegt.
 * Größenleiter 700/1000/1400 px nur für die drei Bilder über 800 px Breite, und
   auch dort nur Stufen, die höchstens 80 % der Nativbreite haben.
 * Thumbnails `-400` nur für Bilder, die tatsächlich größer sind. 55 der 116
   Aufnahmen liegen von sich aus darunter und werden in Nativgröße ausgeliefert.
+* zuletzt `src/image-manifest.json` über `tools/make-manifest.mjs`.
+
+Der Lauf ist idempotent; `FORCE=1` erzwingt eine Neuberechnung. Gebraucht werden
+ImageMagick und Node.js.
 
 **Der Bildbestand ist der harte Constraint dieses Projekts.** Nur drei Dateien
 sind groß: `ntkaltar.jpg` (1994×789), `ntkwinterbild.jpg` (1448×1086) und
 `altetk/tusset_alt.jpg` (1087×1447). Die übrigen 114 sind 125–581 px breit.
 Deshalb ist allein das Hero-Bild formatfüllend; alles andere erscheint in
-Nativgröße in der Textspalte. Nach `npm run images` immer
-`node tools/make-manifest.mjs` laufen lassen.
+Nativgröße in der Textspalte.
 
-### Zu den vorbereiteten WebP-Dateien
+### Neue Bilder kommen über den Editor
 
-Im Archiv liegen `ntkaltar.webp` und `ntkwinterbild.webp` mit Qualität 92. Eine
-Neukodierung mit Qualität 82 liefert bei gleichen Abmessungen 197 KB gegenüber
-209 KB bzw. 111 KB gegenüber 164 KB. Die Pipeline erzeugt daher eigene
-Varianten; die Dateien im Archiv bleiben unberührt.
+Im Dialog **Bild auswählen** stehen drei Knöpfe: *Bild aufnehmen*, *Bild
+ersetzen* und *Bild löschen*. Der Editor legt die Datei in `bilder/` ab und ruft
+dafür dieselben Betriebsarten des Bildskripts auf, die auch von Hand nutzbar
+sind:
+
+```
+tools/build-images.sh --add     <datei> <ziel>   Bild aufnehmen
+tools/build-images.sh --replace <datei> <ziel>   Bild ersetzen
+tools/build-images.sh --remove           <ziel>  Bild entfernen
+```
+
+`<ziel>` ist ein Pfad relativ zu `bilder/`. Angenommen werden JPG, PNG, GIF,
+WebP und TIFF; abgelegt wird immer als `.jpg` mit Qualität 82, weil
+Größenleiter und WebP-Varianten ausschließlich aus JPEG-Dateien entstehen. Der
+Dateiname wird dabei auf Kleinschreibung, Bindestriche und ASCII gebracht –
+`Prüf Bild~1.JPG` wird zu `pruef-bild-1.jpg`.
+
+Gelöscht werden darf nur, was auf **keiner** Seite in **keiner** Sprache
+verwendet wird; die Bildergalerie zählt mit. Der Knopf bleibt sonst gesperrt und
+nennt den Grund. `--remove` räumt einen Ordner mit auf, der dadurch leer würde.
+
+Jeder dieser drei Eingriffe macht die erzeugten Seiten veraltet – sie nennen
+Dateinamen, Maße und Größenstufen. Der Editor merkt sich das und sagt es in der
+Statuszeile; **Website erzeugen** bringt sie auf den Stand.
+
+Zwei Dinge bleiben danach von Hand zu tun: neu aufgenommene Bilder gehören in
+einen Commit (`git add bilder/…`), und ein Bild in einem Galerieordner erscheint
+in der Bildergalerie erst nach einem Lauf von `tools/make-gallery.mjs` – mit
+einer Bildunterschrift, die dort in drei Sprachen einzutragen ist.
+
+### Herkunft des Bestands
+
+Die Bilder stammen aus dem Archiv der Altsite von 2003. Bis Juli 2026 las
+`npm run images` sie über einen fest verdrahteten Pfad außerhalb des Projekts
+ein; das ist entfallen, aus demselben Grund wie bei der Wortgleichheitsprüfung
+oben. Beim Übernehmen wurden die Dateinamen normalisiert (Kleinschreibung,
+`.JPG` → `.jpg`, `~` → `-`) – das behob `SM~neubauer~und~emil.jpg` und
+`lr~schumertl~und~emil.jpg`, die in der Vorlage über absolute `http://`-Adressen
+mit `%7E` eingebunden werden mussten.
+
+Am 26.07.2026 ging das Archivverzeichnis durch einen relativen Pfad verloren und
+wurde aus `bilder/` zurückgestellt: 113 der 114 Dateien bitgleich (mit `cp -p`
+kopiert, die Zeitstempel von 2003 und die Byte-Größen stimmten überein). Nicht
+bitgleich wiederherstellbar war `altetk/tusset_alt.jpg` – das Original mit
+Qualität 90 und 905.651 Bytes ist verloren, vorhanden ist eine Neukodierung mit
+Qualität 82 bei gleichen Pixelmaßen. Falls ein Backup auftaucht, sollte es diese
+Datei ersetzen.
 
 ## Gestaltung
 

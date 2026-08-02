@@ -71,12 +71,22 @@ FOLDER_LABELS = {
 
 
 class ImageManifest:
-    """Nur lesend. Neue Bilder kommen über tools/build-images.sh dazu."""
+    """Nur lesend. Geschrieben wird die Datei allein von tools/build-images.sh."""
 
     def __init__(self, path: FsPath, images_dir: FsPath) -> None:
         self.path = path
         self.images_dir = images_dir
-        data, _, _ = load_file(path)
+        self._images: dict[str, ImageInfo] = {}
+        self.reload()
+
+    def reload(self) -> None:
+        """Liest das Bildverzeichnis erneut ein – nach Aufnehmen oder Löschen.
+
+        Ersetzt wird nur der Inhalt, nicht das Objekt: die Oberfläche hält an
+        mehreren Stellen einen Verweis auf dieses Bildverzeichnis, und ein
+        Austausch würde dort einen veralteten Stand zurücklassen.
+        """
+        data, _, _ = load_file(self.path)
         self._images = {
             src: ImageInfo(
                 src=src,
