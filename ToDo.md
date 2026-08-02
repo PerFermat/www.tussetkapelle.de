@@ -99,11 +99,16 @@ wurde nicht geprüft.
 
 ## 3. Abweichungen vom Wortlaut der Vorlage
 
-Die Prüfung `node tools/check-content.mjs` vergleicht jede Wortfolge der
-Vorlage mit der neuen deutschen Fassung. Jede Abweichung ist im Skript unter
-`KNOWN_DIFFS` einzeln mit Begründung hinterlegt.
+Bis zum **2. August 2026** verglich `node tools/check-content.mjs` jede
+Wortfolge der Vorlage mit der neuen deutschen Fassung. Letztes Ergebnis:
+**10.025 Wortfolgen geprüft, 17 erklärte Abweichungen, 0 unerklärt fehlend.**
 
-Berichtigt wurden ausschließlich:
+Das Skript ist seither entfernt. Sein Zweck – die einmalige Ersterfassung zu
+belegen – ist erfüllt, und es las die Vorlage aus einem fest verdrahteten Pfad
+außerhalb des Projekts. Ab jetzt sind Textänderungen ausdrücklich vorgesehen
+und werden über den Inhaltseditor (`npm run editor`) vorgenommen.
+
+Berichtigt wurden damals ausschließlich:
 
 * Kodierungsfehler, etwa `Brottasche ?` statt eines Gedankenstrichs
 * Buchstaben mit eingeschobenem Leerzeichen: `E rst` → `Erst`, `I m Sommer` → `Im Sommer`

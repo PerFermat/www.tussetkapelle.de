@@ -1,0 +1,7 @@
+# Python-Umgebung des Inhaltseditors – wird von editor.sh selbst angelegt.
+.venv/
+__pycache__/
+*.pyc
+
+# Zwischendateien des atomaren Speicherns; bleiben nur nach einem Absturz liegen.
+*.json.tmp

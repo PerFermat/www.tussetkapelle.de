@@ -11,6 +11,7 @@
     "build": "node build.js",
     "images": "bash tools/build-images.sh",
     "serve": "bash serve.sh",
-    "check": "node tools/check-links.mjs && node tools/check-images.mjs && node tools/check-content.mjs"
+    "check": "node tools/check-links.mjs && node tools/check-images.mjs",
+    "editor": "bash editor.sh"
   }
 }

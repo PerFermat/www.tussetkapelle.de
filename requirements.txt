@@ -1,0 +1,3 @@
+# Abhängigkeiten des Inhaltseditors (editor/).
+# Die Website selbst braucht nichts davon – sie entsteht allein aus Node.
+PySide6>=6.7

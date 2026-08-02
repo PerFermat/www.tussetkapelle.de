@@ -12,6 +12,7 @@ Texte und Bilder stammen von der Familie Weber und sind inhaltlich unverändert
 ## Schnellstart
 
 ```bash
+npm run editor    # grafischer Inhaltseditor – der übliche Weg
 npm run images    # Bilder aus dem Archiv aufbereiten (nur bei Bedarf)
 npm run build     # HTML-Dateien erzeugen
 npm run serve     # Testserver auf http://localhost:8473
@@ -19,9 +20,49 @@ npm run check     # Vollständigkeit und Struktur prüfen
 ```
 
 Es gibt keine npm-Abhängigkeiten. Vorausgesetzt werden Node ab Version 18,
-Python 3 (nur für den Testserver) und ImageMagick (nur für `npm run images`).
+Python 3 (für den Testserver und den Editor) und ImageMagick (nur für
+`npm run images`).
 
-## Wie man Inhalte ändert
+## Inhalte pflegen – mit dem Editor
+
+```bash
+npm run editor      # oder  ./editor.sh
+```
+
+Der Editor unter `editor/` zeigt Seiten, Abschnitte und Bilder in Klartext.
+JSON und HTML kommen darin nirgends vor. Er kann Seiten anlegen, umbenennen,
+verschieben und löschen, Abschnitte per Maus umsortieren, Bilder mit Vorschau
+auswählen und am Ende **Website erzeugen** und **Prüfen** anstoßen.
+
+Beim ersten Start legt `editor.sh` eine Python-Umgebung unter `.venv/` an und
+installiert PySide6 hinein (rund 300 MB, ein bis zwei Minuten). Danach startet
+er sofort. Voraussetzung ist Python 3.12 oder neuer.
+
+Drei Eigenschaften sind dabei bewusst so gebaut:
+
+* **Er formatiert nichts um.** Beim Laden merkt er sich, welcher Baustein
+  einzeilig geschrieben ist und wo Leerzeilen stehen, und setzt das beim
+  Speichern wieder ein. Wer einen Satz ändert, sieht im Git-Diff genau eine
+  geänderte Zeile – nicht die ganze Datei.
+* **Er kennt die Kennungen.** Eine Seitenkennung steht an sieben Stellen
+  (Dateiname, `id`, `slugs`, `nav`, `sequence`, `footerLinks`, `parent`) und in
+  jedem `{{href:…}}`. Umbenennen fasst alle an, in allen drei Sprachen, und
+  entfernt das verwaiste Ausgabeverzeichnis mit – `build.js` räumt dort nicht
+  auf.
+* **Er speichert nichts Kaputtes.** Vor jedem Schreiben läuft dieselbe Prüfung,
+  an der sonst `npm run build` scheitern würde: fehlende Adresse, unbekanntes
+  Bild, Verweis ins Leere.
+
+Neue Bilder kommen weiterhin über `npm run images` in den Bestand; der Editor
+bietet nur an, was in `src/image-manifest.json` steht.
+
+Ein Selbsttest des Datenmodells läuft ohne Oberfläche:
+
+```bash
+.venv/bin/python -m editor.selftest
+```
+
+## Inhalte von Hand ändern
 
 Die HTML-Dateien werden **erzeugt** – niemals direkt bearbeiten, Änderungen wären
 beim nächsten `npm run build` verloren. Bearbeitet wird stattdessen:
@@ -67,35 +108,12 @@ Interne Verweise im Text als `{{href:seiten-id}}` schreiben, nicht als Pfad.
 So bleibt ein Verweis gültig, auch wenn sich eine Adresse ändert.
 
 Seiten sind **zwei Seiten** hinzuzufügen: die Inhaltsdatei **und** ein Eintrag
-unter `slugs` in `site.<sprache>.json`.
+unter `slugs` in `site.<sprache>.json`. Der Editor tut beides von selbst.
 
 ## Prüfungen
 
-`npm run check` führt drei Skripte aus. Alle drei müssen ohne Beanstandung
+`npm run check` führt zwei Skripte aus. Beide müssen ohne Beanstandung
 durchlaufen.
-
-**`tools/check-content.mjs` – Textvollständigkeit.**
-Zerlegt jede Seite der Vorlage in überlappende Wortfolgen von acht Wörtern und
-prüft, ob jede davon in der deutschen Fassung wiederzufinden ist. Die Zerlegung
-erfolgt blockweise, damit die Tabellenstruktur der Vorlage keine falschen
-Treffer erzeugt. Stand: **10.025 Wortfolgen geprüft, 0 unerklärt fehlend.**
-
-Die bewussten Abweichungen sind im Skript einzeln mit Begründung deklariert
-und ausschließlich typografischer Art – zum Beispiel:
-
-* `Brottasche ?` → `Brottasche –` (Kodierungsartefakt der Vorlage)
-* `E rst wenn` → `Erst wenn`, `I m Sommer` → `Im Sommer` (Leerzeichen im Wort)
-* `den richtigen Patz` → `Platz`, `HI. Bruder Konrad` → `Hl.` (Tippfehler)
-* `auf,aber` → `auf, aber`, `Mädchenauf` → `Mädchen auf` (fehlende Leerzeichen)
-* `Tusset-` + `kapelle` → `Tussetkapelle` (Trennung durch Zeilenumbruch)
-
-Grundsatz: Kodierungsfehler, Trennungen aus dem Zeilenumbruch, fehlende oder
-überzählige Leerzeichen und offensichtliche Buchstabendreher werden berichtigt.
-**Nicht** angetastet werden historische Rechtschreibung (`daß`, `mußte`),
-sprachliche Eigenheiten und inhaltliche Angaben. Wo eine Angabe
-einer anderen widerspricht, bleibt der Wortlaut stehen und ein gekennzeichneter
-Hinweis nennt den Widerspruch – so beim Einweihungsdatum auf der Seite über
-Emil Weber, das dort mit 1987 statt 1985 angegeben ist.
 
 **`tools/check-images.mjs` – Bildvollständigkeit.**
 Jedes Bild des Bestandes muss auf mindestens einer Seite eingebunden sein und
@@ -113,6 +131,30 @@ je Seite, lückenlose Überschriftenordnung, `lang`, `title`, `description`,
 `canonical`, `rel="noopener noreferrer"` an Außenlinks und – als Nachweis der
 DSGVO-Konformität – dass **keine Ressource von einem fremden Server** geladen
 wird.
+
+### Die Wortgleichheitsprüfung ist abgeschlossen
+
+Bis zum 2. August 2026 lief zusätzlich `tools/check-content.mjs`. Das Skript
+zerlegte jede Seite der Vorlage von 2003 in überlappende Wortfolgen von acht
+Wörtern und wies nach, dass jede davon in der neuen deutschen Fassung
+wiederzufinden ist. Es war der Beleg für die Auflage, alle Texte inhaltlich
+unverändert zu übernehmen.
+
+**Letztes Ergebnis: 10.025 Wortfolgen geprüft, 17 erklärte Abweichungen,
+0 unerklärt fehlend.** Die erklärten Abweichungen waren ausschließlich
+typografischer Art – Kodierungsartefakte (`Brottasche ?` → `–`), Leerzeichen
+mitten im Wort (`E rst wenn` → `Erst wenn`), Tippfehler (`den richtigen Patz`
+→ `Platz`), fehlende Leerzeichen (`auf,aber`) und Trennungen aus dem
+Zeilenumbruch der alten Seite (`Tusset-` + `kapelle`). Historische
+Rechtschreibung (`daß`, `mußte`), sprachliche Eigenheiten und alle inhaltlichen
+Angaben blieben unangetastet; ein Widerspruch in der Vorlage – das
+Einweihungsdatum 1987 statt 1985 auf der Seite über Emil Weber – steht im
+Wortlaut samt kenntlich gemachtem Hinweis.
+
+Das Skript wurde danach entfernt. Zwei Gründe: Sein Zweck, die einmalige
+Ersterfassung zu belegen, ist erfüllt. Und es las die Vorlage aus einem fest
+verdrahteten Pfad **außerhalb des Projekts** – auf keinem anderen Rechner wäre
+es lauffähig gewesen, und jede künftige Textpflege hätte es fehlschlagen lassen.
 
 ## Bilder
 
