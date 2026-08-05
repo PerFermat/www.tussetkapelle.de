@@ -1842,16 +1842,25 @@ a:hover {
 
 .lightbox__stage {
   position: relative;
-  display: grid;
-  place-items: center;
   min-height: 0;
 }
 
+/* Das Bild füllt die Bühne immer aus – große Aufnahmen werden verkleinert,
+   kleine vergrößert. Mit max-width/max-height blieb ein kleines Bild in seiner
+   Originalgröße mitten auf dunklem Grund stehen; ein Teil des Bestands ist nur
+   150 bis 300 px breit und war so kaum zu erkennen. „contain“ wahrt dabei das
+   Seitenverhältnis: das Bild wird nie verzerrt und nie beschnitten.
+
+   Absolut gesetzt, nicht im Fluss: die Bühne ist eine Rasterzelle ohne eigene
+   Höhenangabe, und an einer solchen läuft „height: 100 %“ ins Leere – das Bild
+   nahm sich dann sein Seitenverhältnis und ragte unten heraus. Gegenüber einem
+   Vorfahren mit „position: relative“ rechnet sich der Anteil dagegen immer aus.
+   Die Blätterknöpfe liegen mit z-index darüber. */
 .lightbox__stage img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 

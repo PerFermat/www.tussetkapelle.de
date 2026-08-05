@@ -137,7 +137,9 @@
   const render = () => {
     const it = items[index];
     if (!it) return;
-    // Maße vorab setzen: verhindert das Springen beim Laden.
+    // Die echten Maße mitgeben. Für die Größe auf dem Schirm sorgt das
+    // Stylesheet – das Bild füllt die Bühne stets aus. Ohne Stylesheet bleibt
+    // über die Maße wenigstens das Seitenverhältnis erhalten.
     if (it.w) stage.width = it.w;
     if (it.h) stage.height = it.h;
     stage.src = it.href;
