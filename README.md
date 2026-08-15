@@ -186,6 +186,50 @@ Ersterfassung zu belegen, ist erfüllt. Und es las die Vorlage aus einem fest
 verdrahteten Pfad **außerhalb des Projekts** – auf keinem anderen Rechner wäre
 es lauffähig gewesen, und jede künftige Textpflege hätte es fehlschlagen lassen.
 
+## Ausliefern – ein Release je Stand auf dem Gemeindeserver
+
+Ein Release hält fest, **was auf dem Server der Gemeinde Philippsreut steht** –
+nicht, was hier fertig geworden ist. Das ist die einzige Stelle, an der das
+nachlesbar bleibt: weil die erzeugten Seiten im Projektstamm liegen und zugleich
+das Auslieferungsgut sind, sagt ein Commit für sich genommen nichts darüber, ob
+er je hochgeladen wurde.
+
+Daraus folgt die Reihenfolge, und sie ist streng:
+
+1. Änderung fertigstellen, erzeugen, prüfen, committen, pushen.
+2. Die Gemeinde Philippsreut gibt die Änderung **bewusst frei** und übernimmt
+   sie auf ihren Server.
+3. **Erst danach** das Release setzen – und nur auf ausdrückliche Ansage des
+   Betreibers, der die Freigabe getrennt mitteilt.
+
+Ein Release beim Fertigwerden zu setzen wäre eine Falschauskunft: es behauptete
+einen Auslieferungsstand, den es noch nicht gibt. Fertig heißt hier nicht online.
+
+Den Anfang macht [`v1.0`](https://github.com/PerFermat/www.tussetkapelle.de/releases/tag/v1.0),
+die erste Fassung auf dem Server der Gemeinde, vom 15.08.2026.
+
+Ist die Freigabe erfolgt, vor dem Release in dieser Reihenfolge:
+
+```bash
+npm run build      # die Seiten neu erzeugen – sie sind das, was hochgeladen wird
+npm run check      # 0 Beanstandungen, 0 defekte Verweise
+git status         # muss sauber sein: alles committet und gepusht
+```
+
+Dann das Release setzen – die Nummer wächst um eine Nachkommastelle bei
+Inhaltspflege, um eine ganze Zahl bei einem Umbau der Seite:
+
+```bash
+git tag -a v1.1 -m "1.1 – kurz, was sich geändert hat"
+git push origin v1.1
+gh release create v1.1 --verify-tag --title "1.1 – …" --notes-file <datei>
+```
+
+In den Anmerkungen gehört festgehalten, was sich seit dem vorigen Stand geändert
+hat und **welche Punkte offen bleiben**. In `v1.0` ist das der Platzhalter in
+Impressum und Datenschutzerklärung: Wer die Seite später prüft, soll nicht raten
+müssen, ob das übersehen wurde oder bekannt war.
+
 ## Bilder
 
 `bilder/` ist die Bildquelle des Projekts – 315 Dateien, alle in der
