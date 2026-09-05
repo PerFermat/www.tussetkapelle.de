@@ -769,6 +769,19 @@ a:hover {
   z-index: 0;
 }
 
+/* <picture> ist nur eine Hülle ohne eigene Höhe. Ohne diese Regel läuft
+   „height: 100 %“ am <img> darin ins Leere – der Anteil rechnet sich gegen eine
+   Höhe, die es nicht gibt, das Bild fällt auf sein Seitenverhältnis zurück und
+   ließ am Fuß des Hero rund 107 px leeres Grün stehen. Auf dem Schirm sah das
+   aus wie ein zu großer Abstand zwischen Bild und Titel; in Wahrheit hörte das
+   Foto zu früh auf. Absolut gesetzt bekommt die Hülle den Kasten von
+   .hero__media, und erst dadurch rechnet sich der Anteil am Bild aus. */
+.hero__media picture {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
 .hero__media img {
   width: 100%;
   height: 100%;
@@ -875,7 +888,9 @@ a:hover {
 
   .hero__text {
     max-width: none;
-    padding-block: var(--sp-6) var(--sp-7);
+    /* Oben knapper als unten: der Titel gehört zum Bild darüber, der Abstand
+       nach unten trennt den Hero vom nächsten Abschnitt. */
+    padding-block: var(--sp-5) var(--sp-7);
   }
 }
 
