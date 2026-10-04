@@ -17,9 +17,9 @@ from .jsonio import Style
 __all__ = ["Page", "PageKind"]
 
 #: Seiten, deren Kennung fest in Navigation, Fußzeile oder Vorlagen steht.
-FIXED_IDS = frozenset(
-    {"home", "geschichte", "galerie", "besuch", "kontakt", "impressum", "datenschutz"}
-)
+#: ``impressum`` und ``datenschutz`` stehen hier nicht mehr: beides liegt beim
+#: Betreiber, der Gemeinde Philippsreut, und die Fußzeile verweist dorthin.
+FIXED_IDS = frozenset({"home", "geschichte", "galerie", "besuch", "kontakt"})
 
 
 class PageKind:

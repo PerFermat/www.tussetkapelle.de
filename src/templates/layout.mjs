@@ -262,10 +262,24 @@ function pager(ctx) {
 
 function footer(ctx) {
   const links = ctx.site.footerLinks
-    .map(
-      (id) =>
-        `<li><a href="${esc(ctx.href(id))}">${esc(ctx.navLabel(id))}</a></li>`,
-    )
+    .map((entry) => {
+      // Zwei Formen sind erlaubt: eine Zeichenkette ist die Kennung einer
+      // eigenen Seite, ein Objekt { label, url } ein Verweis nach außen.
+      //
+      // Impressum und Datenschutzerklärung stehen bewusst als Außenverweis.
+      // Betreiberin der Seite ist die Gemeinde Philippsreut; sie pflegt beides
+      // auf ihrem eigenen Server. Eine Kopie hier liefe ihrer Fassung über kurz
+      // oder lang hinterher, ohne dass es jemand bemerkt – und bei jeder
+      // Auslieferung müsste die Gemeinde ihre Änderung von Hand nachziehen.
+      //
+      // target, rel und der unsichtbare Hinweis auf den Tabwechsel kommen
+      // nicht von hier, sondern von externalLinks() in build.js – dieselbe
+      // Behandlung wie bei jedem anderen Verweis nach außen.
+      const href = typeof entry === 'string' ? ctx.href(entry) : entry.url;
+      const label =
+        typeof entry === 'string' ? ctx.navLabel(entry) : entry.label;
+      return `<li><a href="${esc(href)}">${esc(label)}</a></li>`;
+    })
     .join('');
 
   return (

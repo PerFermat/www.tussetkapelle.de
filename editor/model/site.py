@@ -43,7 +43,15 @@ class SiteConfig:
         return self.data.setdefault("sequence", [])
 
     @property
-    def footer_links(self) -> list[str]:
+    def footer_links(self) -> list[str | dict]:
+        """Verweise der Fußzeile.
+
+        Eine Zeichenkette ist die Kennung einer eigenen Seite, ein Objekt
+        ``{"label": …, "url": …}`` ein Verweis nach außen – so stehen Impressum
+        und Datenschutzerklärung der Gemeinde darin. ``rename_id`` und
+        ``remove_id`` vergleichen gegen Zeichenketten und lassen die Objekte
+        deshalb von sich aus unangetastet.
+        """
         return self.data.setdefault("footerLinks", [])
 
     @property

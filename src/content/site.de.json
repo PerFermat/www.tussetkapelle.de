@@ -50,9 +50,7 @@
     "emil-weber": "geschichte/emil-weber",
     "galerie": "galerie",
     "besuch": "besuch",
-    "kontakt": "kontakt",
-    "impressum": "impressum",
-    "datenschutz": "datenschutz"
+    "kontakt": "kontakt"
   },
 
   "nav": [
@@ -109,5 +107,8 @@
     "emil-weber"
   ],
 
-  "footerLinks": ["impressum", "datenschutz"]
+  "footerLinks": [
+    { "label": "Impressum", "url": "https://philippsreut.de/impressum/" },
+    { "label": "Datenschutz", "url": "https://philippsreut.de/gemeinde/datenschutzerklaerung/" }
+  ]
 }

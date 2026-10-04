@@ -8,27 +8,29 @@ müssen.
 
 ## 1. Was Sie noch selbst eintragen müssen
 
-### Impressum
+### Impressum und Datenschutz – erledigt, nichts mehr einzutragen
 
-In `src/content/de/impressum.json`, `en/impressum.json` und `ls/impressum.json`
-stehen Platzhalter in spitzen Klammern `⟨…⟩`:
+Beides liegt nicht mehr in diesem Projekt. Die Fußzeile verweist in allen drei
+Sprachen unmittelbar auf den Server der Gemeinde Philippsreut, die Betreiberin
+der Website ist:
 
-* Name des Anbieters (Person oder Körperschaft)
-* Straße und Hausnummer, Postleitzahl und Ort
-* Telefonnummer
-* Name des inhaltlich Verantwortlichen
+* <https://philippsreut.de/impressum/>
+* <https://philippsreut.de/gemeinde/datenschutzerklaerung/>
 
-Ein Impressum ist für eine in Deutschland betriebene Website nach § 5 DDG
-verpflichtend.
+Die früheren eigenen Seiten samt ihrer Platzhalter sind entfernt; die Adressen
+`/impressum/` und `/datenschutz/` antworten mit 404. Nach § 5 DDG genügt das:
+die Angaben sind von jeder Seite aus mit einem Klick erreichbar.
 
-### Datenschutzerklärung
+Verwiesen statt kopiert, und zwar mit Absicht. Eine Kopie liefe der Fassung der
+Gemeinde über kurz oder lang hinterher, ohne dass es jemand bemerkt. Außerdem
+hatte die Gemeinde die beiden Seiten zwischenzeitlich **auf dem Server von Hand**
+umgebogen (`<meta http-equiv="refresh">`) – eine Änderung, die `produktion.sh`
+mit `rsync --delete-excluded` beim nächsten Lauf überschrieben hätte. Seit die
+Verweise in der Quelle stehen, muss das niemand mehr nachziehen.
 
-In `src/content/*/datenschutz.json` fehlen noch:
-
-* Speicherdauer der Server-Protokolldateien beim Hosting-Anbieter
-* Name und Anschrift des Hosting-Anbieters
-* Mit dem Hosting-Anbieter ist ein Vertrag zur Auftragsverarbeitung nach
-  Art. 28 DSGVO zu schließen.
+Die Verweise stehen in `src/content/site.{de,en,ls}.json` unter `footerLinks`.
+Dort sind zwei Formen erlaubt: eine Zeichenkette ist die Kennung einer eigenen
+Seite, ein Objekt `{ "label": …, "url": … }` ein Verweis nach außen.
 
 ### Kontaktdaten auf der Besuchsseite
 

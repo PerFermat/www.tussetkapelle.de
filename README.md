@@ -226,9 +226,10 @@ gh release create v1.1 --verify-tag --title "1.1 – …" --notes-file <datei>
 ```
 
 In den Anmerkungen gehört festgehalten, was sich seit dem vorigen Stand geändert
-hat und **welche Punkte offen bleiben**. In `v1.0` ist das der Platzhalter in
+hat und **welche Punkte offen bleiben**. In `v1.0` war das der Platzhalter in
 Impressum und Datenschutzerklärung: Wer die Seite später prüft, soll nicht raten
-müssen, ob das übersehen wurde oder bekannt war.
+müssen, ob das übersehen wurde oder bekannt war. (Inzwischen erledigt – beides
+liegt bei der Gemeinde, siehe „Impressum und Datenschutz".)
 
 ## Bilder
 
@@ -343,8 +344,8 @@ lesbaren Klartext aus, mit Markierungen an den Stellen der Bilder und Verweise.
 
 ## Offene Punkte und interne Hinweise
 
-Alles, was noch von Hand zu erledigen ist – Impressumsangaben, Daten des
-Hosting-Anbieters, die veralteten Telefonnummern – steht in **`ToDo.md`**.
+Alles, was noch von Hand zu erledigen ist – etwa die veralteten Telefonnummern
+auf der Besuchsseite – steht in **`ToDo.md`**.
 Dort sind auch die Entscheidungen dokumentiert, die bewusst nicht auf der
 Website erwähnt werden.
 
@@ -355,8 +356,38 @@ Website erwähnt werden.
   Screenreader im Markup und steht zusätzlich im `title` des Verweises.
 * **Fußzeile**: links die Wortmarke zweizeilig neben dem Symbol, mittig nur
   Impressum und Datenschutz, rechts die Sprachwahl – auf breiten Schirmen nur
-  als Symbole, auf schmalen mit Beschriftung auf eigener Zeile.
+  als Symbole, auf schmalen mit Beschriftung auf eigener Zeile. Die beiden
+  Rechtsverweise führen nach außen, siehe den nächsten Abschnitt.
 * Zwischen den Sprachen stehen **keine Trennstriche**.
+
+### Impressum und Datenschutz liegen nicht hier
+
+Betreiberin der Website ist die Gemeinde Philippsreut. Impressum und
+Datenschutzerklärung pflegt sie auf ihrem eigenen Server; die Fußzeile verweist
+in allen drei Sprachen unmittelbar dorthin:
+
+* <https://philippsreut.de/impressum/>
+* <https://philippsreut.de/gemeinde/datenschutzerklaerung/>
+
+Eigene Seiten dafür gibt es nicht mehr – `/impressum/` und `/datenschutz/`
+antworten mit 404. Kopiert wird nichts: eine Kopie liefe der Fassung der
+Gemeinde hinterher, ohne dass es jemand bemerkt, und müsste bei jeder
+Auslieferung von Hand nachgezogen werden.
+
+Eingetragen sind die Verweise in `src/content/site.{de,en,ls}.json` unter
+`footerLinks`. Zwei Formen sind dort erlaubt:
+
+```json
+"footerLinks": [
+  "kontakt",
+  { "label": "Impressum", "url": "https://philippsreut.de/impressum/" }
+]
+```
+
+Eine Zeichenkette ist die Kennung einer eigenen Seite, ein Objekt ein Verweis
+nach außen. `target="_blank"`, `rel="noopener noreferrer"` und der unsichtbare
+Hinweis auf den Tabwechsel kommen von `externalLinks()` in `build.js` – wie bei
+jedem anderen Außenlink.
 
 Die Menüschaltfläche trägt `flex: none`. Ohne das drücken Wortmarke und
 Sprachwahl sie auf schmalen Schirmen auf 0 px zusammen und das Menü ist nicht

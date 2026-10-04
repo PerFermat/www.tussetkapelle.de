@@ -420,6 +420,9 @@ writeFileSync(
     .replace(/<link rel="alternate"[^>]*>\n?/g, '');
 
   html = html.replace(/\{\{href:([a-z0-9-]+)\}\}/g, (_, id) => urlOf('de', id));
+  // Auch die Fehlerseite trägt die Fußzeile und damit Verweise nach außen –
+  // sie braucht dieselbe Behandlung wie jede andere Seite.
+  html = externalLinks(html, sites.de);
   writeFileSync(join(ROOT, '404.html'), html);
   console.log('  404.html');
 }
