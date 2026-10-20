@@ -441,6 +441,79 @@ def test_preview(app: QApplication, w: MainWindow) -> None:
         mainwindow.QDesktopServices, mainwindow.webbrowser = echt_qt, echt_web
 
 
+def test_search(app: QApplication, w: MainWindow) -> None:
+    """Suchen und zum Treffer springen.
+
+    Gewünscht war: ein Wort eintippen, der Editor springt zur ersten Fundstelle
+    *nach der aktuellen Stelle*, Pfeil ab zur nächsten, Pfeil auf zurück.
+
+    Gesucht wird im Lesetext, nicht im Markup. Wer „href“ eingibt, darf nichts
+    finden, und ein Bildpfad ist kein Text, den jemand liest.
+    """
+    print("\nSuche im Inhalt")
+
+    w.switch_language("de")
+    settle(300)
+    w.open_page("home")
+    settle(300)
+
+    w.search_bar.edit.setText("Richtsfeld")
+    settle(250)
+    check("„Richtsfeld“ wird gefunden", len(w._hits) == 3, f"{len(w._hits)} Treffer")
+    check("Der Zähler sagt es", w.search_bar.count.text() == "1 von 3",
+          w.search_bar.count.text())
+    check("Der Editor ist hingesprungen", w.page.page_id == "wiederaufbau",
+          f"steht auf {w.page.page_id}")
+    check("Und zwar auf den Abschnitt", w.block_index == w._hits[0].block_index)
+
+    seiten = []
+    for _ in range(3):
+        w.step_hit(1)
+        settle(120)
+        seiten.append(w.page.page_id)
+    check("Pfeil ab führt weiter", seiten[:2] == ["einweihung-1985", "besuch"], str(seiten))
+    check("Und am Ende wieder von vorn", seiten[2] == "wiederaufbau")
+
+    w.step_hit(-1)
+    settle(120)
+    check("Pfeil auf führt zurück", w.search_bar.count.text() == "3 von 3",
+          w.search_bar.count.text())
+
+    # Markup und Bildpfade sind kein Lesetext.
+    w.search_bar.edit.setText("href")
+    settle(200)
+    check("Auszeichnung wird nicht durchsucht", not w._hits, f"{len(w._hits)} Treffer")
+    w.search_bar.edit.setText("neuetk/einleitung")
+    settle(200)
+    check("Bildpfade werden nicht durchsucht", not w._hits, f"{len(w._hits)} Treffer")
+
+    w.search_bar.edit.setText("gibtesganzsichernicht")
+    settle(200)
+    check("Ohne Treffer sagt es der Zähler", w.search_bar.count.text() == "nichts gefunden",
+          w.search_bar.count.text())
+
+    # Die Startseite hat Inhalt neben den Abschnitten – Hero, Kacheln,
+    # Besuchskarte, Zeitleiste. Der wäre ohne eigene Behandlung unauffindbar.
+    w.search_bar.edit.setText("Erinnerungsort")
+    settle(250)
+    check("Auch der Inhalt der Startseite wird gefunden",
+          any(h.page_id == "home" and h.block_index == -1 for h in w._hits),
+          f"{len(w._hits)} Treffer")
+
+    # Beim Sprachwechsel gilt die andere Fassung.
+    w.search_bar.edit.setText("Richtsfeld")
+    settle(250)
+    vorher = len(w._hits)
+    w.switch_language("ls")
+    settle(500)
+    check("Der Sprachwechsel sucht neu", len(w._hits) == 1 and vorher == 3,
+          f"de {vorher}, ls {len(w._hits)}")
+    w.search_bar.edit.setText("")
+    settle(150)
+    w.switch_language("de")
+    settle(400)
+
+
 def main() -> int:
     app = QApplication(sys.argv[:1])
     w = MainWindow(ROOT)
@@ -457,6 +530,7 @@ def main() -> int:
     test_stale_site(app, w)
     test_wheel_safe_fields(app, w)
     test_preview(app, w)
+    test_search(app, w)
 
     print()
     if _failures:

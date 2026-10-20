@@ -38,6 +38,7 @@ from PySide6.QtWidgets import (
 
 from ..commands import AddBlockCommand, EditBlockCommand, MoveBlockCommand, RemoveBlockCommand
 from ..model import BLOCKS, ContentRepository, Page, RepositoryError, Severity, spec_for
+from ..model.search import Hit, find as find_in_content
 from ..process import NpmRunner
 from .blockeditor import BlockEditor
 from .blocklist import BlockList
@@ -45,6 +46,7 @@ from .console import ConsolePanel, ConsoleTitleBar
 from .homeeditor import HomeEditor
 from .pagedialogs import NewPageDialog, RenamePageDialog
 from .pagetree import PageTree
+from .searchbar import SearchBar
 from .theme import STYLESHEET, Color, icon
 from .widgets import ComboBox
 
@@ -75,6 +77,10 @@ class MainWindow(QMainWindow):
         self._after_build = ""
         #: Selbst gestarteter Testserver für die Vorschau, sonst None.
         self._preview: QProcess | None = None
+        #: Fundstellen der laufenden Suche, in Lesereihenfolge.
+        self._hits: list[Hit] = []
+        #: Welche davon gerade angesprungen ist; -1, solange keine.
+        self._hit_index = -1
 
         self.setWindowTitle("Tussetkapelle – Inhalte bearbeiten")
         self.resize(1500, 940)
@@ -124,12 +130,27 @@ class MainWindow(QMainWindow):
         lang_caption = QLabel("Sprachfassung")
         lang_caption.setProperty("rolle", "feld")
 
+        # Die Suche steht über dem Seitenbaum, aus demselben Grund wie die
+        # Sprachwahl: Sie ist Navigation und gehört neben die Seitenliste – und
+        # in der Werkzeugleiste ist bei neun beschrifteten Knöpfen kein Platz.
+        self.search_bar = SearchBar()
+        self.search_bar.search.connect(self.search_content)
+        self.search_bar.next_hit.connect(lambda: self.step_hit(1))
+        self.search_bar.previous_hit.connect(lambda: self.step_hit(-1))
+        self.search_bar.left.connect(lambda: self.editor.setFocus())
+
+        search_caption = QLabel("Suchen")
+        search_caption.setProperty("rolle", "feld")
+
         left = QWidget()
         left_layout = QVBoxLayout(left)
         left_layout.setContentsMargins(10, 10, 6, 0)
         left_layout.setSpacing(6)
         left_layout.addWidget(lang_caption)
         left_layout.addWidget(self.lang_combo)
+        left_layout.addSpacing(8)
+        left_layout.addWidget(search_caption)
+        left_layout.addWidget(self.search_bar)
         left_layout.addSpacing(4)
         left_layout.addWidget(self.tree, 1)
         self.editor = BlockEditor(self.repo, self.lang)
@@ -200,6 +221,11 @@ class MainWindow(QMainWindow):
         self.action_check = self._action(bar, "check", "Prüfen", "F6", self.check_site, Color.CREAM)
         self.action_preview = self._action(bar, "preview", "Vorschau", "", self.open_preview, Color.CREAM)
 
+        self.action_find = QAction("Suchen", self)
+        self.action_find.setShortcut(QKeySequence("Ctrl+F"))
+        self.action_find.triggered.connect(self.search_bar.focus)
+        self.addAction(self.action_find)
+
         self._build_menu()
 
     def _action(self, bar, name, text, shortcut, slot, color=Color.GREEN) -> QAction:
@@ -231,6 +257,17 @@ class MainWindow(QMainWindow):
         edit_menu.addSeparator()
         edit_menu.addAction(self.action_add_block)
         edit_menu.addAction(self.action_remove_block)
+        edit_menu.addSeparator()
+        self.action_find.setToolTip("Suchen  (Strg+F)")
+        edit_menu.addAction(self.action_find)
+        edit_menu.addAction(
+            QAction("Nächster Treffer", self, shortcut="F3",
+                    triggered=lambda: self.step_hit(1))
+        )
+        edit_menu.addAction(
+            QAction("Vorheriger Treffer", self, shortcut="Shift+F3",
+                    triggered=lambda: self.step_hit(-1))
+        )
 
         site_menu = self.menuBar().addMenu("&Website")
         site_menu.addAction(self.action_build)
@@ -519,7 +556,15 @@ class MainWindow(QMainWindow):
         self.tabs.insertTab(0, self.editor, "Abschnitt")
         self.tabs.insertTab(1, self.home_editor, "Aufbau der Startseite")
         self.undo_stack.clear()
+        # Die Fundstellen gehören zur alten Sprachfassung und zeigen auf
+        # Abschnitte, die es dort womöglich gar nicht gibt. Neu suchen, sobald
+        # ein Begriff im Feld steht.
+        self._hits = []
+        self._hit_index = -1
+        # Erst den Baum neu aufbauen, dann suchen: sonst überschriebe das
+        # Wiederherstellen der Seite den gerade angesprungenen Treffer.
         self._reload_tree(select=current)
+        self.search_content(self.search_bar.term())
 
     def new_page(self) -> None:
         parent_id = self.page.page_id if self.page else "home"
@@ -712,6 +757,71 @@ class MainWindow(QMainWindow):
     def refresh_images(self) -> None:
         """Ableitungen und Bildverzeichnis aus bilder/ neu erzeugen."""
         self.runner.run("images")
+
+    # -- Suche -------------------------------------------------------------- #
+
+    def _position(self) -> tuple[int, int]:
+        """Wo steht der Benutzer gerade – als (Seitennummer, Abschnittsnummer)?
+
+        Dieselbe Ordnung wie die Treffer, damit sich „der nächste danach“
+        überhaupt bestimmen lässt.
+        """
+        order = self.repo.page_ids()
+        page_id = self.page.page_id if self.page is not None else None
+        page_pos = order.index(page_id) if page_id in order else -1
+        return page_pos, self.block_index if self.block_index is not None else -1
+
+    def _hit_position(self, hit: Hit, order: list[str]) -> tuple[int, int]:
+        return (order.index(hit.page_id) if hit.page_id in order else -1), hit.block_index
+
+    def search_content(self, term: str) -> None:
+        """Neu suchen und zur ersten Fundstelle nach der aktuellen Stelle springen.
+
+        Nicht an den Anfang des Bestandes: Wer auf Seite zwölf arbeitet, meint
+        den nächsten Treffer von dort aus. Gibt es danach keinen mehr, wird
+        vorn fortgesetzt – wie in jedem Textprogramm.
+        """
+        self._hits = find_in_content(self.repo, term, self.lang) if term.strip() else []
+        if not self._hits:
+            self._hit_index = -1
+            self.search_bar.set_result(0, 0)
+            return
+
+        order = self.repo.page_ids()
+        hier = self._position()
+        self._hit_index = next(
+            (n for n, hit in enumerate(self._hits) if self._hit_position(hit, order) > hier),
+            0,
+        )
+        self._show_hit()
+
+    def step_hit(self, delta: int) -> None:
+        """Einen Treffer weiter oder zurück, am Ende von vorn."""
+        if not self._hits:
+            return
+        self._hit_index = (self._hit_index + delta) % len(self._hits)
+        self._show_hit()
+
+    def _show_hit(self) -> None:
+        """Zur gemerkten Fundstelle springen und den Zähler nachführen."""
+        hit = self._hits[self._hit_index]
+        if self.page is None or self.page.page_id != hit.page_id:
+            self.open_page(hit.page_id)
+
+        if hit.block_index >= 0:
+            self.tabs.setCurrentIndex(0)
+            if self.blocks.currentRow() != hit.block_index:
+                self.blocks.setCurrentRow(hit.block_index)
+            self.editor.focus_field(hit.field)
+        elif self.tabs.isTabVisible(1):
+            # Seitenebene: auf der Startseite hat das eine eigene Maske.
+            self.tabs.setCurrentIndex(1)
+
+        self.search_bar.set_result(self._hit_index + 1, len(self._hits))
+        self.status_result.setText(
+            f"„{self.search_bar.term()}“ – Treffer {self._hit_index + 1} von "
+            f"{len(self._hits)}: {hit.page_title} · {hit.excerpt}"
+        )
 
     # -- Vorschau ---------------------------------------------------------- #
 

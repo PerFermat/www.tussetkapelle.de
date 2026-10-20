@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from PySide6.QtCore import Signal
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import (
     QLabel,
     QScrollArea,
@@ -56,9 +56,11 @@ class BlockEditor(QWidget):
         self.form.setContentsMargins(0, 0, 0, 0)
         self.form.setSpacing(14)
 
-        scroll = QScrollArea()
-        scroll.setWidgetResizable(True)
-        scroll.setWidget(self.form_host)
+        # Als Merkmal, nicht als lokale Größe: focus_field() muss ein Feld
+        # hierin sichtbar scrollen können.
+        self.scroll = QScrollArea()
+        self.scroll.setWidgetResizable(True)
+        self.scroll.setWidget(self.form_host)
 
         layout = QVBoxLayout(self)
         layout.setContentsMargins(16, 14, 16, 14)
@@ -66,7 +68,7 @@ class BlockEditor(QWidget):
         layout.addWidget(self.title)
         layout.addWidget(self.hint)
         layout.addSpacing(8)
-        layout.addWidget(scroll, 1)
+        layout.addWidget(self.scroll, 1)
 
         self.clear()
 
@@ -90,6 +92,20 @@ class BlockEditor(QWidget):
     def set_read_only(self, read_only: bool) -> None:
         self._read_only = read_only
         self.form_host.setEnabled(not read_only)
+
+    def focus_field(self, key: str) -> bool:
+        """Ein Feld anspringen und den Fokus hineinlegen.
+
+        Benutzt von der Suche: Der Treffer nennt den Feldnamen, und erst damit
+        landet der Benutzer an der Fundstelle statt irgendwo im Abschnitt.
+        Gibt False zurück, wenn der Abschnitt dieses Feld nicht hat.
+        """
+        widget = self._fields.get(key)
+        if widget is None:
+            return False
+        widget.setFocus(Qt.FocusReason.OtherFocusReason)
+        self.scroll.ensureWidgetVisible(widget, 0, 60)
+        return True
 
     def show_block(self, block: dict[str, Any]) -> None:
         spec = spec_for(block.get("t", ""))

@@ -62,6 +62,7 @@ _PATHS: dict[str, str] = {
     "add": "M12 5v14M5 12h14",
     "minus": "M5 12h14",
     "remove": "M6 7h12M9 7V5h6v2M8 7l1 13h6l1-13",
+    "search": "M11 4a7 7 0 100 14 7 7 0 000-14M20 20l-4-4",
     "up": "M12 19V6M6 12l6-6 6 6",
     "down": "M12 5v13M6 12l6 6 6-6",
     "undo": "M9 8H4V3M4 8a9 9 0 113 8",

@@ -64,6 +64,30 @@ Neue Bilder kommen über den Dialog **Bild auswählen** in den Bestand – siehe
 [Bilder](#bilder). Der Editor bietet zur Auswahl nur an, was in
 `src/image-manifest.json` steht.
 
+### Suchen
+
+Über dem Seitenbaum steht ein Suchfeld, erreichbar auch mit **Strg+F**. Ein Wort
+eintippen, und der Editor springt zur ersten Fundstelle **nach der aktuellen
+Stelle** – nicht an den Anfang des Bestandes. Weiter geht es mit **Pfeil ab**,
+zurück mit **Pfeil auf**, beides direkt im Suchfeld; **F3** und **Umschalt+F3**
+tun dasselbe von überall. **Esc** gibt den Fokus an die Eingabemaske zurück.
+
+Gesprungen wird bis aufs Feld genau: Seite, Abschnitt, Eingabefeld. Der Zähler
+unter dem Feld zeigt „3 von 12“, die Statuszeile den Textauszug.
+
+Gesucht wird im **Lesetext der aktuellen Sprachfassung**, nicht im Markup. Wer
+`href` eingibt, findet nichts, und Bildpfade zählen nicht als Text. Je Feld wird
+höchstens ein Treffer gemeldet – käme ein Wort in einem Absatz dreimal vor,
+spränge der Editor sonst dreimal an dieselbe Stelle.
+
+Mitgesucht wird auch, was neben den Abschnitten steht: Seitentitel, der Text für
+Suchmaschinen und auf der Startseite das große Bild, die Kacheln, die
+Besuchskarte und die Zeitleiste.
+
+Die Sprachfassungen sind eigenständige Texte, keine Übersetzungen voneinander.
+Wer eine Angabe ändert, muss alle drei durchgehen – die Suche hilft dabei: nach
+dem Umschalten der Sprachfassung wird derselbe Begriff dort erneut gesucht.
+
 ### „Website nicht auf dem neuesten Stand“
 
 Die fertigen Seiten liegen im Projektordner und sind zugleich das, was
