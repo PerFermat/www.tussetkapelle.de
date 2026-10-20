@@ -12,7 +12,6 @@ from typing import Any
 
 from PySide6.QtCore import Signal
 from PySide6.QtWidgets import (
-    QComboBox,
     QFormLayout,
     QGroupBox,
     QHBoxLayout,
@@ -28,6 +27,7 @@ from PySide6.QtWidgets import (
 from ..model import ContentRepository, FieldKind, FieldSpec, Page
 from .fields import ImageField, LongField, RichField
 from .theme import Color, icon
+from .widgets import ComboBox
 
 __all__ = ["HomeEditor"]
 
@@ -136,7 +136,7 @@ class HomeEditor(QWidget):
         form.addRow(label, field)
 
     def _page_choice(self, form: QFormLayout, label: str, holder: dict, key: str) -> None:
-        combo = QComboBox()
+        combo = ComboBox()
         pages = self._repo.pages.get(self._lang, {})
         for page_id in self._repo.page_ids():
             page = pages.get(page_id)
@@ -150,7 +150,7 @@ class HomeEditor(QWidget):
         form.addRow(label, combo)
 
     def _icon_choice(self, form: QFormLayout, label: str, holder: dict, key: str) -> None:
-        combo = QComboBox()
+        combo = ComboBox()
         for value, text in ICON_CHOICES:
             combo.addItem(icon(value if value in ("book", "camera", "pin") else "page", Color.GREEN), text, value)
         index = combo.findData(holder.get(key, ""))
@@ -239,7 +239,7 @@ class HomeEditor(QWidget):
         what.setPlaceholderText("Was ist geschehen?")
         what.textChanged.connect(lambda t, e=entry: self._set(e, "what", t))
 
-        combo = QComboBox()
+        combo = ComboBox()
         combo.setMaximumWidth(140)
         for value, text in ICON_CHOICES:
             combo.addItem(text, value)

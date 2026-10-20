@@ -20,7 +20,6 @@ from typing import Any
 from PySide6.QtCore import QSettings, Qt, QTimer, QUrl
 from PySide6.QtGui import QAction, QDesktopServices, QKeySequence, QUndoStack
 from PySide6.QtWidgets import (
-    QComboBox,
     QDockWidget,
     QLabel,
     QMainWindow,
@@ -44,6 +43,7 @@ from .homeeditor import HomeEditor
 from .pagedialogs import NewPageDialog, RenamePageDialog
 from .pagetree import PageTree
 from .theme import STYLESHEET, Color, icon
+from .widgets import ComboBox
 
 __all__ = ["MainWindow"]
 
@@ -106,7 +106,7 @@ class MainWindow(QMainWindow):
         # Die Sprachwahl steht über dem Seitenbaum, nicht in der Werkzeugleiste:
         # sie bestimmt, welche Fassung der Baum zeigt, und gehört deshalb daneben.
         # In der Leiste passte sie bei 1560 Pixeln Fensterbreite ohnehin nicht mehr.
-        self.lang_combo = QComboBox()
+        self.lang_combo = ComboBox()
         for lang in self.repo.languages:
             self.lang_combo.addItem(self.repo.sites[lang].label, lang)
         self.lang_combo.setCurrentIndex(self.lang_combo.findData(self.lang))

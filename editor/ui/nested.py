@@ -13,7 +13,6 @@ from typing import Any
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
     QAbstractItemView,
-    QComboBox,
     QDialog,
     QDialogButtonBox,
     QHBoxLayout,
@@ -32,6 +31,7 @@ from PySide6.QtWidgets import (
 from ..model import ContentRepository, FieldKind, FieldSpec, summarize
 from .fields import FieldWidget, RichField
 from .theme import Color, icon
+from .widgets import ComboBox
 
 __all__ = ["NestedBlockField", "ChapterGroupsField"]
 
@@ -170,7 +170,7 @@ class _ChapterEntryDialog(QDialog):
         self.setMinimumWidth(560)
         self._repo, self._lang = repo, lang
 
-        self.page = QComboBox()
+        self.page = ComboBox()
         pages = repo.pages.get(lang, {})
         for page_id in repo.page_ids():
             page = pages.get(page_id)

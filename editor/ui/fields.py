@@ -17,7 +17,6 @@ from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import (
     QAbstractItemView,
     QCheckBox,
-    QComboBox,
     QFrame,
     QHBoxLayout,
     QHeaderView,
@@ -27,7 +26,6 @@ from PySide6.QtWidgets import (
     QListWidgetItem,
     QPlainTextEdit,
     QPushButton,
-    QSpinBox,
     QTableWidget,
     QTableWidgetItem,
     QToolButton,
@@ -40,6 +38,7 @@ from ..richtext import plain_text
 from .imagepicker import ImagePickerDialog, thumbnail
 from .richtextedit import RichTextEdit
 from .theme import Color, icon
+from .widgets import ComboBox, SpinBox
 
 __all__ = ["build_field", "FieldWidget"]
 
@@ -169,7 +168,7 @@ class BoolField(FieldWidget):
 class ChoiceField(FieldWidget):
     def __init__(self, spec: FieldSpec, parent: QWidget | None = None) -> None:
         super().__init__(parent)
-        self.combo = QComboBox()
+        self.combo = ComboBox()
         for value, label in spec.choices:
             self.combo.addItem(label, value)
         self.combo.currentIndexChanged.connect(self.changed)
@@ -188,7 +187,7 @@ class ChoiceField(FieldWidget):
 class IntField(FieldWidget):
     def __init__(self, spec: FieldSpec, parent: QWidget | None = None) -> None:
         super().__init__(parent)
-        self.spin = QSpinBox()
+        self.spin = SpinBox()
         self.spin.setRange(0, 4000)
         self.spin.setSpecialValueText("automatisch")
         self.spin.setSuffix(" px")

@@ -11,7 +11,6 @@ import re
 import unicodedata
 
 from PySide6.QtWidgets import (
-    QComboBox,
     QDialog,
     QDialogButtonBox,
     QFormLayout,
@@ -23,6 +22,7 @@ from PySide6.QtWidgets import (
 
 from ..model import ContentRepository, NewPage
 from .theme import Color
+from .widgets import ComboBox
 
 __all__ = ["NewPageDialog", "RenamePageDialog", "slugify"]
 
@@ -61,7 +61,7 @@ class NewPageDialog(QDialog):
         first = repo.languages[0]
         self.titles[first].textChanged.connect(self._suggest_id)
 
-        self.parent_combo = QComboBox()
+        self.parent_combo = ComboBox()
         pages = repo.pages.get(first, {})
         for page_id in repo.page_ids():
             page = pages.get(page_id)

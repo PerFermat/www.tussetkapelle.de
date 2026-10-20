@@ -16,7 +16,6 @@ from pathlib import Path
 from PySide6.QtCore import QSize, Qt
 from PySide6.QtGui import QColor, QImageReader, QPainter, QPixmap
 from PySide6.QtWidgets import (
-    QComboBox,
     QDialog,
     QDialogButtonBox,
     QFileDialog,
@@ -32,6 +31,7 @@ from PySide6.QtWidgets import (
 from ..imagejobs import IMAGE_FILTER, human_size, normalize_name, split_target
 from ..model import ImageManifest
 from .theme import Color
+from .widgets import ComboBox
 
 __all__ = ["ImageImportDialog"]
 
@@ -103,7 +103,7 @@ class ImageImportDialog(QDialog):
         # Bekannte Ordner in Klartext; wer einen neuen anlegen will, trägt den
         # Pfad ein (deshalb editierbar). Was dabei herauskommt, steht darunter
         # in der Zeile „Wird abgelegt als“.
-        self.folder = QComboBox()
+        self.folder = ComboBox()
         self.folder.setEditable(True)
         self.folder.lineEdit().setPlaceholderText("Ordner, z. B. neuetk/anfahrt")
         for value in sorted(self._manifest.by_folder()):

@@ -25,20 +25,23 @@ import sys
 import tempfile
 from pathlib import Path
 
-from PySide6.QtCore import QEventLoop, Qt, QTimer
-from PySide6.QtGui import QColor, QImage
+from PySide6.QtCore import QEventLoop, QPoint, QPointF, Qt, QTimer
+from PySide6.QtGui import QColor, QImage, QWheelEvent
 from PySide6.QtWidgets import (
     QApplication,
+    QComboBox,
     QDialog,
     QDockWidget,
     QMessageBox,
     QScrollArea,
+    QWidget,
 )
 
 from .model import spec_for
 from .model.repository import ContentRepository
 from .ui import MainWindow
 from .ui.imagepicker import ImagePickerDialog
+from .ui.widgets import ComboBox, SpinBox
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -308,6 +311,73 @@ def test_stale_site(app: QApplication, w: MainWindow) -> None:
     check("Und die Statuszeile schweigt wieder", w.status_site.text() == "")
 
 
+def test_wheel_safe_fields(app: QApplication, w: MainWindow) -> None:
+    """Das Mausrad darf beim Scrollen keinen Wert verstellen.
+
+    Gemeldet wurde: auf der Startseite nach unten gescrollt, dabei mit dem
+    Zeiger über „Schaltfläche führt zu“ geraten – das Feld sprang auf ein
+    anderes Ziel. Lautlos, ohne Rückfrage, und erst auf der fertigen Website
+    zu bemerken. Qt schickt Rad-Ereignisse an das Widget unter dem Zeiger,
+    auch ohne Fokus; Auswahl- und Zahlenfelder verarbeiten sie von sich aus.
+
+    Geprüft wird der Vertrag, auf dem Qts Weiterreichung beruht: Ein Feld, das
+    das Ereignis *annimmt*, verschluckt es und der Scrollbereich bekommt nichts
+    mehr. Unsere Felder müssen es freigeben und den Wert in Ruhe lassen.
+    """
+    print("\nMausrad über Eingabefeldern")
+
+    def dreh(widget: QWidget) -> bool:
+        """Ein Rad-Ereignis zustellen; True, wenn das Feld es angenommen hat."""
+        event = QWheelEvent(
+            QPointF(10, 10), QPointF(10, 10), QPoint(0, -120), QPoint(0, -360),
+            Qt.MouseButton.NoButton, Qt.KeyboardModifier.NoModifier,
+            Qt.ScrollPhase.NoScrollPhase, False,
+        )
+        event.setAccepted(False)
+        QApplication.sendEvent(widget, event)
+        return event.isAccepted()
+
+    # Gegenprobe: Qts eigene Felder zeigen den Fehler – sonst prüfte der Test
+    # womöglich gar nichts.
+    roh = QComboBox()
+    for text in ("eins", "zwei", "drei"):
+        roh.addItem(text)
+    vorher = roh.currentText()
+    check("Qts Auswahlfeld verschluckt das Rad", dreh(roh))
+    check("und verstellt dabei den Wert", roh.currentText() != vorher)
+
+    eigen = ComboBox()
+    for text in ("eins", "zwei", "drei"):
+        eigen.addItem(text)
+    vorher = eigen.currentText()
+    check("Unser Auswahlfeld reicht das Rad weiter", not dreh(eigen))
+    check("und lässt den Wert stehen", eigen.currentText() == vorher)
+
+    zahl = SpinBox()
+    zahl.setRange(0, 4000)
+    zahl.setValue(350)
+    check("Unser Zahlenfeld reicht das Rad weiter", not dreh(zahl))
+    check("und lässt den Wert stehen", zahl.value() == 350, f"steht auf {zahl.value()}")
+
+    # Und in der echten Maske: die Startseite hat die meisten Auswahlfelder.
+    w.open_page("home")
+    settle(400)
+    felder = w.home_editor.findChildren(QComboBox)
+    check("Die Startseite hat Auswahlfelder", len(felder) > 0, f"{len(felder)} gefunden")
+    check(
+        "Alle sind die radsichere Fassung",
+        all(isinstance(f, ComboBox) for f in felder),
+        f"{sum(1 for f in felder if not isinstance(f, ComboBox))} ungeschützt",
+    )
+    sauber = w.repo.dirty
+    ziel = felder[0]
+    stand = ziel.currentText()
+    for _ in range(5):
+        dreh(ziel)
+    check("Fünfmal darüber gedreht ändert nichts", ziel.currentText() == stand)
+    check("Und die Seite gilt weiter als ungeändert", w.repo.dirty == sauber)
+
+
 def main() -> int:
     app = QApplication(sys.argv[:1])
     w = MainWindow(ROOT)
@@ -322,6 +392,7 @@ def main() -> int:
     test_console_dock(app, w)
     test_delete_image(app, w)
     test_stale_site(app, w)
+    test_wheel_safe_fields(app, w)
 
     print()
     if _failures:
