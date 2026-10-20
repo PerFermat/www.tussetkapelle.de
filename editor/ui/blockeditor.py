@@ -93,18 +93,31 @@ class BlockEditor(QWidget):
         self._read_only = read_only
         self.form_host.setEnabled(not read_only)
 
-    def focus_field(self, key: str) -> bool:
-        """Ein Feld anspringen und den Fokus hineinlegen.
+    def reveal_field(self, key: str) -> bool:
+        """Ein Feld sichtbar scrollen, **ohne** den Fokus zu nehmen.
 
-        Benutzt von der Suche: Der Treffer nennt den Feldnamen, und erst damit
-        landet der Benutzer an der Fundstelle statt irgendwo im Abschnitt.
+        Benutzt von der Suche. Den Fokus zu nehmen wäre hier falsch: Der
+        Benutzer tippt im Suchfeld und blättert mit den Pfeiltasten durch die
+        Treffer – zöge der Editor den Fokus an sich, wirkte die Pfeiltaste nur
+        ein einziges Mal.
+
         Gibt False zurück, wenn der Abschnitt dieses Feld nicht hat.
         """
         widget = self._fields.get(key)
         if widget is None:
             return False
-        widget.setFocus(Qt.FocusReason.OtherFocusReason)
         self.scroll.ensureWidgetVisible(widget, 0, 60)
+        return True
+
+    def focus_field(self, key: str) -> bool:
+        """Wie ``reveal_field``, aber mit dem Fokus im Feld.
+
+        Für den Augenblick, in dem der Benutzer mit dem Suchen fertig ist und
+        an der Fundstelle zu schreiben beginnen will – im Editor die Esc-Taste.
+        """
+        if not self.reveal_field(key):
+            return False
+        self._fields[key].setFocus(Qt.FocusReason.OtherFocusReason)
         return True
 
     def show_block(self, block: dict[str, Any]) -> None:

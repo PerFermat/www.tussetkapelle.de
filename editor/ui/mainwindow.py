@@ -81,6 +81,8 @@ class MainWindow(QMainWindow):
         self._hits: list[Hit] = []
         #: Welche davon gerade angesprungen ist; -1, solange keine.
         self._hit_index = -1
+        #: Begriff, zu dem ``_hits`` gehört – leer, solange nichts gesucht wurde.
+        self._hit_term = ""
 
         self.setWindowTitle("Tussetkapelle – Inhalte bearbeiten")
         self.resize(1500, 940)
@@ -134,10 +136,10 @@ class MainWindow(QMainWindow):
         # Sprachwahl: Sie ist Navigation und gehört neben die Seitenliste – und
         # in der Werkzeugleiste ist bei neun beschrifteten Knöpfen kein Platz.
         self.search_bar = SearchBar()
-        self.search_bar.search.connect(self.search_content)
+        self.search_bar.term_changed.connect(self._search_term_changed)
         self.search_bar.next_hit.connect(lambda: self.step_hit(1))
         self.search_bar.previous_hit.connect(lambda: self.step_hit(-1))
-        self.search_bar.left.connect(lambda: self.editor.setFocus())
+        self.search_bar.left.connect(self._leave_search)
 
         search_caption = QLabel("Suchen")
         search_caption.setProperty("rolle", "feld")
@@ -561,6 +563,7 @@ class MainWindow(QMainWindow):
         # ein Begriff im Feld steht.
         self._hits = []
         self._hit_index = -1
+        self._hit_term = ""
         # Erst den Baum neu aufbauen, dann suchen: sonst überschriebe das
         # Wiederherstellen der Seite den gerade angesprungenen Treffer.
         self._reload_tree(select=current)
@@ -774,6 +777,20 @@ class MainWindow(QMainWindow):
     def _hit_position(self, hit: Hit, order: list[str]) -> tuple[int, int]:
         return (order.index(hit.page_id) if hit.page_id in order else -1), hit.block_index
 
+    def _search_term_changed(self, term: str) -> None:
+        """Der Benutzer tippt – mehr nicht.
+
+        Bei jedem Buchstaben zu suchen und zu springen wäre unbrauchbar: Der
+        Sprung wechselt den Abschnitt und zöge den Fokus aus dem Suchfeld, schon
+        nach dem ersten Zeichen. Hier wird deshalb nur der Zähler geleert, damit
+        keine Zahl stehen bleibt, die nicht mehr zum Feldinhalt passt.
+        """
+        if term.strip() != self._hit_term:
+            self._hits = []
+            self._hit_index = -1
+            self._hit_term = ""
+            self.search_bar.clear_result()
+
     def search_content(self, term: str) -> None:
         """Neu suchen und zur ersten Fundstelle nach der aktuellen Stelle springen.
 
@@ -781,7 +798,9 @@ class MainWindow(QMainWindow):
         den nächsten Treffer von dort aus. Gibt es danach keinen mehr, wird
         vorn fortgesetzt – wie in jedem Textprogramm.
         """
-        self._hits = find_in_content(self.repo, term, self.lang) if term.strip() else []
+        gesucht = term.strip()
+        self._hit_term = gesucht
+        self._hits = find_in_content(self.repo, gesucht, self.lang) if gesucht else []
         if not self._hits:
             self._hit_index = -1
             self.search_bar.set_result(0, 0)
@@ -796,11 +815,29 @@ class MainWindow(QMainWindow):
         self._show_hit()
 
     def step_hit(self, delta: int) -> None:
-        """Einen Treffer weiter oder zurück, am Ende von vorn."""
+        """Einen Treffer weiter oder zurück, am Ende von vorn.
+
+        Steht im Feld ein anderer Begriff als der, zu dem die Fundstellen
+        gehören, wird zuerst gesucht. So ist die Eingabetaste der Suchbefehl,
+        und die Pfeiltasten sind es beim ersten Druck ebenfalls – ohne dass der
+        Benutzer sich den Unterschied merken müsste.
+        """
+        term = self.search_bar.term()
+        if term != self._hit_term:
+            self.search_content(term)
+            return
         if not self._hits:
             return
         self._hit_index = (self._hit_index + delta) % len(self._hits)
         self._show_hit()
+
+    def _leave_search(self) -> None:
+        """Esc: den Fokus an die Fundstelle geben, damit dort geschrieben werden kann."""
+        if 0 <= self._hit_index < len(self._hits):
+            hit = self._hits[self._hit_index]
+            if hit.block_index >= 0 and self.editor.focus_field(hit.field):
+                return
+        self.editor.setFocus()
 
     def _show_hit(self) -> None:
         """Zur gemerkten Fundstelle springen und den Zähler nachführen."""
@@ -812,7 +849,9 @@ class MainWindow(QMainWindow):
             self.tabs.setCurrentIndex(0)
             if self.blocks.currentRow() != hit.block_index:
                 self.blocks.setCurrentRow(hit.block_index)
-            self.editor.focus_field(hit.field)
+            # Nur sichtbar machen, nicht fokussieren: Der Benutzer blättert
+            # mit den Pfeiltasten weiter, und die brauchen das Suchfeld.
+            self.editor.reveal_field(hit.field)
         elif self.tabs.isTabVisible(1):
             # Seitenebene: auf der Startseite hat das eine eigene Maske.
             self.tabs.setCurrentIndex(1)

@@ -67,10 +67,17 @@ Neue Bilder kommen über den Dialog **Bild auswählen** in den Bestand – siehe
 ### Suchen
 
 Über dem Seitenbaum steht ein Suchfeld, erreichbar auch mit **Strg+F**. Ein Wort
-eintippen, und der Editor springt zur ersten Fundstelle **nach der aktuellen
-Stelle** – nicht an den Anfang des Bestandes. Weiter geht es mit **Pfeil ab**,
-zurück mit **Pfeil auf**, beides direkt im Suchfeld; **F3** und **Umschalt+F3**
-tun dasselbe von überall. **Esc** gibt den Fokus an die Eingabemaske zurück.
+eintippen, **Eingabetaste**, und der Editor springt zur ersten Fundstelle **nach
+der aktuellen Stelle** – nicht an den Anfang des Bestandes. Weiter geht es mit
+**Pfeil ab**, zurück mit **Pfeil auf**, beides direkt im Suchfeld; **F3** und
+**Umschalt+F3** tun dasselbe von überall. **Esc** legt den Fokus in das
+gefundene Feld, zum Weiterschreiben.
+
+Gesucht wird erst auf die Eingabetaste, nicht schon beim Tippen. Bei jedem
+Buchstaben zu springen hieße, nach „R“ irgendwohin zu springen und nach „Ri“
+woandershin – und weil der Sprung den Abschnitt wechselt, wäre der Fokus nach
+dem ersten Buchstaben aus dem Suchfeld verschwunden. Beim Blättern bleibt er
+deshalb ebenfalls im Feld: Sonst wirkte die Pfeiltaste nur ein einziges Mal.
 
 Gesprungen wird bis aufs Feld genau: Seite, Abschnitt, Eingabefeld. Der Zähler
 unter dem Feld zeigt „3 von 12“, die Statuszeile den Textauszug.

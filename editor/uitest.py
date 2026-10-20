@@ -28,6 +28,7 @@ from pathlib import Path
 
 from PySide6.QtCore import QEventLoop, QPoint, QPointF, Qt, QTimer
 from PySide6.QtGui import QColor, QImage, QWheelEvent
+from PySide6.QtTest import QTest
 from PySide6.QtWidgets import (
     QApplication,
     QComboBox,
@@ -442,73 +443,111 @@ def test_preview(app: QApplication, w: MainWindow) -> None:
 
 
 def test_search(app: QApplication, w: MainWindow) -> None:
-    """Suchen und zum Treffer springen.
+    """Suchen, zum Treffer springen – und dabei im Suchfeld bleiben.
 
     Gewünscht war: ein Wort eintippen, der Editor springt zur ersten Fundstelle
     *nach der aktuellen Stelle*, Pfeil ab zur nächsten, Pfeil auf zurück.
 
-    Gesucht wird im Lesetext, nicht im Markup. Wer „href“ eingibt, darf nichts
-    finden, und ein Bildpfad ist kein Text, den jemand liest.
+    Der erste Anlauf suchte bei jedem Tastendruck. Das war unbrauchbar: Der
+    Sprung wechselt den Abschnitt, und mit ihm wanderte der Fokus aus dem
+    Suchfeld – schon nach dem ersten Buchstaben. Gesucht wird deshalb erst auf
+    die Eingabetaste, und der Fokus bleibt beim Blättern im Feld. Beides wird
+    hier mit echten Tastendrücken geprüft, nicht mit gesetztem Text.
     """
     print("\nSuche im Inhalt")
 
+    # Die Dialoge der vorangegangenen Tests haben das Fenster unaktiv gemacht,
+    # und ohne aktives Fenster vergibt Qt keinen Fokus. Das ist ein Umstand der
+    # Testumgebung, kein Verhalten des Editors – im Betrieb ist das Fenster aktiv.
+    w.activateWindow()
+    settle(200)
     w.switch_language("de")
     settle(300)
     w.open_page("home")
     settle(300)
+    feld = w.search_bar.edit
 
-    w.search_bar.edit.setText("Richtsfeld")
-    settle(250)
-    check("„Richtsfeld“ wird gefunden", len(w._hits) == 3, f"{len(w._hits)} Treffer")
+    def tippe(wort: str) -> None:
+        feld.clear()
+        for zeichen in wort:
+            QTest.keyClick(feld, zeichen)
+            settle(20)
+
+    def taste(key: Qt.Key, ms: int = 250) -> None:
+        QTest.keyClick(feld, key)
+        settle(ms)
+
+    w.search_bar.focus()
+    settle(120)
+    check("Strg+F setzt den Fokus ins Suchfeld", QApplication.focusWidget() is feld)
+
+    # -- Tippen darf nichts auslösen --------------------------------------- #
+    tippe("Richtsfeld")
+    check("Der Text steht im Feld", feld.text() == "Richtsfeld", feld.text())
+    check("Tippen sucht noch nicht", not w._hits, f"{len(w._hits)} Treffer")
+    check("Und behauptet nichts", w.search_bar.count.text() == "",
+          w.search_bar.count.text())
+    check("Der Fokus bleibt beim Tippen im Feld", QApplication.focusWidget() is feld)
+
+    # -- Erst die Eingabetaste sucht --------------------------------------- #
+    taste(Qt.Key.Key_Return)
+    check("Die Eingabetaste sucht", len(w._hits) == 3, f"{len(w._hits)} Treffer")
     check("Der Zähler sagt es", w.search_bar.count.text() == "1 von 3",
           w.search_bar.count.text())
     check("Der Editor ist hingesprungen", w.page.page_id == "wiederaufbau",
           f"steht auf {w.page.page_id}")
     check("Und zwar auf den Abschnitt", w.block_index == w._hits[0].block_index)
+    check("Der Fokus bleibt trotzdem im Feld", QApplication.focusWidget() is feld)
 
+    # -- Blättern ----------------------------------------------------------- #
     seiten = []
     for _ in range(3):
-        w.step_hit(1)
-        settle(120)
+        taste(Qt.Key.Key_Down, 150)
         seiten.append(w.page.page_id)
     check("Pfeil ab führt weiter", seiten[:2] == ["einweihung-1985", "besuch"], str(seiten))
     check("Und am Ende wieder von vorn", seiten[2] == "wiederaufbau")
+    check("Auch nach dem Blättern bleibt der Fokus", QApplication.focusWidget() is feld)
 
-    w.step_hit(-1)
-    settle(120)
+    taste(Qt.Key.Key_Up, 150)
     check("Pfeil auf führt zurück", w.search_bar.count.text() == "3 von 3",
           w.search_bar.count.text())
 
-    # Markup und Bildpfade sind kein Lesetext.
-    w.search_bar.edit.setText("href")
-    settle(200)
+    # -- Esc gibt den Fokus an die Fundstelle ------------------------------- #
+    taste(Qt.Key.Key_Escape, 200)
+    check("Esc holt den Fokus aus dem Suchfeld", QApplication.focusWidget() is not feld)
+
+    # -- Markup und Bildpfade sind kein Lesetext ---------------------------- #
+    w.search_bar.focus()
+    tippe("href")
+    taste(Qt.Key.Key_Return)
     check("Auszeichnung wird nicht durchsucht", not w._hits, f"{len(w._hits)} Treffer")
-    w.search_bar.edit.setText("neuetk/einleitung")
-    settle(200)
+    check("Dann steht da „nichts gefunden“",
+          w.search_bar.count.text() == "nichts gefunden", w.search_bar.count.text())
+
+    tippe("neuetk/einleitung")
+    taste(Qt.Key.Key_Return)
     check("Bildpfade werden nicht durchsucht", not w._hits, f"{len(w._hits)} Treffer")
 
-    w.search_bar.edit.setText("gibtesganzsichernicht")
-    settle(200)
-    check("Ohne Treffer sagt es der Zähler", w.search_bar.count.text() == "nichts gefunden",
-          w.search_bar.count.text())
-
-    # Die Startseite hat Inhalt neben den Abschnitten – Hero, Kacheln,
-    # Besuchskarte, Zeitleiste. Der wäre ohne eigene Behandlung unauffindbar.
-    w.search_bar.edit.setText("Erinnerungsort")
-    settle(250)
+    # -- Der Inhalt der Startseite steht neben den Abschnitten -------------- #
+    tippe("Erinnerungsort")
+    taste(Qt.Key.Key_Return)
     check("Auch der Inhalt der Startseite wird gefunden",
           any(h.page_id == "home" and h.block_index == -1 for h in w._hits),
           f"{len(w._hits)} Treffer")
 
-    # Beim Sprachwechsel gilt die andere Fassung.
-    w.search_bar.edit.setText("Richtsfeld")
-    settle(250)
+    # -- Pfeil ab sucht ebenfalls, wenn der Begriff neu ist ----------------- #
+    tippe("Richtsfeld")
+    taste(Qt.Key.Key_Down)
+    check("Pfeil ab sucht einen neuen Begriff von sich aus", len(w._hits) == 3,
+          f"{len(w._hits)} Treffer")
+
+    # -- Beim Sprachwechsel gilt die andere Fassung ------------------------- #
     vorher = len(w._hits)
     w.switch_language("ls")
     settle(500)
     check("Der Sprachwechsel sucht neu", len(w._hits) == 1 and vorher == 3,
           f"de {vorher}, ls {len(w._hits)}")
-    w.search_bar.edit.setText("")
+    feld.clear()
     settle(150)
     w.switch_language("de")
     settle(400)

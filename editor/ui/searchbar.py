@@ -1,13 +1,19 @@
 """Suchfeld der Werkzeugleiste.
 
-Ein Wort eintippen, und der Editor springt zur ersten Fundstelle **nach der
-aktuellen Stelle** – nicht an den Anfang des Bestandes. Wer auf Seite zwölf
-arbeitet, meint in aller Regel den nächsten Treffer von dort aus.
+Ein Wort eintippen, **Eingabetaste**, und der Editor springt zur ersten
+Fundstelle nach der aktuellen Stelle – nicht an den Anfang des Bestandes. Wer
+auf Seite zwölf arbeitet, meint in aller Regel den nächsten Treffer von dort
+aus.
+
+Gesucht wird erst auf die Eingabetaste, nicht schon beim Tippen. Bei jedem
+Buchstaben zu springen hieße, nach „R“ irgendwohin zu springen, nach „Ri“
+woandershin – und weil der Sprung den Abschnitt wechselt, wäre der Fokus nach
+dem ersten Buchstaben aus dem Suchfeld verschwunden. Genau das ist passiert.
 
 Weiter geht es mit Pfeil ab, zurück mit Pfeil auf, beides direkt im Suchfeld:
 QLineEdit braucht die Pfeiltasten nicht, und die Hand muss die Tastatur nicht
-verlassen. Eingabetaste ist dasselbe wie Pfeil ab, Esc gibt den Fokus an die
-Eingabemaske zurück.
+verlassen. Der Fokus bleibt dabei im Feld – sonst wirkte die Pfeiltaste nur ein
+einziges Mal. Esc legt ihn in das gefundene Feld, zum Weiterschreiben.
 
 Das Widget kennt den Inhalt nicht. Es meldet nur, was der Benutzer will; gesucht
 und gesprungen wird im Hauptfenster.
@@ -55,11 +61,14 @@ class _SearchEdit(QLineEdit):
 class SearchBar(QWidget):
     """Suchfeld mit Zähler und zwei Richtungsknöpfen."""
 
-    #: Der Suchbegriff hat sich geändert – neu suchen und zum ersten Treffer.
-    search = Signal(str)
+    #: Der Benutzer hat getippt. **Kein** Suchbefehl – nur das Zeichen, dass
+    #: ein angezeigter Zähler nicht mehr zum Feldinhalt passt.
+    term_changed = Signal(str)
+    #: Weiter bzw. zurück. Beim ersten Mal nach einer Änderung heißt das:
+    #: neu suchen. Das entscheidet das Hauptfenster.
     next_hit = Signal()
     previous_hit = Signal()
-    #: Esc im Suchfeld: der Benutzer will zurück an die Arbeit.
+    #: Esc im Suchfeld: der Benutzer will an der Fundstelle weiterschreiben.
     left = Signal()
 
     def __init__(self, parent: QWidget | None = None) -> None:
@@ -92,7 +101,7 @@ class SearchBar(QWidget):
         layout.addLayout(zeile)
         layout.addWidget(self.count)
 
-        self.edit.textChanged.connect(self.search)
+        self.edit.textChanged.connect(self.term_changed)
         self.edit.go_next.connect(self.next_hit)
         self.edit.go_previous.connect(self.previous_hit)
         self.edit.escaped.connect(self.left)
@@ -107,6 +116,9 @@ class SearchBar(QWidget):
         button.setIcon(icon(name, Color.GREEN))
         button.setToolTip(hint)
         button.setAutoRaise(True)
+        # Ohne das nähme der Knopf beim Klicken den Fokus, und die Pfeiltasten
+        # im Suchfeld wären danach wirkungslos.
+        button.setFocusPolicy(Qt.FocusPolicy.NoFocus)
         return button
 
     # -- Anzeige ------------------------------------------------------------ #
@@ -124,6 +136,16 @@ class SearchBar(QWidget):
             self.count.setText(f"{index} von {total}")
         self.button_next.setEnabled(total > 0)
         self.button_prev.setEnabled(total > 0)
+
+    def clear_result(self) -> None:
+        """Zähler leeren, ohne etwas zu behaupten.
+
+        Beim Tippen ist noch nichts gesucht worden – „nichts gefunden“ wäre dann
+        eine Aussage über eine Suche, die gar nicht stattgefunden hat.
+        """
+        self.count.setText("")
+        self.button_next.setEnabled(False)
+        self.button_prev.setEnabled(False)
 
     def focus(self) -> None:
         self.edit.setFocus(Qt.FocusReason.ShortcutFocusReason)
