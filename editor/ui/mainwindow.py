@@ -13,13 +13,16 @@ sonst irgendwann eine Anzeige nicht mehr zum Inhalt passt.
 from __future__ import annotations
 
 import copy
+import socket
+import sys
 import webbrowser
 from pathlib import Path
 from typing import Any
 
-from PySide6.QtCore import QSettings, Qt, QTimer, QUrl
+from PySide6.QtCore import QProcess, QSettings, Qt, QTimer, QUrl
 from PySide6.QtGui import QAction, QDesktopServices, QKeySequence, QUndoStack
 from PySide6.QtWidgets import (
+    QApplication,
     QDockWidget,
     QLabel,
     QMainWindow,
@@ -48,7 +51,9 @@ from .widgets import ComboBox
 __all__ = ["MainWindow"]
 
 AUTOSAVE_MS = 60_000
-PREVIEW_URL = "http://localhost:8473/"
+#: Port des mitgelieferten Testservers – derselbe wie in serve.sh.
+PREVIEW_PORT = 8473
+PREVIEW_URL = f"http://localhost:{PREVIEW_PORT}/"
 
 
 class MainWindow(QMainWindow):
@@ -68,6 +73,8 @@ class MainWindow(QMainWindow):
         #: Anschließend auszuführendes Skript – „Prüfen“ lässt die Website erst
         #: neu erzeugen, wenn sie veraltet ist.
         self._after_build = ""
+        #: Selbst gestarteter Testserver für die Vorschau, sonst None.
+        self._preview: QProcess | None = None
 
         self.setWindowTitle("Tussetkapelle – Inhalte bearbeiten")
         self.resize(1500, 940)
@@ -706,11 +713,91 @@ class MainWindow(QMainWindow):
         """Ableitungen und Bildverzeichnis aus bilder/ neu erzeugen."""
         self.runner.run("images")
 
+    # -- Vorschau ---------------------------------------------------------- #
+
+    def _preview_responds(self) -> bool:
+        """Nimmt auf dem Vorschau-Port schon jemand Verbindungen an?"""
+        with socket.socket() as probe:
+            probe.settimeout(0.3)
+            return probe.connect_ex(("127.0.0.1", PREVIEW_PORT)) == 0
+
+    def _start_preview_server(self) -> bool:
+        """Startet den Testserver im Hintergrund und wartet, bis er antwortet.
+
+        Aufgerufen wird ``sys.executable`` statt ``python3``: Der Editor läuft
+        ohnehin in einer eigenen Python-Umgebung, und unter Windows gibt es
+        ``python3`` auf dem Suchpfad gar nicht.
+
+        Nicht über ``NpmRunner`` – der ist für Befehle gedacht, die zu einem
+        Ende kommen. Ein Server kommt nie zu einem Ende; er bliebe als „läuft
+        noch“ stehen und sperrte jeden weiteren Aufruf.
+        """
+        process = QProcess(self)
+        process.setProgram(sys.executable)
+        process.setArguments([
+            "-m", "http.server", str(PREVIEW_PORT),
+            "--bind", "127.0.0.1", "--directory", str(self.root),
+        ])
+        process.setProcessChannelMode(QProcess.ProcessChannelMode.MergedChannels)
+        process.start()
+        if not process.waitForStarted(3000):
+            return False
+        self._preview = process
+
+        # Der Port ist erst ein paar Augenblicke nach dem Start bereit. Hier
+        # wird gewartet, statt den Browser auf eine tote Adresse zu schicken –
+        # mit laufender Ereignisschleife, damit das Fenster nicht einfriert.
+        for _ in range(30):  # höchstens drei Sekunden
+            if self._preview_responds():
+                return True
+            QApplication.processEvents()
+            process.waitForFinished(100)
+            if process.state() == QProcess.ProcessState.NotRunning:
+                return False
+        return False
+
     def open_preview(self) -> None:
+        """Zeigt die erzeugte Website im Browser – und sorgt dafür, dass sie stimmt.
+
+        Zwei Dinge können der Vorschau im Weg stehen, und beide hat der Editor
+        bisher dem Benutzer überlassen. Erstens ein veralteter Stand: Gezeigt
+        wird, was auf der Platte liegt, nicht der Inhalt im Editor. Zweitens der
+        Testserver, ohne den der Browser nur einen Verbindungsfehler anzeigt –
+        der Hinweis darauf stand in der Statuszeile, wo ihn niemand liest.
+
+        Deshalb jetzt: erst speichern, bei Bedarf erzeugen, dann den Server
+        starten, falls keiner läuft, und erst danach den Browser öffnen.
+        """
+        if self.repo.dirty and not self.save():
+            return
+        if self.repo.site_stale:
+            self._after_build = "preview"
+            self.runner.run("build")
+            return
+
+        if not self._preview_responds() and not self._start_preview_server():
+            self._error(
+                "Vorschau",
+                "Der Testserver ließ sich nicht starten.\n\n"
+                f"Erwartet wurde er auf {PREVIEW_URL}\n\n"
+                "Auf der Kommandozeile hilft „npm run serve“. Möglicherweise "
+                f"belegt auch ein anderes Programm den Port {PREVIEW_PORT}.",
+            )
+            return
+
         QDesktopServices.openUrl(QUrl(PREVIEW_URL)) or webbrowser.open(PREVIEW_URL)
-        self.status_result.setText(
-            "Vorschau geöffnet. Läuft der Testserver nicht, hilft „npm run serve“."
-        )
+        self.status_result.setText(f"Vorschau geöffnet: {PREVIEW_URL}")
+
+    def _stop_preview_server(self) -> None:
+        """Beendet den selbst gestarteten Server – sonst bliebe er nach dem
+        Schließen des Editors im Hintergrund liegen und belegte den Port."""
+        process, self._preview = self._preview, None
+        if process is None or process.state() == QProcess.ProcessState.NotRunning:
+            return
+        process.terminate()
+        if not process.waitForFinished(2000):
+            process.kill()
+            process.waitForFinished(1000)
 
     def _set_tools_enabled(self, on: bool) -> None:
         for action in (self.action_build, self.action_check, self.action_images):
@@ -735,6 +822,11 @@ class MainWindow(QMainWindow):
             self.repo.manifest.reload()
             self.repo.site_stale = True
         self._update_status()
+        if ok and follow == "preview":
+            # Kein npm-Skript, sondern der zweite Teil von open_preview():
+            # erzeugt ist jetzt, also Server und Browser.
+            self.open_preview()
+            return
         if ok and follow:
             self.runner.run(follow)
             return
@@ -774,6 +866,7 @@ class MainWindow(QMainWindow):
             if answer == QMessageBox.StandardButton.Save and not self.save():
                 event.ignore()
                 return
+        self._stop_preview_server()
         self.settings.setValue("geometry", self.saveGeometry())
         self.settings.setValue("windowState", self.saveState())
         super().closeEvent(event)

@@ -21,6 +21,7 @@ und die Eingabemaske verdeckt – etwas, das kein Modelltest sehen kann.
 from __future__ import annotations
 
 import copy
+import socket
 import sys
 import tempfile
 from pathlib import Path
@@ -39,7 +40,7 @@ from PySide6.QtWidgets import (
 
 from .model import spec_for
 from .model.repository import ContentRepository
-from .ui import MainWindow
+from .ui import MainWindow, mainwindow
 from .ui.imagepicker import ImagePickerDialog
 from .ui.widgets import ComboBox, SpinBox
 
@@ -378,6 +379,68 @@ def test_wheel_safe_fields(app: QApplication, w: MainWindow) -> None:
     check("Und die Seite gilt weiter als ungeändert", w.repo.dirty == sauber)
 
 
+def test_preview(app: QApplication, w: MainWindow) -> None:
+    """„Vorschau“ muss den Testserver selbst starten und wieder aufräumen.
+
+    Gemeldet wurde: Vorschau angeklickt, Browser zeigt einen Verbindungsfehler.
+    Kein Fehler im Programm – es lief nur kein Testserver. Der Knopf öffnete die
+    Adresse blind, und der Hinweis darauf stand in der Statuszeile, wo ihn
+    niemand liest. Vor einer Vorführung ist das unangenehm.
+
+    Geprüft wird beides: die Verkettung bei veralteter Website (erst erzeugen,
+    dann zeigen) und der Server selbst – startet, liefert aus, wird beim
+    Schließen beendet. Der Browseraufruf wird dabei abgefangen; aufspringen
+    soll hier nichts.
+    """
+    print("\nVorschau")
+
+    def port_frei() -> bool:
+        with socket.socket() as probe:
+            probe.settimeout(0.3)
+            return probe.connect_ex(("127.0.0.1", mainwindow.PREVIEW_PORT)) != 0
+
+    geoeffnet: list[str] = []
+    echt_qt, echt_web = mainwindow.QDesktopServices, mainwindow.webbrowser
+    mainwindow.QDesktopServices = type("Abfang", (), {
+        "openUrl": staticmethod(lambda url: (geoeffnet.append(url.toString()), True)[1])
+    })
+    mainwindow.webbrowser = type("Abfang", (), {
+        "open": staticmethod(lambda url: geoeffnet.append(url))
+    })
+    try:
+        check("Vor dem Test läuft kein Server", port_frei())
+
+        # 1. Veraltete Website: erst erzeugen, nicht sofort zeigen.
+        w.repo.site_stale = True
+        w.open_preview()
+        # Ohne settle() geprüft, und das mit Absicht: Das Erzeugen dauert keine
+        # halbe Sekunde. Wartet man erst, ist es schon durch, der Folgeschritt
+        # abgearbeitet und _after_build wieder leer – der Test prüfte dann
+        # nichts mehr. open_preview() kehrt nach dem Anstoßen sofort zurück.
+        check("Bei veralteter Website wird erst erzeugt", w._after_build == "preview")
+        check("Der Browser bleibt so lange zu", not geoeffnet)
+
+        wait_idle(w)
+        settle(600)
+        check("Danach gilt die Website als aktuell", not w.repo.site_stale)
+        check("Der Testserver antwortet", not port_frei())
+        check("Und der Browser wurde geschickt", geoeffnet == [mainwindow.PREVIEW_URL])
+
+        # 2. Ein zweiter Klick startet keinen zweiten Server.
+        laufend = w._preview
+        w.open_preview()
+        settle(200)
+        check("Ein zweiter Klick startet keinen zweiten Server", w._preview is laufend)
+
+        # 3. Beim Schließen wird aufgeräumt.
+        w._stop_preview_server()
+        settle(400)
+        check("Nach dem Schließen ist der Port wieder frei", port_frei())
+        check("Und der Prozess ist vergessen", w._preview is None)
+    finally:
+        mainwindow.QDesktopServices, mainwindow.webbrowser = echt_qt, echt_web
+
+
 def main() -> int:
     app = QApplication(sys.argv[:1])
     w = MainWindow(ROOT)
@@ -393,6 +456,7 @@ def main() -> int:
     test_delete_image(app, w)
     test_stale_site(app, w)
     test_wheel_safe_fields(app, w)
+    test_preview(app, w)
 
     print()
     if _failures:
