@@ -208,6 +208,13 @@ einen Auslieferungsstand, den es noch nicht gibt. Fertig heißt hier nicht onlin
 Den Anfang macht [`v1.0`](https://github.com/PerFermat/www.tussetkapelle.de/releases/tag/v1.0),
 die erste Fassung auf dem Server der Gemeinde, vom 15.08.2026.
 
+**Zwei Server, nicht zu verwechseln.** `tussetkapelle.de` liegt beim Hoster der
+Gemeinde (85.13.144.162); dorthin besteht kein Zugriff, die Gemeinde übernimmt
+jede Fassung selbst aus diesem Repository. `produktion.sh` überträgt dagegen auf
+den **eigenen** Testserver (87.106.133.140) – ebenfalls öffentlich erreichbar,
+aber eben nicht das, was Besucher unter `tussetkapelle.de` sehen. Ein Lauf des
+Skripts verändert die veröffentlichte Website also nicht.
+
 Ist die Freigabe erfolgt, vor dem Release in dieser Reihenfolge:
 
 ```bash

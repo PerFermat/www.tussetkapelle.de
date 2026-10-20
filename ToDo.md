@@ -23,10 +23,10 @@ die Angaben sind von jeder Seite aus mit einem Klick erreichbar.
 
 Verwiesen statt kopiert, und zwar mit Absicht. Eine Kopie liefe der Fassung der
 Gemeinde über kurz oder lang hinterher, ohne dass es jemand bemerkt. Außerdem
-hatte die Gemeinde die beiden Seiten zwischenzeitlich **auf dem Server von Hand**
-umgebogen (`<meta http-equiv="refresh">`) – eine Änderung, die `produktion.sh`
-mit `rsync --delete-excluded` beim nächsten Lauf überschrieben hätte. Seit die
-Verweise in der Quelle stehen, muss das niemand mehr nachziehen.
+hatte die Gemeinde die beiden deutschen Seiten auf **ihrem** Server von Hand
+umgebogen (`<meta http-equiv="refresh">`), und jede Fassung, die sie künftig aus
+diesem Repository übernimmt, hätte diese Handarbeit wieder zunichte gemacht.
+Seit die Verweise in der Quelle stehen, muss das niemand mehr nachziehen.
 
 Die Verweise stehen in `src/content/site.{de,en,ls}.json` unter `footerLinks`.
 Dort sind zwei Formen erlaubt: eine Zeichenkette ist die Kennung einer eigenen

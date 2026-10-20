@@ -1,6 +1,13 @@
 #!/bin/bash
 #
-# Überträgt die *erzeugte* Website auf den Server der Gemeinde Philippsreut.
+# Überträgt die *erzeugte* Website auf den eigenen Testserver.
+#
+# ACHTUNG, Verwechslungsgefahr: Das Ziel unten ist der **eigene** Server
+# (87.106.133.140), öffentlich erreichbar, aber nicht die Adresse
+# tussetkapelle.de. Die liegt beim Hoster der Gemeinde Philippsreut
+# (85.13.144.162), und dorthin besteht kein Zugriff. Was dieses Skript
+# überträgt, ist also nicht das, was Besucher unter tussetkapelle.de sehen;
+# diese Fassung übernimmt die Gemeinde selbst aus dem GitHub-Repository.
 #
 #   ./produktion.sh            überträgt
 #   ./produktion.sh --probe    zeigt nur, was übertragen würde (rsync --dry-run)
