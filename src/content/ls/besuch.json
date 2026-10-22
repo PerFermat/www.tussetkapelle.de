@@ -73,25 +73,10 @@
           "html": "Frau Therese Friedsam, Hauptstraße 1, Telefon 08550/763"
         },
         {
-          "term": "Für einen Gottes-Dienst:",
-          "html": "Pfarrer Max Richtsfeld, Telefon 08550/274"
+          "term": "Für einen Gottes-Dienst oder eine Führung:",
+          "html": "Fragen Sie bei der Tourist-Information Philippsreut. Telefon:&nbsp;08550/9219525,  E-Mail: <a href=\"mailto:tourismus@philippsreut.de\">tourismus@philippsreut.de</a>"
         }
       ]
-    },
-    {
-      "t": "h2",
-      "text": "Ein Buch in der Kapelle"
-    },
-    {
-      "t": "p",
-      "html": "In der Kapelle liegt ein Buch. In dem Buch steht die Geschichte von der Kapelle. Das Buch kostet 2 Euro und 50 Cent."
-    },
-    {
-      "t": "fig",
-      "src": "neuetk/einleitung/ntksonnenuntergang.jpg",
-      "align": "center",
-      "alt": "Die Kapelle am Abend. Die Sonne geht unter. Der Himmel ist orange.",
-      "caption": "Die Kapelle am Abend."
     }
   ]
 }
