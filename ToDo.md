@@ -34,14 +34,14 @@ Seite, ein Objekt `{ "label": …, "url": … }` ein Verweis nach außen.
 
 ### Kontaktdaten auf der Besuchsseite
 
-Aus dem Bestand übernommen und vermutlich veraltet:
+Die Zuständigkeit für Gottesdienste und Führungen ist inzwischen aktualisiert –
+sie liegt bei der Tourist-Info Philippsreut, 08550/9219525. Die Angabe stammt
+von der Gemeinde selbst.
 
-* Betreuerin: Frau Therese Friedsam, Hauptstraße 1, Tel. 08550/763
-* Anmeldung für Gottesdienste: Pfarrer Max Richtsfeld, Tel. 08550/274
+Offen bleibt die Betreuerin: **Frau Therese Friedsam, Hauptstraße 1,
+Tel. 08550/763** – aus dem Bestand von 2003 übernommen und ungeprüft.
 
-Bitte prüfen und gegebenenfalls ersetzen. Die Angaben stehen in
-`src/content/de/besuch.json` und in den Fassungen für Englisch und Leichte
-Sprache.
+Die Angaben stehen in `src/content/de/besuch.json`.
 
 ### Nach dem Hochladen
 

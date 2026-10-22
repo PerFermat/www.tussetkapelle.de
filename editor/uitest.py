@@ -44,6 +44,7 @@ from .model.repository import ContentRepository
 from .ui import MainWindow, mainwindow
 from .ui.imagepicker import ImagePickerDialog
 from .ui.widgets import ComboBox, SpinBox
+from .model.search import find as find_in_content
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -490,26 +491,38 @@ def test_search(app: QApplication, w: MainWindow) -> None:
     check("Der Fokus bleibt beim Tippen im Feld", QApplication.focusWidget() is feld)
 
     # -- Erst die Eingabetaste sucht --------------------------------------- #
+    # Wie viele Treffer es gibt, verrät das Modell – eine eingetippte Zahl
+    # veraltet mit dem nächsten Inhaltsstand. Der Test prüft das Verhalten,
+    # nicht den Bestand.
+    erwartet = find_in_content(w.repo, "Richtsfeld", w.lang)
+    check("Der Bestand taugt für diesen Test", len(erwartet) >= 2,
+          f"{len(erwartet)} Fundstellen")
+
     taste(Qt.Key.Key_Return)
-    check("Die Eingabetaste sucht", len(w._hits) == 3, f"{len(w._hits)} Treffer")
-    check("Der Zähler sagt es", w.search_bar.count.text() == "1 von 3",
+    check("Die Eingabetaste sucht", len(w._hits) == len(erwartet),
+          f"{len(w._hits)} statt {len(erwartet)}")
+    check("Der Zähler sagt es", w.search_bar.count.text() == f"1 von {len(erwartet)}",
           w.search_bar.count.text())
-    check("Der Editor ist hingesprungen", w.page.page_id == "wiederaufbau",
-          f"steht auf {w.page.page_id}")
+    check("Der Editor ist hingesprungen", w.page.page_id == erwartet[0].page_id,
+          f"steht auf {w.page.page_id}, erwartet {erwartet[0].page_id}")
     check("Und zwar auf den Abschnitt", w.block_index == w._hits[0].block_index)
     check("Der Fokus bleibt trotzdem im Feld", QApplication.focusWidget() is feld)
 
     # -- Blättern ----------------------------------------------------------- #
     seiten = []
-    for _ in range(3):
+    for _ in range(len(erwartet)):
         taste(Qt.Key.Key_Down, 150)
         seiten.append(w.page.page_id)
-    check("Pfeil ab führt weiter", seiten[:2] == ["einweihung-1985", "besuch"], str(seiten))
-    check("Und am Ende wieder von vorn", seiten[2] == "wiederaufbau")
+    # Einmal rundherum: Pfeil ab so oft wie es Treffer gibt führt zurück zum
+    # Ausgangspunkt. Welche Seiten dazwischen liegen, sagt das Modell.
+    folge = [h.page_id for h in erwartet[1:]] + [erwartet[0].page_id]
+    check("Pfeil ab führt der Reihe nach weiter", seiten == folge,
+          f"{seiten} statt {folge}")
+    check("Und am Ende wieder von vorn", seiten[-1] == erwartet[0].page_id)
     check("Auch nach dem Blättern bleibt der Fokus", QApplication.focusWidget() is feld)
 
     taste(Qt.Key.Key_Up, 150)
-    check("Pfeil auf führt zurück", w.search_bar.count.text() == "3 von 3",
+    check("Pfeil auf führt zurück", w.search_bar.count.text() == f"{len(erwartet)} von {len(erwartet)}",
           w.search_bar.count.text())
 
     # -- Esc gibt den Fokus an die Fundstelle ------------------------------- #
@@ -538,19 +551,29 @@ def test_search(app: QApplication, w: MainWindow) -> None:
     # -- Pfeil ab sucht ebenfalls, wenn der Begriff neu ist ----------------- #
     tippe("Richtsfeld")
     taste(Qt.Key.Key_Down)
-    check("Pfeil ab sucht einen neuen Begriff von sich aus", len(w._hits) == 3,
-          f"{len(w._hits)} Treffer")
+    check("Pfeil ab sucht einen neuen Begriff von sich aus",
+          len(w._hits) == len(erwartet), f"{len(w._hits)} Treffer")
 
     # -- Beim Sprachwechsel gilt die andere Fassung ------------------------- #
-    vorher = len(w._hits)
-    w.switch_language("ls")
-    settle(500)
-    check("Der Sprachwechsel sucht neu", len(w._hits) == 1 and vorher == 3,
-          f"de {vorher}, ls {len(w._hits)}")
+    # Nur prüfbar, solange es mehr als eine Fassung gibt. Englisch und Leichte
+    # Sprache wurden auf Wunsch der Gemeinde entfernt; der Mechanismus bleibt
+    # im Editor, er hat dann bloß nichts zu tun.
+    andere = [l for l in w.repo.languages if l != w.lang]
+    if andere:
+        vorher = len(w._hits)
+        w.switch_language(andere[0])
+        settle(500)
+        drüben = find_in_content(w.repo, "Richtsfeld", w.lang)
+        check("Der Sprachwechsel sucht neu", len(w._hits) == len(drüben),
+              f"{w.lang}: {len(w._hits)} statt {len(drüben)} (vorher {vorher})")
+        feld.clear()
+        settle(150)
+        w.switch_language("de")
+        settle(400)
+    else:
+        print("  --    Sprachwechsel: nur eine Fassung vorhanden, übersprungen")
     feld.clear()
     settle(150)
-    w.switch_language("de")
-    settle(400)
 
 
 def main() -> int:

@@ -65,7 +65,7 @@ const pagesByLang = {};
 for (const lang of LANGS) {
   const sitePath = join(CONTENT, `site.${lang}.json`);
   if (!existsSync(sitePath)) {
-    console.warn(`  übersprungen: ${lang} (site.${lang}.json fehlt noch)`);
+    console.log(`  übersprungen: ${lang} (keine site.${lang}.json – diese Fassung gibt es nicht)`);
     continue;
   }
   sites[lang] = readJson(sitePath);
@@ -239,6 +239,10 @@ function makeCtx(lang, page) {
      * rel="alternate" ohne hreflang und den sichtbaren Sprachwechsler geführt.
      */
     hreflangs: (id) => {
+      // hreflang beschreibt das Verhältnis mehrerer Sprachfassungen zueinander.
+      // Bei nur einer Fassung gibt es nichts zu beschreiben.
+      if (activeLangs.length < 2) return '';
+
       const out = [];
       for (const l of activeLangs) {
         if (l === 'ls') continue;
@@ -381,7 +385,7 @@ writeFileSync(
     metaTitle: '404 – Seite nicht gefunden | Tussetkapelle Philippsreut',
     description:
       'Diese Adresse gibt es auf dieser Website nicht. Hier finden Sie den Weg ' +
-      'zurück zur Startseite in Deutsch, Englisch oder Leichter Sprache.',
+      'zurück zur Startseite.',
     kicker: 'Fehler 404',
     blocks: [
       {
@@ -396,15 +400,20 @@ writeFileSync(
           (l) => `<a href="${urlOf(l, 'home')}" hreflang="${sites[l].htmlLang}">${sites[l].label}</a>`,
         ),
       },
-      { t: 'h2', text: 'This page does not exist' },
-      {
-        t: 'p',
-        lang: 'en',
-        html: `The address you requested is not available on this website. Please continue to the <a href="${urlOf(
-          'en',
-          'home',
-        )}">English home page</a>.`,
-      },
+      // Der englische Hinweis nur, solange es eine englische Fassung gibt.
+      // Ohne diese Bedingung bricht der Bau ab, sobald site.en.json fehlt.
+      ...(sites.en
+        ? [
+            { t: 'h2', text: 'This page does not exist' },
+            {
+              t: 'p',
+              lang: 'en',
+              html:
+                'The address you requested is not available on this website. ' +
+                `Please continue to the <a href="${urlOf('en', 'home')}">English home page</a>.`,
+            },
+          ]
+        : []),
     ],
   };
 

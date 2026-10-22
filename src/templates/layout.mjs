@@ -84,6 +84,10 @@ function brand(ctx, { small = false } = {}) {
  * das Symbol trägt zusätzlich ein title-Attribut.
  */
 function langs(ctx, variant) {
+  // Eine Sprachwahl mit einem einzigen Eintrag ist keine Wahl. Gibt es nur eine
+  // Fassung, entfällt die Liste ganz – in Kopf- und Fußzeile.
+  if (ctx.allSites.length < 2) return '';
+
   const items = ctx.allSites.map((s) => {
     const current = s.lang === ctx.site.lang;
     const url = ctx.hrefIn(s.lang, ctx.page.id);

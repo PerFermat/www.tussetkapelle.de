@@ -4,8 +4,14 @@ Statische Website über die neue Tussetkapelle in Philippsreut, den originalgetr
 Wiederaufbau der Gnadenkapelle auf dem Tussetberg im Böhmerwald.
 
 Texte und Bilder stammen von der Familie Weber und sind inhaltlich unverändert
-übernommen. Die Fassungen: **Deutsch** (Wurzelverzeichnis), **Englisch**
-(`/en/`) und **Leichte Sprache** (`/ls/`).
+übernommen. Die Website ist **einsprachig deutsch**.
+
+> Bis Oktober 2026 gab es zusätzlich eine englische Fassung unter `/en/` und
+> eine in Leichter Sprache unter `/ls/`, beide maschinell erzeugt. Die Gemeinde
+> Philippsreut als Betreiberin hat entschieden, sie nicht weiterzuführen; sie
+> wurden entfernt. Der letzte dreisprachige Stand steht im Release
+> [`v1.1`](https://github.com/PerFermat/www.tussetkapelle.de/releases/tag/v1.1)
+> und lässt sich von dort zurückholen.
 
 ---
 
@@ -53,7 +59,7 @@ Drei Eigenschaften sind dabei bewusst so gebaut:
   geänderte Zeile – nicht die ganze Datei.
 * **Er kennt die Kennungen.** Eine Seitenkennung steht an sieben Stellen
   (Dateiname, `id`, `slugs`, `nav`, `sequence`, `footerLinks`, `parent`) und in
-  jedem `{{href:…}}`. Umbenennen fasst alle an, in allen drei Sprachen, und
+  jedem `{{href:…}}`. Umbenennen fasst alle an, in jeder vorhandenen Sprache, und
   entfernt das verwaiste Ausgabeverzeichnis mit – `build.js` räumt dort nicht
   auf.
 * **Er speichert nichts Kaputtes.** Vor jedem Schreiben läuft dieselbe Prüfung,
@@ -321,7 +327,7 @@ Statuszeile; **Website erzeugen** bringt sie auf den Stand.
 Zwei Dinge bleiben danach von Hand zu tun: neu aufgenommene Bilder gehören in
 einen Commit (`git add bilder/…`), und ein Bild in einem Galerieordner erscheint
 in der Bildergalerie erst nach einem Lauf von `tools/make-gallery.mjs` – mit
-einer Bildunterschrift, die dort in drei Sprachen einzutragen ist.
+einer Bildunterschrift, die dort für jede vorhandene Sprachfassung einzutragen ist.
 
 ### Herkunft des Bestands
 
@@ -358,9 +364,9 @@ Es werden **keine Webfonts** geladen, nur Systemschriften. Das erspart einen
 externen Request (DSGVO) und jede Verzögerung beim Rendern. Alle Symbole und die
 Sprachkennzeichen sind Inline-SVG.
 
-Das Kennzeichen für Leichte Sprache ist ein **eigenes, neutrales Zeichen**. Das
-offizielle Logo (Inclusion Europe / Netzwerk Leichte Sprache) ist geschützt und
-wird nicht verwendet.
+Die Sprachkennzeichen und die Sprachwahl erscheinen nur, solange es mehr als
+eine Fassung gibt. Bei einer einzigen entfallen sie – in Kopf- und Fußzeile, in
+den `hreflang`-Angaben und in der linken Spalte des Editors.
 
 ## Verzeichnisse
 
@@ -402,7 +408,7 @@ Website erwähnt werden.
 
 Betreiberin der Website ist die Gemeinde Philippsreut. Impressum und
 Datenschutzerklärung pflegt sie auf ihrem eigenen Server; die Fußzeile verweist
-in allen drei Sprachen unmittelbar dorthin:
+unmittelbar dorthin:
 
 * <https://philippsreut.de/impressum/>
 * <https://philippsreut.de/gemeinde/datenschutzerklaerung/>
@@ -412,7 +418,7 @@ antworten mit 404. Kopiert wird nichts: eine Kopie liefe der Fassung der
 Gemeinde hinterher, ohne dass es jemand bemerkt, und müsste bei jeder
 Auslieferung von Hand nachgezogen werden.
 
-Eingetragen sind die Verweise in `src/content/site.{de,en,ls}.json` unter
+Eingetragen sind die Verweise in `src/content/site.de.json` unter
 `footerLinks`. Zwei Formen sind dort erlaubt:
 
 ```json

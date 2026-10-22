@@ -132,6 +132,13 @@ class MainWindow(QMainWindow):
         lang_caption = QLabel("Sprachfassung")
         lang_caption.setProperty("rolle", "feld")
 
+        # Eine Auswahl mit einem einzigen Eintrag ist keine Auswahl. Seit
+        # Englisch und Leichte Sprache entfallen sind, bleibt nur Deutsch –
+        # dann verschwindet die Zeile samt Beschriftung.
+        mehrsprachig = len(self.repo.languages) > 1
+        lang_caption.setVisible(mehrsprachig)
+        self.lang_combo.setVisible(mehrsprachig)
+
         # Die Suche steht über dem Seitenbaum, aus demselben Grund wie die
         # Sprachwahl: Sie ist Navigation und gehört neben die Seitenliste – und
         # in der Werkzeugleiste ist bei neun beschrifteten Knöpfen kein Platz.

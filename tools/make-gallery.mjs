@@ -14,7 +14,7 @@
  *
  * Aufruf: node tools/make-gallery.mjs
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { en as CAP_EN, ls as CAP_LS } from './gallery-captions.mjs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -396,7 +396,10 @@ const all = Object.keys(manifest)
 
 let report = [];
 
-for (const lang of ['de', 'en', 'ls']) {
+// Nur Sprachfassungen, die es gibt. Englisch und Leichte Sprache wurden auf
+// Wunsch der Gemeinde entfernt; das Skript soll deshalb nicht in Verzeichnisse
+// schreiben, die nicht mehr da sind.
+for (const lang of ['de', 'en', 'ls'].filter((l) => existsSync(join(ROOT, `src/content/${l}`)))) {
   const caps = CAPTIONS[lang];
   const used = new Set();
   const sections = [];
